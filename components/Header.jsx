@@ -14,11 +14,11 @@ const Header = () => {
       <div className="text-center my-8">
         <h1 className="text-3xl sm:text-5xl font-medium">Latest Update</h1>
         <p className='mt-10 max-w-[740px] m-auto text-xs sm:text-base'>
-          New change ipsum dolor sit amet consectetur, adipisicing elit. Earum expedita itaque nostrum quasi, quam repellat perspiciatis perferendis voluptas reiciendis adipisci consequatur explicabo praesentium doloribus voluptatum voluptatibus odit dignissimos sed repudiandae?
+          New change ipsum dolor sit amet consectetur, adipisicing elit. Earum expedita itaque nostrum quasi, quam repellat perspiciatis perferendis voluptas reiciendis adipisci consequatur  repudiandae?
         </p>
-        <form className='flex justify-between max-w-[500] scale-75 sm:scale-100 mx-auto mt-10 border border-black' action="">
-          <input type="text" placeholder='Enter your email' className='pl-4 outline-none' />
-          <button className='border-1 border-black py-4 px-4'>Subscribe</button>
+        <form className='flex justify-between max-w-[200] scale-75 sm:scale-90 mx-auto mt-10 border border-black shadow-[-7px_7px_0px_#000000]' action="">
+          <input type="email" placeholder='Enter your email' className='pl-4 outline-none' />
+          <button type='submit' className='border-l border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white'>Subscribe</button>
         </form>
 
       </div>

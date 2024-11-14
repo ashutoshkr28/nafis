@@ -14,7 +14,7 @@ const Itemlist = () => {
         </div>
         <div className='flex flex-wrap justify-around gap-1 gap-y-10 mb-16 xl:mx-24'>
             {item_data.map((item)=> {
-                return <Item image = {item.image} title = {item.title} description={item.description} category={item.category} />
+                return <Item key={item.title} image = {item.image} title = {item.title} description={item.description} category={item.category} />
 
             })}
         </div>

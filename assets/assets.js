@@ -237,4 +237,66 @@ export const questions = [
       answer: "Cascading Style Sheets",
     },
   ];
+
+  export const sixtques = [
+  {  question: "एक रैखिक समीकरण का मान होगा  ",
+    options: [
+        "0 ",
+        "2 ",
+        "1  ",
+        "इनमे से कोई नहीं "
+    ],
+    answer: "1",},
+    {
+     question: "tanπ/2 का मान होगा  ",
+     options: [
+        "0",
+        "√3",
+        "1/√3",
+        "infinite",
+     ],
+     answer: "infinite"
+    },
+    {
+        question: "बिन्दु (4, -3) किस चतुर्थांश में है ?",
+        options: [
+           "First",
+           "Second",
+           "Third",
+           "Fourth",
+        ],
+        answer: "Fourth"
+       },
+       {
+        question: "वृत के केंद्र पर बना कोण होगा -",
+        options: [
+           "90°",
+           "180°",
+           "360°",
+           "270°",
+        ],
+        answer: "360°"
+       },
+       {
+        question: "3, 5, 2, 5, 7, 5, 8, 5 का बहुलक होगा ",
+        options: [
+           "2",
+           "3",
+           "5",
+           "8",
+        ],
+        answer: "5"
+       },
+       {
+        question: "△ABC में AB एवं AC के मध्य बिन्दु D एवं E इस प्रकार है की DE || BC तथा BC = 8 सेमी , तब DE का मान होगा -",
+        options: [
+           "5cm",
+           "3cm",
+           "4cm",
+           "2cm",
+        ],
+        answer: "4cm"
+       }
+
+]
   

@@ -55,7 +55,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:bihar1,
         date:Date.now(),
-        category:"BiharBoard",
+        category:"Model Paper",
         author:"Alex Bennett",
         author_img:profile_icon
     },
@@ -71,11 +71,11 @@ export const assets = {
     },
     {
         id:3,
-        title:"Learning new technology to boost your career in software",
+        title:"Learning new Model Paper to boost your career in software",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_3,
         date:Date.now(),
-        category:"Technology",
+        category:"Model Paper",
         author:"Alex Bennett",
         author_img:profile_icon
     },
@@ -85,7 +85,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_4,
         date:Date.now(),
-        category:"Technology",
+        category:"Model Paper",
         author:"Alex Bennett",
         author_img:profile_icon
     },
@@ -95,37 +95,37 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_5,
         date:Date.now(),
-        category:"Lifestyle",
+        category:"Notes",
         author:"Alex Bennett",
         author_img:profile_icon
     },
     {
         id:6,
-        title:"Maximizing returns by minimizing resources in your startup",
+        title:"Maximizing returns by minimizing resources in your Latest Update",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_6,
         date:Date.now(),
-        category:"Startup",
+        category:"Latest Update",
         author:"Alex Bennett",
         author_img:profile_icon
     },
     {
         id:7,
-        title:"Technology for Career advancement in development",
+        title:"Model Paper for Career advancement in development",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_7,
         date:Date.now(),
-        category:"Technology",
+        category:"Model Paper",
         author:"Alex Bennett",
         author_img:profile_icon
     },
     {
         id:8,
-        title:"A comprehensive roadmap for effective lifestyle management",
+        title:"A comprehensive roadmap for effective Notes management",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_8,
         date:Date.now(),
-        category:"Lifestyle",
+        category:"Notes",
         author:"Alex Bennett",
         author_img:profile_icon
     },
@@ -135,27 +135,27 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_9,
         date:Date.now(),
-        category:"Startup",
+        category:"Notes",
         author:"Alex Bennett",
         author_img:profile_icon
     },
     {
         id:10,
-        title:"Beyond the Ordinary: Crafting Your Exceptional Lifestyle",
+        title:"Beyond the Ordinary: Crafting Your Exceptional Notes",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_10,
         date:Date.now(),
-        category:"Lifestyle",
+        category:"Notes",
         author:"Alex Bennett",
         author_img:profile_icon
     },
     {
         id:11,
-        title:"Unveiling the Secrets of Successful Startups in Technolgy",
+        title:"Unveiling the Secrets of Successful Latest Updates in Technolgy",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_11,
         date:Date.now(),
-        category:"Startup",
+        category:"Notes",
         author:"Alex Bennett",
         author_img:profile_icon
     },
@@ -165,7 +165,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_12,
         date:Date.now(),
-        category:"Technology",
+        category:"Notes",
         author:"Alex Bennett",
         author_img:profile_icon
     },
@@ -175,7 +175,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_13,
         date:Date.now(),
-        category:"Startup",
+        category:"Latest Update",
         author:"Alex Bennett",
         author_img:profile_icon
     },
@@ -185,7 +185,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_14,
         date:Date.now(),
-        category:"Lifestyle",
+        category:"Notes",
         author:"Alex Bennett",
         author_img:profile_icon
     },
@@ -195,7 +195,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_15,
         date:Date.now(),
-        category:"Technology",
+        category:"Model Paper",
         author:"Alex Bennett",
         author_img:profile_icon
     },
@@ -205,7 +205,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_16,
         date:Date.now(),
-        category:"Startup",
+        category:"Notes",
         author:"Alex Bennett",
         author_img:profile_icon
     },

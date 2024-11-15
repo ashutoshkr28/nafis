@@ -1,5 +1,4 @@
 import { assets } from "@/assets/assets";
-import Description from "@/components/description";
 import Image from "next/image";
 
 const Page = () => {

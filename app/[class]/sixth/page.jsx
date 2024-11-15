@@ -75,7 +75,6 @@
 import { useState } from "react";
 import { sixtques } from "@/assets/assets";
 import Banner from "@/components/banner";
-import Description from "@/components/description";
 // import Image from "next/image";
 
 const Quiz = () => {

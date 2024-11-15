@@ -34,7 +34,7 @@ const Page = () => {
           <div className="flex space-x-4 justify-center md:justify-start">
             {/* Facebook Icon */}
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/@Mdnafisakbar.facebok/?mibextid=ZbWKwL"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:text-blue-800 transition-colors duration-300"
@@ -57,7 +57,7 @@ const Page = () => {
             </a>
 
             {/* LinkedIn Icon */}
-            <a
+            {/* <a
               href="https://www.linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -66,11 +66,11 @@ const Page = () => {
               <svg className="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M22.23 0H1.77C.792 0 0 .774 0 1.727v20.546C0 23.226.792 24 1.77 24h20.46c.978 0 1.77-.774 1.77-1.727V1.727C24 .774 23.208 0 22.23 0zM7.12 20.452H3.616V9.017H7.12v11.435zM5.367 7.65a2.048 2.048 0 1 1 0-4.096 2.048 2.048 0 0 1 0 4.096zM20.452 20.452h-3.503v-5.688c0-1.36-.027-3.113-1.896-3.113-1.897 0-2.187 1.48-2.187 3.004v5.797H9.361V9.017h3.366v1.561h.048c.47-.889 1.615-1.825 3.325-1.825 3.553 0 4.206 2.338 4.206 5.376v6.323z" />
               </svg>
-            </a>
+            </a> */}
 
             {/* Instagram Icon */}
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/nafissirchhaurahi?igsh=MTRybDV5dWZ4bHkwdg=="
               target="_blank"
               rel="noopener noreferrer"
               className="text-pink-500 hover:text-pink-700 transition-colors duration-300"

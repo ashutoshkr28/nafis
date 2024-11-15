@@ -74,6 +74,9 @@
 
 import { useState } from "react";
 import { sixtques } from "@/assets/assets";
+import Banner from "@/components/banner";
+import Description from "@/components/description";
+// import Image from "next/image";
 
 const Quiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -126,7 +129,13 @@ const Quiz = () => {
   };
 
   return (
-    <div className="p-6 max-w-md mx-auto bg-white rounded-xl shadow-md text-center">
+    <>
+    <div className="flex justify-center">
+    <Banner></Banner>
+    </div>
+
+    <div className="p-6 max-w-md mx-auto bg-white rounded-xl shadow-md text-center border border-yellow-300 mt-9">
+
       {showScore ? (
         <div>
           <h2 className="text-2xl font-bold">Quiz Completed!</h2>
@@ -210,6 +219,10 @@ const Quiz = () => {
         </div>
       )}
     </div>
+    <div className="bg-blue-500 mt-4">
+      <Description></Description>
+    </div>
+    </>
   );
 };
 

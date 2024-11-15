@@ -63,9 +63,9 @@ const Itemlist = () => {
         <button onClick={() => setMenu("Latest Update")} className={buttonClasses("Latest Update")}>
           Latest Update
         </button>
-        {/* <button onClick={() => setMenu("Test Quiz")} className={buttonClasses("Test Quiz")}>
-          Test Quiz
-        </button> */}
+        <button onClick={() => setMenu("Blog")} className={buttonClasses("Blog")}>
+          Blog
+        </button>
         <Link href="/testquiz" className={buttonClasses("Test Quiz")} >
           Test Quiz
         </Link>

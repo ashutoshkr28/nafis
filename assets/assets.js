@@ -4,6 +4,8 @@ import nafis1 from "./nafis1.png"
 import nafis2 from "./nafis2.png"
 import bihar1 from "./biharboard1.jpg"
 import lnmu from "./LNMU.webp"
+import test from "./onlinetest.jpg"
+import abtimg from "./nafis.jpg"
 // import blog_pic_1 from './blog_pic_1.png';
 // import blog_pic_2 from './blog_pic_2.png';
 import blog_pic_3 from './blog_pic_3.png';
@@ -36,6 +38,8 @@ export const assets = {
     log,
     nafis1,
     nafis2,
+    test,
+    abtimg,
     facebook_icon,
     googleplus_icon,
     twitter_icon,

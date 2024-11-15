@@ -35,6 +35,8 @@
 
 
 
+import { assets } from '@/assets/assets'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -44,7 +46,8 @@ const Testquiz = () => {
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4 lg:mb-6">
         Quiz Test Mathematics
       </h1>
-      <h2 className="text-lg md:text-xl lg:text-2xl text-red-500 border border-blue-600 py-3 px-4 rounded hover:bg-lime-700 transition duration-300">
+      <Image src={assets.test} alt='' width={600}/>
+      <h2 className="text-lg md:text-xl lg:text-2xl mt-4 text-red-500 border border-blue-600 py-3 px-4 rounded hover:bg-lime-700 transition duration-300">
         Choose Your Class
       </h2>
 

@@ -10,7 +10,6 @@ const Footer = () => {
           <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Get In Touch</h1>
           <p className="text-lg md:text-xl text-gray-600">We&apos;d love to hear from you</p>
         </div>
-
         {/* Contact Content */}
         <div className="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center md:justify-between space-y-8 md:space-y-0">
           {/* Left: Title / Contact Info */}
@@ -27,7 +26,7 @@ const Footer = () => {
             </div>
             <p className="text-gray-600 mb-2">Md Nafis Akbar</p>
             <a href="mailto:mdnafisakbar289@gmail.com" className="text-gray-600 block mt-2">Email: mdnafisakbar289@gmail.com</a>
-            <a href="tel:+918877241912" className="text-gray-600 block">Phone: +91 8877241912</a>
+            <a href="tel:+918877241912" className="text-gray-600 block">Phone: +918877241912</a>
           </div>
 
           {/* Right: Social Media Icons */}

@@ -220,7 +220,6 @@ const Quiz = () => {
       )}
     </div>
     <div className="bg-blue-500 mt-4">
-      <Description></Description>
     </div>
     </>
   );

@@ -5,7 +5,7 @@ import React from 'react'
 const Banner = () => {
   return (
     <div>
-        <Image src={assets.test}  width={800} />
+        <Image src={assets.test} alt='banner'  width={800} />
         
       
     </div>

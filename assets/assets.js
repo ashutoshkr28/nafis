@@ -60,8 +60,8 @@ export const assets = {
         image:bihar1,
         date:Date.now(),
         category:"Model Paper",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:2,
@@ -70,8 +70,8 @@ export const assets = {
         image:lnmu,
         date:Date.now(),
         category:"LNMU",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:3,
@@ -80,8 +80,8 @@ export const assets = {
         image:blog_pic_3,
         date:Date.now(),
         category:"Model Paper",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:4,
@@ -90,8 +90,8 @@ export const assets = {
         image:blog_pic_4,
         date:Date.now(),
         category:"Model Paper",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:5,
@@ -100,8 +100,8 @@ export const assets = {
         image:blog_pic_5,
         date:Date.now(),
         category:"Notes",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:6,
@@ -110,8 +110,8 @@ export const assets = {
         image:blog_pic_6,
         date:Date.now(),
         category:"Latest Update",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:7,
@@ -120,8 +120,8 @@ export const assets = {
         image:blog_pic_7,
         date:Date.now(),
         category:"Model Paper",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:8,
@@ -130,8 +130,8 @@ export const assets = {
         image:blog_pic_8,
         date:Date.now(),
         category:"Notes",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:9,
@@ -140,8 +140,8 @@ export const assets = {
         image:blog_pic_9,
         date:Date.now(),
         category:"Notes",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:10,
@@ -150,8 +150,8 @@ export const assets = {
         image:blog_pic_10,
         date:Date.now(),
         category:"Notes",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:11,
@@ -160,8 +160,8 @@ export const assets = {
         image:blog_pic_11,
         date:Date.now(),
         category:"Notes",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:12,
@@ -170,8 +170,8 @@ export const assets = {
         image:blog_pic_12,
         date:Date.now(),
         category:"Notes",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:13,
@@ -180,8 +180,8 @@ export const assets = {
         image:blog_pic_13,
         date:Date.now(),
         category:"Latest Update",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:14,
@@ -190,8 +190,8 @@ export const assets = {
         image:blog_pic_14,
         date:Date.now(),
         category:"Notes",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:15,
@@ -200,8 +200,8 @@ export const assets = {
         image:blog_pic_15,
         date:Date.now(),
         category:"Model Paper",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
     {
         id:16,
@@ -210,8 +210,8 @@ export const assets = {
         image:blog_pic_16,
         date:Date.now(),
         category:"Notes",
-        author:"Alex Bennett",
-        author_img:profile_icon
+        author:"Nafis Sir",
+        author_img:abtimg
     },
 ]
 

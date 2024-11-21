@@ -707,6 +707,271 @@
 
 
 ///// new check 
+// "use client";
+
+// import { item_data } from "@/assets/assets";
+// import React, { useState } from "react";
+// import Item from "./Item";
+// import Link from "next/link";
+
+// const Itemlist = () => {
+//   const [menu, setMenu] = useState("All");
+
+//   const categories = [
+//     { name: "All", subcategories: [] },
+//     { name: "Blog", subcategories: [] },
+//     {
+//       name: "Objective",
+//       subcategories: [
+//         { name: "Math", link: "/objective/math" },
+//         { name: "Science", link: "/objective/science" },
+//         { name: "English", link: "/objective/english" },
+//       ],
+//     },
+//     {
+//       name: "Model Paper",
+//       subcategories: [
+//         { name: "Math", link: "/modelpaper/math" },
+//         { name: "Science", link: "/modelpaper/science" },
+//         { name: "English", link: "/modelpaper/english" },
+//       ],
+//     },
+//     {
+//       name: "Notes",
+//       subcategories: [
+//         { name: "Math", link: "/notes/math" },
+//         { name: "Science", link: "/notes/science" },
+//         { name: "English", link: "/notes/english" },
+//       ],
+//     },
+ 
+//     {
+//       name: "Test Quiz",
+//       subcategories: [
+//         { name: "Math", link: "/math" },
+//         { name: "Science", link: "/testquiz/science" },
+//         { name: "English", link: "/testquiz/english" },
+//       ],
+//     },
+//   ];
+
+//   const buttonClasses = (category) =>
+//     `relative py-2 px-4 rounded-full font-medium transition-all duration-300 ${
+//       menu === category
+//         ? "bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-lg"
+//         : "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-700 hover:from-indigo-100 hover:to-purple-100 hover:text-indigo-800"
+//     }`;
+
+//   return (
+//     <div className="py-8 px-4 sm:px-6 lg:px-12 xl:px-20 bg-gradient-to-b from-gray-50 to-gray-200">
+//       {/* Dropdown Buttons */}
+//       <div className="flex flex-wrap justify-center gap-6 mb-10">
+//         {categories.map((cat, index) => (
+//           <div
+//             key={index}
+//             className="relative group" // Use `group` for hover-based styling
+//           >
+//             <button
+//               className={buttonClasses(cat.name)}
+//               onClick={() => setMenu(cat.name)}
+//             >
+//               {cat.name}
+//             </button>
+
+//             {/* Dropdown Options (appear on hover) */}
+//             {cat.subcategories.length > 0 && (
+//               <div className="absolute left-0 hidden group-hover:block mt-2 w-48 bg-white border rounded shadow-lg z-10">
+//                 {cat.subcategories.map((sub, i) => (
+//                   <Link key={i} href={sub.link || "#"} passHref>
+//                     <div className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer">
+//                       {sub.name}
+//                     </div>
+//                   </Link>
+//                 ))}
+//               </div>
+//             )}
+//           </div>
+//         ))}
+//       </div>
+
+//       {/* Item Grid */}
+//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+//         {item_data
+//           .filter((item) => (menu === "All" ? true : item.category === menu))
+//           .map((item, index) => (
+//             <Item
+//               key={index}
+//               image={item.image}
+//               title={item.title}
+//               description={item.description}
+//               category={item.category}
+//               id={item.id}
+//             />
+//           ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Itemlist;
+
+
+// "use client";
+
+// import { item_data } from "@/assets/assets";
+// import React, { useState } from "react";
+// import Item from "./Item";
+// import Link from "next/link";
+
+// const Itemlist = () => {
+//   const [menu, setMenu] = useState("All");
+//   const [isMenuOpen, setIsMenuOpen] = useState(false); // state for mobile menu toggle
+
+//   const categories = [
+//     { name: "All", subcategories: [] },
+//     { name: "Blog", subcategories: [] },
+//     {
+//       name: "Objective",
+//       subcategories: [
+//         { name: "Math", link: "/objective/math" },
+//         { name: "Science", link: "/objective/science" },
+//         { name: "English", link: "/objective/english" },
+//       ],
+//     },
+//     {
+//       name: "Model Paper",
+//       subcategories: [
+//         { name: "Math", link: "/modelpaper/math" },
+//         { name: "Science", link: "/modelpaper/science" },
+//         { name: "English", link: "/modelpaper/english" },
+//       ],
+//     },
+//     {
+//       name: "Notes",
+//       subcategories: [
+//         { name: "Math", link: "/notes/math" },
+//         { name: "Science", link: "/notes/science" },
+//         { name: "English", link: "/notes/english" },
+//       ],
+//     },
+//     {
+//       name: "Test Quiz",
+//       subcategories: [
+//         { name: "Math", link: "/math" },
+//         { name: "Science", link: "/testquiz/science" },
+//         { name: "English", link: "/testquiz/english" },
+//       ],
+//     },
+//   ];
+
+//   const buttonClasses = (category) =>
+//     `relative py-2 px-4 rounded-full font-medium transition-all duration-300 ${
+//       menu === category
+//         ? "bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-lg"
+//         : "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-700 hover:from-indigo-100 hover:to-purple-100 hover:text-indigo-800"
+//     }`;
+
+//   return (
+//     <div className="py-8 px-4 sm:px-6 lg:px-12 xl:px-20 bg-gradient-to-b from-gray-50 to-gray-200">
+//       {/* Mobile Menu Toggle */}
+//       <div className="flex justify-between items-center mb-6 md:hidden">
+//         <h2 className="text-lg font-semibold">Categories</h2>
+//         <button
+//           onClick={() => setIsMenuOpen(!isMenuOpen)}
+//           className="p-2 rounded-md bg-indigo-500 text-white hover:bg-indigo-600 focus:outline-none"
+//         >
+//           {isMenuOpen ? (
+//             <svg
+//               xmlns="http://www.w3.org/2000/svg"
+//               className="h-6 w-6"
+//               fill="none"
+//               viewBox="0 0 24 24"
+//               stroke="currentColor"
+//             >
+//               <path
+//                 strokeLinecap="round"
+//                 strokeLinejoin="round"
+//                 strokeWidth={2}
+//                 d="M6 18L18 6M6 6l12 12"
+//               />
+//             </svg>
+//           ) : (
+//             <svg
+//               xmlns="http://www.w3.org/2000/svg"
+//               className="h-6 w-6"
+//               fill="none"
+//               viewBox="0 0 24 24"
+//               stroke="currentColor"
+//             >
+//               <path
+//                 strokeLinecap="round"
+//                 strokeLinejoin="round"
+//                 strokeWidth={2}
+//                 d="M4 6h16M4 12h16m-7 6h7"
+//               />
+//             </svg>
+//           )}
+//         </button>
+//       </div>
+
+//       {/* Categories Menu */}
+//       <div
+//         className={`flex-col md:flex md:flex-row md:justify-center gap-4 mb-10 ${
+//           isMenuOpen ? "flex" : "hidden"
+//         }`}
+//       >
+//         {categories.map((cat, index) => (
+//           <div
+//             key={index}
+//             className="relative group"
+//           >
+//             <button
+//               className={buttonClasses(cat.name)}
+//               onClick={() => setMenu(cat.name)} // Optional click-based category switching
+//             >
+//               {cat.name}
+//             </button>
+
+//             {/* Dropdown Options (appear on hover for large screens) */}
+//             {cat.subcategories.length > 0 && (
+//               <div className="absolute left-0 hidden group-hover:block mt-2 w-48 bg-white border rounded shadow-lg z-10 hover:bg-indigo-50 transition-all duration-200">
+//                 {cat.subcategories.map((sub, i) => (
+//                   <Link key={i} href={sub.link || "#"} passHref>
+//                     <div className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer">
+//                       {sub.name}
+//                     </div>
+//                   </Link>
+//                 ))}
+//               </div>
+//             )}
+//           </div>
+//         ))}
+//       </div>
+
+//       {/* Item Grid */}
+//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+//         {item_data
+//           .filter((item) => (menu === "All" ? true : item.category === menu))
+//           .map((item, index) => (
+//             <Item
+//               key={index}
+//               image={item.image}
+//               title={item.title}
+//               description={item.description}
+//               category={item.category}
+//               id={item.id}
+//             />
+//           ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Itemlist;
+
+
+
+
 "use client";
 
 import { item_data } from "@/assets/assets";
@@ -716,6 +981,7 @@ import Link from "next/link";
 
 const Itemlist = () => {
   const [menu, setMenu] = useState("All");
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // state for mobile menu toggle
 
   const categories = [
     { name: "All", subcategories: [] },
@@ -744,7 +1010,6 @@ const Itemlist = () => {
         { name: "English", link: "/notes/english" },
       ],
     },
- 
     {
       name: "Test Quiz",
       subcategories: [
@@ -756,34 +1021,79 @@ const Itemlist = () => {
   ];
 
   const buttonClasses = (category) =>
-    `relative py-2 px-4 rounded-full font-medium transition-all duration-300 ${
+    `relative py-2 px-6 rounded-full font-medium text-lg transition-all duration-300 ${
       menu === category
-        ? "bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-lg"
-        : "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-700 hover:from-indigo-100 hover:to-purple-100 hover:text-indigo-800"
+        ? "bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-xl"
+        : "bg-gradient-to-r from-gray-200 to-gray-300 text-gray-700 hover:from-indigo-300 hover:to-purple-200 hover:text-indigo-800 hover:shadow-md"
     }`;
 
   return (
     <div className="py-8 px-4 sm:px-6 lg:px-12 xl:px-20 bg-gradient-to-b from-gray-50 to-gray-200">
-      {/* Dropdown Buttons */}
-      <div className="flex flex-wrap justify-center gap-6 mb-10">
+      {/* Mobile Menu Toggle */}
+      <div className="flex justify-between items-center mb-6 md:hidden">
+        <h2 className="text-lg font-semibold text-gray-800">Categories</h2>
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="p-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none transition-all duration-200"
+        >
+          {isMenuOpen ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          )}
+        </button>
+      </div>
+
+      {/* Categories Menu */}
+      <div
+        className={`flex-col md:flex md:flex-row md:justify-center gap-4 mb-10 ${
+          isMenuOpen ? "flex" : "hidden"
+        }`}
+      >
         {categories.map((cat, index) => (
           <div
             key={index}
-            className="relative group" // Use `group` for hover-based styling
+            className="relative group"
           >
             <button
               className={buttonClasses(cat.name)}
-              onClick={() => setMenu(cat.name)}
+              onClick={() => setMenu(cat.name)} // Optional click-based category switching
             >
               {cat.name}
             </button>
 
-            {/* Dropdown Options (appear on hover) */}
+            {/* Dropdown Options (appear on hover for large screens) */}
             {cat.subcategories.length > 0 && (
-              <div className="absolute left-0 hidden group-hover:block mt-2 w-48 bg-white border rounded shadow-lg z-10">
+              <div className="absolute left-0 hidden group-hover:block mt-2 w-48 bg-white border border-gray-300 rounded-xl shadow-xl z-10 hover:bg-indigo-50 transition-all duration-200">
                 {cat.subcategories.map((sub, i) => (
                   <Link key={i} href={sub.link || "#"} passHref>
-                    <div className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer">
+                    <div className="block px-4 py-3 text-gray-700 hover:bg-indigo-100 cursor-pointer rounded-xl transition-all duration-200">
                       {sub.name}
                     </div>
                   </Link>

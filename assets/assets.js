@@ -59,7 +59,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:bihar1,
         date:Date.now(),
-        category:"Model Paper",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -75,11 +75,11 @@ export const assets = {
     },
     {
         id:3,
-        title:"Learning new Model Paper to boost your career in software",
+        title:"Learning new Blog to boost your career in software",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_3,
         date:Date.now(),
-        category:"Model Paper",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -89,7 +89,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_4,
         date:Date.now(),
-        category:"Model Paper",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -99,7 +99,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_5,
         date:Date.now(),
-        category:"Notes",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -115,21 +115,21 @@ export const assets = {
     },
     {
         id:7,
-        title:"Model Paper for Career advancement in development",
+        title:"Blog for Career advancement in development",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_7,
         date:Date.now(),
-        category:"Model Paper",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },
     {
         id:8,
-        title:"A comprehensive roadmap for effective Notes management",
+        title:"A comprehensive roadmap for effective Blog management",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_8,
         date:Date.now(),
-        category:"Notes",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -139,17 +139,17 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_9,
         date:Date.now(),
-        category:"Notes",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },
     {
         id:10,
-        title:"Beyond the Ordinary: Crafting Your Exceptional Notes",
+        title:"Beyond the Ordinary: Crafting Your Exceptional Blog",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_10,
         date:Date.now(),
-        category:"Notes",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -159,7 +159,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_11,
         date:Date.now(),
-        category:"Notes",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -169,7 +169,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_12,
         date:Date.now(),
-        category:"Notes",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -189,7 +189,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_14,
         date:Date.now(),
-        category:"Notes",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -199,7 +199,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_15,
         date:Date.now(),
-        category:"Model Paper",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -209,7 +209,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_16,
         date:Date.now(),
-        category:"Notes",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -304,3 +304,11 @@ export const questions = [
 
 ]
   
+
+export const notes = [
+    {
+        question: "ashutosh kumar",
+        answer: "lorefjbjsdfbgjdfcv c dnjdsnfhsdsdhmvncvjhd jvfdfhfus"
+
+    }
+]

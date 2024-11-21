@@ -105,11 +105,11 @@ export const assets = {
     },
     {
         id:6,
-        title:"Maximizing returns by minimizing resources in your Latest Update",
+        title:"Maximizing returns by minimizing resources in your Blog",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_6,
         date:Date.now(),
-        category:"Latest Update",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -155,7 +155,7 @@ export const assets = {
     },
     {
         id:11,
-        title:"Unveiling the Secrets of Successful Latest Updates in Technolgy",
+        title:"Unveiling the Secrets of Successful Blogs in Technolgy",
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_11,
         date:Date.now(),
@@ -179,7 +179,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_13,
         date:Date.now(),
-        category:"Latest Update",
+        category:"Blog",
         author:"Nafis Sir",
         author_img:abtimg
     },

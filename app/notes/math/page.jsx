@@ -9,7 +9,7 @@ const Page = () => {
            <h1 className='text-red-600 my-5 text-2xl'>Class 10th Maths Notes Questions With Answer in Hindi</h1>
            <ul className='text-blue-800'>
             <li>
-            <Link href= "/note/real">1. वास्तविक संख्याएं (Real Numbers)</Link>
+            {/* <Link href= "/note/real">1. वास्तविक संख्याएं (Real Numbers)</Link> */}
               
             </li>
             <li>2. बहुपद (Polynomials)</li>

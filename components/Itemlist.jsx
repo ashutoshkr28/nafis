@@ -172,7 +172,7 @@
 "use client";
 
 import { item_data } from "@/assets/assets";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Item from "./Item";
 import Link from "next/link";
 
@@ -186,6 +186,44 @@ const Itemlist = () => {
         ? "bg-indigo-600 text-white shadow-lg scale-105"
         : "bg-indigo-100 text-indigo-700 hover:bg-indigo-200 hover:text-indigo-800"
     }`;
+      // Prevent text selection, right-click, and copy actions
+  useEffect(() => {
+    // Disable text selection
+    document.body.style.userSelect = "none";
+
+    // Disable right-click globally
+    document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+    // Disable copy/cut/paste keyboard shortcuts
+    document.addEventListener("keydown", (event) => {
+      if (
+        (event.ctrlKey && event.key === "c") ||
+        (event.ctrlKey && event.key === "v") ||
+        (event.ctrlKey && event.key === "x")
+      ) {
+        event.preventDefault();
+      }
+    });
+
+    // Disable right-click on images specifically
+    document.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("contextmenu", (event) => event.preventDefault());
+    });
+
+    // Clean up event listeners when the component is unmounted
+    return () => {
+      document.removeEventListener("contextmenu", (event) => event.preventDefault());
+      document.removeEventListener("keydown", (event) => {
+        if (
+          (event.ctrlKey && event.key === "c") ||
+          (event.ctrlKey && event.key === "v") ||
+          (event.ctrlKey && event.key === "x")
+        ) {
+          event.preventDefault();
+        }
+      });
+    };
+  }, []);
 
   return (
     <div className="py-10 px-5 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50">

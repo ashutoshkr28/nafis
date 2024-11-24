@@ -1,11 +1,11 @@
-import React from 'react'
 
-const page = () => {
-  return (
-    <div>
-      <h1>science model paper</h1>
-    </div>
-  )
+
+const Page = () => {
+    return(
+        <>
+        <h1>Science Page</h1>
+        </>
+    )
 }
 
-export default page
+export default Page;

@@ -37,19 +37,19 @@ const Header = () => {
     <div className="py-4 px-4 md:px-8 lg:px-20 xl:px-32 bg-gray-100">
       <div className="flex flex-wrap justify-between items-center gap-4">
         {/* Logo */}
-        <Image 
+        {/* <Image 
           src={assets.logo} 
           width={90} 
           height={90} 
           alt="Company Logo" 
           className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28"
-        />
+        /> */}
         
         {/* Get Started Button */}
-        <button className="flex items-center gap-2 font-medium py-2 px-3 md:py-3 md:px-6 border border-black shadow-[-4px_4px_0px_#000000] hover:bg-gray-200 transition duration-300">
+        {/* <button className="flex items-center gap-2 font-medium py-2 px-3 md:py-3 md:px-6 border border-black shadow-[-4px_4px_0px_#000000] hover:bg-gray-200 transition duration-300">
           Get Started 
           <Image src={assets.arrow} width={16} height={16} alt="Arrow Icon" className="w-4 h-4 md:w-5 md:h-5" />
-        </button>
+        </button> */}
       </div>
 
       {/* Content Section */}

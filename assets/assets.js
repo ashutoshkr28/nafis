@@ -245,12 +245,12 @@ export const questions = [
   export const sixtques = [
   {  question: "एक रैखिक समीकरण का मान होगा  ",
     options: [
-        "0 ",
-        "2 ",
-        "1  ",
-        "इनमे से कोई नहीं "
+        "0",
+        "2",
+        "1",
+        "इनमे से कोई नहीं ",
     ],
-    answer: "1",},
+    answer: "1"},
     {
      question: "tanπ/2 का मान होगा  ",
      options: [

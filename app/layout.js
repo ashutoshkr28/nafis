@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 // import Description from "@/components/description";
 // import Item from "@/components/Item";
 // import Itemlist from "@/components/Itemlist";
@@ -28,6 +29,8 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* <Itemlist></Itemlist> */}
+      <Navbar></Navbar>
+
         {children}
       </body>
     </html>

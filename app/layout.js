@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-// import Description from "@/components/description";
+import Description from "@/components/description";
 // import Item from "@/components/Item";
 // import Itemlist from "@/components/Itemlist";
 
@@ -24,14 +24,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <Description></Description> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* <Itemlist></Itemlist> */}
-      <Navbar></Navbar>
 
-        {children}
+     
+        <Navbar/>
+
+           {children}
+      <Description></Description>
+
+
       </body>
     </html>
   );

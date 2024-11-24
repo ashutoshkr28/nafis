@@ -1,7 +1,10 @@
+
 "use client"
 
 import { useState } from "react";
 import { sixtques } from "@/assets/assets";
+import Banner from "@/components/banner";
+// import Image from "next/image";
 
 const Quiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -13,18 +16,19 @@ const Quiz = () => {
   // Track selected option for each question
   const [selectedOptions, setSelectedOptions] = useState({});
 
-  const optionLabels = ["A", "B", "C", "D"]; // Labels for options
-
   const handleAnswerOptionClick = (selectedOption) => {
+    // Store the selected answer in state
     setSelectedOptions((prev) => ({
       ...prev,
       [currentQuestionIndex]: selectedOption,
     }));
 
+    // Update userAnswers array
     const updatedUserAnswers = [...userAnswers];
     updatedUserAnswers[currentQuestionIndex] = selectedOption;
     setUserAnswers(updatedUserAnswers);
 
+    // Check if answer is correct and update score if so
     const isCorrect = selectedOption === sixtques[currentQuestionIndex].answer;
     if (isCorrect) {
       setScore(score + 1);
@@ -53,7 +57,13 @@ const Quiz = () => {
   };
 
   return (
-    <div className="p-6 max-w-md mx-auto bg-white rounded-xl shadow-md text-center">
+    <>
+    <div className="flex justify-center">
+    <Banner></Banner>
+    </div>
+
+    <div className="p-6 max-w-md mx-auto bg-white rounded-xl shadow-md text-center border border-yellow-300 mt-9">
+
       {showScore ? (
         <div>
           <h2 className="text-2xl font-bold">Quiz Completed!</h2>
@@ -95,7 +105,7 @@ const Quiz = () => {
           <p className="mt-4 text-lg">{sixtques[currentQuestionIndex].question}</p>
 
           <div className="mt-6 space-y-4">
-            {sixtques[currentQuestionIndex].options.map((option, index) => (
+            {sixtques[currentQuestionIndex].options.map((option) => (
               <button
                 key={option}
                 onClick={() => handleAnswerOptionClick(option)}
@@ -108,7 +118,7 @@ const Quiz = () => {
                 }`}
                 disabled={submitted || selectedOptions[currentQuestionIndex] !== undefined}
               >
-                {optionLabels[index]}. {option}
+                {option}
               </button>
             ))}
           </div>
@@ -137,6 +147,9 @@ const Quiz = () => {
         </div>
       )}
     </div>
+    <div className="bg-blue-500 mt-4">
+    </div>
+    </>
   );
 };
 

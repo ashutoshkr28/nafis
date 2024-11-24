@@ -1,47 +1,101 @@
-// components/Quiz.js
+
 "use client"
 
-import { sixtques } from "@/assets/assets";
 import { useState } from "react";
-// import { sixtques } from "../data/sixtques";
+import { sixtques } from "@/assets/assets";
+import Banner from "@/components/banner";
+// import Image from "next/image";
 
 const Quiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
+  const [userAnswers, setUserAnswers] = useState([]);
+  const [submitted, setSubmitted] = useState(false);
+
+  // Track selected option for each question
+  const [selectedOptions, setSelectedOptions] = useState({});
 
   const handleAnswerOptionClick = (selectedOption) => {
+    // Store the selected answer in state
+    setSelectedOptions((prev) => ({
+      ...prev,
+      [currentQuestionIndex]: selectedOption,
+    }));
+
+    // Update userAnswers array
+    const updatedUserAnswers = [...userAnswers];
+    updatedUserAnswers[currentQuestionIndex] = selectedOption;
+    setUserAnswers(updatedUserAnswers);
+
+    // Check if answer is correct and update score if so
     const isCorrect = selectedOption === sixtques[currentQuestionIndex].answer;
     if (isCorrect) {
       setScore(score + 1);
     }
+  };
 
+  const handleNextQuestion = () => {
     const nextQuestion = currentQuestionIndex + 1;
     if (nextQuestion < sixtques.length) {
       setCurrentQuestionIndex(nextQuestion);
-    } else {
-      setShowScore(true);
     }
+  };
+
+  const handleSubmit = () => {
+    setShowScore(true);
+    setSubmitted(true);
   };
 
   const handleRestart = () => {
     setCurrentQuestionIndex(0);
     setScore(0);
     setShowScore(false);
+    setUserAnswers([]);
+    setSelectedOptions({});
+    setSubmitted(false);
   };
 
   return (
-    <div className="p-6 max-w-md mx-auto bg-white rounded-xl shadow-md text-center">
+    <>
+    <div className="flex justify-center">
+    <Banner></Banner>
+    </div>
+
+    <div className="p-6 max-w-md mx-auto bg-white rounded-xl shadow-md text-center border border-yellow-300 mt-9">
+
       {showScore ? (
         <div>
           <h2 className="text-2xl font-bold">Quiz Completed!</h2>
-          <p className="mt-4 text-xl">You scored {score} out of {sixtques.length}</p>
+          <p className="mt-4 text-xl">
+            You scored {score} out of {sixtques.length}
+          </p>
           <button
             onClick={handleRestart}
             className="mt-6 px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-700"
           >
             Restart Quiz
           </button>
+
+          {/* Display summary of answers */}
+          <div className="mt-6 text-left">
+            <h3 className="text-lg font-semibold">Your Answers:</h3>
+            {sixtques.map((question, index) => (
+              <div key={index} className="mt-4">
+                <p className="font-medium">
+                  Q{index + 1}: {question.question}
+                </p>
+                <p
+                  className={`${
+                    userAnswers[index] === question.answer ? "text-green-500" : "text-red-500"
+                  }`}
+                >
+                  Your answer: {userAnswers[index]}
+                </p>
+                <p className="text-gray-600">Correct answer: {question.answer}</p>
+              </div>
+            ))}
+          </div>
         </div>
       ) : (
         <div>
@@ -49,20 +103,53 @@ const Quiz = () => {
             Question {currentQuestionIndex + 1}/{sixtques.length}
           </h2>
           <p className="mt-4 text-lg">{sixtques[currentQuestionIndex].question}</p>
+
           <div className="mt-6 space-y-4">
             {sixtques[currentQuestionIndex].options.map((option) => (
               <button
                 key={option}
                 onClick={() => handleAnswerOptionClick(option)}
-                className="w-full px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 text-lg font-medium"
+                className={`w-full px-4 py-2 rounded text-lg font-medium ${
+                  selectedOptions[currentQuestionIndex] === option
+                    ? option === sixtques[currentQuestionIndex].answer
+                      ? "bg-green-500 text-white"
+                      : "bg-red-500 text-white"
+                    : "bg-gray-200 hover:bg-gray-300"
+                }`}
+                disabled={submitted || selectedOptions[currentQuestionIndex] !== undefined}
               >
                 {option}
               </button>
             ))}
           </div>
+
+          {/* Show "Next" button if not on the last question */}
+          {currentQuestionIndex < sixtques.length - 1 && (
+            <button
+              onClick={handleNextQuestion}
+              disabled={selectedOptions[currentQuestionIndex] === undefined}
+              className="mt-6 px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-700"
+            >
+              Next
+            </button>
+          )}
+
+          {/* Show "Submit" button on the last question */}
+          {currentQuestionIndex === sixtques.length - 1 && (
+            <button
+              onClick={handleSubmit}
+              disabled={selectedOptions[currentQuestionIndex] === undefined}
+              className="mt-6 px-4 py-2 bg-green-500 text-white font-semibold rounded hover:bg-green-700"
+            >
+              Submit
+            </button>
+          )}
         </div>
       )}
     </div>
+    <div className="bg-blue-500 mt-4">
+    </div>
+    </>
   );
 };
 

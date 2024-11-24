@@ -621,6 +621,208 @@
 
 
 
+// "use client";
+
+// import { assets } from "@/assets/assets";
+// import Image from "next/image";
+// import Link from "next/link";
+// import React, { useState } from "react";
+// import { IoIosArrowDown } from "react-icons/io";
+// import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+
+// const Navbar = () => {
+//   const [isMenuOpen, setIsMenuOpen] = useState(false); // Mobile menu toggle
+//   const [activeDropdown, setActiveDropdown] = useState(null); // Track open dropdown on desktop or mobile
+
+//   const menus = [
+//     { name: "Objective", links: ["objective/math", "objective/science", "objective/english"] },
+//     { name: "Model Paper", links: ["modelpaper/math", "modelpaper/science", "modelpaper/english"] },
+//     { name: "Notes", links: ["notes/math", "notes/science", "notes/english"] },
+//     { name: "Test Quiz", links: ["testquiz/math", "testquiz/science", "testquiz/english"] },
+//     { name: "About Us", links: ["/about"], isDirect: true }, // Direct link without dropdown
+//     { name: "Contact", links: ["/contact"], isDirect: true }, // Direct link without dropdown
+//   ];
+
+//   const toggleDropdown = (index) => {
+//     setActiveDropdown(activeDropdown === index ? null : index); // Toggle dropdown visibility
+//   };
+
+//   const closeDropdown = () => {
+//     setActiveDropdown(null); // Close dropdown when link is clicked
+//   };
+
+//   return (
+//     <nav className="w-full bg-gradient-to-r from-indigo-600 to-purple-700 text-white shadow-md">
+//       {/* Navbar Container */}
+//       <div className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
+//         {/* Logo */}
+//         <div className="flex items-center">
+//           <Link href="/">
+//           <Image
+//             src={assets.logo}
+//             alt="Logo"
+//             width={60}
+//             height={60}
+//             className="select-none pointer-events-none"
+//           /></Link>
+//         </div>
+
+//         {/* Mobile Menu Button */}
+//         <button
+//           className="lg:hidden p-2 rounded-md bg-white text-indigo-600 hover:bg-gray-200 transition-all"
+//           onClick={() => setIsMenuOpen(!isMenuOpen)}
+//         >
+//           {isMenuOpen ? <AiOutlineClose size={28} /> : <AiOutlineMenu size={28} />}
+//         </button>
+
+//         {/* Menu Links */}
+//         <div
+//           className={`${
+//             isMenuOpen ? "flex" : "hidden"
+//           } lg:flex flex-col lg:flex-row absolute lg:relative top-16 lg:top-0 left-0 w-full lg:w-auto bg-white lg:bg-transparent text-gray-800 lg:text-white z-20 shadow-lg lg:shadow-none`}
+//         >
+//           {menus.map((menu, index) => (
+//             <div key={index} className="relative group w-full lg:w-auto">
+//               {/* If the menu has links, show a dropdown, otherwise render it as a direct link */}
+//               {menu.isDirect ? (
+//                 <Link
+//                   href={menu.links[0]}  // Only render Link if there is a valid link
+//                   className="w-full lg:w-auto flex items-center justify-between px-4 py-3 text-lg font-semibold transition-all hover:bg-purple-800 lg:hover:bg-transparent"
+//                   onClick={closeDropdown} // Close dropdown when link is clicked
+//                 >
+//                   {menu.name}  {/* Display menu name like "About Us" */}
+//                 </Link>
+//               ) : (
+//                 <>
+//                   <button
+//                     onClick={() => toggleDropdown(index)}
+//                     className={`w-full lg:w-auto flex items-center justify-between px-4 py-3 text-lg font-semibold transition-all hover:bg-purple-800 lg:hover:bg-transparent ${
+//                       menu.links.length > 0 ? "cursor-pointer" : ""
+//                     }`}
+//                   >
+//                     {menu.name}  {/* Display menu name like "Objective", "Model Paper", etc. */}
+//                     {menu.links.length > 0 && (
+//                       <IoIosArrowDown
+//                         className={`ml-2 transform transition-transform ${
+//                           activeDropdown === index ? "rotate-180" : "rotate-0"
+//                         } lg:rotate-0`}
+//                       />
+//                     )}
+//                   </button>
+
+//                   {/* Dropdown */}
+//                   {menu.links.length > 0 && (
+//                     <div
+//                       className={`${
+//                         activeDropdown === index ? "block" : "hidden"
+//                       } lg:group-hover:block lg:absolute left-0 lg:left-auto w-full lg:w-48 bg-white text-gray-800 rounded-lg shadow-lg py-2 z-20`}
+//                     >
+//                       {menu.links.map((link, i) => {
+//                         const linkName = link.split("/")[1].toUpperCase();  // Extract and capitalize link name
+//                         return (
+//                           <Link
+//                             key={i}
+//                             href={link}
+//                             className="block px-6 py-2 text-sm font-medium whitespace-nowrap hover:bg-gray-100 hover:text-indigo-600"
+//                             onClick={closeDropdown} // Close dropdown when a link is clicked
+//                           >
+//                             {linkName}  {/* Display the link name in the dropdown */}
+//                           </Link>
+//                         );
+//                       })}
+//                     </div>
+//                   )}
+//                 </>
+//               )}
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+// "use client"
+
+// import { assets } from "@/assets/assets";
+// import Image from "next/image";
+// import Link from "next/link";
+// import React, { useState } from "react";
+// import { IoIosArrowDown } from "react-icons/io";
+// import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+
+
+// const Navbar = () => {
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+//   const [activeDropdown, setActiveDropdown] = useState(null);
+
+//   const menus = [
+//     { name: "Objective", links: ["/objective/math", "/objective/science", "/objective/english"] },
+//     { name: "Model Paper", links: ["/modelpaper/math", "/modelpaper/science", "/modelpaper/english"] },
+//     { name: "Notes", links: ["/notes/math", "/notes/science", "/notes/english"] },
+//     { name: "Test Quiz", links: ["/testquiz/math", "/testquiz/science", "/testquiz/english"] },
+//     { name: "About Us", links: ["/about"], isDirect: true },
+//     { name: "Contact", links: ["/contact"], isDirect: true },
+//   ];
+
+//   const toggleDropdown = (index) => {
+//     setActiveDropdown(activeDropdown === index ? null : index);
+//   };
+
+//   return (
+//     <nav className="w-full bg-gradient-to-r from-indigo-600 to-purple-700 text-white shadow-md">
+//       <div className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
+//         <div className="flex items-center">
+//           <Link href="/">
+//             <Image src={assets.logo} alt="Logo" width={60} height={60} className="select-none pointer-events-none" />
+//           </Link>
+//         </div>
+//         <button className="lg:hidden p-2 rounded-md bg-white text-indigo-600 hover:bg-gray-200 transition-all" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+//           {isMenuOpen ? <AiOutlineClose size={28} /> : <AiOutlineMenu size={28} />}
+//         </button>
+//         <div className={`${isMenuOpen ? "flex" : "hidden"} lg:flex flex-col lg:flex-row absolute lg:relative top-16 lg:top-0 left-0 w-full lg:w-auto bg-white lg:bg-transparent text-gray-800 lg:text-white z-20 shadow-lg lg:shadow-none`}>
+//           {menus.map((menu, index) => (
+//             <div key={index} className="relative group w-full lg:w-auto">
+//               {menu.isDirect ? (
+//                 <Link href={menu.links[0]} className="w-full lg:w-auto flex items-center justify-between px-4 py-3 text-lg font-semibold transition-all hover:bg-purple-800 lg:hover:bg-transparent">
+//                   {menu.name}
+//                 </Link>
+//               ) : (
+//                 <>
+//                   <button
+//                     onClick={() => toggleDropdown(index)}
+//                     className={`w-full lg:w-auto flex items-center justify-between px-4 py-3 text-lg font-semibold transition-all hover:bg-purple-800 lg:hover:bg-transparent ${
+//                       menu.links.length > 0 ? "cursor-pointer" : ""
+//                     }`}
+//                   >
+//                     {menu.name}
+//                     {menu.links.length > 0 && <IoIosArrowDown className={`ml-2 transform transition-transform ${activeDropdown === index ? "rotate-180" : "rotate-0"} lg:rotate-0`} />}
+//                   </button>
+//                   {menu.links.length > 0 && (
+//                     <div className={`${activeDropdown === index ? "block" : "hidden"} lg:group-hover:block lg:absolute left-0 lg:left-auto w-full lg:w-48 bg-white text-gray-800 rounded-lg shadow-lg py-2 z-20`}>
+//                       {menu.links.map((link, i) => (
+//                         <Link key={i} href={link} className="block px-6 py-2 text-sm font-medium whitespace-nowrap hover:bg-gray-100 hover:text-indigo-600">
+//                           {link.split("/")[2].toUpperCase()}
+//                         </Link>
+//                       ))}
+//                     </div>
+//                   )}
+//                 </>
+//               )}
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+
+
 "use client";
 
 import { assets } from "@/assets/assets";
@@ -635,20 +837,22 @@ const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null); // Track open dropdown on desktop or mobile
 
   const menus = [
-    { name: "Objective", links: ["objective/math", "objective/science", "objective/english"] },
-    { name: "Model Paper", links: ["modelpaper/math", "modelpaper/science", "modelpaper/english"] },
-    { name: "Notes", links: ["notes/math", "notes/science", "notes/english"] },
-    { name: "Test Quiz", links: ["testquiz/math", "testquiz/science", "testquiz/english"] },
+    { name: "Objective", links: ["/objective/math", "/objective/science", "/objective/english"] },
+    { name: "Model Paper", links: ["/modelpaper/math", "/modelpaper/science", "/modelpaper/english"] },
+    { name: "Notes", links: ["/notes/math", "/notes/science", "/notes/english"] },
+    { name: "Test Quiz", links: ["/testquiz/math", "/testquiz/science", "/testquiz/english"] },
     { name: "About Us", links: ["/about"], isDirect: true }, // Direct link without dropdown
     { name: "Contact", links: ["/contact"], isDirect: true }, // Direct link without dropdown
   ];
 
   const toggleDropdown = (index) => {
-    setActiveDropdown(activeDropdown === index ? null : index); // Toggle dropdown visibility
+    setActiveDropdown(activeDropdown === index ? null : index);
   };
 
-  const closeDropdown = () => {
-    setActiveDropdown(null); // Close dropdown when link is clicked
+  // Function to handle link click: Close the mobile menu
+  const handleLinkClick = () => {
+    setIsMenuOpen(false); // Close the menu on mobile
+    setActiveDropdown(null); // Reset active dropdown
   };
 
   return (
@@ -657,14 +861,15 @@ const Navbar = () => {
       <div className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="flex items-center">
-          <Link href="/">
-          <Image
-            src={assets.logo}
-            alt="Logo"
-            width={60}
-            height={60}
-            className="select-none pointer-events-none"
-          /></Link>
+          <Link href="/" onClick={handleLinkClick}>
+            <Image
+              src={assets.logo}
+              alt="Logo"
+              width={60}
+              height={60}
+              className="select-none pointer-events-none"
+            />
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -686,11 +891,11 @@ const Navbar = () => {
               {/* If the menu has links, show a dropdown, otherwise render it as a direct link */}
               {menu.isDirect ? (
                 <Link
-                  href={menu.links[0]}  // Only render Link if there is a valid link
+                  href={menu.links[0]}
+                  onClick={handleLinkClick} // Close menu on link click
                   className="w-full lg:w-auto flex items-center justify-between px-4 py-3 text-lg font-semibold transition-all hover:bg-purple-800 lg:hover:bg-transparent"
-                  onClick={closeDropdown} // Close dropdown when link is clicked
                 >
-                  {menu.name}  {/* Display menu name like "About Us" */}
+                  {menu.name}
                 </Link>
               ) : (
                 <>
@@ -700,7 +905,7 @@ const Navbar = () => {
                       menu.links.length > 0 ? "cursor-pointer" : ""
                     }`}
                   >
-                    {menu.name}  {/* Display menu name like "Objective", "Model Paper", etc. */}
+                    {menu.name}
                     {menu.links.length > 0 && (
                       <IoIosArrowDown
                         className={`ml-2 transform transition-transform ${
@@ -718,15 +923,15 @@ const Navbar = () => {
                       } lg:group-hover:block lg:absolute left-0 lg:left-auto w-full lg:w-48 bg-white text-gray-800 rounded-lg shadow-lg py-2 z-20`}
                     >
                       {menu.links.map((link, i) => {
-                        const linkName = link.split("/")[1].toUpperCase();  // Extract and capitalize link name
+                        const linkName = link.split("/")[2]?.toUpperCase() || ""; // Extract and capitalize link name
                         return (
                           <Link
                             key={i}
                             href={link}
+                            onClick={handleLinkClick} // Close menu on link click
                             className="block px-6 py-2 text-sm font-medium whitespace-nowrap hover:bg-gray-100 hover:text-indigo-600"
-                            onClick={closeDropdown} // Close dropdown when a link is clicked
                           >
-                            {linkName}  {/* Display the link name in the dropdown */}
+                            {linkName}
                           </Link>
                         );
                       })}

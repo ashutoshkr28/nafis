@@ -69,7 +69,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:lnmu,
         date:Date.now(),
-        category:"LNMU",
+        category:"Latest Update",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -79,7 +79,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_3,
         date:Date.now(),
-        category:"Blog",
+        category:"Latest Update",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -159,7 +159,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_11,
         date:Date.now(),
-        category:"Blog",
+        category:"Latest Update",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -179,7 +179,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_13,
         date:Date.now(),
-        category:"Blog",
+        category:"Latest Update",
         author:"Nafis Sir",
         author_img:abtimg
     },
@@ -199,7 +199,7 @@ export const assets = {
         description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
         image:blog_pic_15,
         date:Date.now(),
-        category:"Blog",
+        category:"Latest Update",
         author:"Nafis Sir",
         author_img:abtimg
     },

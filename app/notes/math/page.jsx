@@ -1,40 +1,110 @@
-import Link from 'next/link'
-import React from 'react'
+"use client";
+import { useState } from "react";
 
-const Page = () => {
-  return (
-    <div className=''>
+const FAQ = () => {
+  // Sample questions and answers with headings and highlights
+  const faqs = [
+    {
+      question: "त्रिभुज किसे कहते हैं और यह कितने प्रकार के होते हैं?",
+      answer: (
+        <div>
+          <h3 className="font-bold text-lg mb-2 text-indigo-700">त्रिभुज की परिभाषा:</h3>
+          <p className="mb-4 text-gray-800">
+            त्रिभुज एक बंद आकृति होती है जिसमें तीन भुजाएं, तीन शीर्ष और तीन कोण होते हैं। इसके तीनों कोणों का योग हमेशा{" "}
+            <strong className="text-indigo-600">180 डिग्री</strong> होता है।
+          </p>
 
-      <div className='flex flex-col items-center'> 
-           <h1 className='text-red-600 my-5 text-2xl'>Class 10th Maths Notes Questions With Answer in Hindi</h1>
-           <ul className='text-blue-800'>
+          <h3 className="font-bold text-lg mb-2 text-indigo-700">त्रिभुज के प्रकार:</h3>
+          <ul className="list-disc ml-6 mb-4 text-gray-800">
             <li>
-            <Link href= "/note/real">1. वास्तविक संख्याएं (Real Numbers)</Link>
-              
+              <strong className="text-indigo-600">समबाहु त्रिभुज:</strong> सभी भुजाएं समान होती हैं।
             </li>
-            <li>2. बहुपद (Polynomials)</li>
-            <li>3. दो चर वाले रैखिक समीकरण युग्म (Pair of Linear Equations in Two Variables)</li>
-            <li>4. द्विघात समीकरण (Quadratic Equations)</li>
-            <li>5. समान्तर श्रेणियाँ (Arithmetic Progressions)</li>
-            <li>6. त्रिभुज (Triangles)</li>
-            <li>7. निर्देशांक ज्यामिति (Coordinate Geometry)</li>
-            <li>8. त्रिकोणमिति (Trigonometry)</li>
-            <li>9. त्रिकोणमिति के कुछ अनुप्रयोग (Some Applications of Trigonometry)</li>
-            <li>10. वृत्त (Circles)</li>
-            <li>11. रचनाएँ (Constructions)</li>
-            <li>12. वृतों से सबंधित क्षेत्रफल (Areas Related to Circles)</li>
-            <li> 13. पृष्ठीय क्षेत्रफल और आयतन (Surface Areas and Volumes)</li>
-            <li>14. संख्यिकी (Statistics)</li>
-            <li>15. प्रायिकता (Probability)</li>
-           </ul>
+            <li>
+              <strong className="text-indigo-600">समद्विबाहु त्रिभुज:</strong> दो भुजाएं समान होती हैं।
+            </li>
+            <li>
+              <strong className="text-indigo-600">विषमबाहु त्रिभुज:</strong> सभी भुजाएं असमान होती हैं।
+            </li>
+          </ul>
 
-    <p>
+          <h3 className="font-bold text-lg mb-2 text-indigo-700">त्रिभुज के गुणधर्म:</h3>
+          <p className="text-gray-800">
+            त्रिभुज के तीनों कोणों का योग हमेशा <strong className="text-indigo-600">180 डिग्री</strong> होता है।
+          </p>
+        </div>
+      ),
+    },
+    {
+      question: "How does server-side rendering work?",
+      answer: (
+        <div>
+          <h3 className="font-bold text-lg mb-2 text-indigo-700">Definition:</h3>
+          <p className="text-gray-800">
+            Server-side rendering (SSR) generates HTML on the server for each request, improving performance and SEO.
+          </p>
 
-</p>
-</div>
+          <h3 className="font-bold text-lg mb-2 text-indigo-700">Benefits:</h3>
+          <ul className="list-disc ml-6 mb-4 text-gray-800">
+            <li>Improved SEO because the content is rendered before delivery.</li>
+            <li>Faster perceived page load time for users.</li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      question: "What is static site generation?",
+      answer: (
+        <div>
+          <h3 className="font-bold text-lg mb-2 text-indigo-700">Definition:</h3>
+          <p className="text-gray-800">
+            Static site generation (SSG) pre-renders pages at build time, offering fast load speeds and better caching.
+          </p>
 
+          <h3 className="font-bold text-lg mb-2 text-indigo-700">Advantages:</h3>
+          <ul className="list-disc ml-6 mb-4 text-gray-800">
+            <li>Fast page load times due to pre-rendering.</li>
+            <li>Improved performance and reliability.</li>
+          </ul>
+        </div>
+      ),
+    },
+  ];
+
+  return (
+    <div className="max-w-4xl mx-auto px-6 py-12">
+      <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">Frequently Asked Questions</h1>
+      <div className="space-y-6">
+        {faqs.map((faq, index) => (
+          <QuestionAnswer key={index} faq={faq} />
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Page;
+const QuestionAnswer = ({ faq }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div
+      className="border-b-2 border-gray-300 pb-4 cursor-pointer"
+      onClick={() => setIsOpen(!isOpen)}
+    >
+      <h2
+        className="text-lg font-medium text-gray-800 flex justify-between items-center"
+      >
+        {faq.question}
+        <span className="text-indigo-500 text-xl font-bold">
+          {isOpen ? "-" : "+"}
+        </span>
+      </h2>
+      {isOpen && (
+        <div className="text-gray-600 mt-4">
+          {faq.answer}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default FAQ;

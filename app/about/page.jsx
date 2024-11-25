@@ -108,8 +108,6 @@
 // };
 
 // export default Page;
-
-
 "use client";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
@@ -124,7 +122,7 @@ const Page = () => {
             Get In Touch
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-8">
-            Hello! I'm <span className="font-bold text-indigo-600">Nafis Sir</span>, 
+            Hello! I&apos;m <span className="font-bold text-indigo-600">Nafis Sir</span>, 
             a passionate Mathematics teacher dedicated to inspiring and guiding 
             students to achieve excellence in Maths.
           </p>

@@ -368,7 +368,7 @@ const QuestionAnswer = ({ faq }) => {
       onClick={() => setIsOpen(!isOpen)}
     >
       <h2
-        className="text-lg font-medium text-gray-800 flex justify-between items-center"
+        className="text-lg font-medium text-red-600 flex justify-between items-center"
       >
         {faq.question}
         <span className="text-indigo-500 text-xl font-bold">
@@ -385,3 +385,4 @@ const QuestionAnswer = ({ faq }) => {
 };
 
 export default FAQ;
+

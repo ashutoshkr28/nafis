@@ -1,171 +1,79 @@
-"use client";
-import { useState } from "react";
+// import Link from "next/link";
 
-const FAQ = () => {
+// const chapters = [
+//   { name: "Introduction to Science", slug: "introduction-to-science" },
+//   { name: "Matter and Its Properties", slug: "matter-and-properties" },
+//   { name: "Forces and Motion", slug: "forces-and-motion" },
+//   { name: "The Living World", slug: "the-living-world" },
+// ];
+
+// const ScienceTable = () => {
+//   return (
+//     <div className="flex justify-center items-center p-6">
+//       <div className="overflow-x-auto w-full max-w-4xl">
+//         <table className="table-auto w-full border-collapse border border-gray-300 shadow-lg">
+//           <thead>
+//             <tr className="bg-gray-200">
+//               <th className="px-4 py-2 border border-gray-300 text-left">Chapter Name</th>
+//             </tr>
+//           </thead>
+//           <tbody>
+//             {chapters.map((chapter, index) => (
+//               <tr key={index} className="hover:bg-gray-100 transition duration-150">
+//                 <td className="px-4 py-2 border border-gray-300">
+//                   <Link href={`/notes/science/${chapter.slug}`} className="text-blue-600 hover:underline">
+//                     {chapter.name}
+//                   </Link>
+//                 </td>
+//               </tr>
+//             ))}
+//           </tbody>
+//         </table>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ScienceTable;
 
 
-const cropManagementQuestions = [
-  {
-    question: "फसल किसे कहते हैं?",
-    answer: (
-      <div>
-        <p className="text-gray-800">
-          जब एक ही किस्म के पौधे किसी स्थान पर बड़े पैमाने पर उगाए जाते हैं तो इसे फसल कहते हैं।
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "जुताई किसे कहते हैं?",
-    answer: (
-      <div>
-        <p className="text-gray-800">
-          मिट्टी को उलटने-पलटने एवं पोला करने की प्रक्रिया को जुताई कहते हैं।
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "खाद एवं उर्वरक किसे कहते हैं?",
-    answer: (
-      <div>
-        <p className="text-gray-800">
-          वे पदार्थ जिन्हें मिट्टी में पोषक तत्व बनाए रखने के लिए मिलाया जाता है, उन्हें खाद एवं उर्वरक कहते हैं।
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "उर्वरक कैसे बनाया जाता है?",
-    answer: (
-      <div>
-        <p className="text-gray-800">
-          खाद जैविक प्रक्रिया द्वारा फैक्ट्रियों में बनाया जाता है।
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "फसल चक्रण किसे कहते हैं?",
-    answer: (
-      <div>
-        <p className="text-gray-800">
-          फसलों को अदल-बदल कर बोना फसल चक्रण कहलाता है।
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "खेतों में लगातार फसल उगाने से क्या हानियाँ हैं?",
-    answer: (
-      <div>
-        <p className="text-gray-800">
-          खेतों में लगातार फसल उगाने से खेतों में पोषक तत्वों की कमी हो जाती है।
-        </p>
-      </div>
-    ),
-  },
-  {
-    question: "खाद एवं उर्वरक में क्या अंतर है?",
-    answer: (
-      <div>
-        <h3 className="font-bold text-lg mb-2 text-indigo-700">खाद और उर्वरक का अंतर:</h3>
-        <table className="table-auto border-collapse border border-gray-400 text-gray-800">
+
+
+import Link from "next/link";
+
+const chapters = [
+  { name: "8th Class ( कक्षा 8 विज्ञान )", slug: "8th Class" },
+  { name: "9th Class ( कक्षा 9 विज्ञान ) - Coming Soon..", slug: "matter-and-properties" },
+  { name: "10th Class ( कक्षा 10  विज्ञान ) Coming Soon..", slug: "forces-and-motion" },
+  { name: "11th Class ( कक्षा 11  विज्ञान ) Coming Soon..", slug: "the-living-world" },
+  { name: "12th Class ( कक्षा 12  विज्ञान ) Coming Soon..", slug: "the-living-world" },
+];
+
+export default function ScienceNotes() {
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-50">
+      <h1 className="text-3xl font-bold mb-6">Science Subject</h1>
+      <div className="overflow-x-auto w-full max-w-4xl">
+        <table className="table-auto w-full border-collapse border border-gray-300 shadow-lg">
           <thead>
-            <tr>
-              <th className="border border-gray-400 px-4 py-2">खाद</th>
-              <th className="border border-gray-400 px-4 py-2">उर्वरक</th>
+            <tr className="bg-gray-200">
+              <th className="px-4 py-2 border border-gray-300 text-left">All Class Subjective Questions with Answer</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td className="border border-gray-400 px-4 py-2">जैविक पदार्थ</td>
-              <td className="border border-gray-400 px-4 py-2">रासायनिक पदार्थ</td>
-            </tr>
-            <tr>
-              <td className="border border-gray-400 px-4 py-2">सभी प्रकार के पोषक तत्व</td>
-              <td className="border border-gray-400 px-4 py-2">विशेष पोषक तत्व</td>
-            </tr>
-            <tr>
-              <td className="border border-gray-400 px-4 py-2">अपशिष्ट से तैयार</td>
-              <td className="border border-gray-400 px-4 py-2">फैक्ट्रियों में तैयार</td>
-            </tr>
+            {chapters.map((chapter, index) => (
+              <tr key={index} className="hover:bg-gray-100 transition duration-150">
+                <td className="px-4 py-2 border border-gray-300">
+                  <Link href={`/notes/science/${chapter.slug}`} className="text-blue-600 hover:underline">
+                    {chapter.name}
+                  </Link>
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
-    ),
-  },
-  {
-    question: "खरीफ फसल क्या है?",
-    answer: (
-      <div>
-        <p className="text-gray-800">
-          वह फसल जिन्हें वर्षा ऋतु में बोया जाता है उन्हें खरीफ फसल कहते हैं।
-        </p>
-        <ul className="list-disc ml-6 text-gray-800">
-          <li>धान</li>
-          <li>मक्का</li>
-          <li>कपास</li>
-          <li>सोयाबीन</li>
-          <li>मूंगफली</li>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    question: "रबी फसल क्या है?",
-    answer: (
-      <div>
-        <p className="text-gray-800">
-          शीत ऋतु में उगाई जाने वाली फसलें रबी फसल कहलाती हैं।
-        </p>
-        <ul className="list-disc ml-6 text-gray-800">
-          <li>गेहूं</li>
-          <li>चना</li>
-          <li>मटर</li>
-          <li>सरसों</li>
-        </ul>
-      </div>
-    ),
-  },
-];
-
-return (
-  <div className="max-w-4xl mx-auto px-6 py-12">
-    <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">Frequently Asked Questions</h1>
-    <div className="space-y-6">
-      {cropManagementQuestions.map((faq, index) => (
-        <QuestionAnswer key={index} faq={faq} />
-      ))}
     </div>
-  </div>
-);
-};
-
-const QuestionAnswer = ({ faq }) => {
-const [isOpen, setIsOpen] = useState(false);
-
-return (
-  <div
-    className="border-b-2 border-gray-300 pb-4 cursor-pointer"
-    onClick={() => setIsOpen(!isOpen)}
-  >
-    <h2
-      className="text-lg font-medium text-red-600 flex justify-between items-center"
-    >
-      {faq.question}
-      <span className="text-indigo-500 text-xl font-bold">
-        {isOpen ? "-" : "+"}
-      </span>
-    </h2>
-    {isOpen && (
-      <div className="text-gray-600 mt-4">
-        {faq.answer}
-      </div>
-    )}
-  </div>
-);
-};
-
-export default FAQ;
+  );
+}
 

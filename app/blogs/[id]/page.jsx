@@ -70,12 +70,6 @@ const Page = ({params}) => {
         </div>
 
 
-
-
-
-
-
-
         {/* <p className='my-3'>Before you can mange your lifestyle, you must have a clear understanding of what you want to achieve. Start by reflecting on your values, aspiration, and long-term goals. </p> */}
 
     </div>

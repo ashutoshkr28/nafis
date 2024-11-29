@@ -100,7 +100,7 @@ const Watermark = () => {
   return (
     <div className="fixed inset-0 flex justify-center items-center pointer-events-none z-50">
       {/* Responsive Watermark */}
-      <h1 className="text-gray-700 rotate-45 text-2xl sm:text-4xl md:text-6xl lg:text-4xl xl:text-7xl opacity-10">
+      <h1 className="text-gray-700 -rotate-45 text-2xl sm:text-4xl md:text-6xl lg:text-4xl xl:text-7xl opacity-10">
         Nafis Sir Chhaurahi
       </h1>
     </div>

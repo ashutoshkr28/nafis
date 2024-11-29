@@ -254,6 +254,7 @@ const Itemlist = () => {
               title={item.title}
               description={item.description}
               category={item.category}
+              id = {item.id}
             />
           ))}
       </div>

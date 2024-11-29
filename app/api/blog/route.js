@@ -34,7 +34,6 @@
 //             author:`${formData.get(author)}`,
 //             image:`${formData.get(image)}`,
 //             authorImg:`${formData.get(authorImg)}`
-         
 //         }
 
 //         await BlogModel.create(blogData)

@@ -293,7 +293,7 @@ const FAQ = () => {
   // Chapter data
   const chapters = [
     {
-      chapterName: "अध्याय 1: फसल उत्पादन एवं प्रबंधन",
+      chapterName: "फसल उत्पादन एवं प्रबंधन",
       questions: [
         {
           question: "फसल किसे कहते हैं?",
@@ -323,38 +323,38 @@ const FAQ = () => {
             question: "तीन उर्वरकों के नाम लिखें।",
             answer: "यूरिया, अमोनियम, सल्फेट।",
           },
+          {
+            question: "खाद एवं उर्वरक में क्या अंतर है?",
+            answer: (
+              <div>
+                <h3 className="font-bold text-lg mb-2 text-indigo-700">खाद और उर्वरक का अंतर:</h3>
+                <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
+                  <thead>
+                    <tr className="bg-indigo-100">
+                      <th className="border border-gray-400 px-6 py-3 text-left text-gray-700 font-medium">खाद</th>
+                      <th className="border border-gray-400 px-6 py-3 text-left text-gray-700 font-medium">उर्वरक</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white">
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-400 px-6 py-4">(I) एक जैविक पदार्थ है।</td>
+                      <td className="border border-gray-400 px-6 py-4">(I) यह एक रासायनिक पदार्थ है।</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-400 px-6 py-4">(II) इसमें सभी प्रकार के पोषक तत्व पाये जाते हैं।</td>
+                      <td className="border border-gray-400 px-6 py-4">(II) इसमें विशेष प्रकार के पोषक तत्व पाये जाते हैं।</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-400 px-6 py-4">(III)  यह अपशिष्टों को मिट्टी में दबाकर बनाया जाता है।</td>
+                      <td className="border border-gray-400 px-6 py-4">(III) यह फैक्ट्रियों में बनाया जाता है। </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            ),
+          },
           
-          
-        {
-          question: "खाद एवं उर्वरक में क्या अंतर है?",
-          answer: (
-            <div>
-              <h3 className="font-bold text-lg mb-2 text-indigo-700">खाद और उर्वरक का अंतर:</h3>
-              <table className="table-auto border-collapse border border-gray-400 text-gray-800">
-                <thead>
-                  <tr>
-                    <th className="border border-gray-400 px-4 py-2">खाद</th>
-                    <th className="border border-gray-400 px-4 py-2">उर्वरक</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border border-gray-400 px-4 py-2">जैविक पदार्थ</td>
-                    <td className="border border-gray-400 px-4 py-2">रासायनिक पदार्थ</td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-400 px-4 py-2">सभी प्रकार के पोषक तत्व</td>
-                    <td className="border border-gray-400 px-4 py-2">विशेष पोषक तत्व</td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-400 px-4 py-2">अपशिष्ट से तैयार</td>
-                    <td className="border border-gray-400 px-4 py-2">फैक्ट्रियों में तैयार</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          ),
-        },
+               
         {
             question: "सिंचाई के पारम्परिक तरीके कौन-कौन से हैं?",
             answer: (
@@ -1214,13 +1214,13 @@ const QuestionAnswer = ({ faq, questionNumber }) => {
   return (
     <div
       className="border-b-2 border-gray-300 pb-4 cursor-pointer"
-      onClick={() => setIsOpen(!isOpen)}
+    //   onClick={() => setIsOpen(!isOpen)}
     >
       <h3 className="text-lg font-medium text-red-600 flex justify-between items-center">
         {`${questionNumber}. ${faq.question}`}
-        <span className="text-indigo-500 text-xl font-bold">{isOpen ? "-" : "+"}</span>
+        {/* <span className="text-indigo-500 text-xl font-bold">{isOpen ? "-" : "+"}</span> */}
       </h3>
-      {isOpen && <div className="text-gray-600 mt-4">{faq.answer}</div>}
+      {isOpen || <div className="text-gray-600 mt-4">{faq.answer}</div>}
     </div>
   );
 };

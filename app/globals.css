@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    user-select: none; /* Disable text selection */
+  }
+  
+
+  @media screen and (display-mode: fullscreen) {
+    body {
+      visibility: hidden;
+    }
+  }
+  

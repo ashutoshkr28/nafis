@@ -50,6 +50,35 @@
 
 
 
+// 'use client';
+
+// import { useEffect } from 'react';
+
+// const Watermark = () => {
+//   useEffect(() => {
+//     console.log('Watermark effect is running');
+//     const disableRightClick = (e) => {
+//       e.preventDefault();
+//       console.log('Right-click disabled');
+//     };
+//     document.addEventListener('contextmenu', disableRightClick);
+
+//     return () => {
+//       document.removeEventListener('contextmenu', disableRightClick);
+//     };
+//   }, []);
+
+//   return (
+//     <div className="fixed inset-0 flex justify-center items-center opacity-10 pointer-events-none">
+//       <h1 className="text-6xl text-gray-700 rotate-45">Nafis Sir Chhaurahi</h1>
+//     </div>
+//   );
+// };
+
+// export default Watermark;
+
+
+
 'use client';
 
 import { useEffect } from 'react';
@@ -69,8 +98,11 @@ const Watermark = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 flex justify-center items-center opacity-10 pointer-events-none">
-      <h1 className="text-6xl text-gray-700 rotate-45">Nafis Sir Chhaurahi</h1>
+    <div className="fixed inset-0 flex justify-center items-center pointer-events-none z-50">
+      {/* Responsive Watermark */}
+      <h1 className="text-gray-700 rotate-45 text-2xl sm:text-4xl md:text-6xl lg:text-8xl xl:text-9xl opacity-10">
+        Nafis Sir Chhaurahi
+      </h1>
     </div>
   );
 };

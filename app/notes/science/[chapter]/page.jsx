@@ -3049,10 +3049,6 @@ const FAQ = () => {
         </div>
       ),
     },
-    
-    
-
-
 
   ]
 }
@@ -3109,7 +3105,7 @@ const QuestionAnswer = ({ faq, questionNumber }) => {
 const [isOpen, setIsOpen] = useState(false);
 
 return (
-  <div className="border-b-2 border-gray-300 pb-4 cursor-pointer">
+  <div className="border-b-2 border-gray-300 pb-8 cursor-pointer">
     <h3 className="text-lg font-medium text-red-600 flex justify-between items-center">
       {`प्रश्‍न: ${questionNumber}. ${faq.question}`}
     </h3>

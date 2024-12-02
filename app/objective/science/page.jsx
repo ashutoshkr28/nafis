@@ -64,7 +64,7 @@ export default function ScienceNotes() {
             {chapters.map((chapter, index) => (
               <tr key={index} className="hover:bg-gray-100 transition duration-150">
                 <td className="px-4 py-2 border border-gray-300">
-                  <Link href={`/notes/science/${chapter.slug}`} className="text-blue-600 hover:underline">
+                  <Link href={`/objective/science/${chapter.slug}`} className="text-blue-600 hover:underline">
                     {chapter.name}
                   </Link>
                 </td>

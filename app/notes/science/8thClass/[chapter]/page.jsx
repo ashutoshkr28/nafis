@@ -4388,7 +4388,7 @@ const FAQ = () => {
         answer: (
           <div>
             <b style={{ color: "green" }}>उत्तर:—</b> मानव नेत्र का नामांकित रेखा चित्र निम्नलिखित प्रकार से बनता है:
-            <img src="path_to_image_of_eye_diagram" alt="Human Eye Diagram" />
+            {/* <img src="path_to_image_of_eye_diagram" alt="Human Eye Diagram" /> */}
             {/* Replace path_to_image_of_eye_diagram with the actual image path */}
           </div>
         ),
@@ -4482,7 +4482,7 @@ const FAQ = () => {
             question: "प्रश्‍न: 9. शुक्र ग्रह के बारे में बताएँ?",
             answer: (
               <div>
-                <b style={{ color: "green" }}>उत्तर:—</b> शुक्र ग्रह सौर परिवार का दूसरा ग्रह है। इसका आकार पृथ्वी के आकार के समान है, लेकिन इसकी सतह पर बहुत अधिक गर्मी और दबाव है। शुक्र ग्रह को अक्सर "<span style={{ color: "blue" }}>पृथ्वी की बहन</span>" कहा जाता है।
+                <b style={{ color: "green" }}>उत्तर:—</b> शुक्र ग्रह सौर परिवार का दूसरा ग्रह है। इसका आकार पृथ्वी के आकार के समान है, लेकिन इसकी सतह पर बहुत अधिक गर्मी और दबाव है। शुक्र ग्रह को अक्सर '<span style={{ color: "blue" }}>पृथ्वी की बहन</span>'' कहा जाता है।
               </div>
             ),
           },

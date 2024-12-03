@@ -369,7 +369,7 @@ const FAQ = () => {
             answer: (
               <div>
                
-                <h3 className="font-bold text-lg mb-2 text-indigo-700"> <b className="text-black">उत्तर: </b>खाद और उर्वरक में अंतर है:</h3>
+                <h3 className="font-bold text-lg mb-2 text-indigo-700"> <b className="text-black">उत्तर: </b>खाद और उर्वरक में निम्न अंतर है:</h3>
                 <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
                   <thead>
                     <tr className="bg-indigo-100">
@@ -379,16 +379,16 @@ const FAQ = () => {
                   </thead>
                   <tbody className="bg-white">
                     <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-400 px-6 py-4 ">(I) यह एक जैविक पदार्थ है।</td>
-                      <td className="border border-gray-400 px-6 py-4">(I) यह एक रासायनिक पदार्थ है।</td>
+                      <td className="border border-gray-400 px-4  py-4 ">(I) यह एक जैविक पदार्थ है।</td>
+                      <td className="border border-gray-400 px-4 py-4">(I) यह एक रासायनिक पदार्थ है।</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-400 px-6 py-4">(II) इसमें सभी प्रकार के पोषक तत्व पाये जाते हैं।</td>
-                      <td className="border border-gray-400 px-6 py-4">(II) इसमें विशेष प्रकार के पोषक तत्व पाये जाते हैं।</td>
+                      <td className="border border-gray-400 px-4  py-4">(II) इसमें सभी प्रकार के पोषक तत्व पाये जाते हैं।</td>
+                      <td className="border border-gray-400 px-4  py-4">(II) इसमें विशेष प्रकार के पोषक तत्व पाये जाते हैं।</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-400 px-6 py-4">(III)  यह अपशिष्टों को मिट्टी में दबाकर बनाया जाता है।</td>
-                      <td className="border border-gray-400 px-6 py-4">(III) यह फैक्ट्रियों में बनाया जाता है। </td>
+                      <td className="border border-gray-400 px-4  py-4">(III)  यह अपशिष्टों को मिट्टी में दबाकर बनाया जाता है।</td>
+                      <td className="border border-gray-400 px-4  py-4">(III) यह फैक्ट्रियों में बनाया जाता है। </td>
                     </tr>
                   </tbody>
                 </table>
@@ -433,37 +433,37 @@ const FAQ = () => {
           //   ),
           // },
           {
-            question: "  सिंचाई के पारम्परिक तरीके कौन-कौन से हैं?",
+            question: "9. सिंचाई के पारम्परिक तरीके कौन-कौन से हैं?",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
 
                   <b style={{ color: "blue" }}> सिंचाई के पारम्परिक तरीके निम्न हैं: </b>
 
-                   <p>मोटर, चेन पम्प, चेन पम्प, ढकली, रिहट आदि</p>
+                   <p className="ml-10">मोटर, चेन पम्प, चेन पम्प, ढकली, रिहट आदि।</p>
 
               </div>
             ),
           },
           {
-            question: "  सिंचाई के प्रमुख स्त्रोतों के नाम बताइये।",
+            question: " 10.  सिंचाई के प्रमुख स्त्रोतों के नाम बताइये।",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
 
-                   सिंचाई के प्रमुख स्त्रोत निम्न हैं:
+                <b style={{ color: "blue" }}> सिंचाई के प्रमुख स्त्रोत निम्न हैं: </b>
                 <ul className="list-disc ml-14">
                   <li>कुएँ</li>
                   <li>नलकूप</li>
                   <li>तालाब या झील</li>
                   <li>नदियाँ</li>
-                  <li>बांध और नहर आदि</li>
+                  <li>बांध और नहर आदि।</li>
                 </ul>
               </div>
             ),
           },
           {
-            question: "  उर्वरक किसे कहते हैं? किन्हीं दो उर्वरकों के नाम लिखे।",
+            question: " 11. उर्वरक किसे कहते हैं? किन्हीं दो उर्वरकों के नाम लिखे।",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
@@ -477,7 +477,7 @@ const FAQ = () => {
             ),
           },
           {
-            question: "  खरपतवार क्या हैं?",
+            question: " 12.   खरपतवार क्या हैं?",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
@@ -488,7 +488,7 @@ const FAQ = () => {
           
           
           {
-            question: "  पीड़कनाशी क्या हैं?",
+            question: " 13.  पीड़कनाशी क्या हैं?",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
@@ -498,7 +498,7 @@ const FAQ = () => {
           },
           
           {
-            question: "  हार्वेस्टर क्या है?",
+            question: "14.  हार्वेस्टर क्या है?",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
@@ -508,7 +508,7 @@ const FAQ = () => {
           },
           
           {
-            question: "  दालों की फसलों की जड़ों में कौनसा जीवाणु पाया जाता है?",
+            question: " 15.  दालों की फसलों की जड़ों में कौनसा जीवाणु पाया जाता है?",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
@@ -518,7 +518,7 @@ const FAQ = () => {
           },
           
           {
-            question: "  हरित क्रांति से क्या तात्पर्य है?",
+            question: " 16.  हरित क्रांति से क्या तात्पर्य है?",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
@@ -528,7 +528,7 @@ const FAQ = () => {
           },
           
           {
-            question: "  कॉम्बाइन मशीन क्या है?",
+            question: " 17.  कॉम्बाइन मशीन क्या है?",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
@@ -538,7 +538,7 @@ const FAQ = () => {
           },
           
           {
-            question: " थ्रेशर क्या है?",
+            question: " 18. थ्रेशर क्या है?",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
@@ -548,7 +548,7 @@ const FAQ = () => {
           },
           
           {
-            question: " खरीफ फसल क्या है?",
+            question: " 19. खरीफ फसल क्या है?",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
@@ -561,7 +561,7 @@ const FAQ = () => {
             ),
           },
           {
-            question: "  रबी फसल क्या है?",
+            question: " 20.  रबी फसल क्या है?",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
@@ -577,7 +577,7 @@ const FAQ = () => {
             ),
           },
           {
-            question: " समय-समय पर खेतों में खाद क्यों देनी चाहिए?",
+            question: " 21. समय-समय पर खेतों में खाद क्यों देनी चाहिए?",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
@@ -594,7 +594,7 @@ const FAQ = () => {
           },
                              
           {
-            question: " अच्छी फसल के लिए हमें किन-किन बातों पर ध्यान देना चाहिए?",
+            question: " 22. अच्छी फसल के लिए हमें किन-किन बातों पर ध्यान देना चाहिए?",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
@@ -611,7 +611,7 @@ const FAQ = () => {
             ),
           },
           {
-            question: "  फसल का संरक्षण कैसे किया जाता है?",
+            question: " 23.  फसल का संरक्षण कैसे किया जाता है?",
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>

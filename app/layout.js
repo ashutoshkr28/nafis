@@ -3,6 +3,9 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";  // Direct import now
 import Description from "@/components/description";
 import Watermark from "@/components/Watermark";
+// import { Skeleton } from "@/components/ui/skeleton";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,7 +29,10 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />  {/* Direct import */}
         <Watermark></Watermark>
+        {/* <Skeleton></Skeleton> */}
+        <Suspense fallback={<Loading/>}>
         {children}
+        </Suspense>
         <Description />
       </body>
     </html>

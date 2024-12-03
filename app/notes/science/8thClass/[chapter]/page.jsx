@@ -556,7 +556,7 @@ const FAQ = () => {
               <b style={{ color: "green" }}>उत्तर: </b>
               वह फसल जिन्हें वर्षा ऋतु में बोया जाता है उन्हें <b style={{ color: 'blue' }}>खरीफ फसल</b> कहते हैं।
               <br /> <br />
-              <p><b>उदाहरण: </b>धान, मक्का, कपास, सोयाबीन, मूंगफली इत्यादि।</p>
+              <p><b style={{color: "violet"}}>उदाहरण: </b>धान, मक्का, कपास, सोयाबीन, मूंगफली इत्यादि।</p>
               {/* <h1> </h1> */}
 
               <p style={{ color: "blue" }}><b>नोट:</b> भारत में वर्षा ऋतु सामान्यतः जून से सितंबर तक होती है।</p>
@@ -570,7 +570,7 @@ const FAQ = () => {
               <b style={{ color: "green" }}>उत्तर: </b>
               शीत ऋतु (अक्टूबर से मार्च तक) उगाई जाने वाली फसलें <b style={{ color: 'blue' }}>रबी फसल</b> कहलाती हैं।
               <br /> <br />
-              <p><b>उदाहरण: </b>गेहूं, चना, मटर, सरसों इत्यादि।</p>
+              <p><b style={{color: "violet"}}>उदाहरण: </b>गेहूं, चना, मटर, सरसों इत्यादि।</p>
               {/* <ul className="list-disc ml-6 text-gray-800">
                   <li></li>
                   <li></li>
@@ -619,9 +619,10 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
-              फसल का संरक्षण करने के लिए निम्नलिखित तरीकों का पालन किया जा सकता है:
+              <b style={{color: "blue"}}>
+              फसल का संरक्षण करने के लिए निम्नलिखित तरीकों का पालन किया जा सकता है:</b>
               <ul className="ml-12 mt-2 list-none ">
-                <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >कीट और रोग नियंत्रण:</b> कीटनाशकों का उपयोग या जैविक नियंत्रण विधियों का प्रयोग।</li>
+                <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >कीट और रोग नियंत्रण:</b><span className=""> कीटनाशकों का उपयोग या जैविक नियंत्रण विधियों का प्रयोग।</span></li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की नियमित जाँच:</b> पौधों को पानी देना, उर्वरकों का उपयोग करना आदि।</li>  
                 <li className="relative before:content-['(III)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की सुरक्षा:</b> फसल को जानवरों से बचाने के लिए बाड़ लगाना।</li>
                 <li className="relative before:content-['(IV)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }} >मौसम की भविष्यवाणी:</b> मौसम की भविष्यवाणी करें और उसके अनुसार फसल की देखभाल करें।</li>
@@ -643,9 +644,10 @@ const FAQ = () => {
           question: " 25.  सिंचाई किसे कहते है? इसकी आवश्यकता क्यों होती है?",
           answer: (
             <div>
-              <p className="ml-8  " >
-                <b style={{ color: "blue" }}>सिंचाई की परिभाषा: </b> सिंचाई एक ऐसी प्रक्रिया है जिसमें पौधों को पानी दिया जाता है ताकि वे स्वस्थ और उत्पादक बने रहें।</p>
-              <p className="ml-8  "><b style={{ color: "blue" }}>सिंचाई की आवश्यकता:</b> सिंचाई की आवश्यकता निम्नलिखित कारणों से होती है:</p>
+              <b style={{ color: "green" }}>उत्तर: </b>
+               <p className="ml-8  " >
+                सिंचाई एक ऐसी प्रक्रिया है जिसमें पौधों को पानी दिया जाता है ताकि वे स्वस्थ और उत्पादक बने रहें।</p>
+              <p className="ml-8  "><b style={{ color: "blue" }}> सिंचाई की आवश्यकता निम्नलिखित कारणों से होती है:</b></p>
               <ul className="ml-12   list-decimal">
                 <li><b style={{ color: "red" }}>पौधों की वृद्धि:</b> पौधों को पानी की आवश्यकता होती है ताकि वे स्वस्थ और उत्पादक बने रहें।</li>
                 <li><b style={{ color: "red" }}>मिट्टी की नमी:</b> मिट्टी में नमी की कमी होने पर पौधों को पानी देना आवश्यक होता है।</li>
@@ -660,7 +662,7 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
-              जैविक खाद के निम्नलिखित लाभ हैं:
+               <b style={{color:"blue"}}> जैविक खाद के निम्नलिखित लाभ हैं:</b>
               <ul className="ml-12 list-none">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की उर्वरता में वृद्धि:</b> जैविक खाद मिट्टी की उर्वरता में वृद्धि करती है, जिससे पौधों को आवश्यक पोषक तत्व मिलते हैं।</li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>पौधों की वृद्धि में वृद्धि:</b> जैविक खाद पौधों की वृद्धि में वृद्धि करती है, जिससे पौधे स्वस्थ और मजबूत होते हैं।</li>
@@ -676,7 +678,8 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
-              खेतों की बार-बार सिंचाई करने की आवश्यकता निम्नलिखित कारणों से होती है:
+              <b style={{color: "blue"}}>
+              खेतों की बार-बार सिंचाई करने की आवश्यकता निम्नलिखित कारणों से होती है:</b>
               <ul className="ml-12 list-decimal">
                 <li><b style={{ color: "red" }}>मिट्टी की नमी की कमी:</b> मिट्टी में नमी की कमी होने पर पौधों को पानी की आवश्यकता होती है।</li>
                 <li><b style={{ color: "red" }}>मौसम की परिस्थितियाँ:</b> शुष्क मौसम में पौधों को पानी की आवश्यकता होती है ताकि वे सूखने से बचें।</li>
@@ -691,7 +694,7 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
-              फसलों की उपज में सुधार हेतु महत्वपूर्ण सुझाव निम्नलिखित हैं:
+              <b style={{color: "blue"}}> फसलों की उपज में सुधार हेतु महत्वपूर्ण सुझाव निम्नलिखित हैं:</b>
               <ul className="ml-12 list-none">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>उचित बीज चयन:</b> फसल की आवश्यकताओं के अनुसार उचित बीज का चयन करें।</li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की जाँच:</b> मिट्टी की जाँच करें और आवश्यक पोषक तत्वों का उपयोग करें।</li>

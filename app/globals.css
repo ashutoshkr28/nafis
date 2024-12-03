@@ -12,4 +12,13 @@ body {
       visibility: hidden;
     }
   }
+
+  /* Roman numeral style for ordered lists */
+.list-roman {
+  list-style-type: upper-roman; /* Use Roman numerals */
+}
+
+.list-roman li::marker {
+  color: red; /* Change the Roman numeral color */
+}
   

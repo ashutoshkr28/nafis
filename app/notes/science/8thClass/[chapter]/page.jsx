@@ -452,12 +452,12 @@ const FAQ = () => {
               <b style={{ color: "green" }}>उत्तर: </b>
 
               <b style={{ color: "blue" }}> सिंचाई के प्रमुख स्त्रोत निम्न हैं: </b>
-              <ul className="list-disc ml-14">
-                <li>कुएँ</li>
-                <li>नलकूप</li>
-                <li>तालाब या झील</li>
-                <li>नदियाँ</li>
-                <li>बांध और नहर आदि।</li>
+              <ul className=" ml-10 list-none pl-5">
+                <li className="relative before:content-['●'] before:absolute before:-left-5 before:text-violet-500">कुएँ</li>
+                <li className="relative before:content-['●'] before:absolute before:-left-5 before:text-violet-500">नलकूप</li>
+                <li className="relative before:content-['●'] before:absolute before:-left-5 before:text-violet-500">तालाब या झील</li>
+                <li className="relative before:content-['●'] before:absolute before:-left-5 before:text-violet-500">नदियाँ</li>
+                <li className="relative before:content-['●'] before:absolute before:-left-5 before:text-violet-500">बांध और नहर आदि।</li>
               </ul>
             </div>
           ),
@@ -586,12 +586,12 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
               <b style={{ color: "blue" }} >  समय-समय पर खेतों में खाद देने के निम्न फायदे हैं: </b>
-              <ul className="ml-12 list-decimal">
-                <li><b style={{ color: "red" }} >मिट्टी की उर्वरता बढ़ती है:</b> खाद में पोषक तत्व होते हैं जो मिट्टी की उर्वरता बढ़ाते हैं। इससे मिट्टी की क्षमता बढ़ती है और वह अधिक पौधों को सहारा दे सकती है।</li>
-                <li><b style={{ color: "red" }} >पौधों की वृद्धि बढ़ती है:</b> खाद में पोषक तत्व पौधों की वृद्धि को बढ़ावा देते हैं। इससे पौधे अधिक तेजी से बढ़ते हैं और उनकी पत्तियाँ और फल अधिक स्वस्थ होते हैं।</li>
-                <li><b style={{ color: "red" }} >फसल की गुणवत्ता में सुधार होता है:</b> खाद के उपयोग से फसल की गुणवत्ता में सुधार होता है। इससे फसल का स्वाद, रंग और पौष्टिकता बढ़ती है।</li>
-                <li><b style={{ color: "red" }} >मिट्टी की संरचना में सुधार होता है:</b> खाद के उपयोग से मिट्टी की संरचना में सुधार होता है। इससे मिट्टी की जल धारण क्षमता बढ़ती है और वह अधिक पौधों को सहारा दे सकती है।</li>
-                <li><b style={{ color: "red" }} >कीटों और रोगों का प्रभाव कम होता है:</b> खाद के उपयोग से कीटों और रोगों का प्रभाव कम होता है। इससे फसल की सुरक्षा बढ़ती है और वह अधिक स्वस्थ होती है।</li>
+              <ul className="ml-12 mt-2 list-none">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"> <b style={{ color: "red" }} >मिट्टी की उर्वरता बढ़ती है:</b> खाद में पोषक तत्व होते हैं जो मिट्टी की उर्वरता बढ़ाते हैं। इससे मिट्टी की क्षमता बढ़ती है और वह अधिक पौधों को सहारा दे सकती है।</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >पौधों की वृद्धि बढ़ती है:</b> खाद में पोषक तत्व पौधों की वृद्धि को बढ़ावा देते हैं। इससे पौधे अधिक तेजी से बढ़ते हैं और उनकी पत्तियाँ और फल अधिक स्वस्थ होते हैं।</li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की गुणवत्ता में सुधार होता है:</b> खाद के उपयोग से फसल की गुणवत्ता में सुधार होता है। इससे फसल का स्वाद, रंग और पौष्टिकता बढ़ती है।</li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >मिट्टी की संरचना में सुधार होता है:</b> खाद के उपयोग से मिट्टी की संरचना में सुधार होता है। इससे मिट्टी की जल धारण क्षमता बढ़ती है और वह अधिक पौधों को सहारा दे सकती है।</li>
+                <li className="relative before:content-['(V)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >कीटों और रोगों का प्रभाव कम होता है:</b> खाद के उपयोग से कीटों और रोगों का प्रभाव कम होता है। इससे फसल की सुरक्षा बढ़ती है और वह अधिक स्वस्थ होती है।</li>
               </ul>
             </div>
           ),
@@ -602,14 +602,14 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
-              <b style={{ color: "red" }} > अच्छी फसल के लिए हमें निम्नलिखित बातों पर ध्यान देना चाहिए: </b>
-              <ul className="ml-12 mt-2 list-decimal">
-                <li ><b style={{ color: "red" }} >मिट्टी की तैयारी:</b> मिट्टी की जाँच करें और उसमें आवश्यक पोषक तत्व मिलाएं। <br /><b style={{ color: "violet" }} > (उदाहरण: गोबर की खाद)</b> </li>
-                <li><b style={{ color: "red" }} >बीज का चयन:</b> अच्छी गुणवत्ता वाले बीज का चयन करें। <br /><b style={{ color: "violet" }} > (उदाहरण: हाइब्रिड बीज)</b></li>
-                <li><b style={{ color: "red" }} >सिंचाई:</b> पौधों को आवश्यक पानी दें। <br /> <b style={{ color: "violet" }} >  (उदाहरण: ड्रिप सिंचाई) </b></li>
-                <li><b style={{ color: "red" }} >उर्वरकों का उपयोग:</b> अच्छी गुणवत्ता वाले उर्वरकों का उपयोग करें। <br /><b style={{ color: "violet" }} > (उदाहरण: यूरिया) </b></li>
-                <li><b style={{ color: "red" }} >कीट और रोग नियंत्रण:</b> कीट और रोग की पहचान करें और उनके नियंत्रण के लिए आवश्यक कदम उठाएं। <br /><b style={{ color: "violet" }} > (उदाहरण: कीटनाशकों का उपयोग)</b></li>
-                <li><b style={{ color: "red" }} >फसल की देखभाल:</b> फसल की नियमित जाँच करें और उसकी आवश्यकताओं को पूरा करें। <br /><b style={{ color: "violet" }} > (उदाहरण: फसल की पत्तियों की जाँच)</b></li>
+              <b style={{ color: "blue" }} > अच्छी फसल के लिए हमें निम्नलिखित बातों पर ध्यान देना चाहिए: </b>
+              <ul className="ml-12 mt-2 list-none">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >मिट्टी की तैयारी:</b> मिट्टी की जाँच करें और उसमें आवश्यक पोषक तत्व मिलाएं। <br /><b style={{ color: "violet" }} > (उदाहरण: गोबर की खाद)</b> </li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >बीज का चयन:</b> अच्छी गुणवत्ता वाले बीज का चयन करें। <br /><b style={{ color: "violet" }} > (उदाहरण: हाइब्रिड बीज)</b></li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >सिंचाई:</b> पौधों को आवश्यक पानी दें। <br /> <b style={{ color: "violet" }} >  (उदाहरण: ड्रिप सिंचाई) </b></li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >उर्वरकों का उपयोग:</b> अच्छी गुणवत्ता वाले उर्वरकों का उपयोग करें। <br /><b style={{ color: "violet" }} > (उदाहरण: यूरिया) </b></li>
+                <li className="relative before:content-['(V)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >कीट और रोग नियंत्रण:</b> कीट और रोग की पहचान करें और उनके नियंत्रण के लिए आवश्यक कदम उठाएं। <br /><b style={{ color: "violet" }} > (उदाहरण: कीटनाशकों का उपयोग)</b></li>
+                <li className="relative before:content-['(VI)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की देखभाल:</b> फसल की नियमित जाँच करें और उसकी आवश्यकताओं को पूरा करें। <br /><b style={{ color: "violet" }} > (उदाहरण: फसल की पत्तियों की जाँच)</b></li>
               </ul>
             </div>
           ),
@@ -620,12 +620,12 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
               फसल का संरक्षण करने के लिए निम्नलिखित तरीकों का पालन किया जा सकता है:
-              <ul className="ml-12 list-decimal">
-                <li><b style={{ color: "red" }} >कीट और रोग नियंत्रण:</b> कीटनाशकों का उपयोग या जैविक नियंत्रण विधियों का प्रयोग।</li>
-                <li><b style={{ color: "red" }} >फसल की नियमित जाँच:</b> पौधों को पानी देना, उर्वरकों का उपयोग करना आदि।</li>
-                <li><b style={{ color: "red" }} >फसल की सुरक्षा:</b> फसल को जानवरों से बचाने के लिए बाड़ लगाना।</li>
-                <li><b style={{ color: "red" }} >मौसम की भविष्यवाणी:</b> मौसम की भविष्यवाणी करें और उसके अनुसार फसल की देखभाल करें।</li>
-                <li><b style={{ color: "red" }} >फसल की कटाई और भंडारण:</b> फसल को सही समय पर काटना और उसे सूखे और सुरक्षित स्थान पर भंडारण करना।</li>
+              <ul className="ml-12 mt-2 list-none ">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >कीट और रोग नियंत्रण:</b> कीटनाशकों का उपयोग या जैविक नियंत्रण विधियों का प्रयोग।</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की नियमित जाँच:</b> पौधों को पानी देना, उर्वरकों का उपयोग करना आदि।</li>  
+                <li className="relative before:content-['(III)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की सुरक्षा:</b> फसल को जानवरों से बचाने के लिए बाड़ लगाना।</li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }} >मौसम की भविष्यवाणी:</b> मौसम की भविष्यवाणी करें और उसके अनुसार फसल की देखभाल करें।</li>
+                <li className="relative before:content-['(V)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की कटाई और भंडारण:</b> फसल को सही समय पर काटना और उसे सूखे और सुरक्षित स्थान पर भंडारण करना।</li>
               </ul>
             </div>
           ),
@@ -661,12 +661,12 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
               जैविक खाद के निम्नलिखित लाभ हैं:
-              <ul className="ml-12 list-decimal">
-                <li><b style={{ color: "red" }}>मिट्टी की उर्वरता में वृद्धि:</b> जैविक खाद मिट्टी की उर्वरता में वृद्धि करती है, जिससे पौधों को आवश्यक पोषक तत्व मिलते हैं।</li>
-                <li><b style={{ color: "red" }}>पौधों की वृद्धि में वृद्धि:</b> जैविक खाद पौधों की वृद्धि में वृद्धि करती है, जिससे पौधे स्वस्थ और मजबूत होते हैं।</li>
-                <li><b style={{ color: "red" }}>मिट्टी की संरचना में सुधार:</b> जैविक खाद मिट्टी की संरचना में सुधार करती है, जिससे मिट्टी में पानी का अवशोषण और वायु का संचार बेहतर होता है।</li>
-                <li><b style={{ color: "red" }}>कीटों और रोगों का नियंत्रण:</b> जैविक खाद कीटों और रोगों का नियंत्रण करने में मदद करती है, जिससे पौधों को नुकसान नहीं पहुंचता है।</li>
-                <li><b style={{ color: "red" }}>पर्यावरण के अनुकूल:</b> जैविक खाद पर्यावरण के अनुकूल होती है, जिससे मिट्टी, पानी और वायु प्रदूषण नहीं होता है।</li>
+              <ul className="ml-12 list-none">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की उर्वरता में वृद्धि:</b> जैविक खाद मिट्टी की उर्वरता में वृद्धि करती है, जिससे पौधों को आवश्यक पोषक तत्व मिलते हैं।</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>पौधों की वृद्धि में वृद्धि:</b> जैविक खाद पौधों की वृद्धि में वृद्धि करती है, जिससे पौधे स्वस्थ और मजबूत होते हैं।</li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की संरचना में सुधार:</b> जैविक खाद मिट्टी की संरचना में सुधार करती है, जिससे मिट्टी में पानी का अवशोषण और वायु का संचार बेहतर होता है।</li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>कीटों और रोगों का नियंत्रण:</b> जैविक खाद कीटों और रोगों का नियंत्रण करने में मदद करती है, जिससे पौधों को नुकसान नहीं पहुंचता है।</li>
+                <li className="relative before:content-['(V)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>पर्यावरण के अनुकूल:</b> जैविक खाद पर्यावरण के अनुकूल होती है, जिससे मिट्टी, पानी और वायु प्रदूषण नहीं होता है।</li>
               </ul>
             </div>
           ),
@@ -692,14 +692,14 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
               फसलों की उपज में सुधार हेतु महत्वपूर्ण सुझाव निम्नलिखित हैं:
-              <ul className="ml-12 list-decimal">
-                <li><b style={{ color: "red" }}>उचित बीज चयन:</b> फसल की आवश्यकताओं के अनुसार उचित बीज का चयन करें।</li>
-                <li><b style={{ color: "red" }}>मिट्टी की जाँच:</b> मिट्टी की जाँच करें और आवश्यक पोषक तत्वों का उपयोग करें।</li>
-                <li><b style={{ color: "red" }}>सिंचाई प्रबंधन:</b> सिंचाई का सही तरीके से प्रबंधन करें ताकि पानी की बर्बादी न हो।</li>
-                <li><b style={{ color: "red" }}>उर्वरकों का उपयोग:</b> उर्वरकों का उपयोग करें लेकिन उनकी मात्रा का ध्यान रखें।</li>
-                <li><b style={{ color: "red" }}>कीट और रोग नियंत्रण:</b> कीट और रोग का नियंत्रण करें ताकि फसल को नुकसान न हो।</li>
-                <li><b style={{ color: "red" }}>फसल चक्र:</b> फसल चक्र का पालन करें ताकि मिट्टी की उर्वरता बनी रहे।</li>
-                <li><b style={{ color: "red" }}>प्रौद्योगिकी का उपयोग:</b> प्रौद्योगिकी का उपयोग करें जैसे कि ड्रिप सिंचाई और प्रीसिजन फार्मिंग।</li>
+              <ul className="ml-12 list-none">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>उचित बीज चयन:</b> फसल की आवश्यकताओं के अनुसार उचित बीज का चयन करें।</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की जाँच:</b> मिट्टी की जाँच करें और आवश्यक पोषक तत्वों का उपयोग करें।</li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>सिंचाई प्रबंधन:</b> सिंचाई का सही तरीके से प्रबंधन करें ताकि पानी की बर्बादी न हो।</li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>उर्वरकों का उपयोग:</b> उर्वरकों का उपयोग करें लेकिन उनकी मात्रा का ध्यान रखें।</li>
+                <li className="relative before:content-['(V)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>कीट और रोग नियंत्रण:</b> कीट और रोग का नियंत्रण करें ताकि फसल को नुकसान न हो।</li>
+                <li className="relative before:content-['(VI)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>फसल चक्र:</b> फसल चक्र का पालन करें ताकि मिट्टी की उर्वरता बनी रहे।</li>
+                <li className="relative before:content-['(VII)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>प्रौद्योगिकी का उपयोग:</b> प्रौद्योगिकी का उपयोग करें जैसे कि ड्रिप सिंचाई और प्रीसिजन फार्मिंग।</li>
               </ul>
             </div>
           ),
@@ -4870,7 +4870,7 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> जल प्रदूषण के निम्न कारण है:
-              <ul>
+              <ul className="ml-14 list-decimal">
                 <li><b style={{ color: "blue" }} >जैविक प्रदूषण:</b> नदियों में मलमूत्र बहाना तथा पशुओं को स्नान कराना, लाशें बहाना या अस्थि विसर्जन इत्यादि से जल प्रदूषण होता है।</li>
                 <li><b style={{ color: "blue" }} >रासायनिक प्रदूषण:</b> कई प्रकार के धात्विक पदार्थ जैसे – <span style={{ color: "blue" }}>सीसा, मरकरी, कैडमियम</span> इत्यादि जल को दूषित करते हैं। रासायनिक उर्वरकों के प्रयोग से भी जल प्रदूषण होता है।</li>
               </ul>
@@ -4889,15 +4889,16 @@ const FAQ = () => {
           question: " 20. वायु प्रदूषण रोकने के उपाय बताइए?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> वायु प्रदूषण रोकने के उपाय निम्न है:
-              <ul>
-                <li><span style={{ color: "blue" }}>वृक्षारोपण करें।</span></li>
-                <li><span style={{ color: "blue" }}>सार्वजनिक परिवहन का उपयोग करें</span></li>
-                <li><span style={{ color: "blue" }}>वाहनों की नियमित जांच करें।</span></li>
-                <li><span style={{ color: "blue" }}>बिजली की बचत करें।</span></li>
-                <li><span style={{ color: "blue" }}>कूड़ा-कचरा सही तरीके से निपटाएं।</span></li>
-                <li><span style={{ color: "blue" }}>वायु प्रदूषण नियंत्रण कानून का पालन करें।</span></li>
-                <li><span style={{ color: "blue" }}>वायु प्रदूषण जागरूकता अभियान चलाएं।</span></li>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color: "blue"}}>  वायु प्रदूषण रोकने के उपाय निम्न है: </b></p>
+              <ul className="list-decimal ml-14">
+                <li><span style={{ color: "red" }}>वृक्षारोपण करें।</span></li>
+                <li><span style={{ color: "red" }}>सार्वजनिक परिवहन का उपयोग करें</span></li>
+                <li><span style={{ color: "red" }}>वाहनों की नियमित जांच करें।</span></li>
+                <li><span style={{ color: "red" }}>बिजली की बचत करें।</span></li>
+                <li><span style={{ color: "red" }}>कूड़ा-कचरा सही तरीके से निपटाएं।</span></li>
+                <li><span style={{ color: "red" }}>वायु प्रदूषण नियंत्रण कानून का पालन करें।</span></li>
+                <li><span style={{ color: "red" }}>वायु प्रदूषण जागरूकता अभियान चलाएं।</span></li>
               </ul>
             </div>
           ),
@@ -4983,7 +4984,7 @@ const QuestionAnswer = ({ faq, questionNumber }) => {
 
   return (
     <div className="border-b-2 border-gray-300 pb-8 cursor-pointer">
-      <h3 className="text-lg font-bold text-red-600 flex justify-between items-center">
+      <h3 className="text-lg font-bold text-red-600 flex justify-between items-center mt-2">
         {`प्रश्‍न: ${faq.question}`}
       </h3>
       {isOpen || <div className="text-gray-600 mt-4">{faq.answer}</div>}

@@ -4907,7 +4907,7 @@ const [isOpen, setIsOpen] = useState(false);
 
 return (
   <div className="border-b-2 border-gray-300 pb-8 cursor-pointer">
-    <h3 className="text-lg font-medium text-red-600 flex justify-between items-center">
+    <h3 className="text-lg font-bold text-red-600 flex justify-between items-center">
       {`प्रश्‍न: ${faq.question}`}
     </h3>
     {isOpen || <div className="text-gray-600 mt-4">{faq.answer}</div>}

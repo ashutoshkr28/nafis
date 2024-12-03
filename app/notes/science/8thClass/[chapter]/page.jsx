@@ -359,7 +359,7 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
-                   यूरिया, अमोनियम, सल्फेट
+              <b style={{ color: "blue" }}>  यूरिया, अमोनियम, सल्फेट </b>
             </div>
           ),
         },
@@ -369,17 +369,17 @@ const FAQ = () => {
             answer: (
               <div>
                
-                <h3 className="font-bold text-lg mb-2 text-indigo-700"> <b className="text-black">उत्तर: </b>खाद और उर्वरक का अंतर:</h3>
+                <h3 className="font-bold text-lg mb-2 text-indigo-700"> <b className="text-black">उत्तर: </b>खाद और उर्वरक में अंतर है:</h3>
                 <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
                   <thead>
                     <tr className="bg-indigo-100">
-                      <th className="border border-gray-400 px-6 py-3 text-left text-gray-700 font-medium">खाद</th>
-                      <th className="border border-gray-400 px-6 py-3 text-left text-gray-700 font-medium">उर्वरक</th>
+                      <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center"><b > खाद </b></th>
+                      <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center "> <b>उर्वरक </b></th>
                     </tr>
                   </thead>
                   <tbody className="bg-white">
                     <tr className="hover:bg-gray-50">
-                      <td className="border border-gray-400 px-6 py-4">(I) एक जैविक पदार्थ है।</td>
+                      <td className="border border-gray-400 px-6 py-4 ">(I) यह एक जैविक पदार्थ है।</td>
                       <td className="border border-gray-400 px-6 py-4">(I) यह एक रासायनिक पदार्थ है।</td>
                     </tr>
                     <tr className="hover:bg-gray-50">
@@ -437,13 +437,11 @@ const FAQ = () => {
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
-                   सिंचाई के पारम्परिक तरीके निम्न हैं:
-                <ul className="list-disc ml-14">
-                  <li>मोटर</li>
-                  <li>चेन पम्प</li>
-                  <li>ढकली</li>
-                  <li>रिहट</li>
-                </ul>
+
+                  <b style={{ color: "blue" }}> सिंचाई के पारम्परिक तरीके निम्न हैं: </b>
+
+                   <p>मोटर, चेन पम्प, चेन पम्प, ढकली, रिहट आदि</p>
+
               </div>
             ),
           },
@@ -452,6 +450,7 @@ const FAQ = () => {
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर: </b>
+
                    सिंचाई के प्रमुख स्त्रोत निम्न हैं:
                 <ul className="list-disc ml-14">
                   <li>कुएँ</li>

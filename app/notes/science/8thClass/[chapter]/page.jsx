@@ -586,7 +586,7 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
               <b style={{ color: "blue" }} >  समय-समय पर खेतों में खाद देने के निम्न फायदे हैं: </b>
-              <ul className="ml-12 mt-2 list-none">
+              <ul className="ml-16 mt-2 list-none">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"> <b style={{ color: "red" }} >मिट्टी की उर्वरता बढ़ती है:</b> खाद में पोषक तत्व होते हैं जो मिट्टी की उर्वरता बढ़ाते हैं। इससे मिट्टी की क्षमता बढ़ती है और वह अधिक पौधों को सहारा दे सकती है।</li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >पौधों की वृद्धि बढ़ती है:</b> खाद में पोषक तत्व पौधों की वृद्धि को बढ़ावा देते हैं। इससे पौधे अधिक तेजी से बढ़ते हैं और उनकी पत्तियाँ और फल अधिक स्वस्थ होते हैं।</li>
                 <li className="relative before:content-['(III)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की गुणवत्ता में सुधार होता है:</b> खाद के उपयोग से फसल की गुणवत्ता में सुधार होता है। इससे फसल का स्वाद, रंग और पौष्टिकता बढ़ती है।</li>
@@ -603,7 +603,7 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
               <b style={{ color: "blue" }} > अच्छी फसल के लिए हमें निम्नलिखित बातों पर ध्यान देना चाहिए: </b>
-              <ul className="ml-12 mt-2 list-none">
+              <ul className="ml-16 mt-2 list-none">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >मिट्टी की तैयारी:</b> मिट्टी की जाँच करें और उसमें आवश्यक पोषक तत्व मिलाएं। <br /><b style={{ color: "violet" }} > (उदाहरण: गोबर की खाद)</b> </li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >बीज का चयन:</b> अच्छी गुणवत्ता वाले बीज का चयन करें। <br /><b style={{ color: "violet" }} > (उदाहरण: हाइब्रिड बीज)</b></li>
                 <li className="relative before:content-['(III)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >सिंचाई:</b> पौधों को आवश्यक पानी दें। <br /> <b style={{ color: "violet" }} >  (उदाहरण: ड्रिप सिंचाई) </b></li>
@@ -621,7 +621,7 @@ const FAQ = () => {
               <b style={{ color: "green" }}>उत्तर: </b>
               <b style={{color: "blue"}}>
               फसल का संरक्षण करने के लिए निम्नलिखित तरीकों का पालन किया जा सकता है:</b>
-              <ul className="ml-12 mt-2 list-none ">
+              <ul className="ml-16 mt-2 list-none ">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >कीट और रोग नियंत्रण:</b><span className=""> कीटनाशकों का उपयोग या जैविक नियंत्रण विधियों का प्रयोग।</span></li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की नियमित जाँच:</b> पौधों को पानी देना, उर्वरकों का उपयोग करना आदि।</li>  
                 <li className="relative before:content-['(III)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की सुरक्षा:</b> फसल को जानवरों से बचाने के लिए बाड़ लगाना।</li>
@@ -644,11 +644,11 @@ const FAQ = () => {
           question: " 25.  सिंचाई किसे कहते है? इसकी आवश्यकता क्यों होती है?",
           answer: (
             <div>
-              <b style={{ color: "green" }} className="text-xl">उत्तर: </b>
-               <p className="ml-8  " >
+           
+               <p >    <b style={{ color: "green" }} className="text-xl">उत्तर: </b>
                 सिंचाई एक ऐसी प्रक्रिया है जिसमें पौधों को पानी दिया जाता है ताकि वे स्वस्थ और उत्पादक बने रहें।</p>
-              <p className="ml-8  "><b style={{ color: "blue" }}> सिंचाई की आवश्यकता निम्नलिखित कारणों से होती है:</b></p>
-              <ul className="ml-12   list-none">
+              <p className="ml-12  "><b style={{ color: "blue" }}> सिंचाई की आवश्यकता निम्नलिखित कारणों से होती है:</b></p>
+              <ul className="ml-16   list-none">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>पौधों की वृद्धि:</b> पौधों को पानी की आवश्यकता होती है ताकि वे स्वस्थ और उत्पादक बने रहें।</li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की नमी:</b> मिट्टी में नमी की कमी होने पर पौधों को पानी देना आवश्यक होता है।</li>
                 <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>मौसम की परिस्थितियाँ:</b> शुष्क मौसम में पौधों को पानी देना आवश्यक होता है ताकि वे सूखने से बचें।</li>
@@ -663,7 +663,7 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
                <b style={{color:"blue"}}> जैविक खाद के निम्नलिखित लाभ हैं:</b>
-              <ul className="ml-12 list-none">
+              <ul className="ml-16 list-none">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की उर्वरता में वृद्धि:</b> जैविक खाद मिट्टी की उर्वरता में वृद्धि करती है, जिससे पौधों को आवश्यक पोषक तत्व मिलते हैं।</li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>पौधों की वृद्धि में वृद्धि:</b> जैविक खाद पौधों की वृद्धि में वृद्धि करती है, जिससे पौधे स्वस्थ और मजबूत होते हैं।</li>
                 <li className="relative before:content-['(III)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की संरचना में सुधार:</b> जैविक खाद मिट्टी की संरचना में सुधार करती है, जिससे मिट्टी में पानी का अवशोषण और वायु का संचार बेहतर होता है।</li>
@@ -680,7 +680,7 @@ const FAQ = () => {
               <b style={{ color: "green" }}>उत्तर: </b>
               <b style={{color: "blue"}}>
               खेतों की बार-बार सिंचाई करने की आवश्यकता निम्नलिखित कारणों से होती है:</b>
-              <ul className="ml-12 list-none">
+              <ul className="ml-16 list-none">
                 <l className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"i><b style={{ color: "red" }}>मिट्टी की नमी की कमी:</b> मिट्टी में नमी की कमी होने पर पौधों को पानी की आवश्यकता होती है।</l>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>मौसम की परिस्थितियाँ:</b> शुष्क मौसम में पौधों को पानी की आवश्यकता होती है ताकि वे सूखने से बचें।</li>
                 <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>पौधों की वृद्धि:</b> पौधों की वृद्धि के लिए पानी की आवश्यकता होती है।</li>
@@ -695,7 +695,7 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
               <b style={{color: "blue"}}> फसलों की उपज में सुधार हेतु महत्वपूर्ण सुझाव निम्नलिखित हैं:</b>
-              <ul className="ml-12 list-none">
+              <ul className="ml-16 list-none">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>उचित बीज चयन:</b> फसल की आवश्यकताओं के अनुसार उचित बीज का चयन करें।</li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की जाँच:</b> मिट्टी की जाँच करें और आवश्यक पोषक तत्वों का उपयोग करें।</li>
                 <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>सिंचाई प्रबंधन:</b> सिंचाई का सही तरीके से प्रबंधन करें ताकि पानी की बर्बादी न हो।</li>
@@ -752,7 +752,7 @@ const FAQ = () => {
               <p ><b style={{ color: "green" }}>उत्तर: </b>
 
                 <b style={{ color: "blue " }}>सूक्ष्मजीवों को मुख्य चार वर्गों में बाँटा गया है:</b ></p>
-              <ul className="ml-12 list-none">
+              <ul className="ml-16 list-none">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red " }}>जीवाणु:</b> जीवाणु एक प्रकार के सूक्ष्मजीव होते हैं जो एककोशिकीय होते हैं।</li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red " }}>कवक:</b> कवक एक प्रकार के सूक्ष्मजीव होते हैं जो बहुकोशिकीय होते हैं।</li>
                 <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red " }}>प्रोटोजोआ:</b> प्रोटोजोआ एक प्रकार के सूक्ष्मजीव होते हैं जो एककोशिकीय होते हैं।</li>
@@ -802,7 +802,7 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
-              शिशु एवं बच्चों के शरीर में प्रतिरक्षी उत्पन्न करके रोगकारक सूक्ष्मजीव को नष्ट करने के लिए टीका लगाया जाता है।<p className="ml-10 text-blue-600">  जैसे - हैजा , क्षय आदि बीमारियों को टीके द्वारा रोका जा सकता है।</p>
+              शिशु एवं बच्चों के शरीर में प्रतिरक्षी उत्पन्न करके रोगकारक सूक्ष्मजीव को नष्ट करने के लिए टीका लगाया जाता है।<p className="ml-10 text-blue-600">  <b style={{color:"violet"}}> जैसे:—</b> हैजा , क्षय आदि बीमारियों को टीके द्वारा रोका जा सकता है।</p>
             </div>
           ),
         },
@@ -927,7 +927,7 @@ const FAQ = () => {
               <p>
                 <b style={{ color: "green" }}>उत्तर: </b>
                 <b style={{ color: "blue" }}>  सूक्ष्मजीव हमारे मित्र हैं क्योंकि वे:  </b></p>
-              <ul className="ml-12 list-none">
+              <ul className="ml-16 list-none">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>भोजन के उत्पादन में मदद करते हैं।</b></li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की उर्वरता में सुधार करते हैं।</b></li>
                 <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>रोग प्रतिरोधक क्षमता में सुधार करते हैं।</b></li>
@@ -998,7 +998,7 @@ const FAQ = () => {
 
               <p><b style={{ color: "green" }}>उत्तर: </b>
                 <b style={{ color: "blue" }}>  खाद्य परिरक्षण निम्न प्रकार से किया जाता है:</b></p>
-              <ul className="ml-12 list-none">
+              <ul className="ml-16 list-none">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>निर्जलीकरण</b></li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>रासायनिक तरीका</b></li>
                 <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>नमक और चीनी द्वारा परिरक्षण</b></li>
@@ -1016,7 +1016,7 @@ const FAQ = () => {
             <div>
               <p> <b style={{ color: "green" }}>उत्तर: </b>
                 <b style={{ color: "blue" }}> सूक्ष्मजीवों द्वारा होनेवाली हानियाँ:</b></p>
-              <ul className="ml-12 list-none">
+              <ul className="ml-16 list-none">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>रोग पैदा करना:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया, वायरस और फंगस कई प्रकार के रोग पैदा कर सकते हैं।</li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>खाद्य का खराब होना:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया और फंगस खाद्य को खराब कर सकते हैं।</li>
                 <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>पेयजल का प्रदूषण:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया और वायरस पेयजल को प्रदूषित कर सकते हैं।</li>
@@ -1031,7 +1031,7 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
               रोगकारक सूक्ष्मजीव हमारे शरीर में निम्नलिखित तरीकों से प्रवेश कर सकते हैं:
-              <ul className="ml-12 list-none">
+              <ul className="ml-16 list-none">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>वायुमार्ग:</b> जब हम संक्रमित व्यक्ति के साथ सांस लेते हैं या संक्रमित व्यक्ति के द्वारा छोड़े गए ड्रॉपलेट्स के संपर्क में आते हैं।</li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>जलमार्ग:</b> जब हम संक्रमित जल पीते हैं या संक्रमित जल में नहाते हैं।</li>
                 <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>आहार:</b> जब हम संक्रमित भोजन खाते हैं या संक्रमित पेय पदार्थों का सेवन करते हैं।</li>
@@ -1150,12 +1150,15 @@ const FAQ = () => {
           question: "9.  संश्लेषित रेशों के गुण लिखिए।",
           answer: (
             <div>
+              <p>
               <b style={{ color: "green" }}>उत्तर: </b>
-              संश्लेषित रेशों के गुण निम्नलिखित हैं:
-              <ul>
-                <li><b style={{ color: "red" }}>यह शीघ्र सूखते हैं।</b></li>
-                <li><b style={{ color: "red" }}>अधिक चलाऊ कम महंगे और आसानी से उपलब्ध होते हैं।</b></li>
-                <li><b style={{ color: "red" }}>यह रख रखाव में सुविधाजनक होते हैं।</b></li>
+              <b style={{color:"blue"}}>
+              संश्लेषित रेशों के गुण निम्नलिखित हैं:</b>
+              </p>
+              <ul className="ml-16">
+                <li><b>यह शीघ्र सूखते हैं।</b></li>
+                <li><b>अधिक चलाऊ कम महंगे और आसानी से उपलब्ध होते हैं।</b></li>
+                <li><b>यह रख रखाव में सुविधाजनक होते हैं।</b></li>
               </ul>
             </div>
           ),
@@ -1165,10 +1168,12 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
+              <b style={{color:"blue"}}>
               प्लास्टिक दो प्रकार के होते हैं:
-              <ul>
-                <li><b style={{ color: "red" }}>थर्मोप्लास्टिक</b></li>
-                <li><b style={{ color: "red" }}>थर्मोसेटिंग प्लास्टिक</b></li>
+              </b>
+              <ul className="ml-14">
+                <li><b>(i) थर्मोप्लास्टिक</b></li>
+                <li><b>(ii) थर्मोसेटिंग प्लास्टिक</b></li>
               </ul>
             </div>
           ),
@@ -1186,11 +1191,14 @@ const FAQ = () => {
           question: "12.  थर्मोप्लास्टिक और थर्मोसेटिंग प्लास्टिक में क्या अंतर है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर: </b>
+              <p>              <b style={{ color: "green" }}>उत्तर: </b>
+              <b style={{color:"blue"}}>
               थर्मोप्लास्टिक और थर्मोसेटिंग प्लास्टिक में निम्नलिखित अंतर हैं:
-              <ul>
-                <li><b style={{ color: "red" }}>थर्मोप्लास्टिक:</b> यह गर्म करने पर विकृत हो जाते हैं। ये सरलता पूर्वक मुड़ जाते हैं। इनका उपयोग खिलौने और बर्तनों के बनाने में किया जाता है।</li>
-                <li><b style={{ color: "red" }}>थर्मोसेटिंग प्लास्टिक:</b> यह गर्म करने पर विकृत नहीं होते हैं। यह मुड़ते नहीं हैं। इनसे बर्तनों के हत्थे जैसा गर्मी सहने वाला सामान बनाए जाते हैं।</li>
+              </b>
+              </p>
+              <ul className="ml-14">
+                <li><b style={{ color: "red" }}>(i) थर्मोप्लास्टिक:</b> यह गर्म करने पर विकृत हो जाते हैं। ये सरलता पूर्वक मुड़ जाते हैं। इनका उपयोग खिलौने और बर्तनों के बनाने में किया जाता है।</li>
+                <li><b style={{ color: "red" }}>(ii) थर्मोसेटिंग प्लास्टिक:</b> यह गर्म करने पर विकृत नहीं होते हैं। यह मुड़ते नहीं हैं। इनसे बर्तनों के हत्थे जैसा गर्मी सहने वाला सामान बनाए जाते हैं।</li>
               </ul>
             </div>
           ),
@@ -1303,7 +1311,7 @@ const FAQ = () => {
             <div>
               <p> <b style={{ color: "green" }}>उत्तर: </b>
                 <b className="text-lg text-blue-600">  संश्लेषित रेशों और प्लास्टिक के नुकसान हैं: </b></p>
-              <ul className="ml-12 list-none">
+              <ul className="ml-16 list-none">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>पर्यावरण प्रदूषण</b></li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>जानवरों के लिए हानिकारक</b></li>
                 <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>गैर-बायोडिग्रेडेबल होना</b></li>
@@ -1317,7 +1325,7 @@ const FAQ = () => {
             <div>
               <p>  <b style={{ color: "green" }}>उत्तर: </b>
                 <b className="text-lg text-blue-600">  रेशम प्राप्त करने की प्रक्रिया निम्नलिखित है: </b></p>
-              <ul className="ml-12 list-none">
+              <ul className="ml-16 list-none">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>रेशमकीट का पालन:</b> रेशमकीट के अंडों को उबालकर निकाला जाता है और उन्हें एक विशेष कमरे में रखा जाता है जहां वे 3-4 दिनों में बच्चे में बदल जाते हैं।</li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>कोकून का निर्माण:</b> रेशमकीट के बच्चे पत्तियों को खाकर बड़े होते हैं और लगभग 30 दिनों में वे कोकून बनाने लगते हैं।</li>
                 <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>कोकून का संग्रह:</b> जब रेशमकीट कोकून बना लेता है, तो उसे सावधानी से इकट्ठा किया जाता है।</li>
@@ -1355,18 +1363,18 @@ const FAQ = () => {
             <div>
               <p> <b style={{ color: "green" }}>उत्तर: </b>
                 <b className="text-lg text-blue-600"> पदार्थ तीन अवस्थाओं में पाया जाता है:</b></p>
-              <ul className="list-none ml-12 text-gray-800">
+              <ul className="list-none ml-16 text-gray-800">
                 <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'red' }}>ठोस</b> </li>
                 <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'red' }}>द्रव्य</b> </li>
                 <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: 'red' }}>गैस</b> </li>
               </ul>
               <ul className="ml-8">
                 <li><b style={{ color: 'blue' }}>ठोस: </b>पदार्थ की वह अवस्थाएँ जिनका आकार एवं आयतन दोनों निश्‍चित हो। <br />
-                  <b>जैसे:</b> पत्थर, फुटबॉल इत्यादि।</li>
+                  <b><b style={{color:"violet"}}> जैसे:—</b></b> पत्थर, फुटबॉल इत्यादि।</li>
                 <li><b style={{ color: 'blue' }}>द्रव्य: </b> पदार्थ की वह अवस्थाएँ जिनका आकार अनिश्‍चित एवं आयतन निश्‍चित हो। <br />
-                  <b>जैसे:</b> पानी, डीजल, पेट्रोल इत्यादि।</li>
+                  <b><b style={{color:"violet"}}> जैसे:—</b></b> पानी, डीजल, पेट्रोल इत्यादि।</li>
                 <li><b style={{ color: 'blue' }}>गैस: </b> पदार्थ की वह अवस्थाएँ जिनका आकार एवं आयतन दोनों अनिश्‍चित हो। <br />
-                  <b>जैसे:</b> कार्बन डाई ऑक्साइड, नाइट्रोजन गैस।</li>
+                  <b><b style={{color:"violet"}}> जैसे:—</b></b> कार्बन डाई ऑक्साइड, नाइट्रोजन गैस।</li>
               </ul>
 
               {/* <b style={{ color: 'blue' }}>ठोस: </b> पदार्थ की वह अवस्थाएँ जिनका आकार एवं आयतन दोनों निश्‍चित हो। <br />
@@ -1391,7 +1399,9 @@ const FAQ = () => {
                 वे पदार्थ जिसमें विशेष प्रकार की चमक हो और इलेक्ट्रॉन
                 त्याग कर धन आयन बनाते हैं, एवं धातुओं को पीट-पीटकर चौड़ा किया जा सकता
                 है। <br />
-                <b>जैसे:</b> सोना, चांदी, सोडियम।
+                <p className="ml-12">
+                <b style={{color:"violet"}}> जैसे:—</b> सोना, चांदी, सोडियम।
+                </p>
               </p>
             </div>
           ),
@@ -1404,7 +1414,9 @@ const FAQ = () => {
                 <b style={{ color: "green" }}>उत्तर: </b>
                 वे पदार्थ जिसमें विशेष प्रकार की चमक नहीं होती है तथा
                 अधातु को पीटने पर भंगुर हो जाते हैं। <br />
-                <b>जैसे:</b> ऑक्सीजन, सल्फर, क्लोरीन, ब्रोमीन इत्यादि।
+                <p className="ml-12">
+                <b style={{color:"violet"}}> जैसे:—</b> ऑक्सीजन, सल्फर, क्लोरीन, ब्रोमीन इत्यादि।
+                </p>
               </p>
             </div>
           ),
@@ -1417,7 +1429,9 @@ const FAQ = () => {
                 <b style={{ color: "green" }}>उत्तर: </b>
                 कुछ धातुएँ प्रकृति में स्वतंत्र अवस्था में पाई जाती हैं
                 जिन्हें अक्रिय धातु कहते हैं। <br />
-                <b>जैसे:</b> सोना, चाँदी और प्लेटिनियम।
+                <p className="ml-12">
+                <b style={{color:"violet"}} > जैसे:—</b> सोना, चाँदी और प्लेटिनियम।
+                </p>
               </p>
             </div>
           ),
@@ -1484,8 +1498,8 @@ const FAQ = () => {
                     <td className="border border-gray-400 px-4  py-4 ">(V)अधातुओं के ऑक्साइड अम्लीय होते हैं।</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
-                    <td className="border border-gray-400 px-4  py-4 "> <b className="text-sm">उदाहरण:  लोहा, तांबा, एल्युमिनियम, सोना, चांदी। </b></td>
-                    <td className="border border-gray-400 px-4  py-4 "> <b className="text-sm">उदाहरण: कार्बन, सल्फर, ऑक्सीजन, नाइट्रोजन। </b></td>
+                    <td className="border border-gray-400 px-4  py-4 "> <b className="text-sm"><b style={{color:"violet"}}> उदाहरण:</b>  लोहा, तांबा, एल्युमिनियम, सोना, चांदी। </b></td>
+                    <td className="border border-gray-400 px-4  py-4 "> <b className="text-sm"><b style={{color:"violet"}}> उदाहरण:</b> कार्बन, सल्फर, ऑक्सीजन, नाइट्रोजन। </b></td>
                   </tr>
                 </tbody>
               </table>
@@ -1590,9 +1604,9 @@ const FAQ = () => {
                 एक ही तत्व के अलग-अलग रूपों को अपरूप कहते हैं। <br />
                 <b className="ml-8 text-blue-600">कार्बन के दो अपरूप:</b>
               </p>
-              <ul className="list-none ml-12 text-gray-800 ">
-                <li className="relative before:content-['(I)'] before:absolute before:-left-10 before:text-red-500 font-bold">हीरा</li>
-                <li className="relative before:content-['(II)'] before:absolute before:-left-10 before:text-red-500 font-bold">ग्रेफाइट</li>
+              <ul className="list-none ml-10 text-gray-800 ">
+                <li>(i) हीरा</li>
+                <li>(ii) ग्रेफाइट</li>
               </ul>
             </div>
           ),
@@ -1606,11 +1620,11 @@ const FAQ = () => {
                 धातुओं और अधातुओं के मिश्रण से बने पदार्थ मिश्र धातु
                 कहलाते हैं।
               </p>
-              <p><b>उदाहरण:</b></p>
-              <ul className="list-disc ml-6 text-gray-800">
-                <li>इस्पात: लोहे में कार्बन मिलाकर बनाया जाता है।</li>
-                <li>पीतल: तांबे में जस्ता मिलाकर बनाया जाता है।</li>
-                <li>कांसा: तांबे में टिन मिलाकर बनाया जाता है।</li>
+              <p className="ml-12"><b style={{color:"violet"}}> उदाहरण:</b></p>
+              <ul className="list-disc ml-12 text-gray-800">
+                <li><b>इस्पात:</b> लोहे में कार्बन मिलाकर बनाया जाता है।</li>
+                <li><b>पीतल:</b> तांबे में जस्ता मिलाकर बनाया जाता है।</li>
+                <li><b>कांसा:</b> तांबे में टिन मिलाकर बनाया जाता है।</li>
               </ul>
             </div>
           ),
@@ -1760,29 +1774,29 @@ const FAQ = () => {
                 कहते हैं।
               </p>
               <p>
-                <b>उदाहरण:</b>
+              <b style={{color:"violet"}} className="ml-12"> उदाहरण:</b>
               </p>
-              <p>
+              <p className="ml-12">
                 मान लीजिए हमारे पास एक लोहे की कील है जिसे हम कॉपर सल्फेट के घोल में
                 डालते हैं। कुछ समय बाद हम देखेंगे कि लोहे की कील पर तांबे की एक परत
                 जम गई है और घोल का रंग हरा हो गया है।
               </p>
-              <p>
+              <p className="ml-12">
                 <b style={{ color: 'blue' }}>इस अभिक्रिया को हम निम्न रासायनिक समीकरण से दर्शा सकते हैं:</b>
               </p>
-              <p className="font-mono mt-2" style={{ color: 'brown' }}>
+              <p className="font-mono mt-2 ml-12" style={{ color: 'brown' }}>
                 Fe (s) + CuSO₄ (aq) → FeSO₄ (aq) + Cu (s)
               </p>
-              <ul className="list-disc ml-6 text-gray-800">
+              <ul className="list-disc ml-16 text-gray-800">
                 <li><b style={{ color: 'red' }}>Fe (s):</b> लोहा (ठोस अवस्था में)</li>
                 <li><b style={{ color: 'red' }}>CuSO₄ (aq):</b> कॉपर सल्फेट (जलीय घोल में)</li>
                 <li><b style={{ color: 'red' }}>FeSO₄ (aq):</b> आयरन सल्फेट (जलीय घोल में)</li>
                 <li><b style={{ color: 'red' }}>Cu (s):</b> तांबा (ठोस अवस्था में)</li>
               </ul>
-              <p>
+              <p className="ml-12">
                 <b style={{ color: 'blue' }}>इस अभिक्रिया में क्या हुआ:</b>
               </p>
-              <ul className="list-disc ml-6 text-gray-800">
+              <ul className="list-disc ml-16 text-gray-800">
                 <li><b style={{ color: 'orange' }}>लोहा (Fe)</b> कॉपर (Cu) से अधिक क्रियाशील है।</li>
                 <li>
                   <b style={{ color: 'orange' }}>लोहे</b> ने <b style={{ color: 'orange' }}>कॉपर सल्फेट (CuSO₄)</b> में मौजूद कॉपर को विस्थापित
@@ -1832,10 +1846,10 @@ const FAQ = () => {
               हाइड्रोजन तथा कार्बन से बने यौगिक को <b style={{ color: 'purple' }}>हाइड्रोकार्बन</b> कहते हैं।
               <br />
               <b className="text-blue-600 ml-10">तीन हाइड्रोकार्बन का नाम निम्न है:</b>
-              <ul className="list-none ml-16 text-gray-800">
-                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'orange' }}>मीथेन</b></li>
-                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'orange' }}>एथेन</b></li>
-                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: 'orange' }}>प्रोपेन</b></li>
+              <ul className="list-none ml-10 text-gray-800">
+                <li ><b style={{ color: 'orange' }}>(i) मीथेन</b></li>
+                <li ><b style={{ color: 'orange' }}>(ii) एथेन</b></li>
+                <li ><b style={{ color: 'orange' }}>(iii) प्रोपेन</b></li>
               </ul>
             </div>
           ),
@@ -1857,9 +1871,9 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
 
-              <ul className="list-none ml-16 text-gray-800">
-                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'blue' }}>हीरा</b>: रंगहीन, पारदर्शी, ठोस तथा कठोर होता है। यह विद्युत का <b style={{ color: 'red' }}>कुचालक</b> होता है।</li>
-                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'blue' }}>ग्रेफाइट</b>: काला, चमकदार, ठोस, बहुत मुलायम, चिकना और फिसलदार होता है। यह विद्युत का <b style={{ color: 'red' }}>सुचालक</b> होता है।</li>
+              <ul className="list-none ml-10 text-gray-800">
+                <li><b>(ii) हीरा</b>: रंगहीन, पारदर्शी, ठोस तथा कठोर होता है। यह विद्युत का <b style={{ color: 'red' }}>कुचालक</b> होता है।</li>
+                <li><b>(ii) ग्रेफाइट</b>: काला, चमकदार, ठोस, बहुत मुलायम, चिकना और फिसलदार होता है। यह विद्युत का <b style={{ color: 'red' }}>सुचालक</b> होता है।</li>
               </ul>
             </div>
           ),
@@ -1873,9 +1887,9 @@ const FAQ = () => {
               <b style={{ color: 'blue' }}>
               मिश्र धातु के बनाने के निम्न फायदा हैं:</b>
               <ul className="list-none ml-12 text-gray-800">
-                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b>मिश्र धातु तत्वों के मुकाबले अधिक मजबूत और कठोर होता है।</b></li>
-                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b>मिश्र धातु पर जंग नहीं लगता है।</b></li>
-                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b>मिश्र धातुओं से उपयोगी वस्तुएँ बनायी जाती हैं।</b></li>
+                <li><b>(i) मिश्र धातु तत्वों के मुकाबले अधिक मजबूत और कठोर होता है।</b></li>
+                <li ><b>(ii) मिश्र धातु पर जंग नहीं लगता है।</b></li>
+                <li ><b>(iii) मिश्र धातुओं से उपयोगी वस्तुएँ बनायी जाती हैं।</b></li>
               </ul>
             </div>
           ),

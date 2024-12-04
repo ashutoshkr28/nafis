@@ -358,7 +358,7 @@ const FAQ = () => {
           question: "7.  तीन उर्वरकों के नाम लिखें।",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर: </b>
+              <b style={{ color: "green" }} className="text-xl">उत्तर: </b>
               <b style={{ color: "blue" }}>  यूरिया, अमोनियम, सल्फेट </b>
             </div>
           ),
@@ -369,7 +369,7 @@ const FAQ = () => {
           answer: (
             <div>
 
-              <h3 className="font-bold text-lg mb-2 text-indigo-700"> <b className="text-black">उत्तर: </b>खाद और उर्वरक में निम्न अंतर है:</h3>
+              <h3 className="font-bold text-lg mb-2 text-indigo-700"> <b style={{color:"green"}} className="text-xl">उत्तर: </b>खाद और उर्वरक में निम्न अंतर है:</h3>
               <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
                 <thead>
                   <tr className="bg-indigo-100">
@@ -436,7 +436,7 @@ const FAQ = () => {
           question: "9. सिंचाई के पारम्परिक तरीके कौन-कौन से हैं?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर: </b>
+              <b style={{ color: "green" }} className="text-xl">उत्तर: </b>
 
               <b style={{ color: "blue" }}> सिंचाई के पारम्परिक तरीके निम्न हैं: </b>
 
@@ -449,7 +449,7 @@ const FAQ = () => {
           question: " 10.  सिंचाई के प्रमुख स्त्रोतों के नाम बताइये।",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर: </b>
+              <b style={{ color: "green" }} className="text-xl">उत्तर: </b>
 
               <b style={{ color: "blue" }}> सिंचाई के प्रमुख स्त्रोत निम्न हैं: </b>
               <ul className=" ml-10 list-none pl-5">
@@ -644,15 +644,15 @@ const FAQ = () => {
           question: " 25.  सिंचाई किसे कहते है? इसकी आवश्यकता क्यों होती है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर: </b>
+              <b style={{ color: "green" }} className="text-xl">उत्तर: </b>
                <p className="ml-8  " >
                 सिंचाई एक ऐसी प्रक्रिया है जिसमें पौधों को पानी दिया जाता है ताकि वे स्वस्थ और उत्पादक बने रहें।</p>
               <p className="ml-8  "><b style={{ color: "blue" }}> सिंचाई की आवश्यकता निम्नलिखित कारणों से होती है:</b></p>
-              <ul className="ml-12   list-decimal">
-                <li><b style={{ color: "red" }}>पौधों की वृद्धि:</b> पौधों को पानी की आवश्यकता होती है ताकि वे स्वस्थ और उत्पादक बने रहें।</li>
-                <li><b style={{ color: "red" }}>मिट्टी की नमी:</b> मिट्टी में नमी की कमी होने पर पौधों को पानी देना आवश्यक होता है।</li>
-                <li><b style={{ color: "red" }}>मौसम की परिस्थितियाँ:</b> शुष्क मौसम में पौधों को पानी देना आवश्यक होता है ताकि वे सूखने से बचें।</li>
-                <li><b style={{ color: "red" }}>फसल की उत्पादकता:</b> सिंचाई से फसल की उत्पादकता में वृद्धि होती है और फसल की गुणवत्ता में सुधार होता है।</li>
+              <ul className="ml-12   list-none">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>पौधों की वृद्धि:</b> पौधों को पानी की आवश्यकता होती है ताकि वे स्वस्थ और उत्पादक बने रहें।</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की नमी:</b> मिट्टी में नमी की कमी होने पर पौधों को पानी देना आवश्यक होता है।</li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>मौसम की परिस्थितियाँ:</b> शुष्क मौसम में पौधों को पानी देना आवश्यक होता है ताकि वे सूखने से बचें।</li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>फसल की उत्पादकता:</b> सिंचाई से फसल की उत्पादकता में वृद्धि होती है और फसल की गुणवत्ता में सुधार होता है।</li>
               </ul>
             </div>
           ),
@@ -680,11 +680,11 @@ const FAQ = () => {
               <b style={{ color: "green" }}>उत्तर: </b>
               <b style={{color: "blue"}}>
               खेतों की बार-बार सिंचाई करने की आवश्यकता निम्नलिखित कारणों से होती है:</b>
-              <ul className="ml-12 list-decimal">
-                <li><b style={{ color: "red" }}>मिट्टी की नमी की कमी:</b> मिट्टी में नमी की कमी होने पर पौधों को पानी की आवश्यकता होती है।</li>
-                <li><b style={{ color: "red" }}>मौसम की परिस्थितियाँ:</b> शुष्क मौसम में पौधों को पानी की आवश्यकता होती है ताकि वे सूखने से बचें।</li>
-                <li><b style={{ color: "red" }}>पौधों की वृद्धि:</b> पौधों की वृद्धि के लिए पानी की आवश्यकता होती है।</li>
-                <li><b style={{ color: "red" }}>मिट्टी की उर्वरता:</b> मिट्टी की उर्वरता बनाए रखने के लिए पानी की आवश्यकता होती है।</li>
+              <ul className="ml-12 list-none">
+                <l className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"i><b style={{ color: "red" }}>मिट्टी की नमी की कमी:</b> मिट्टी में नमी की कमी होने पर पौधों को पानी की आवश्यकता होती है।</l>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>मौसम की परिस्थितियाँ:</b> शुष्क मौसम में पौधों को पानी की आवश्यकता होती है ताकि वे सूखने से बचें।</li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>पौधों की वृद्धि:</b> पौधों की वृद्धि के लिए पानी की आवश्यकता होती है।</li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की उर्वरता:</b> मिट्टी की उर्वरता बनाए रखने के लिए पानी की आवश्यकता होती है।</li>
               </ul>
             </div>
           ),
@@ -696,12 +696,12 @@ const FAQ = () => {
               <b style={{ color: "green" }}>उत्तर: </b>
               <b style={{color: "blue"}}> फसलों की उपज में सुधार हेतु महत्वपूर्ण सुझाव निम्नलिखित हैं:</b>
               <ul className="ml-12 list-none">
-                <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>उचित बीज चयन:</b> फसल की आवश्यकताओं के अनुसार उचित बीज का चयन करें।</li>
-                <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की जाँच:</b> मिट्टी की जाँच करें और आवश्यक पोषक तत्वों का उपयोग करें।</li>
-                <li className="relative before:content-['(III)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>सिंचाई प्रबंधन:</b> सिंचाई का सही तरीके से प्रबंधन करें ताकि पानी की बर्बादी न हो।</li>
-                <li className="relative before:content-['(IV)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>उर्वरकों का उपयोग:</b> उर्वरकों का उपयोग करें लेकिन उनकी मात्रा का ध्यान रखें।</li>
-                <li className="relative before:content-['(V)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>कीट और रोग नियंत्रण:</b> कीट और रोग का नियंत्रण करें ताकि फसल को नुकसान न हो।</li>
-                <li className="relative before:content-['(VI)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>फसल चक्र:</b> फसल चक्र का पालन करें ताकि मिट्टी की उर्वरता बनी रहे।</li>
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>उचित बीज चयन:</b> फसल की आवश्यकताओं के अनुसार उचित बीज का चयन करें।</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की जाँच:</b> मिट्टी की जाँच करें और आवश्यक पोषक तत्वों का उपयोग करें।</li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>सिंचाई प्रबंधन:</b> सिंचाई का सही तरीके से प्रबंधन करें ताकि पानी की बर्बादी न हो।</li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>उर्वरकों का उपयोग:</b> उर्वरकों का उपयोग करें लेकिन उनकी मात्रा का ध्यान रखें।</li>
+                <li className="relative before:content-['(V)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>कीट और रोग नियंत्रण:</b> कीट और रोग का नियंत्रण करें ताकि फसल को नुकसान न हो।</li>
+                <li className="relative before:content-['(VI)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>फसल चक्र:</b> फसल चक्र का पालन करें ताकि मिट्टी की उर्वरता बनी रहे।</li>
                 <li className="relative before:content-['(VII)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>प्रौद्योगिकी का उपयोग:</b> प्रौद्योगिकी का उपयोग करें जैसे कि ड्रिप सिंचाई और प्रीसिजन फार्मिंग।</li>
               </ul>
             </div>
@@ -729,6 +729,10 @@ const FAQ = () => {
         // Add more questions here...
       ],
     },
+
+    /// Chapter 2 
+
+
     {
       chapterName: "  सूक्ष्मजीव मित्र एवं शत्रु",
       questions: [
@@ -748,11 +752,11 @@ const FAQ = () => {
               <p ><b style={{ color: "green" }}>उत्तर: </b>
 
                 <b style={{ color: "blue " }}>सूक्ष्मजीवों को मुख्य चार वर्गों में बाँटा गया है:</b ></p>
-              <ul className="ml-12 list-decimal">
-                <li><b style={{ color: "red " }}>जीवाणु:</b> जीवाणु एक प्रकार के सूक्ष्मजीव होते हैं जो एककोशिकीय होते हैं।</li>
-                <li><b style={{ color: "red " }}>कवक:</b> कवक एक प्रकार के सूक्ष्मजीव होते हैं जो बहुकोशिकीय होते हैं।</li>
-                <li><b style={{ color: "red " }}>प्रोटोजोआ:</b> प्रोटोजोआ एक प्रकार के सूक्ष्मजीव होते हैं जो एककोशिकीय होते हैं।</li>
-                <li><b style={{ color: "red " }}>शैवाल:</b> शैवाल एक प्रकार के सूक्ष्मजीव होते हैं जो बहुकोशिकीय होते हैं।</li>
+              <ul className="ml-12 list-none">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red " }}>जीवाणु:</b> जीवाणु एक प्रकार के सूक्ष्मजीव होते हैं जो एककोशिकीय होते हैं।</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red " }}>कवक:</b> कवक एक प्रकार के सूक्ष्मजीव होते हैं जो बहुकोशिकीय होते हैं।</li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red " }}>प्रोटोजोआ:</b> प्रोटोजोआ एक प्रकार के सूक्ष्मजीव होते हैं जो एककोशिकीय होते हैं।</li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red " }}>शैवाल:</b> शैवाल एक प्रकार के सूक्ष्मजीव होते हैं जो बहुकोशिकीय होते हैं।</li>
               </ul>
             </div>
           ),
@@ -798,7 +802,7 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
-              शिशु एवं बच्चों के शरीर में प्रतिरक्षी उत्पन्न करके रोगकारक सूक्ष्मजीव को नष्ट करने के लिए टीका लगाया जाता है। जैसे - हैजा , क्षय आदि बीमारियों को टीके द्वारा रोका जा सकता है।
+              शिशु एवं बच्चों के शरीर में प्रतिरक्षी उत्पन्न करके रोगकारक सूक्ष्मजीव को नष्ट करने के लिए टीका लगाया जाता है।<p className="ml-10 text-blue-600">  जैसे - हैजा , क्षय आदि बीमारियों को टीके द्वारा रोका जा सकता है।</p>
             </div>
           ),
         },
@@ -908,10 +912,10 @@ const FAQ = () => {
 
               <p><b style={{ color: "green" }}>उत्तर: </b>
                 <b style={{ color: "blue" }}> मच्छर फैलाने से रोकने के तीन उपाई निम्न है:</b></p>
-              <ul className="ml-12 list-decimal">
-                <li><b style={{ color: "red" }}>हमें पानी को कहीं भी रुका नहीं रहने देना चाहिए।</b></li>
-                <li><b style={{ color: "red" }}>इकट्ठा हुए पानी को मिट्टी का तेल या पेट्रोल का छिड़काव करना चाहिए।</b></li>
-                <li><b style={{ color: "red" }}>हमें आस–पास के जगहों को साफ रखना चाहिए।</b></li>
+              <ul className="ml-12 list-none">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>हमें पानी को कहीं भी रुका नहीं रहने देना चाहिए।</b></li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>इकट्ठा हुए पानी को मिट्टी का तेल या पेट्रोल का छिड़काव करना चाहिए।</b></li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>हमें आस–पास के जगहों को साफ रखना चाहिए।</b></li>
               </ul>
             </div>
           ),
@@ -923,12 +927,12 @@ const FAQ = () => {
               <p>
                 <b style={{ color: "green" }}>उत्तर: </b>
                 <b style={{ color: "blue" }}>  सूक्ष्मजीव हमारे मित्र हैं क्योंकि वे:  </b></p>
-              <ul className="ml-12 list-decimal">
-                <li><b style={{ color: "red" }}>भोजन के उत्पादन में मदद करते हैं।</b></li>
-                <li><b style={{ color: "red" }}>मिट्टी की उर्वरता में सुधार करते हैं।</b></li>
-                <li><b style={{ color: "red" }}>रोग प्रतिरोधक क्षमता में सुधार करते हैं।</b></li>
-                <li><b style={{ color: "red" }}>कचरे के प्रबंधन में मदद करते हैं।</b></li>
-                <li><b style={{ color: "red" }}>वैक्सीने और दवाओं के उत्पादन में मदद करते हैं।</b></li>
+              <ul className="ml-12 list-none">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>भोजन के उत्पादन में मदद करते हैं।</b></li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की उर्वरता में सुधार करते हैं।</b></li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>रोग प्रतिरोधक क्षमता में सुधार करते हैं।</b></li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>कचरे के प्रबंधन में मदद करते हैं।</b></li>
+                <li className="relative before:content-['(V)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>वैक्सीने और दवाओं के उत्पादन में मदद करते हैं।</b></li>
               </ul>
             </div>
           ),
@@ -994,14 +998,14 @@ const FAQ = () => {
 
               <p><b style={{ color: "green" }}>उत्तर: </b>
                 <b style={{ color: "blue" }}>  खाद्य परिरक्षण निम्न प्रकार से किया जाता है:</b></p>
-              <ul className="ml-12 list-decimal">
-                <li><b style={{ color: "red" }}>निर्जलीकरण</b></li>
-                <li><b style={{ color: "red" }}>रासायनिक तरीका</b></li>
-                <li><b style={{ color: "red" }}>नमक और चीनी द्वारा परिरक्षण</b></li>
-                <li><b style={{ color: "red" }}>तेल एवं सिरके द्वारा परिरक्षण</b></li>
-                <li><b style={{ color: "red" }}>गर्म एवं ठंडा करके</b></li>
-                <li><b style={{ color: "red" }}>पॉश्चुरीकरण</b></li>
-                <li><b style={{ color: "red" }}>भंडारण एवं पैकिंग</b></li>
+              <ul className="ml-12 list-none">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>निर्जलीकरण</b></li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>रासायनिक तरीका</b></li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>नमक और चीनी द्वारा परिरक्षण</b></li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>तेल एवं सिरके द्वारा परिरक्षण</b></li>
+                <li className="relative before:content-['(V)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>गर्म एवं ठंडा करके</b></li>
+                <li className="relative before:content-['(VI)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>पॉश्चुरीकरण</b></li>
+                <li className="relative before:content-['(VII)'] before:absolute before:-left-11 before:text-red-500 font-bold"><b style={{ color: "red" }}>भंडारण एवं पैकिंग</b></li>
               </ul>
             </div>
           ),
@@ -1012,11 +1016,11 @@ const FAQ = () => {
             <div>
               <p> <b style={{ color: "green" }}>उत्तर: </b>
                 <b style={{ color: "blue" }}> सूक्ष्मजीवों द्वारा होनेवाली हानियाँ:</b></p>
-              <ul className="ml-12 list-decimal">
-                <li><b style={{ color: "red" }}>रोग पैदा करना:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया, वायरस और फंगस कई प्रकार के रोग पैदा कर सकते हैं।</li>
-                <li><b style={{ color: "red" }}>खाद्य का खराब होना:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया और फंगस खाद्य को खराब कर सकते हैं।</li>
-                <li><b style={{ color: "red" }}>पेयजल का प्रदूषण:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया और वायरस पेयजल को प्रदूषित कर सकते हैं।</li>
-                <li><b style={{ color: "red" }}>कृषि उत्पादों का नुकसान:</b> सूक्ष्मजीव जैसे कि फंगस और बैक्टीरिया कृषि उत्पादों को नुकसान पहुँचा सकते हैं।</li>
+              <ul className="ml-12 list-none">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>रोग पैदा करना:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया, वायरस और फंगस कई प्रकार के रोग पैदा कर सकते हैं।</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>खाद्य का खराब होना:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया और फंगस खाद्य को खराब कर सकते हैं।</li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>पेयजल का प्रदूषण:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया और वायरस पेयजल को प्रदूषित कर सकते हैं।</li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>कृषि उत्पादों का नुकसान:</b> सूक्ष्मजीव जैसे कि फंगस और बैक्टीरिया कृषि उत्पादों को नुकसान पहुँचा सकते हैं।</li>
               </ul>
             </div>
           ),
@@ -1027,12 +1031,12 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
               रोगकारक सूक्ष्मजीव हमारे शरीर में निम्नलिखित तरीकों से प्रवेश कर सकते हैं:
-              <ul className="ml-12 list-decimal">
-                <li><b style={{ color: "red" }}>वायुमार्ग:</b> जब हम संक्रमित व्यक्ति के साथ सांस लेते हैं या संक्रमित व्यक्ति के द्वारा छोड़े गए ड्रॉपलेट्स के संपर्क में आते हैं।</li>
-                <li><b style={{ color: "red" }}>जलमार्ग:</b> जब हम संक्रमित जल पीते हैं या संक्रमित जल में नहाते हैं।</li>
-                <li><b style={{ color: "red" }}>आहार:</b> जब हम संक्रमित भोजन खाते हैं या संक्रमित पेय पदार्थों का सेवन करते हैं।</li>
-                <li><b style={{ color: "red" }}>त्वचा:</b> जब हम संक्रमित व्यक्ति के संपर्क में आते हैं या संक्रमित वस्तुओं को छूते हैं।</li>
-                <li><b style={{ color: "red" }}>कीट और जानवर:</b> जब कीट और जानवर संक्रमित होते हैं और हमारे संपर्क में आते हैं।</li>
+              <ul className="ml-12 list-none">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>वायुमार्ग:</b> जब हम संक्रमित व्यक्ति के साथ सांस लेते हैं या संक्रमित व्यक्ति के द्वारा छोड़े गए ड्रॉपलेट्स के संपर्क में आते हैं।</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>जलमार्ग:</b> जब हम संक्रमित जल पीते हैं या संक्रमित जल में नहाते हैं।</li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>आहार:</b> जब हम संक्रमित भोजन खाते हैं या संक्रमित पेय पदार्थों का सेवन करते हैं।</li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>त्वचा:</b> जब हम संक्रमित व्यक्ति के संपर्क में आते हैं या संक्रमित वस्तुओं को छूते हैं।</li>
+                <li className="relative before:content-['(V)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>कीट और जानवर:</b> जब कीट और जानवर संक्रमित होते हैं और हमारे संपर्क में आते हैं।</li>
               </ul>
             </div>
           ),
@@ -1299,10 +1303,10 @@ const FAQ = () => {
             <div>
               <p> <b style={{ color: "green" }}>उत्तर: </b>
                 <b className="text-lg text-blue-600">  संश्लेषित रेशों और प्लास्टिक के नुकसान हैं: </b></p>
-              <ul className="ml-12 list-decimal">
-                <li><b style={{ color: "red" }}>पर्यावरण प्रदूषण</b></li>
-                <li><b style={{ color: "red" }}>जानवरों के लिए हानिकारक</b></li>
-                <li><b style={{ color: "red" }}>गैर-बायोडिग्रेडेबल होना</b></li>
+              <ul className="ml-12 list-none">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>पर्यावरण प्रदूषण</b></li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>जानवरों के लिए हानिकारक</b></li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>गैर-बायोडिग्रेडेबल होना</b></li>
               </ul>
             </div>
           ),
@@ -1313,14 +1317,14 @@ const FAQ = () => {
             <div>
               <p>  <b style={{ color: "green" }}>उत्तर: </b>
                 <b className="text-lg text-blue-600">  रेशम प्राप्त करने की प्रक्रिया निम्नलिखित है: </b></p>
-              <ul className="ml-12 list-decimal">
-                <li><b style={{ color: "red" }}>रेशमकीट का पालन:</b> रेशमकीट के अंडों को उबालकर निकाला जाता है और उन्हें एक विशेष कमरे में रखा जाता है जहां वे 3-4 दिनों में बच्चे में बदल जाते हैं।</li>
-                <li><b style={{ color: "red" }}>कोकून का निर्माण:</b> रेशमकीट के बच्चे पत्तियों को खाकर बड़े होते हैं और लगभग 30 दिनों में वे कोकून बनाने लगते हैं।</li>
-                <li><b style={{ color: "red" }}>कोकून का संग्रह:</b> जब रेशमकीट कोकून बना लेता है, तो उसे सावधानी से इकट्ठा किया जाता है।</li>
-                <li><b style={{ color: "red" }}>कोकून का उबालना:</b> इकट्ठे किए गए कोकून को उबालकर रेशमकीट को मार दिया जाता है।</li>
-                <li><b style={{ color: "red" }}>रेशम का निकालना:</b> उबले हुए कोकून से रेशम को निकाला जाता है। यह प्रक्रिया हाथ से या मशीन की मदद से की जा सकती है।</li>
-                <li><b style={{ color: "red" }}>रेशम का साफ़ करना:</b> निकाले गए रेशम को साफ़ किया जाता है और उसे सुखाया जाता है।</li>
-                <li><b style={{ color: "red" }}>रेशम का बुनना:</b> साफ़ और सूखे रेशम को बुनकर कपड़ा बनाया जाता है।</li>
+              <ul className="ml-12 list-none">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>रेशमकीट का पालन:</b> रेशमकीट के अंडों को उबालकर निकाला जाता है और उन्हें एक विशेष कमरे में रखा जाता है जहां वे 3-4 दिनों में बच्चे में बदल जाते हैं।</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>कोकून का निर्माण:</b> रेशमकीट के बच्चे पत्तियों को खाकर बड़े होते हैं और लगभग 30 दिनों में वे कोकून बनाने लगते हैं।</li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>कोकून का संग्रह:</b> जब रेशमकीट कोकून बना लेता है, तो उसे सावधानी से इकट्ठा किया जाता है।</li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>कोकून का उबालना:</b> इकट्ठे किए गए कोकून को उबालकर रेशमकीट को मार दिया जाता है।</li>
+                <li className="relative before:content-['(V)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>रेशम का निकालना:</b> उबले हुए कोकून से रेशम को निकाला जाता है। यह प्रक्रिया हाथ से या मशीन की मदद से की जा सकती है।</li>
+                <li className="relative before:content-['(VI)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>रेशम का साफ़ करना:</b> निकाले गए रेशम को साफ़ किया जाता है और उसे सुखाया जाता है।</li>
+                <li className="relative before:content-['(VII)'] before:absolute before:-left-11 before:text-red-500 font-bold"><b style={{ color: "red" }}>रेशम का बुनना:</b> साफ़ और सूखे रेशम को बुनकर कपड़ा बनाया जाता है।</li>
               </ul>
             </div>
           ),
@@ -1351,10 +1355,10 @@ const FAQ = () => {
             <div>
               <p> <b style={{ color: "green" }}>उत्तर: </b>
                 <b className="text-lg text-blue-600"> पदार्थ तीन अवस्थाओं में पाया जाता है:</b></p>
-              <ul className="list-decimal ml-12 text-gray-800">
-                <li><b style={{ color: 'red' }}>ठोस</b> </li>
-                <li><b style={{ color: 'red' }}>द्रव्य</b> </li>
-                <li><b style={{ color: 'red' }}>गैस</b> </li>
+              <ul className="list-none ml-12 text-gray-800">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'red' }}>ठोस</b> </li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'red' }}>द्रव्य</b> </li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: 'red' }}>गैस</b> </li>
               </ul>
               <ul className="ml-8">
                 <li><b style={{ color: 'blue' }}>ठोस: </b>पदार्थ की वह अवस्थाएँ जिनका आकार एवं आयतन दोनों निश्‍चित हो। <br />
@@ -1586,9 +1590,9 @@ const FAQ = () => {
                 एक ही तत्व के अलग-अलग रूपों को अपरूप कहते हैं। <br />
                 <b className="ml-8 text-blue-600">कार्बन के दो अपरूप:</b>
               </p>
-              <ul className="list-decimal ml-12 text-gray-800 ">
-                <li>हीरा</li>
-                <li>ग्रेफाइट</li>
+              <ul className="list-none ml-12 text-gray-800 ">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-10 before:text-red-500 font-bold">हीरा</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-10 before:text-red-500 font-bold">ग्रेफाइट</li>
               </ul>
             </div>
           ),
@@ -1827,11 +1831,11 @@ const FAQ = () => {
               <b style={{ color: "green" }}>उत्तर: </b>
               हाइड्रोजन तथा कार्बन से बने यौगिक को <b style={{ color: 'purple' }}>हाइड्रोकार्बन</b> कहते हैं।
               <br />
-              <b>तीन हाइड्रोकार्बन का नाम निम्न है:</b>
-              <ul className="list-decimal ml-6 text-gray-800">
-                <li><b style={{ color: 'orange' }}>मीथेन</b></li>
-                <li><b style={{ color: 'orange' }}>एथेन</b></li>
-                <li><b style={{ color: 'orange' }}>प्रोपेन</b></li>
+              <b className="text-blue-600 ml-10">तीन हाइड्रोकार्बन का नाम निम्न है:</b>
+              <ul className="list-none ml-16 text-gray-800">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'orange' }}>मीथेन</b></li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'orange' }}>एथेन</b></li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: 'orange' }}>प्रोपेन</b></li>
               </ul>
             </div>
           ),
@@ -1853,9 +1857,9 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
 
-              <ul className="list-decimal ml-6 text-gray-800">
-                <li><b style={{ color: 'blue' }}>हीरा</b>: रंगहीन, पारदर्शी, ठोस तथा कठोर होता है। यह विद्युत का <b style={{ color: 'red' }}>कुचालक</b> होता है।</li>
-                <li><b style={{ color: 'blue' }}>ग्रेफाइट</b>: काला, चमकदार, ठोस, बहुत मुलायम, चिकना और फिसलदार होता है। यह विद्युत का <b style={{ color: 'blue' }}>सुचालक</b> होता है।</li>
+              <ul className="list-none ml-16 text-gray-800">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'blue' }}>हीरा</b>: रंगहीन, पारदर्शी, ठोस तथा कठोर होता है। यह विद्युत का <b style={{ color: 'red' }}>कुचालक</b> होता है।</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'blue' }}>ग्रेफाइट</b>: काला, चमकदार, ठोस, बहुत मुलायम, चिकना और फिसलदार होता है। यह विद्युत का <b style={{ color: 'red' }}>सुचालक</b> होता है।</li>
               </ul>
             </div>
           ),
@@ -1866,11 +1870,12 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
-              मिश्र धातु के बनाने के निम्न <b style={{ color: 'purple' }}>फायदा</b> हैं:
-              <ul className="list-decimal ml-6 text-gray-800">
-                <li><b style={{ color: 'blue' }}>मिश्र धातु तत्वों के मुकाबले अधिक मजबूत और कठोर होता है।</b></li>
-                <li><b style={{ color: 'blue' }}>मिश्र धातु पर जंग नहीं लगता है।</b></li>
-                <li><b style={{ color: 'blue' }}>मिश्र धातुओं से उपयोगी वस्तुएँ बनायी जाती हैं।</b></li>
+              <b style={{ color: 'blue' }}>
+              मिश्र धातु के बनाने के निम्न फायदा हैं:</b>
+              <ul className="list-none ml-12 text-gray-800">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b>मिश्र धातु तत्वों के मुकाबले अधिक मजबूत और कठोर होता है।</b></li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b>मिश्र धातु पर जंग नहीं लगता है।</b></li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b>मिश्र धातुओं से उपयोगी वस्तुएँ बनायी जाती हैं।</b></li>
               </ul>
             </div>
           ),
@@ -1893,23 +1898,23 @@ const FAQ = () => {
               लोहे पर जंग लगने का मुख्य कारण <b style={{ color: 'red' }}>ऑक्सीजन और नमी</b> की उपस्थिति है। जब लोहा पानी और हवा के संपर्क में आता है, तो यह ऑक्सीजन के साथ अभिक्रिया करके आयरन ऑक्साइड बनाता है, जिसे हम <b style={{ color: 'blue' }}>जंग</b> कहते हैं।
               <br />
               <b>जंग लगने की प्रक्रिया:</b>
-              <ul className="list-decimal ml-6 text-gray-800">
-                <li><b style={{ color: 'purple' }}>लोहा पानी और ऑक्सीजन</b> के संपर्क में आता है।</li>
-                <li><b style={{ color: 'purple' }}>पानी और ऑक्सीजन</b> लोहे के साथ रासायनिक अभिक्रिया करते हैं।</li>
-                <li><b style={{ color: 'purple' }}>इस अभिक्रिया</b> से लोहे की सतह पर एक लाल-भूरे रंग की परत जम जाती है, जिसे जंग कहते हैं।</li>
+              <ul className="list-none ml-10 text-gray-800">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'purple' }}>लोहा पानी और ऑक्सीजन</b> के संपर्क में आता है।</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'purple' }}>पानी और ऑक्सीजन</b> लोहे के साथ रासायनिक अभिक्रिया करते हैं।</li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: 'purple' }}>इस अभिक्रिया</b> से लोहे की सतह पर एक लाल-भूरे रंग की परत जम जाती है, जिसे जंग कहते हैं।</li>
               </ul>
               <b>जंग लगने से क्या होता है:</b>
-              <ul className="list-decimal ml-6 text-gray-800">
-                <li><b style={{ color: 'red' }}>लोहा कमजोर</b> हो जाता है।</li>
-                <li><b style={{ color: 'red' }}>लोहे की चमक</b> खत्म हो जाती है।</li>
-                <li><b style={{ color: 'red' }}>लोहे का आकार</b> बदल जाता है।</li>
+              <ul className="list-none ml-10 text-gray-800">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'red' }}>लोहा कमजोर</b> हो जाता है।</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'red' }}>लोहे की चमक</b> खत्म हो जाती है।</li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: 'red' }}>लोहे का आकार</b> बदल जाता है।</li>
               </ul>
-              <b>जंग लगने से कैसे बचें:</b>
-              <ul className="list-decimal ml-6 text-gray-800">
-                <li><b style={{ color: 'blue' }}>लोहे पर पेंट</b> या तेल लगाएं।</li>
-                <li><b style={{ color: 'blue' }}>लोहे को पानी से</b> दूर रखें।</li>
-                <li><b style={{ color: 'blue' }}>लोहे को जंग रोधी पदार्थों</b> से ढकें।</li>
-                <li><b style={{ color: 'blue' }}>गैल्वनाइजेशन की प्रक्रिया</b> का उपयोग करें।</li>
+              <b className="">जंग लगने से कैसे बचें:</b>
+              <ul className="list-none ml-10 text-gray-800">
+                <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'blue' }}>लोहे पर पेंट</b> या तेल लगाएं।</li>
+                <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'blue' }}>लोहे को पानी से</b> दूर रखें।</li>
+                <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: 'blue' }}>लोहे को जंग रोधी पदार्थों</b> से ढकें।</li>
+                <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: 'blue' }}>गैल्वनाइजेशन की प्रक्रिया</b> का उपयोग करें।</li>
               </ul>
               <b>नोट:</b> <i>जंग लगना एक प्राकृतिक प्रक्रिया है, लेकिन हम कुछ उपायों से इसे रोक सकते हैं।</i>
             </div>
@@ -1922,9 +1927,9 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b>
               सोडियम एक बेहद क्रियाशील धातु है। यह हवा में मौजूद ऑक्सीजन और पानी के साथ बहुत तेजी से प्रतिक्रिया करता है। इस प्रतिक्रिया से काफी गर्मी पैदा होती है जिससे सोडियम में आग लग सकती है। इसे रोकने के लिए सोडियम को <b style={{ color: 'orange' }}>केरोसिन तेल</b> में डुबोकर रखा जाता है क्योंकि:
-              <ul className="list-decimal ml-6 text-gray-800">
-                <li><b style={{ color: 'blue' }}>केरोसिन तेल</b> सोडियम को हवा और पानी से पूरी तरह से अलग कर देता है। इससे सोडियम, हवा और पानी के संपर्क में आने से बच जाता है और प्रतिक्रिया नहीं कर पाता।</li>
-                <li><b style={{ color: 'blue' }}>केरोसिन तेल</b> एक अक्रिय पदार्थ है। यह सोडियम के साथ किसी भी तरह की प्रतिक्रिया नहीं करता, जिससे सोडियम सुरक्षित रहता है।</li>
+              <ul className="list-none ml-6 text-gray-800">
+                <li><b style={{ color: 'blue' }}>(i) केरोसिन तेल</b> सोडियम को हवा और पानी से पूरी तरह से अलग कर देता है। इससे सोडियम, हवा और पानी के संपर्क में आने से बच जाता है और प्रतिक्रिया नहीं कर पाता।</li>
+                <li><b style={{ color: 'blue' }}>(ii) केरोसिन तेल</b> एक अक्रिय पदार्थ है। यह सोडियम के साथ किसी भी तरह की प्रतिक्रिया नहीं करता, जिससे सोडियम सुरक्षित रहता है।</li>
               </ul>
               <b>संक्षेप में:</b> <p>सोडियम को केरोसिन तेल में डुबोकर रखने का मुख्य उद्देश्य इसे हवा और पानी के संपर्क में आने से बचाना है ताकि यह प्रतिक्रिया न करे और आग लगने का खतरा कम हो।</p>
             </div>
@@ -1958,7 +1963,7 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b> वे ईंधन, जिनका निर्माण सजीव प्राणियों के मृत अवशेषों से होता है, उन्हें <b style={{ color: "blue" }}>जीवाश्म ईंधन</b> कहते हैं।
               <br />
-              जैसे:— <b style={{ color: "blue" }}>कोयला, पेट्रोलियम और प्राकृतिक गैस</b>।
+                    <p className="ml-10"> जैसे:— <b style={{ color: "blue" }}>कोयला, पेट्रोलियम और प्राकृतिक गैस । </b></p>
             </div>
           ),
         },
@@ -1966,11 +1971,11 @@ const FAQ = () => {
           question: " 2. जीवाश्म ईंधन कितने प्रकार के होते हैं?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर: </b> जीवाश्म ईंधन तीन प्रकार के होते हैं:
-              <ul>
-                <li><b style={{ color: "blue" }}>कोयला</b></li>
-                <li><b style={{ color: "blue" }}>पेट्रोलियम</b></li>
-                <li><b style={{ color: "blue" }}>प्राकृतिक गैस</b></li>
+              <b style={{ color: "green" }}>उत्तर: </b> <b style={{color: "blue"}}> जीवाश्म ईंधन तीन प्रकार के होते हैं:</b>
+              <ul className="ml-10">
+                <li><b style={{ color: "red" }}>(i) कोयला</b></li>
+                <li><b style={{ color: "red" }}>(ii) पेट्रोलियम</b></li>
+                <li><b style={{ color: "red" }}>(iii) प्राकृतिक गैस</b></li>
               </ul>
             </div>
           ),
@@ -1989,9 +1994,9 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b> <b style={{ color: "blue" }}>पेट्रोलियम</b> एक जीवाश्म ईंधन है जो प्राचीन पौधों और जानवरों के अवशेषों से बनता है। यह एक तरल ईंधन है।
               <br />
-              <b style={{ color: "blue" }}>उपयोग:</b> पेट्रोलियम का उपयोग विभिन्न उद्योगों में किया जाता है।
+              <b style={{ color: "blue" }} className="ml-12">उपयोग:</b> पेट्रोलियम का उपयोग विभिन्न उद्योगों में किया जाता है।
               <br />
-              जैसे:— <b style={{ color: "blue" }}>वाहन ईंधन, ऊर्जा उत्पादन और पेट्रोकेमिकल्स के निर्माण</b> में।
+            <p className="ml-12"> <b style={{color: "violet"}}> जैसे:— </b> <b style={{ color: "blue" }}>वाहन ईंधन, ऊर्जा उत्पादन और पेट्रोकेमिकल्स के निर्माण में। </b> </p>
             </div>
           ),
         },
@@ -2001,8 +2006,11 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर: </b> <b style={{ color: "blue" }}>प्राकृतिक गैस</b> एक जीवाश्म ईंधन है जो प्राचीन पौधों और जानवरों के अवशेषों से बनती है। यह मुख्य रूप से <b style={{ color: "blue" }}>मिथेन (मीथेन)</b> CH₄ से बनी होती है।
               <br />
-              <b style={{ color: "blue" }}>उदाहरण:</b> घरों में खाना पकाने के लिए उपयोग की जाने वाली गैस।
-            </div>
+              <p className="ml-10">
+              <b style={{ color: "violet" }}>उदाहरण:</b> घरों में खाना पकाने के लिए उपयोग की जाने वाली गैस।
+ 
+              </p>
+                       </div>
           ),
         },
         {
@@ -2035,9 +2043,12 @@ const FAQ = () => {
           question: " 9. कोलतार क्या है? इसका उपयोग लिखे?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> यह एक अप्रिया गंध वाला काला गाढ़ा द्रव्य है। यह लगभग दो सौ (200) पदार्थों का मिश्रण होता है।
+              <b style={{ color: "green" }}>उत्तर:-</b> यह एक अप्रिया गंध वाला काला गाढ़ा द्रव्य है। यह लगभग दो सौ (200) पदार्थों का मिश्रण होता है।
               <br />
-              <b>उपयोग:—</b> इसका उपयोग औद्योगिक निर्माण में संश्लेषित रंग, औषधि, विस्फोटक, सुगंध, प्लास्टिक आदि कार्यों में होता है।
+              <p className="ml-14">
+              <b style={{color: "violet"}}>उपयोग:—</b> इसका उपयोग औद्योगिक निर्माण में संश्लेषित रंग, औषधि, विस्फोटक, सुगंध, प्लास्टिक आदि कार्यों में होता है।
+              </p>
+              
             </div>
           ),
         },
@@ -2063,7 +2074,9 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> कोयला के प्रक्रमण द्वारा कोक बनाते समय कोयला गैस प्राप्त होता है।
               <br />
-              <b>उपयोग:—</b> इसका उपयोग उद्योगों में ईंधन के रूप में किया जाता है।
+              <p className="ml-14">
+              <b style={{color: "violet"}}>उपयोग:—</b> इसका उपयोग उद्योगों में ईंधन के रूप में किया जाता है।
+              </p>
             </div>
           ),
         },
@@ -2079,8 +2092,8 @@ const FAQ = () => {
           question: " 14. PCRA लोगों को क्या सलाह देती है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> पेट्रोलियम संरक्षण अनुसंधान समिति (PCRA) लोगों को ईंधन की बचत के लिए निम्नलिखित सलाह देती है:
-              <ul style={{ color: "blue" }}>
+              <b style={{ color: "green" }}>उत्तर:-</b> पेट्रोलियम संरक्षण अनुसंधान समिति (PCRA) लोगों को ईंधन की बचत के लिए निम्नलिखित सलाह देती है:
+              <ul className="ml-16">
                 <li>जहाँ तक संभव हो गाड़ी समान और मध्यम गति से चलाइए।</li>
                 <li>यातायात लाइटों पर अथवा जहाँ आपको प्रतीक्षा करनी है, गाड़ी का ईंधन बंद कर दीजिए।</li>
                 <li>टायरों का दाब सही रखिए।</li>
@@ -2093,8 +2106,9 @@ const FAQ = () => {
           question: " 15. LPG और CNG का ईंधन के रूप में उपयोग करने से क्या लाभ है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> LPG और CNG का ईंधन के रूप में उपयोग करने से निम्नलिखित फायदे होते हैं:
-              <ul style={{ color: "blue" }}>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color: "blue"}}> LPG और CNG का ईंधन के रूप में उपयोग करने से निम्नलिखित फायदे होते हैं:  </b></p>
+              <ul className="ml-16">
                 <li>प्रदूषण कम फैलता है।</li>
                 <li>काम जल्दी से होता है।</li>
                 <li>एक जगह से दूसरे जगह ले जाने में आसानी होती है।</li>
@@ -2139,8 +2153,8 @@ const FAQ = () => {
           question: " 20. ईंधन कितने प्रकार के होते हैं?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> ईंधन मुख्य रूप से तीन प्रकार के होते हैं:
-              <ul style={{ color: "blue" }}>
+             <p> <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }} > ईंधन मुख्य रूप से तीन प्रकार के होते हैं: </b></p>
+              <ul className="ml-14">
                 <li>ठोस ईंधन (जैसे: कोयला, लकड़ी)</li>
                 <li>तरल ईंधन (जैसे: पेट्रोल, डीजल)</li>
                 <li>गैसीय ईंधन (जैसे: एलपीजी, सीएनजी)</li>
@@ -2172,7 +2186,10 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> जो ईंधन प्रकृति से हमें उसी रूप में प्राप्त होता है जिस रूप में उसका उपयोग होना है, प्राथमिक ईंधन कहलाता है।
               <br />
-              <b>जैसे:—</b> लकड़ी, कोयला, पेट्रोलियम इत्यादि।
+              <p className="ml-14">
+              <b style={{color: "violet"}}>जैसे:—</b> लकड़ी, कोयला, पेट्रोलियम इत्यादि।
+              </p>
+             
             </div>
           ),
         },
@@ -2182,7 +2199,9 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> वैसे ईंधन जो प्राथमिक ईंधन से प्राप्त किये जाते हैं, उसे द्वितीय ईंधन कहते हैं।
               <br />
-              <b>जैसे:—</b> कोक, कोयला गैस, कोलतार इत्यादि।
+              <p>
+              <b style={{color: "violet"}}>जैसे:—</b> कोक, कोयला गैस, कोलतार इत्यादि।
+              </p>
             </div>
           ),
         },
@@ -2290,7 +2309,9 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> जो पदार्थ बिना गर्म किया स्वत: ही जल उठता है, स्वत: दहन कहलाता है।
               <br />
-              <b>उदाहरण:—</b> पीले फॉस्फोरस का ज्वलन ताप कमरे के तापमान से कम होने के कारण यह स्वतः ही जल उठता है। क्योंकि इसका ज्वलन ताप कमरे के तापमान से कम होता है।
+              <p className="ml-14">
+              <b style={{color: "violet"}}>उदाहरण:—</b> पीले फॉस्फोरस का ज्वलन ताप कमरे के तापमान से कम होने के कारण यह स्वतः ही जल उठता है। क्योंकि इसका ज्वलन ताप कमरे के तापमान से कम होता है।
+              </p>
             </div>
           ),
         },
@@ -2330,10 +2351,14 @@ const FAQ = () => {
           question: " 11. जलने के तीन उपयोगी बात लिखिए?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b>
-              (i) ज्वलनशील पदार्थ। <br />
-              (ii) ज्वलन ताप। <br />
-              (iii) ऑक्सीजन।
+               <p>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color: "blue"}}>जलने के तीन उपयोगी बात हैं:</b>
+              </p>
+              <ol className="ml-16">
+                <li>(i) ज्वलनशील पदार्थ।</li>
+                <li>(ii) ज्वलन ताप।</li>
+                <li>(iii) ऑक्सीजन।</li>
+              </ol> 
             </div>
           ),
         },
@@ -2341,11 +2366,14 @@ const FAQ = () => {
           question: " 12. दहन कितने प्रकार के होते हैं?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> दहन तीन प्रकार के होते हैं:
-              <br />
-              (i) तीव्र दहन ।<br />
-              (ii) स्वतः दहन।<br />
-              (iii) विस्फोटक।
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color: "blue"}}> दहन तीन प्रकार के होते हैं: </b>
+              </p>
+              <ol className="ml-16">
+                <li>(i) तीव्र दहन ।</li>
+                <li>(ii) स्वतः दहन।</li>
+                <li>(iii) विस्फोटक।</li>
+              </ol>
             </div>
           ),
         },
@@ -2354,8 +2382,10 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> आग पर तुरंत काबू पाने के लिए ऑक्सीजन संपर्क को काट दिया जाता है, इसके लिए कई प्रचलित विधियाँ हैं।
-              <br />
-              जैसे:— पानी डालना, कार्बन डाइऑक्साइड का छिड़काव करना, इसे ज्वलन ताप भी तुरंत कम हो जाता है।
+              
+              <p className="ml-16">
+                 <b style={{color: "violet"}}> जैसे:— </b>  पानी डालना, कार्बन डाइऑक्साइड का छिड़काव करना, इसे ज्वलन ताप भी तुरंत कम हो जाता है।
+              </p>
             </div>
           ),
         },
@@ -2379,14 +2409,17 @@ const FAQ = () => {
           question: " 16. कोयले को हवा की अनुपस्थिति में गर्म करने से क्या प्राप्त होता है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> कोयले को हवा की अनुपस्थिति में गर्म करने से हमें निम्नलिखित महत्वपूर्ण पदार्थ प्राप्त होते हैं:
-              <br />
-              (i) कृत्रिम पेट्रोलियम। <br />
-              (ii) बेंजीन। <br />
-              (iii) औषधियाँ। <br />
-              (iv) विस्फोटक पदार्थ। <br />
-              (v) ईंधन गैस। <br />
-              (vi) कोक।
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b>  <b style={{color: "blue"}}>कोयले को हवा की अनुपस्थिति में गर्म करने से हमें निम्नलिखित महत्वपूर्ण पदार्थ प्राप्त होते हैं: </b>
+              </p>
+              <ol className="ml-16">
+                <li>(i) कृत्रिम पेट्रोलियम।</li>
+                <li>(ii) बेंजीन।</li>
+                <li>(iii) औषधियाँ।</li>
+                <li>(iv) विस्फोटक पदार्थ।</li>
+                <li>(v) ईंधन गैस।</li>
+                <li>(vi) कोक।</li>
+              </ol>
             </div>
           ),
         },
@@ -2402,11 +2435,14 @@ const FAQ = () => {
           question: " 18. ज्वाला के तीन भिन्न क्षेत्र कौन-कौन से हैं?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> ज्वाला के तीन भिन्न क्षेत्र निम्न हैं:
-              <br />
-              (i) अदीप्त क्षेत्र। <br />
-              (ii) दीप्त क्षेत्र। <br />
-              (iii) ज्योतिहिन क्षेत्र।
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b><b style={{color:"blue"}}>  ज्वाला के तीन भिन्न क्षेत्र निम्न हैं: </b>
+              </p>
+              <ol className="ml-16">
+                <li> (i) अदीप्त क्षेत्र। </li>
+                <li> (ii) दीप्त क्षेत्र। </li>
+                <li>(iii) ज्योतिहिन क्षेत्र।</li>
+              </ol>
             </div>
           ),
         },
@@ -2431,8 +2467,9 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> जो पदार्थ लौ पर गर्म करने पर नहीं जलते हैं, अज्वलनशील पदार्थ कहलाते हैं।
-              <br />
-              जैसे:— पत्थर, धातु, पानी आदि।
+              <p className="ml-16">
+                <b style={{color: "violet"}}>  जैसे:—  </b>पत्थर, धातु, पानी आदि।
+              </p>
             </div>
           ),
         },
@@ -2448,11 +2485,17 @@ const FAQ = () => {
           question: " 23. दहन और जंग लगने में क्या अंतर है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> दहन और जंग लगने में मुख्य अंतर यह है:
-              <br />
-              <b>दहन:</b> दहन एक रासायनिक प्रतिक्रिया है जिसमें कोई पदार्थ ऑक्सीजन की उपस्थिति में जलता है और ऊर्जा का उत्पादन करता है। इसमें ताप और प्रकाश का उत्पादन होता है।
-              <br />
-              <b>जंग लगना:</b> जंग लगना एक रासायनिक प्रतिक्रिया है जिसमें धातु ऑक्सीजन और नमी की उपस्थिति में क्षय होती है। इसमें धातु का ऑक्साइड बनता है और धातु की सतह पर जंग की परत बन जाती है।
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color:"blue"}}> दहन और जंग लगने में मुख्य अंतर यह है:</b>
+              </p>
+             <ol className="ml-16">
+              <li>
+              <b style={{color: "violet"}}>दहन:</b> दहन एक रासायनिक प्रतिक्रिया है जिसमें कोई पदार्थ ऑक्सीजन की उपस्थिति में जलता है और ऊर्जा का उत्पादन करता है। इसमें ताप और प्रकाश का उत्पादन होता है।
+              </li>
+             <li>
+              <b style={{color: "violet"}}>जंग लगना:</b> जंग लगना एक रासायनिक प्रतिक्रिया है जिसमें धातु ऑक्सीजन और नमी की उपस्थिति में क्षय होती है। इसमें धातु का ऑक्साइड बनता है और धातु की सतह पर जंग की परत बन जाती है।
+              </li>
+              </ol>
             </div>
           ),
         },
@@ -2468,11 +2511,17 @@ const FAQ = () => {
           question: " 25. बारूद किन पदार्थों से मिलकर बना होता है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> बारूद मुख्य रूप से तीन पदार्थों से मिलकर बना होता है:
-              <br />
-              (i) सल्फर (गंधक) <br />
-              (ii) कार्बन (कोयला) <br />
-              (iii) नाइट्रेट (पोटैशियम नाइट्रेट या चीनी मिट्टी)
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color:"blue"}}> बारूद मुख्य रूप से तीन पदार्थों से मिलकर बना होता है: </b>
+              </p>
+              <ol className="ml-16">
+                <li>  (i) सल्फर (गंधक) </li>
+                <li>  (ii) कार्बन (कोयला) </li>
+                <li>(iii) नाइट्रेट (पोटैशियम नाइट्रेट या चीनी मिट्टी)</li>
+              </ol>
+            
+            
+              
             </div>
           ),
         },
@@ -2516,7 +2565,7 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> पौधों और जंतुओं के संरक्षण के लिए हम कई कदम उठा सकते हैं, जैसे कि:
-              <ul className="text-sky-800">
+              <ul className=" ml-16">
                 <li>पेड़ों को लगाना और उनकी देखभाल करना।</li>
                 <li>जंतुओं के आवासों की रक्षा करना।</li>
                 <li>प्रदूषण को कम करना।</li>
@@ -2531,7 +2580,7 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> पौधों और जंतुओं के संरक्षण के लिए सरकार की भूमिका महत्वपूर्ण है। सरकार निम्नलिखित कदम उठा सकती है:
-              <ul>
+              <ul className="ml-16">
                 <li>संरक्षण के लिए नीतियाँ और कानून बनाना।</li>
                 <li>संरक्षण के प्रयासों के लिए धन और संसाधन प्रदान करना।</li>
                 <li>संरक्षण के बारे में जागरूकता फैलाना।</li>
@@ -2633,15 +2682,15 @@ const FAQ = () => {
           question: " 16. विनाश के मुख्य कारण एवं उसके प्रभाव बताइए?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> <b>विनाश के मुख्य कारण:</b>
-              <ul>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b className="text-blue-600">विनाश के मुख्य कारण:</b>
+              <ul className="ml-16 ">
                 <li>वनस्पतिवृक्षों की कटाई</li>
                 <li>औद्योगिक प्रदूषण</li>
                 <li>जल प्रदूषण</li>
                 <li>मिट्टी का क्षरण</li>
               </ul>
-              <b>विनाश के प्रभाव:</b>
-              <ul>
+              <b className="ml-16 text-blue-600">विनाश के प्रभाव:</b>
+              <ul className="ml-16">
                 <li>जैव विविधता की हानि</li>
                 <li>जलवायु परिवर्तन</li>
                 <li>मिट्टी की उर्वरता में कमी</li>
@@ -2883,11 +2932,13 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> रंजक: कोशिका में पाए जाने वाले रंगीन पदार्थों को रंजक कहते हैं। ये पदार्थ कोशिका को विशिष्ट रंग प्रदान करते हैं और अक्सर कोशिका की विशिष्ट कार्यों में भी भूमिका निभाते हैं।
               <br />
+              <b style={{color:"violet"}}>
               रंजकों के उदाहरण:
-              <ul>
-                <li><b style={{ color: "blue" }}>क्लोरोफिल:</b> पादप कोशिकाओं में पाया जाने वाला एक रंजक जो पौधों को हरा रंग प्रदान करता है और प्रकाश संश्‍लेषण में महत्वपूर्ण भूमिका निभाता है।</li>
-                <li><b style={{ color: "blue" }}>हीमोग्लोबिन:</b> जंतु कोशिकाओं में पाया जाने वाला एक रंजक जो लाल रक्त कोशिकाओं में पाया जाता है और ऑक्सीजन को शरीर के विभिन्न अंगों तक पहुंचाने में मदद करता है।</li>
-                <li><b style={{ color: "blue" }}>मेलानिन:</b> जंतु कोशिकाओं में पाया जाने वाला एक रंजक जो त्वचा, बालों और आंखों को रंग प्रदान करता है।</li>
+              </b>
+              <ul className="ml-16">
+                <li><b style={{ color: "red" }}>क्लोरोफिल:</b> पादप कोशिकाओं में पाया जाने वाला एक रंजक जो पौधों को हरा रंग प्रदान करता है और प्रकाश संश्‍लेषण में महत्वपूर्ण भूमिका निभाता है।</li>
+                <li><b style={{ color: "red" }}>हीमोग्लोबिन:</b> जंतु कोशिकाओं में पाया जाने वाला एक रंजक जो लाल रक्त कोशिकाओं में पाया जाता है और ऑक्सीजन को शरीर के विभिन्न अंगों तक पहुंचाने में मदद करता है।</li>
+                <li><b style={{ color: "red" }}>मेलानिन:</b> जंतु कोशिकाओं में पाया जाने वाला एक रंजक जो त्वचा, बालों और आंखों को रंग प्रदान करता है।</li>
               </ul>
             </div>
           ),
@@ -2896,10 +2947,12 @@ const FAQ = () => {
           question: " 25. जंतु कोशिका और पादप कोशिका में क्या अंतर है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> जंतु कोशिका और पादप कोशिका में निम्न अंतर है:
-              <ul>
-                <li><b style={{ color: "blue" }}>पादप कोशिका में:</b>
-                  <ul>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color:"blue"}}> जंतु कोशिका और पादप कोशिका में निम्न अंतर है: </b>
+              </p>
+              <ul className="ml-16">
+                <li><b style={{ color: "red" }}>पादप कोशिका में:</b>
+                  <ul className="ml-2">
                     <li>कोशिका भित्ति होती है।</li>
                     <li>क्लोरोप्लास्ट होते हैं।</li>
                     <li>वैक्यूल्स बड़े होते हैं।</li>
@@ -2907,8 +2960,8 @@ const FAQ = () => {
                     <li>सेंट्रियोल नहीं होते हैं।</li>
                   </ul>
                 </li>
-                <li><b style={{ color: "blue" }}>जंतु कोशिका में:</b>
-                  <ul>
+                <li><b style={{ color: "red" }}>जंतु कोशिका में:</b>
+                  <ul className="ml-2">
                     <li>कोशिका भित्ति नहीं होती है।</li>
                     <li>क्लोरोप्लास्ट नहीं होते हैं।</li>
                     <li>वैक्यूल्स छोटे होते हैं।</li>
@@ -2950,10 +3003,12 @@ const FAQ = () => {
           question: " 3. निषेचन कितने प्रकार का होता है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> निषेचन दो प्रकार के होते हैं:
-              <ul>
-                <li><b style={{ color: "blue" }} >(i) आंतरिक निषेचन (शरीर के अंदर)</b></li>
-                <li><b style={{ color: "blue" }} > (ii) बाहरी निषेचन (शरीर के बाहर)</b></li>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }} > निषेचन दो प्रकार के होते हैं: </b>
+              </p>
+              <ul className="ml-16">
+                <li><b >(i) आंतरिक निषेचन (शरीर के अंदर)</b></li>
+                <li><b > (ii) बाहरी निषेचन (शरीर के बाहर)</b></li>
               </ul>
             </div>
           ),
@@ -3026,9 +3081,11 @@ const FAQ = () => {
           question: " 12. अलैंगिक प्रजनन और लैंगिक प्रजनन में क्या अंतर है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> अलैंगिक प्रजनन और लैंगिक प्रजनन में निम्न अंतर हैं:
-              <ul>
-                <li><b style={{ color: "blue" }}>अलैंगिक प्रजनन:</b>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:-</b> <b style={{color: "blue"}}> अलैंगिक प्रजनन और लैंगिक प्रजनन में निम्न अंतर हैं: </b>
+              </p>
+              <ul className="ml-14">
+                <li><b style={{ color: "red" }}>अलैंगिक प्रजनन:</b>
                   <ul>
                     <li>एक ही माता-पिता की कोशिका शामिल होती है।</li>
                     <li>कोशिका विभाजन के माध्यम से नए जीव उत्पन्न होते हैं।</li>
@@ -3037,7 +3094,7 @@ const FAQ = () => {
                     <li>यह प्रक्रिया तेजी से होती है और इसमें ऊर्जा की कम आवश्यकता होती है।</li>
                   </ul>
                 </li>
-                <li><b style={{ color: "blue" }}>लैंगिक प्रजनन:</b>
+                <li><b style={{ color: "red" }}>लैंगिक प्रजनन:</b>
                   <ul>
                     <li>दो माता-पिता की कोशिकाएं शामिल होती हैं।</li>
                     <li>नर और मादा युग्मकों के मिलन से नए जीव उत्पन्न होते हैं।</li>
@@ -3054,16 +3111,18 @@ const FAQ = () => {
           question: " 13. आंतरिक निषेचन तथा बाहरी निषेचन में क्या अंतर है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> आंतरिक निषेचन तथा बाहरी निषेचन में निम्न अंतर हैं:
-              <ul>
-                <li><b style={{ color: "blue" }}>आंतरिक निषेचन:</b>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:-</b> <b style={{color: "blue"}}>  आंतरिक निषेचन तथा बाहरी निषेचन में निम्न अंतर हैं:</b>
+              </p>
+              <ul className="ml-14">
+                <li><b style={{ color: "red" }}>आंतरिक निषेचन:</b>
                   <ul>
                     <li>निषेचन मादा के शरीर के अंदर होता है।</li>
                     <li>नर के शुक्राणु मादा के शरीर में प्रवेश करते हैं।</li>
                     <li>यह प्रक्रिया स्तनधारियों, पक्षियों और कुछ अन्य जीवों में होती है।</li>
                   </ul>
                 </li>
-                <li><b style={{ color: "blue" }}>बाहरी निषेचन:</b>
+                <li><b style={{ color: "red" }}>बाहरी निषेचन:</b>
                   <ul>
                     <li>निषेचन जल में या बाहरी वातावरण में होता है।</li>
                     <li>नर और मादा दोनों अपने युग्मकों को जल में छोड़ते हैं।</li>
@@ -3110,10 +3169,12 @@ const FAQ = () => {
           question: " 18. जंतुओं में प्रजनन कितने प्रकार से होता है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> जंतुओं में प्रजनन दो प्रकार से होता है:
-              <ul>
-                <li><b style={{ color: "blue" }} > (i) अलैंगिक प्रजनन</b></li>
-                <li> <b style={{ color: "blue" }} >(ii) लैंगिक प्रजनन</b></li>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:-</b> <b style={{color:"blue"}}> जंतुओं में प्रजनन दो प्रकार से होता है: </b>
+              </p>
+              <ul className="ml-14">
+                <li><b > (i) अलैंगिक प्रजनन</b></li>
+                <li> <b >(ii) लैंगिक प्रजनन</b></li>
               </ul>
             </div>
           ),
@@ -3285,12 +3346,14 @@ const FAQ = () => {
           question: "13. मनुष्य के जीवन काल को कितने भागों में बाँटा जाता है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> मनुष्य के जीवन काल को चार भागों में बाँटा जाता है:
-              <ul>
-                <li><b style={{ color: "blue" }} >बाल्यावस्था (0-12 वर्ष):</b> बचपन का समय</li>
-                <li><b style={{ color: "blue" }}>किशोरावस्था (13-19 वर्ष):</b> जवानी की शुरुआत</li>
-                <li><b style={{ color: "blue" }}>प्रौढ़ावस्था (20-59 वर्ष):</b> जवानी का समय</li>
-                <li><b style={{ color: "blue" }}>वृद्धावस्था (60 वर्ष से अधिक):</b> बुढ़ापा</li>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color: "blue"}}> मनुष्य के जीवन काल को चार भागों में बाँटा जाता है: </b>
+              </p>
+              <ul className="ml-16">
+                <li><b >बाल्यावस्था (0-12 वर्ष):</b> बचपन का समय</li>
+                <li><b>किशोरावस्था (13-19 वर्ष):</b> जवानी की शुरुआत</li>
+                <li><b>प्रौढ़ावस्था (20-59 वर्ष):</b> जवानी का समय</li>
+                <li><b>वृद्धावस्था (60 वर्ष से अधिक):</b> बुढ़ापा</li>
               </ul>
             </div>
           ),
@@ -3346,7 +3409,7 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> किसी वस्तु पर लगने वाले धक्के या खिचाँव को बल कहते हैं।
-              <ul>
+              <ul className="list-disc no-underline ml-16" >
                 <li>जब आप किसी गेंद को धक्का देते हैं, तो आप उस पर बल लगा रहे हैं।</li>
                 <li>जब आप किसी रस्सी को खींचते हैं, तो आप उस पर बल लगा रहे हैं।</li>
                 <li>जब आप किसी दरवाजे को खोलते हैं, तो आप उस पर बल लगा रहे हैं।</li>
@@ -3358,10 +3421,12 @@ const FAQ = () => {
           question: "2. बल कितने प्रकार के होते हैं?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> बल दो प्रकार के होते हैं:
-              <ul>
-                <li> <b style={{ color: "blue" }} >(i) संपर्क बल</b></li>
-                <li><b style={{ color: "blue" }} > (ii) असंपर्क बल</b></li>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }}> बल दो प्रकार के होते हैं:</b>
+              </p>
+              <ul className="ml-16">
+                <li> <b >(i) संपर्क बल</b></li>
+                <li><b > (ii) असंपर्क बल</b></li>
               </ul>
             </div>
           ),
@@ -3435,10 +3500,12 @@ const FAQ = () => {
           question: "9. असंपर्क बल कितने प्रकार के होते हैं?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> असंपर्क बल दो प्रकार के होते हैं:
-              <ul>
-                <li><b style={{ color: "blue" }} >(i) चुंबकीय बल</b></li>
-                <li><b style={{ color: "blue" }} >(ii) गुरुत्व बल</b></li>
+              <p> 
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color:"blue"}}> असंपर्क बल दो प्रकार के होते हैं: </b>
+              </p>
+              <ul className="ml-16">
+                <li><b >(i) चुंबकीय बल</b></li>
+                <li><b >(ii) गुरुत्व बल</b></li>
               </ul>
             </div>
           ),
@@ -3448,8 +3515,8 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> चुंबकीय बल वह बल होता है जो चुंबक के दो ध्रुवों के बीच लगता है।
-              <ul>
-                <li>जैसे:— जब आप एक चुंबक को लोहे के टुकड़े के पास लाते हैं, तो चुंबकीय बल के कारण लोहे का टुकड़ा चुंबक की ओर आकर्षित होता है।</li>
+              <ul className="ml-16">
+                <li> <b style={{color:"violet"}}> जैसे:—</b> जब आप एक चुंबक को लोहे के टुकड़े के पास लाते हैं, तो चुंबकीय बल के कारण लोहे का टुकड़ा चुंबक की ओर आकर्षित होता है।</li>
               </ul>
             </div>
           ),
@@ -3459,8 +3526,8 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> गुरुत्व बल वह बल होता है जो पृथ्वी की ओर किसी वस्तु को आकर्षित करता है।
-              <ul>
-                <li>जैसे:— जब आप कोई वस्तु ऊपर फेंकते हैं, तो वह वस्तु गुरुत्व बल के कारण नीचे गिरती है।</li>
+              <ul className="ml-16">
+                <li><b style={{color:"violet"}}> जैसे:—</b> जब आप कोई वस्तु ऊपर फेंकते हैं, तो वह वस्तु गुरुत्व बल के कारण नीचे गिरती है।</li>
               </ul>
             </div>
           ),
@@ -3597,7 +3664,7 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> कर्षण बल वह बल है जो किसी वस्तु को एक सतह पर खींचने या सरकाने के लिए लगाया जाता है।
-              <br /> जैसे:— कि एक गाड़ी को खींचने के लिए लगाया जाने वाला बल।
+              <p className="ml-16"><b style={{color:"violet"}}> जैसे:—</b> कि एक गाड़ी को खींचने के लिए लगाया जाने वाला बल।</p>
             </div>
           ),
         },
@@ -3622,7 +3689,7 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> हाँ, बल लगाकर वस्तु की आकृति बदली जा सकती है।
-              <br /> जैसे:— हवा भरे बैलून को बल लगाने से आकृति में परिवर्तन आता है।
+              <p className="ml-16"> <b style={{color:"violet"}}> जैसे:—</b> हवा भरे बैलून को बल लगाने से आकृति में परिवर्तन आता है।</p>
             </div>
           ),
         },
@@ -3630,11 +3697,13 @@ const FAQ = () => {
           question: "10. राशियाँ क्या है? यह कितने प्रकार के होते हैं?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> राशियाँ वे मात्राएँ हैं जिनका मापन किया जा सकता है।
-              <br /> राशियाँ  दो प्रकार के होते हैं:
-              <ul>
-                <li> <b style={{ color: "blue" }} >(i) अदिश राशियाँ </b> (जैसे द्रव्यमान, तापमान, समय, घनत्व आदि)</li>
-                <li> <b style={{ color: "blue" }} >(ii) सदिश राशियाँ </b>(जैसे बल, वेग, त्वरण आदि)</li>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:-</b>  राशियाँ वे मात्राएँ हैं जिनका मापन किया जा सकता है। 
+              </p>
+              <p className="ml-14 mt-1"> <b style={{color: "blue"}}> राशियाँ  दो प्रकार के होते हैं: </b></p>
+              <ul className="ml-14 mt-1">
+                <li> <b >(i) अदिश राशियाँ </b> (जैसे द्रव्यमान, तापमान, समय, घनत्व आदि)</li>
+                <li> <b >(ii) सदिश राशियाँ </b>(जैसे बल, वेग, त्वरण आदि)</li>
               </ul>
             </div>
           ),
@@ -3644,7 +3713,9 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> सदिश राशियाँ वे भौतिक राशियाँ हैं जिनके दो गुण होते हैं: परिमाण (मान) और दिशा।
-              <br /> जैसे :— बल, वेग, और त्वरण सदिश राशियाँ हैं।
+              <p className="ml-16">
+              <b style={{color:"violet"}}> जैसे:—</b> बल, वेग, और त्वरण सदिश राशियाँ हैं।
+              </p>
             </div>
           ),
         },
@@ -3653,7 +3724,9 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> अदिश राशियाँ वे भौतिक राशियाँ हैं जिनका केवल परिमाण (मान) होता है, लेकिन दिशा नहीं होती है।
-              <br /> जैसे :— द्रव्यमान, तापमान, समय, और घनत्व अदिश राशियाँ हैं।
+              <p className="ml-16">
+              <b style={{color:"violet"}}> जैसे:—</b> द्रव्यमान, तापमान, समय, और घनत्व अदिश राशियाँ हैं।
+              </p>
             </div>
           ),
         }
@@ -3733,7 +3806,8 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> ध्वनि एक माध्यम के द्वारा संचारित होती है।
-              <br /> जैसे:— कि हवा, पानी या ठोस पदार्थ।
+              <p className="ml-16"> <b style={{color:"violet"}}> जैसे:—</b> कि हवा, पानी या ठोस पदार्थ।
+              </p>
             </div>
           ),
         },
@@ -3750,7 +3824,9 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> अनावश्यक और अवांछित ध्वनि को ध्वनि प्रदूषण कहते हैं।
-              <br /> जैसे:— कि ट्रैफिक की आवाज़, फैक्ट्री की मशीनों की आवाज़, लाउडस्पीकर की तेज़ आवाज़ आदि।
+              <p className="ml-16">
+              <b style={{color:"violet"}}> जैसे:—</b> कि ट्रैफिक की आवाज़, फैक्ट्री की मशीनों की आवाज़, लाउडस्पीकर की तेज़ आवाज़ आदि।
+              </p>
             </div>
           ),
         },
@@ -3766,14 +3842,14 @@ const FAQ = () => {
           question: "12. मानव कान का बाहरी तथा आंतरिक बनावट में क्या अंतर है? वर्णन कीजिए।",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b><br /> <b style={{ color: "blue" }}>मानव कान की बाहरी बनावट में तीन मुख्य भाग होते हैं:</b>
-              <ul>
+              <b style={{ color: "green" }}>उत्तर:—</b><br /> <b style={{ color: "blue" }} className="ml-16">मानव कान की बाहरी बनावट में तीन मुख्य भाग होते हैं:</b>
+              <ul className="ml-16">
                 <li>(i) बाहरी कान: यह कान का वह हिस्सा होता है जो बाहर दिखाई देता है।</li>
                 <li>(ii) कान की नली: यह एक छोटी सी नली होती है जो बाहरी कान को कान के पर्दे से जोड़ती है।</li>
                 <li>(iii) कान का पर्दा: यह एक पतली झिल्ली होती है जो कान की नली के अंत में होती है और ध्वनि तरंगों को आंतरिक कान में भेजती है।</li>
               </ul>
-              <b style={{ color: "blue" }}>आंतरिक बनावट में तीन मुख्य भाग होते हैं:</b>
-              <ul>
+              <b style={{ color: "blue" }} className="ml-16">आंतरिक बनावट में तीन मुख्य भाग होते हैं:</b>
+              <ul className="ml-16">
                 <li>(i) कर्णावर्त: यह एक छोटी सी हड्डी होती है जो कान के पर्दे से जुड़ी होती है और ध्वनि तरंगों को आंतरिक कान में भेजती है।</li>
                 <li>(ii) अर्धचक्र: यह तीन अर्धवृत्ताकार नलियाँ होती हैं जो आंतरिक कान में होती हैं और संतुलन बनाए रखने में मदद करती हैं।</li>
                 <li>(iii) कर्णकोष: यह एक छोटी सी गुहा होती है जो आंतरिक कान में होती है और ध्वनि तरंगों को मस्तिष्क तक पहुँचाने में मदद करती है।</li>
@@ -3808,10 +3884,10 @@ const FAQ = () => {
           question: "2. सुचालक क्या है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> सुचालक एक ऐसा पदार्थ है जो विद्युत धारा को बिना किसी प्रतिरोध के प्रवाहित करने देता है।
+              <b style={{ color: "green" }}>उत्तर:-</b> सुचालक एक ऐसा पदार्थ है जो विद्युत धारा को बिना किसी प्रतिरोध के प्रवाहित करने देता है।
               <br />
-              <b style={{ color: "blue" }}>सुचालकों की विशेषताएं निम्नलिखित हैं:</b>
-              <ul className="list-disc ml-6 text-blue-600">
+              <b style={{ color: "blue" }} className="ml-16">सुचालकों की विशेषताएं निम्नलिखित हैं:</b>
+              <ul className="list-disc ml-16 text-blue-600">
                 <li>सुचालकों में इलेक्ट्रॉनों की गति स्वतंत्र होती है।</li>
                 <li>वे विद्युत धारा को आसानी से प्रवाहित करने देते हैं।</li>
                 <li>उदाहरण के लिए, तांबा, चांदी और सोना अच्छे सुचालक हैं।</li>
@@ -3832,7 +3908,9 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> विद्युत धारा के रासायनिक प्रभाव से तात्पर्य है विद्युत धारा के कारण रासायनिक परिवर्तनों की प्रक्रिया से। जब विद्युत धारा किसी विलयन या पदार्थ से गुजरती है, तो यह रासायनिक अभिक्रियाओं को उत्पन्न कर सकती है।
-              <br /> जैसे:— कि विद्युत अपघटन।
+              <p> 
+              <b style={{color:"violet"}} className="ml-16"> जैसे:—</b> कि विद्युत अपघटन।
+              </p>
             </div>
           ),
         },
@@ -3848,11 +3926,13 @@ const FAQ = () => {
           question: "6. विद्युत धारा प्रवाहित होने की दृष्टि से कितने तरह के पदार्थ होते हैं?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> विद्युत धारा प्रवाहित होने की दृष्टि से पदार्थ तीन प्रकार के होते हैं:
-              <ul>
-                <li> <b style={{ color: "blue" }}>(i) चालक (Conductor):</b> जैसे:— कि तांबा, चांदी, सोना आदि।</li>
-                <li> <b style={{ color: "blue" }}> (ii) अपचालक (Insulator): </b> जैसे:— कि लकड़ी, प्लास्टिक, कांच आदि।</li>
-                <li> <b style={{ color: "blue" }}> (iii) अर्धचालक (Semiconductor): </b> जैसे:— कि सिलिकॉन, जर्मेनियम आदि।</li>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color: "blue"}}> विद्युत धारा प्रवाहित होने की दृष्टि से पदार्थ तीन प्रकार के होते हैं: </b>
+              </p>
+              <ul className="ml-16">
+                <li> <b>(i) चालक (Conductor):</b> <b style={{color:"violet"}}> जैसे:—</b> कि तांबा, चांदी, सोना आदि।</li>
+                <li> <b> (ii) अपचालक (Insulator): </b> <b style={{color:"violet"}}> जैसे:—</b> कि लकड़ी, प्लास्टिक, कांच आदि।</li>
+                <li> <b> (iii) अर्धचालक (Semiconductor): </b> <b style={{color:"violet"}}> जैसे:—</b> कि सिलिकॉन, जर्मेनियम आदि।</li>
               </ul>
             </div>
           ),
@@ -3861,13 +3941,15 @@ const FAQ = () => {
           question: "7. सुचालक एवं अल्पचालकों में क्या अंतर है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> सुचालक और अल्पचालक में निम्नलिखित अंतर हैं:
-              <ul>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:-</b> <b style={{color: "blue"}}> सुचालक और अल्पचालक में निम्नलिखित अंतर हैं: </b>
+              </p>
+              <ul className="ml-14">
                 <li>
-                  <b style={{ color: "blue" }} >सुचालक:</b> विद्युत धारा को आसानी से प्रवाहित करते हैं। इलेक्ट्रॉनों की गति स्वतंत्र होती है। उदाहरण: तांबा, चांदी, सोना आदि।
+                  <b style={{ color: "red" }} >सुचालक:</b> विद्युत धारा को आसानी से प्रवाहित करते हैं। इलेक्ट्रॉनों की गति स्वतंत्र होती है। उदाहरण: तांबा, चांदी, सोना आदि।
                 </li>
                 <li>
-                  <b style={{ color: "blue" }}>अल्पचालक:</b> विद्युत धारा को कम प्रतिरोध के साथ प्रवाहित करते हैं। इलेक्ट्रॉनों की गति सीमित होती है। उदाहरण: कार्बन, सिलिकॉन, जर्मेनियम आदि।
+                  <b style={{ color: "red" }}>अल्पचालक:</b> विद्युत धारा को कम प्रतिरोध के साथ प्रवाहित करते हैं। इलेक्ट्रॉनों की गति सीमित होती है। उदाहरण: कार्बन, सिलिकॉन, जर्मेनियम आदि।
                 </li>
               </ul>
             </div>
@@ -3904,27 +3986,29 @@ const FAQ = () => {
               <b style={{ color: "green" }}>उत्तर:—</b> परमाणु एक रसायनिक तत्व की मूलभूत इकाई है, जो उस तत्व के सभी गुणों को प्रदर्शित करती है। यह एक अत्यधिक छोटी इकाई है।
               <br />
               परमाणु तीन मुख्य घटकों से बनी होती है:
-              <ul>
+              <ul className="ml-16 mt-2">
                 <li>
-                  (i) <b style={{ color: "blue" }}>प्रोटॉन (Proton):</b> प्रोटॉन एक धनात्मक आवेश वाला कण होता है, जो परमाणु के नाभिक में स्थित होता है।
+                 <b> (i) प्रोटॉन (Proton):</b> प्रोटॉन एक धनात्मक आवेश वाला कण होता है, जो परमाणु के नाभिक में स्थित होता है।
                 </li>
                 <li>
-                  (ii) <b style={{ color: "blue" }}>न्यूट्रॉन (Neutron):</b> न्यूट्रॉन एक तटस्थ आवेश वाला कण होता है, जो परमाणु के नाभिक में प्रोटॉन के साथ स्थित होता है।
+                   <b>(ii) न्यूट्रॉन (Neutron):</b> न्यूट्रॉन एक तटस्थ आवेश वाला कण होता है, जो परमाणु के नाभिक में प्रोटॉन के साथ स्थित होता है।
                 </li>
                 <li>
-                  (iii) <b style={{ color: "blue" }}>इलेक्ट्रॉन (Electron):</b> इलेक्ट्रॉन एक ऋणात्मक आवेश वाला कण होता है, जो परमाणु के नाभिक के चारों ओर परिक्रमा करता है।
+                   <b>(iii) इलेक्ट्रॉन (Electron):</b> इलेक्ट्रॉन एक ऋणात्मक आवेश वाला कण होता है, जो परमाणु के नाभिक के चारों ओर परिक्रमा करता है।
                 </li>
               </ul>
-              परमाणु मुख्य रूप से तीन प्रकार के होते हैं:
-              <ul>
+              <p className="ml-16 mt-2">
+                <b style={{color: "blue"}}> परमाणु मुख्य रूप से तीन प्रकार के होते हैं:</b>
+              </p>
+              <ul className="ml-16">
                 <li>
-                  (i) <b style={{ color: "blue" }}>साधारण परमाणु (Ordinary Atom):</b> यह परमाणु एक निश्चित संख्या में प्रोटॉन, न्यूट्रॉन और इलेक्ट्रॉन से बना होता है। उदाहरण: हाइड्रोजन (H) का परमाणु एक प्रोटॉन और एक इलेक्ट्रॉन से बना होता है।
+                   <b>(i) साधारण परमाणु (Ordinary Atom):</b> यह परमाणु एक निश्चित संख्या में प्रोटॉन, न्यूट्रॉन और इलेक्ट्रॉन से बना होता है। <b style={{color:"violet"}}> उदाहरण:</b>  हाइड्रोजन (H) का परमाणु एक प्रोटॉन और एक इलेक्ट्रॉन से बना होता है।
                 </li>
                 <li>
-                  (ii) <b style={{ color: "blue" }}>आइसोटोप (Isotope):</b> यह परमाणु एक ही तत्व के दो या अधिक परमाणु होते हैं, जिनके प्रोटॉन की संख्या समान होती है, लेकिन न्यूट्रॉन की संख्या अलग-अलग होती है। उदाहरण: कार्बन-12 (C-12) और कार्बन-14 (C-14) दो आइसोटोप हैं, जिनके प्रोटॉन की संख्या समान होती है, लेकिन न्यूट्रॉन की संख्या अलग-अलग होती है।
+                   <b>(ii) आइसोटोप (Isotope):</b> यह परमाणु एक ही तत्व के दो या अधिक परमाणु होते हैं, जिनके प्रोटॉन की संख्या समान होती है, लेकिन न्यूट्रॉन की संख्या अलग-अलग होती है। <b style={{color:"violet"}}> उदाहरण:</b> कार्बन-12 (C-12) और कार्बन-14 (C-14) दो आइसोटोप हैं, जिनके प्रोटॉन की संख्या समान होती है, लेकिन न्यूट्रॉन की संख्या अलग-अलग होती है।
                 </li>
                 <li>
-                  (iii) <b style={{ color: "blue" }}>आयन (Ion):</b> यह परमाणु एक या अधिक इलेक्ट्रॉनों को प्राप्त या खो देने के कारण बनता है, जिससे उसका आवेश बदल जाता है। उदाहरण: सोडियम (Na) का परमाणु एक इलेक्ट्रॉन खो देने पर सोडियम आयन (Na⁺) बनता है।
+                   <b>(iii) आयन (Ion):</b> यह परमाणु एक या अधिक इलेक्ट्रॉनों को प्राप्त या खो देने के कारण बनता है, जिससे उसका आवेश बदल जाता है। <b style={{color:"violet"}}> उदाहरण:</b> सोडियम (Na) का परमाणु एक इलेक्ट्रॉन खो देने पर सोडियम आयन (Na⁺) बनता है।
                 </li>
               </ul>
             </div>
@@ -4250,8 +4334,10 @@ const FAQ = () => {
           question: " 2. छाया बनने के लिए किन चीजों का होना आवश्यक है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर :—</b> छाया बनने के लिए तीन चीजों का होना आवश्यक है:
-              <ul>
+              <p>
+              <b style={{ color: "green" }}>उत्तर :—</b> <b style={{color: "blue"}}> छाया बनने के लिए तीन चीजों का होना आवश्यक है: </b>
+              </p>
+              <ul className="ml-16">
                 <li>(i) प्रकाश: प्रकाश के बिना छाया नहीं बन सकती है।</li>
                 <li>(ii) वस्तु: वस्तु के बिना छाया नहीं बन सकती है।</li>
                 <li>(iii) पृष्ठभूमि: पृष्ठभूमि के बिना छाया नहीं दिखाई देती है।</li>
@@ -4264,8 +4350,9 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> जिस वस्तु से प्रकाश निकलता है उसे प्रकाश स्रोत कहते हैं।
-              <br />
-              जैसे:— सूर्य, लालटेन, टॉर्च इत्यादि
+              <p className="ml-16">
+              <b style={{color:"violet"}}> जैसे:—</b> सूर्य, लालटेन, टॉर्च इत्यादि
+              </p>
             </div>
           ),
         },
@@ -4273,10 +4360,12 @@ const FAQ = () => {
           question: " 4. प्रकाश स्रोत कितने प्रकार के होते हैं?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> प्रकाश स्रोत दो प्रकार के होते हैं:
-              <ul>
-                <li>(i) प्राकृतिक प्रकाश स्रोत:— वैसा प्रकाश स्रोत जिसका निर्माण मानव द्वारा नहीं किया गया हो, प्राकृतिक प्रकाश स्रोत कहलाते हैं। जैसे:— सूर्य, तारे इत्यादि।</li>
-                <li>(ii) मानव निर्मित प्रकाश स्रोत:— वैसा प्रकाश स्रोत जिसका निर्माण मानव द्वारा किया गया हो, मानव निर्मित प्रकाश स्रोत कहलाता है। जैसे:— मोमबत्ती, लालटेन, बिजली इत्यादि।</li>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color:"blue"}}>  प्रकाश स्रोत दो प्रकार के होते हैं: </b>
+              </p>
+              <ul className="ml-16">
+                <li> <b> (i) प्राकृतिक प्रकाश स्रोत:— </b> वैसा प्रकाश स्रोत जिसका निर्माण मानव द्वारा नहीं किया गया हो, प्राकृतिक प्रकाश स्रोत कहलाते हैं। <p> <b style={{color:"violet"}}> जैसे:—</b> सूर्य, तारे इत्यादि।</p></li>
+                <li> <b> (ii) मानव निर्मित प्रकाश स्रोत:— </b> वैसा प्रकाश स्रोत जिसका निर्माण मानव द्वारा किया गया हो, मानव निर्मित प्रकाश स्रोत कहलाता है। <p> <b style={{color:"violet"}}> जैसे:—</b> मोमबत्ती, लालटेन, बिजली इत्यादि। </p> </li>
               </ul>
             </div>
           ),
@@ -4397,8 +4486,10 @@ const FAQ = () => {
           question: " 19. प्रकाश के परावर्तन के कितने नियम है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> प्रकाश के परावर्तन के दो नियम हैं:
-              <ul>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color:"blue"}}>  प्रकाश के परावर्तन के दो नियम हैं: </b>
+              </p>
+              <ul className="ml-16">
                 <li>(i) आपतित किरण, परावर्तित किरण तथा आपतन बिंदु पर डाला गया अभिलंब तीनों एक ही समतल में होते हैं।</li>
                 <li>(ii) आपतन कोण और परावर्तन कोण बराबर होते हैं।</li>
               </ul>
@@ -4410,15 +4501,17 @@ const FAQ = () => {
           question: " 20. आप अपनी आँखों की देखभाल कैसे करेंगे?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> आँखों की देखभाल करने के लिए निम्नलिखित बातों का ध्यान रखना चाहिए:
-              <ul>
-                <li>नियमित जाँच: अपनी आँखों की नियमित जाँच करवाएं। इससे आपको अपनी आँखों की समस्याओं का पता लगाने में मदद मिलेगी।</li>
-                <li>स्वच्छता: अपनी आँखों को नियमित रूप से साफ करें। इससे आपकी आँखों में धूल और गंदगी जमा नहीं होगी।</li>
-                <li>सूरज की रोशनी से बचाव: सूरज की रोशनी से अपनी आँखों का बचाव करें। सूरज की रोशनी में यूवी किरणें होती हैं जो आपकी आँखों को नुकसान पहुँचा सकती हैं।</li>
-                <li>आहार: अपने आहार में विटामिन ए और ओमेगा-3 फैटी एसिड युक्त खाद्य पदार्थों को शामिल करें। ये पोषक तत्व आपकी आँखों के लिए फायदेमंद होते हैं।</li>
-                <li>धूम्रपान से बचाव: धूम्रपान से अपनी आँखों का बचाव करें। धूम्रपान आपकी आँखों को नुकसान पहुँचा सकता है।</li>
-                <li>नींद: पर्याप्त नींद लें। नींद की कमी आपकी आँखों को थका सकती है।</li>
-                <li>आँखों का व्यायाम: अपनी आँखों का व्यायाम करें। इससे आपकी आँखों की मांसपेशियाँ मजबूत होंगी।</li>
+            <p >
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color: "blue"}}> आँखों की देखभाल करने के लिए निम्नलिखित बातों का ध्यान रखना चाहिए:</b>
+              </p>
+              <ul className="ml-16 ">
+                <li> <b>नियमित जाँच: </b>अपनी आँखों की नियमित जाँच करवाएं। इससे आपको अपनी आँखों की समस्याओं का पता लगाने में मदद मिलेगी।</li>
+                <li> <b>स्वच्छता: </b>अपनी आँखों को नियमित रूप से साफ करें। इससे आपकी आँखों में धूल और गंदगी जमा नहीं होगी।</li>
+                <li> <b>सूरज की रोशनी से बचाव: </b> सूरज की रोशनी से अपनी आँखों का बचाव करें। सूरज की रोशनी में यूवी किरणें होती हैं जो आपकी आँखों को नुकसान पहुँचा सकती हैं।</li>
+                <li> <b>आहार: </b> अपने आहार में विटामिन ए और ओमेगा-3 फैटी एसिड युक्त खाद्य पदार्थों को शामिल करें। ये पोषक तत्व आपकी आँखों के लिए फायदेमंद होते हैं।</li>
+                <li> <b>धूम्रपान से बचाव: </b> धूम्रपान से अपनी आँखों का बचाव करें। धूम्रपान आपकी आँखों को नुकसान पहुँचा सकता है।</li>
+                <li> <b>नींद: </b> पर्याप्त नींद लें। नींद की कमी आपकी आँखों को थका सकती है।</li>
+                <li> <b>आँखों का व्यायाम:</b> अपनी आँखों का व्यायाम करें। इससे आपकी आँखों की मांसपेशियाँ मजबूत होंगी।</li>
               </ul>
             </div>
           ),
@@ -4594,8 +4687,8 @@ const FAQ = () => {
           question: " 12. सौरमंडल में ग्रहों की संख्या क्रमावली बताइये?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> सौरमंडल में ग्रहों की संख्या और उनकी क्रमावली निम्नलिखित है:
-              <ul>
+              <b style={{ color: "green" }}>उत्तर:-</b> सौरमंडल में ग्रहों की संख्या और उनकी क्रमावली निम्नलिखित है:
+              <ul className="ml-16 list-decimal">
                 <li>बुध</li>
                 <li>शुक्र</li>
                 <li>पृथ्वी</li>
@@ -4621,7 +4714,7 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> पृथ्वी पर जीवन होने के मुख्य कारण हैं:
-              <ul>
+              <ul className="ml-16">
                 <li>ठीक तापमान</li>
                 <li>जल की उपलब्धता</li>
                 <li>उपयुक्त वायुमंडल</li>

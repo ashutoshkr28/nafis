@@ -4987,10 +4987,10 @@ const QuestionAnswer = ({ faq, questionNumber }) => {
 
   return (
     <div className="border-b-2 border-gray-300 pb-8 cursor-pointer">
-      <h3 className="text-lg font-bold text-red-600 flex justify-between items-center mt-2">
+      <h3 className="text-xl font-bold text-red-600 flex justify-between items-center mt-2">
         {`प्रश्‍न: ${faq.question}`}
       </h3>
-      {isOpen || <div className="text-gray-600 mt-4">{faq.answer}</div>}
+      {isOpen || <div className="text-gray-600 mt-4 text-xl">{faq.answer}</div>}
     </div>
   );
 };

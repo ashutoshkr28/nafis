@@ -1,4 +1,4 @@
-
+import newnafis from "./newnafis.png"
 import log from "./logo.png"
 import nafis1 from "./nafis1.png"
 import nafis2 from "./nafis2.png"
@@ -35,6 +35,7 @@ import email_icon from './email_icon.png'
 import upload_area from './upload_area.png'
 
 export const assets = {
+    newnafis,
     log,
     nafis1,
     nafis2,

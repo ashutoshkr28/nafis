@@ -1,11 +1,17 @@
+import { assets } from "@/assets/assets";
 import { Skeleton } from "@/components/ui/skeleton";
+import Image from "next/image";
 
 
 const Loading = () => {
     return(
         <div className="w-full min-h-screen ">
 
-        <Skeleton> <b style={{color: "green"}}> Please Wait</b></Skeleton>
+        <Skeleton> 
+            <div className="mt-10 ml-10">
+            <Image href = {assets.newnafis}></Image>
+            </div>
+            </Skeleton>
         </div>
     )
 }

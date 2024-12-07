@@ -1496,7 +1496,7 @@ const FAQ = () => {
                   <tr className="hover:bg-gray-50">
                     <td className="border border-gray-400 px-4  py-4 ">(V)धातुओं के ऑक्साइड क्षारीय होते हैं।</td>
                     <td className="border border-gray-400 px-4  py-4 ">(V)अधातुओं के ऑक्साइड अम्लीय होते हैं।</td>
-                  </tr>
+                  </tr> 
                   <tr className="hover:bg-gray-50">
                     <td className="border border-gray-400 px-4  py-4 "> <b className="text-sm"><b style={{color:"violet"}}> उदाहरण:</b>  लोहा, तांबा, एल्युमिनियम, सोना, चांदी। </b></td>
                     <td className="border border-gray-400 px-4  py-4 "> <b className="text-sm"><b style={{color:"violet"}}> उदाहरण:</b> कार्बन, सल्फर, ऑक्सीजन, नाइट्रोजन। </b></td>
@@ -2504,10 +2504,10 @@ const FAQ = () => {
               </p>
              <ol className="ml-16">
               <li>
-              <b style={{color: "violet"}}>दहन:</b> दहन एक रासायनिक प्रतिक्रिया है जिसमें कोई पदार्थ ऑक्सीजन की उपस्थिति में जलता है और ऊर्जा का उत्पादन करता है। इसमें ताप और प्रकाश का उत्पादन होता है।
+              <b style={{color: "violet"}}>(I) दहन:</b> दहन एक रासायनिक प्रतिक्रिया है जिसमें कोई पदार्थ ऑक्सीजन की उपस्थिति में जलता है और ऊर्जा का उत्पादन करता है। इसमें ताप और प्रकाश का उत्पादन होता है।
               </li>
              <li>
-              <b style={{color: "violet"}}>जंग लगना:</b> जंग लगना एक रासायनिक प्रतिक्रिया है जिसमें धातु ऑक्सीजन और नमी की उपस्थिति में क्षय होती है। इसमें धातु का ऑक्साइड बनता है और धातु की सतह पर जंग की परत बन जाती है।
+              <b style={{color: "violet"}}>(II) जंग लगना:</b> जंग लगना एक रासायनिक प्रतिक्रिया है जिसमें धातु ऑक्सीजन और नमी की उपस्थिति में क्षय होती है। इसमें धातु का ऑक्साइड बनता है और धातु की सतह पर जंग की परत बन जाती है।
               </li>
               </ol>
             </div>
@@ -2578,13 +2578,13 @@ const FAQ = () => {
           question: " 3. पौधों और जंतुओं के संरक्षण के लिए हम क्या कर सकते हैं?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> पौधों और जंतुओं के संरक्षण के लिए हम कई कदम उठा सकते हैं, जैसे कि:
+              <b style={{ color: "green" }}>उत्तर:—</b> पौधों और जंतुओं के संरक्षण के लिए हम कई कदम उठा सकते हैं, <br /> <span style={{color: "violet"}} className=" ml-16"> जैसे कि: </span>
               <ul className=" ml-16">
-                <li>पेड़ों को लगाना और उनकी देखभाल करना।</li>
-                <li>जंतुओं के आवासों की रक्षा करना।</li>
-                <li>प्रदूषण को कम करना।</li>
-                <li>जंतुओं के शोषण को रोकना।</li>
-                <li>संरक्षण के प्रयासों में भाग लेना।</li>
+                <li>(I) पेड़ों को लगाना और उनकी देखभाल करना।</li>
+                <li>(II) जंतुओं के आवासों की रक्षा करना।</li>
+                <li > (III)  प्रदूषण को कम करना।</li>
+                <li>(IV) जंतुओं के शोषण को रोकना।</li>
+                <li>(V)  संरक्षण के प्रयासों में भाग लेना।</li>
               </ul>
             </div>
           ),
@@ -3280,29 +3280,42 @@ const FAQ = () => {
             </div>
           ),
         },
+
+
+
         {
           question: "8. किशोरावस्था, बाल्यावस्था से किस प्रकार भिन्न है?",
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> किशोरावस्था और बाल्यावस्था में कई अंतर हैं:
-              <ul>
-                <li><b style={{ color: "blue" }} >बाल्यावस्था (6-10 वर्ष):</b>
-                  <ul>
-                    <li>शारीरिक विकास धीमा होता है।</li>
-                    <li>मानसिक विकास तेजी से होता है।</li>
-                    <li>बच्चे अधिक आश्रित होते हैं।</li>
-                    <li>यौन विकास नहीं होता है।</li>
-                  </ul>
-                </li>
-                <li><b style={{ color: "blue" }} >किशोरावस्था (11-19 वर्ष):</b>
-                  <ul>
-                    <li>शारीरिक विकास तेजी से होता है।</li>
-                    <li>मानसिक विकास भी तेजी से होता है।</li>
-                    <li>किशोर अधिक स्वतंत्र होते हैं।</li>
-                    <li>यौन विकास होता है और यौन परिपक्वता प्राप्त होती है।</li>
-                  </ul>
-                </li>
-              </ul>
+                 <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
+             <thead>
+              <tr className="bg-indigo-100">
+               <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center"><b > बाल्यावस्था (6-10 वर्ष): </b></th>
+               <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center "> <b>किशोरावस्था (11-19 वर्ष): </b></th>
+             </tr>
+           </thead>
+           <tbody className="bg-white">
+             <tr className="hover:bg-gray-50">
+               <td className="border border-gray-400 px-4  py-4 ">(I) शारीरिक विकास धीमा होता है।</td>
+               <td className="border border-gray-400 px-4 py-4">(I) शारीरिक विकास तेजी से होता है।</td>
+             </tr>
+             <tr className="hover:bg-gray-50">
+               <td className="border border-gray-400 px-4  py-4">(II) मानसिक विकास तेजी से होता है।</td>
+               <td className="border border-gray-400 px-4  py-4">(II) मानसिक विकास भी तेजी से होता है।</td>
+             </tr>
+             <tr className="hover:bg-gray-50">
+               <td className="border border-gray-400 px-4  py-4">(III)  बच्चे अधिक आश्रित होते हैं।</td>
+               <td className="border border-gray-400 px-4  py-4">(III) किशोर अधिक स्वतंत्र होते हैं। </td>
+             </tr>
+                   <tr className="hover:bg-gray-50">
+                   <td className="border border-gray-400 px-4  py-4">(IV)  यौन विकास नहीं होता है।</td>
+                   <td className="border border-gray-400 px-4  py-4">(IV) यौन विकास होता है और यौन परिपक्वता प्राप्त होती है। </td>
+               </tr>
+
+         </tbody>
+         </table>
+
             </div>
           ),
         },
@@ -3330,29 +3343,39 @@ const FAQ = () => {
             </div>
           ),
         },
+      
         {
           question: "12. शारीरिक बनावट में किस प्रकार परिवर्तन आते हैं?",
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> शारीरिक बनावट में निम्न परिवर्तन आते हैं:
-              <ul>
-                <li><b style={{ color: "blue" }} >लड़कों में:</b>
-                  <ul>
-                    <li>लंबाई और वजन में वृद्धि</li>
-                    <li>मांसपेशियों का विकास</li>
-                    <li>आवाज़ में गहरापन</li>
-                    <li>दाढ़ी और मूंछों का उगना</li>
-                  </ul>
-                </li>
-                <li><b style={{ color: "blue" }}>लड़कियों में:</b>
-                  <ul>
-                    <li>लंबाई और वजन में वृद्धि</li>
-                    <li>स्तनों का विकास</li>
-                    <li>कूल्हों और जांघों का विकास</li>
-                    <li>मासिक धर्म की शुरुआत</li>
-                  </ul>
-                </li>
-              </ul>
+              <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
+             <thead>
+              <tr className="bg-indigo-100">
+               <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center"><b > लड़कों में: </b></th>
+               <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center "> <b>लड़कियों में: </b></th>
+             </tr>
+           </thead>
+           <tbody className="bg-white">
+             <tr className="hover:bg-gray-50">
+               <td className="border border-gray-400 px-4  py-4 ">(I) लंबाई और वजन में वृद्धि।</td>
+               <td className="border border-gray-400 px-4 py-4">(I) लंबाई और वजन में वृद्धि।</td>
+             </tr>
+             <tr className="hover:bg-gray-50">
+               <td className="border border-gray-400 px-4  py-4">(II) मांसपेशियों का विकास।</td>
+               <td className="border border-gray-400 px-4  py-4">(II) स्तनों का विकास।</td>
+             </tr>
+             <tr className="hover:bg-gray-50">
+               <td className="border border-gray-400 px-4  py-4">(III)  आवाज़ में गहरापन।</td>
+               <td className="border border-gray-400 px-4  py-4">(III) कूल्हों और जांघों का विकास। </td>
+             </tr>
+                   <tr className="hover:bg-gray-50">
+                   <td className="border border-gray-400 px-4  py-4">(IV)  दाढ़ी और मूंछों का उगना।</td>
+                   <td className="border border-gray-400 px-4  py-4">(IV) मासिक धर्म की शुरुआत। </td>
+               </tr>
+
+         </tbody>
+         </table>
             </div>
           ),
         },
@@ -3372,27 +3395,35 @@ const FAQ = () => {
             </div>
           ),
         },
+       
         {
           question: "14. मानसिक एवं संवेदनात्मक विकास किस प्रकार होता है?",
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> मानसिक एवं संवेदनात्मक विकास निम्न हैं:
-              <ul>
-                <li><b style={{ color: "blue" }} >मानसिक विकास:</b>
-                  <ul>
-                    <li>सोच और समझ में सुधार</li>
-                    <li>समस्याओं का समाधान करने में सुधार</li>
-                    <li>निर्णय लेने में सुधार</li>
-                  </ul>
-                </li>
-                <li><b style={{ color: "blue" }} >संवेदनात्मक विकास:</b>
-                  <ul>
-                    <li>भावनाओं को समझने और नियंत्रित करने में सुधार</li>
-                    <li>दूसरों की भावनाओं को समझने में सुधार</li>
-                    <li>सामाजिक और रिश्तों में सुधार</li>
-                  </ul>
-                </li>
-              </ul>
+              <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
+             <thead>
+              <tr className="bg-indigo-100">
+               <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center"><b > मानसिक विकास: </b></th>
+               <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center "> <b>संवेदनात्मक विकास: </b></th>
+             </tr>
+           </thead>
+           <tbody className="bg-white">
+             <tr className="hover:bg-gray-50">
+               <td className="border border-gray-400 px-4  py-4 ">(I) सोच और समझ में सुधार</td>
+               <td className="border border-gray-400 px-4 py-4">(I) भावनाओं को समझने और नियंत्रित करने में सुधार</td>
+             </tr>
+             <tr className="hover:bg-gray-50">
+               <td className="border border-gray-400 px-4  py-4">(II) समस्याओं का समाधान करने में सुधार</td>
+               <td className="border border-gray-400 px-4  py-4">(II) दूसरों की भावनाओं को समझने में सुधार</td>
+             </tr>
+             <tr className="hover:bg-gray-50">
+               <td className="border border-gray-400 px-4  py-4">(III)  निर्णय लेने में सुधार</td>
+               <td className="border border-gray-400 px-4  py-4">(III) सामाजिक और रिश्तों में सुधार </td>
+               </tr>
+
+         </tbody>
+         </table>
             </div>
           ),
         },
@@ -4542,7 +4573,7 @@ const FAQ = () => {
           question: " 22. यदि परावर्तित किरण आपतित किरण से 90⁰ का कोण बनाये तो आपतन कोण का मान कितना होगा?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> आपतन कोण का मान 45⁰ होगा।
+              <b style={{ color: "green" }}>उत्तर:—</b> आपतन कोण का मान <b> 45⁰ </b> होगा।
             </div>
           ),
         },
@@ -4641,11 +4672,11 @@ const FAQ = () => {
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> मंगल, बृहस्पति और शनि सौर परिवार के तीन महत्वपूर्ण ग्रह हैं:
               <br />
-              <span style={{ color: "blue" }}>मंगल:</span> मंगल सौर परिवार का चौथा ग्रह है। इसका आकार छोटा है और इसकी सतह पर पहाड़, घाटियाँ और रेगिस्तान हैं।
+              <span style={{ color: "blue" }}>(I) मंगल:</span> मंगल सौर परिवार का चौथा ग्रह है। इसका आकार छोटा है और इसकी सतह पर पहाड़, घाटियाँ और रेगिस्तान हैं।
               <br />
-              <span style={{ color: "blue" }}>बृहस्पति:</span> बृहस्पति सौर परिवार का सबसे बड़ा ग्रह है। इसका आकार बहुत बड़ा है और इसकी सतह पर गैसें और तरल पदार्थ हैं।
+              <span style={{ color: "blue" }}>(II) बृहस्पति:</span> बृहस्पति सौर परिवार का सबसे बड़ा ग्रह है। इसका आकार बहुत बड़ा है और इसकी सतह पर गैसें और तरल पदार्थ हैं।
               <br />
-              <span style={{ color: "blue" }}>शनि:</span> शनि सौर परिवार का छठा ग्रह है। इसका आकार बड़ा है और इसकी सतह पर गैसें और तरल पदार्थ हैं। इसके चारों ओर वलय हैं जो बर्फ और चट्टानों से बने हैं।
+              <span style={{ color: "blue" }}>(III) शनि:</span> शनि सौर परिवार का छठा ग्रह है। इसका आकार बड़ा है और इसकी सतह पर गैसें और तरल पदार्थ हैं। इसके चारों ओर वलय हैं जो बर्फ और चट्टानों से बने हैं।
             </div>
           ),
         },
@@ -4702,15 +4733,15 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:-</b> सौरमंडल में ग्रहों की संख्या और उनकी क्रमावली निम्नलिखित है:
-              <ul className="ml-16 list-decimal">
-                <li>बुध</li>
-                <li>शुक्र</li>
-                <li>पृथ्वी</li>
-                <li>मंगल</li>
-                <li>बृहस्पति</li>
-                <li>शनि</li>
-                <li>यूरेनस</li>
-                <li>नेप्च्यून</li>
+              <ul className="ml-14 list-none text-blue-600">
+                <li>(I) बुध</li>
+                <li>(II) शुक्र</li>
+                <li>(III) पृथ्वी</li>
+                <li>(IV) मंगल</li>
+                <li>(V) बृहस्पति</li>
+                <li>(VI) शनि</li>
+                <li>(VII) यूरेनस</li>
+                <li>(VIII) नेप्च्यून</li>
               </ul>
             </div>
           ),
@@ -4727,12 +4758,14 @@ const FAQ = () => {
           question: " 14. पृथ्वी पर जीवन होने का क्या कारण है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> पृथ्वी पर जीवन होने के मुख्य कारण हैं:
-              <ul className="ml-16">
-                <li>ठीक तापमान</li>
-                <li>जल की उपलब्धता</li>
-                <li>उपयुक्त वायुमंडल</li>
-                <li>सूर्य से सही दूरी</li>
+              <p>
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}> पृथ्वी पर जीवन होने के मुख्य कारण हैं:</span>
+              </p>
+              <ul className="ml-16 text-red-500">
+                <li>(I) ठीक तापमान</li>
+                <li>(II) जल की उपलब्धता</li>
+                <li>(III) उपयुक्त वायुमंडल</li>
+                <li>(IV) सूर्य से सही दूरी</li>
               </ul>
             </div>
           ),
@@ -4813,7 +4846,8 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> वायु के संघटक वायु गैसों का मिश्रण है जिसमें 78% नाइट्रोजन 21% ऑक्सीजन 1% अन्य गैस
-              जैसे:— <span style={{ color: "blue" }}>कार्बन डाइऑक्साइड, कार्बन मोनोऑक्साइड, जल–कण, आर्गन, मेथेन</span> इत्यादि।
+              <br />
+             <b style={{color:"violet"}}> जैसे:—</b> <span style={{ color: "blue" }}>कार्बन डाइऑक्साइड, कार्बन मोनोऑक्साइड, जल–कण, आर्गन, मेथेन</span> इत्यादि।
             </div>
           ),
         },
@@ -4845,13 +4879,13 @@ const FAQ = () => {
           question: " 5. धुएँ के मुख्य कारण है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> धुएँ के मुख्य कारण निम्न है:
-              <ul>
-                <li><span style={{ color: "blue" }}>वाहनों का धुँआ</span></li>
-                <li><span style={{ color: "blue" }}>फैक्ट्रियों और उद्योगों का धुँआ</span></li>
-                <li><span style={{ color: "blue" }}>जंगलों की आग</span></li>
-                <li><span style={{ color: "blue" }}>कूड़ा-कचरा जलाना</span></li>
-                <li><span style={{ color: "blue" }}>वायु प्रदूषण</span></li>
+              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color:"blue"}}> धुएँ के मुख्य कारण निम्न है:</b>
+              <ul className="ml-16">
+                <li><span style={{ color: "red" }}>(I) वाहनों का धुँआ</span></li>
+                <li><span style={{ color: "red" }}>(II) फैक्ट्रियों और उद्योगों का धुँआ</span></li>
+                <li><span style={{ color: "red" }}>(III) जंगलों की आग</span></li>
+                <li><span style={{ color: "red" }}>(IV) कूड़ा-कचरा जलाना</span></li>
+                <li><span style={{ color: "red" }}>(V) वायु प्रदूषण</span></li>
               </ul>
             </div>
           ),
@@ -4933,40 +4967,63 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> अम्ल वर्षा एक प्रकार की वर्षा है जिसमें वायुमंडल में उपस्थित अम्लीय गैसें वर्षा के साथ पृथ्वी पर गिरती हैं।
-              <ul>
-                <li><span style={{ color: "blue" }}>पारिस्थितिकी तंत्र को नुकसान</span></li>
-                <li><span style={{ color: "blue" }}>जल स्रोतों का प्रदूषण</span></li>
-                <li><span style={{ color: "blue" }}>मिट्टी का प्रदूषण</span></li>
-                <li><span style={{ color: "blue" }}>स्वास्थ्य पर प्रभाव</span></li>
-                <li><span style={{ color: "blue" }}>आर्थिक नुकसान</span></li>
+              <ul className="ml-16">
+                <li><span style={{ color: "blue" }}>(I) पारिस्थितिकी तंत्र को नुकसान</span></li>
+                <li><span style={{ color: "blue" }}>(II) जल स्रोतों का प्रदूषण</span></li>
+                <li><span style={{ color: "blue" }}>(III) मिट्टी का प्रदूषण</span></li>
+                <li><span style={{ color: "blue" }}>(IV)स्वास्थ्य पर प्रभाव</span></li>
+                <li><span style={{ color: "blue" }}>(V) आर्थिक नुकसान</span></li>
               </ul>
             </div>
           ),
         },
         {
-          question: " 16. शुद्ध वायु और प्रदूषण वायु में क्या अंतर है?",
+          question: "16. शुद्ध वायु और प्रदूषित वायु में क्या अंतर है?",
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> शुद्ध वायु और प्रदूषित वायु में निम्नलिखित अंतर हैं:
-              <ul>
-                <li><b>शुद्ध वायु:</b>
-                  <ul>
-                    <li><span style={{ color: "blue" }}>इसमें ऑक्सीजन, नाइट्रोजन और अन्य गैसें संतुलित मात्रा में होती हैं।</span></li>
-                    <li><span style={{ color: "blue" }}>इसमें कोई हानिकारक गैसें या कण नहीं होते हैं।</span></li>
-                    <li><span style={{ color: "blue" }}>यह स्वास्थ्य के लिए लाभदायक होती है और जीवन के लिए आवश्यक है।</span></li>
-                  </ul>
-                </li>
-                <li><b>प्रदूषित वायु:</b>
-                  <ul>
-                    <li><span style={{ color: "blue" }}>इसमें हानिकारक गैसें जैसे कि कार्बन मोनोऑक्साइड, सल्फर डाइऑक्साइड और नाइट्रोजन ऑक्साइड होती हैं।</span></li>
-                    <li><span style={{ color: "blue" }}>इसमें कण जैसे कि धूल, धुआं और अन्य हानिकारक पदार्थ होते हैं।</span></li>
-                    <li><span style={{ color: "blue" }}>यह स्वास्थ्य के लिए हानिकारक होती है और जीवन के लिए खतरनाक हो सकती है।</span></li>
-                  </ul>
-                </li>
-              </ul>
+              <table style={{ border: "1px solid black", borderCollapse: "collapse", width: "100%" }}>
+                <thead>
+                  <tr>
+                    <th style={{ border: "1px solid black", padding: "8px", backgroundColor: "#d4edda" }}>
+                      <b>शुद्ध वायु</b>
+                    </th>
+                    <th style={{ border: "1px solid black", padding: "8px", backgroundColor: "#f8d7da" }}>
+                      <b>प्रदूषित वायु</b>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style={{ border: "1px solid black", padding: "8px" }}>
+                    (I)  इसमें ऑक्सीजन, नाइट्रोजन और अन्य गैसें संतुलित मात्रा में होती हैं।
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "8px" }}>
+                    (I)  इसमें हानिकारक गैसें जैसे कि कार्बन मोनोऑक्साइड, सल्फर डाइऑक्साइड और नाइट्रोजन ऑक्साइड होती हैं।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "1px solid black", padding: "8px" }}>
+                    (II)  इसमें कोई हानिकारक गैसें या कण नहीं होते हैं।
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "8px" }}>
+                    (II)  इसमें धूल, धुआं और अन्य हानिकारक कण होते हैं।
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style={{ border: "1px solid black", padding: "8px" }}>
+                    (III)  यह स्वास्थ्य के लिए लाभदायक होती है और जीवन के लिए आवश्यक है।
+                    </td>
+                    <td style={{ border: "1px solid black", padding: "8px" }}>
+                    (III)  यह स्वास्थ्य के लिए हानिकारक होती है और जीवन के लिए खतरनाक हो सकती है।
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           ),
         },
+        
         {
           question: " 17. हरित गृह प्रभाव किसे कहते हैं?",
           answer: (
@@ -4980,9 +5037,9 @@ const FAQ = () => {
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> जल प्रदूषण के निम्न कारण है:
-              <ul className="ml-14 list-decimal">
-                <li><b style={{ color: "blue" }} >जैविक प्रदूषण:</b> नदियों में मलमूत्र बहाना तथा पशुओं को स्नान कराना, लाशें बहाना या अस्थि विसर्जन इत्यादि से जल प्रदूषण होता है।</li>
-                <li><b style={{ color: "blue" }} >रासायनिक प्रदूषण:</b> कई प्रकार के धात्विक पदार्थ जैसे – <span style={{ color: "blue" }}>सीसा, मरकरी, कैडमियम</span> इत्यादि जल को दूषित करते हैं। रासायनिक उर्वरकों के प्रयोग से भी जल प्रदूषण होता है।</li>
+              <ul className="ml-16 list-none">
+                <li><b style={{ color: "blue" }} >(i) जैविक प्रदूषण:</b> नदियों में मलमूत्र बहाना तथा पशुओं को स्नान कराना, लाशें बहाना या अस्थि विसर्जन इत्यादि से जल प्रदूषण होता है।</li>
+                <li><b style={{ color: "blue" }} >(ii) रासायनिक प्रदूषण:</b> कई प्रकार के धात्विक पदार्थ  <b style={{color: "violet"}}>  जैसे – </b><span style={{ color: "blue" }}>सीसा, मरकरी, कैडमियम</span> इत्यादि जल को दूषित करते हैं। रासायनिक उर्वरकों के प्रयोग से भी जल प्रदूषण होता है।</li>
               </ul>
             </div>
           ),
@@ -5001,14 +5058,14 @@ const FAQ = () => {
             <div>
               <p>
               <b style={{ color: "green" }}>उत्तर:—</b> <b style={{color: "blue"}}>  वायु प्रदूषण रोकने के उपाय निम्न है: </b></p>
-              <ul className="list-decimal ml-14">
-                <li><span style={{ color: "red" }}>वृक्षारोपण करें।</span></li>
-                <li><span style={{ color: "red" }}>सार्वजनिक परिवहन का उपयोग करें</span></li>
-                <li><span style={{ color: "red" }}>वाहनों की नियमित जांच करें।</span></li>
-                <li><span style={{ color: "red" }}>बिजली की बचत करें।</span></li>
-                <li><span style={{ color: "red" }}>कूड़ा-कचरा सही तरीके से निपटाएं।</span></li>
-                <li><span style={{ color: "red" }}>वायु प्रदूषण नियंत्रण कानून का पालन करें।</span></li>
-                <li><span style={{ color: "red" }}>वायु प्रदूषण जागरूकता अभियान चलाएं।</span></li>
+              <ul className="list-none ml-16">
+                <li><span style={{ color: "red" }}>(I) वृक्षारोपण करें।</span></li>
+                <li><span style={{ color: "red" }}>(II) सार्वजनिक परिवहन का उपयोग करें</span></li>
+                <li><span style={{ color: "red" }}>(III) वाहनों की नियमित जांच करें।</span></li>
+                <li><span style={{ color: "red" }}>(IV) बिजली की बचत करें।</span></li>
+                <li><span style={{ color: "red" }}>(V) कूड़ा-कचरा सही तरीके से निपटाएं।</span></li>
+                <li><span style={{ color: "red" }}>(VI) वायु प्रदूषण नियंत्रण कानून का पालन करें।</span></li>
+                <li><span style={{ color: "red" }}>(VII) वायु प्रदूषण जागरूकता अभियान चलाएं।</span></li>
               </ul>
             </div>
           ),

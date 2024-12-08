@@ -6,6 +6,8 @@ import Watermark from "@/components/Watermark";
 // import { Skeleton } from "@/components/ui/skeleton";
 import { Suspense } from "react";
 import Loading from "./loading";
+import Script from "next/script";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,6 +29,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Script strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-92VZM05M24"/>
+
+        <Script     id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-92VZM05M24', { page_path: window.location.pathname });
+            `,
+          }}  />
         <Navbar />  {/* Direct import */}
         <Watermark></Watermark>
         {/* <Skeleton></Skeleton> */}

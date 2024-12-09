@@ -863,10 +863,10 @@ const Navbar = () => {
         <div className="flex items-center">
           <Link href="/" onClick={handleLinkClick}>
             <Image
-              src={assets.logo}
+              src={assets.newblack}
               alt="Logo"
-              width={60}
-              height={60}
+              width={100}
+              height={85}
               className="select-none pointer-events-none"
             />
           </Link>

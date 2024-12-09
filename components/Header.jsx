@@ -54,10 +54,9 @@ const Header = () => {
 
       {/* Content Section */}
       <div className="text-center mt-6 md:mt-10 lg:mt-12 xl:mt-14">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-800">Latest Update</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-800">Welcome to Education World</h1>
         <p className="mt-4 sm:mt-6 lg:mt-8 max-w-lg mx-auto text-sm sm:text-base md:text-lg lg:text-xl">
-          New change ipsum dolor sit amet consectetur, adipisicing elit. Earum expedita itaque nostrum quasi, quam repellat perspiciatis perferendis voluptas reiciendis adipisci consequatur repudiandae?
-        </p>
+          An innovative learning platform is under development, designed to transform education with engaging resources, interactive tools, and personalized learning experiences </p>
 
         {/* Subscription Form */}
         <form className="flex justify-between items-center max-w-xs sm:max-w-md lg:max-w-lg mx-auto mt-8 md:mt-10 border border-black shadow-[-4px_4px_0px_#000000]" action="">

@@ -289,6 +289,7 @@
 
 
 "use client";
+import DefaultPage from "@/components/default-page";
 import { useState } from "react";
 
 const FAQ = () => {
@@ -5085,8 +5086,9 @@ const FAQ = () => {
 
 
   //px-6 
+  ///max-w-6xl mx-auto px-4 py-12 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12 ">
+    <div className="max-w-7xl mx-auto px-4 py-12 ">
       <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">Class 8th Science Question and Answer with Chapter Name</h1>
       {chapters.map((chapter, chapterIndex) => (
         <Chapter
@@ -5127,19 +5129,25 @@ const Chapter = ({ chapter, chapterIndex }) => {
 
   return (
     <div className="border border-gray-300 rounded-lg mb-4">
+
       <h2
         className="text-xl font-semibold bg-indigo-200 px-4 py-2 cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
         {`अध्याय ${chapterIndex}: ${chapter.chapterName}`}
       </h2>
+      <DefaultPage></DefaultPage>
+
       {isOpen && (
         <div className="px-4 py-2">
           {chapter.questions.map((faq, questionIndex) => (
             <QuestionAnswer key={questionIndex} faq={faq} />
           ))}
+
         </div>
+
       )}
+
     </div>
   );
 

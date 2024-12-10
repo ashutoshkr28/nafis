@@ -300,6 +300,11 @@ const FAQ = () => {
     //8th class chapter and questions and answer
     {
       chapterName: " फसल उत्पादन एवं प्रबंधन",
+      imageUrl: "/image/8th-S-Chap-1.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
         {
           question: "1. फसल किसे कहते हैं?",
@@ -736,6 +741,11 @@ const FAQ = () => {
 
     {
       chapterName: "  सूक्ष्मजीव मित्र एवं शत्रु",
+      imageUrl: "/image/8th-S-Chap-2.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
         {
           question: " 1. सूक्ष्मजीव किसे कहते हैं?",
@@ -1057,6 +1067,11 @@ const FAQ = () => {
     /////Chapter 3  संश्लेषित रेशे और प्लास्टिक
     {
       chapterName: " संश्‍लेषित रेशे और प्लास्टिक",
+      imageUrl: "/image/8th-S-Chap-3.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
         {
           question: " 1. कपड़े कितने प्रकार के प्राप्त रेशों से बनता है?",
@@ -5136,13 +5151,31 @@ const Chapter = ({ chapter, chapterIndex }) => {
       >
         {`अध्याय ${chapterIndex}: ${chapter.chapterName}`}
       </h2>
-      <DefaultPage></DefaultPage>
+
+      {/* Show image if chapter is open */}
+      {isOpen && chapter.imageUrl && (
+        <div className="flex justify-center my-4">
+          <img 
+            src={chapter.imageUrl} 
+            alt={`Image for ${chapter.chapterName}`} 
+            className="w-full md:w-1/2 rounded-lg shadow-md" 
+          />
+        </div>
+      )}
+
+      {/* Show description if chapter is open */}
+      {isOpen && chapter.description && (
+        <div className="px-4 py-2 text-gray-700 text-md">
+          <p>{chapter.description}</p>
+        </div>
+      )}
 
       {isOpen && (
         <div className="px-4 py-2">
           {chapter.questions.map((faq, questionIndex) => (
             <QuestionAnswer key={questionIndex} faq={faq} />
           ))}
+
 
         </div>
 
@@ -5157,13 +5190,24 @@ const Chapter = ({ chapter, chapterIndex }) => {
 const QuestionAnswer = ({ faq, questionNumber }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+
   return (
+    <>
+    <div >
+        {/* <DefaultPage></DefaultPage> */}
+
+        </div>
+
     <div className="border-b-2 border-gray-300 pb-8 cursor-pointer">
       <h3 className="text-xl font-bold text-red-600 flex justify-between items-center mt-2">
         {`प्रश्‍न: ${faq.question}`}
+
       </h3>
+
       {isOpen || <div className="text-gray-600 mt-4 text-xl">{faq.answer}</div>}
     </div>
+    </>
+ 
   );
 };
 

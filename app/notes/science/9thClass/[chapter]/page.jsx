@@ -49,6 +49,195 @@ const FAQ = () => {
     {
       subjectName: "Chemistry",
       topics: [
+
+        //// Chapter 1
+
+
+        {
+          topicName: "Periodic Table",
+          questions: [
+            {
+              question: "What is the periodic law?",
+              answer: (
+                <div>
+                  <b style={{ color: "green" }}>Answer: </b>
+                  The properties of elements are the periodic function of their atomic numbers.
+                </div>
+              ),
+            },
+          ],
+        },
+
+        //// chapter 2
+
+        {
+          topicName: "Periodic Table",
+          questions: [
+            {
+              question: "What is the periodic law?",
+              answer: (
+                <div>
+                  <b style={{ color: "green" }}>Answer: </b>
+                  The properties of elements are the periodic function of their atomic numbers.
+                </div>
+              ),
+            },
+          ],
+        },
+
+        ///chapter 3
+
+
+        {
+          topicName: "Periodic Table",
+          questions: [
+            {
+              question: "What is the periodic law?",
+              answer: (
+                <div>
+                  <b style={{ color: "green" }}>Answer: </b>
+                  The properties of elements are the periodic function of their atomic numbers.
+                </div>
+              ),
+            },
+          ],
+        },
+
+        //// chapter 4
+
+        {
+          topicName: "Periodic Table",
+          questions: [
+            {
+              question: "What is the periodic law?",
+              answer: (
+                <div>
+                  <b style={{ color: "green" }}>Answer: </b>
+                  The properties of elements are the periodic function of their atomic numbers.
+                </div>
+              ),
+            },
+          ],
+        },
+
+        //// chapter 5
+
+
+        {
+          topicName: "Periodic Table",
+          questions: [
+            {
+              question: "What is the periodic law?",
+              answer: (
+                <div>
+                  <b style={{ color: "green" }}>Answer: </b>
+                  The properties of elements are the periodic function of their atomic numbers.
+                </div>
+              ),
+            },
+          ],
+        },
+
+
+        /// chapter 6
+
+
+
+        {
+          topicName: "Periodic Table",
+          questions: [
+            {
+              question: "What is the periodic law?",
+              answer: (
+                <div>
+                  <b style={{ color: "green" }}>Answer: </b>
+                  The properties of elements are the periodic function of their atomic numbers.
+                </div>
+              ),
+            },
+          ],
+        },
+
+        /// chapter 7
+
+
+
+        {
+          topicName: "Periodic Table",
+          questions: [
+            {
+              question: "What is the periodic law?",
+              answer: (
+                <div>
+                  <b style={{ color: "green" }}>Answer: </b>
+                  The properties of elements are the periodic function of their atomic numbers.
+                </div>
+              ),
+            },
+          ],
+        },
+
+
+        //// chapter 8
+
+
+
+        {
+          topicName: "Periodic Table",
+          questions: [
+            {
+              question: "What is the periodic law?",
+              answer: (
+                <div>
+                  <b style={{ color: "green" }}>Answer: </b>
+                  The properties of elements are the periodic function of their atomic numbers.
+                </div>
+              ),
+            },
+          ],
+        },
+
+
+        /// chapter 9
+
+
+        {
+          topicName: "Periodic Table",
+          questions: [
+            {
+              question: "What is the periodic law?",
+              answer: (
+                <div>
+                  <b style={{ color: "green" }}>Answer: </b>
+                  The properties of elements are the periodic function of their atomic numbers.
+                </div>
+              ),
+            },
+          ],
+        },
+
+
+        /// chapter 10
+
+
+        {
+          topicName: "Periodic Table",
+          questions: [
+            {
+              question: "What is the periodic law?",
+              answer: (
+                <div>
+                  <b style={{ color: "green" }}>Answer: </b>
+                  The properties of elements are the periodic function of their atomic numbers.
+                </div>
+              ),
+            },
+          ],
+        },
+
+        /// chapter 11
+
+
         {
           topicName: "Periodic Table",
           questions: [

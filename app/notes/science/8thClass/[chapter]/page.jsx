@@ -5229,10 +5229,8 @@ const Chapter = ({ chapter, chapterIndex }) => {
   //   </div>
   // );
 
-  ///border-gray-300
-
   return (
-    <div className="  rounded-lg mb-4">
+    <div className="border border-gray-300 rounded-lg mb-4">
 
       <h2
         className="text-4xl font-semibold bg-fuchsia-800  text-cyan-400  px-4 py-2 cursor-pointer"
@@ -5288,16 +5286,14 @@ const QuestionAnswer = ({ faq, questionNumber }) => {
         {/* <DefaultPage></DefaultPage> */}
 
       </div>
-      {/* border-b-2 */}
 
-      <div className=" border-gray-300 pb-8 cursor-pointer">
-        <h3 className="text-xl font-bold text-red-600 flex  text-left mt-2">
-        {/* justify-between items-center */}
+      <div className="border-b-2 border-gray-300 pb-8 cursor-pointer">
+        <h3 className="text-xl font-bold text-red-600 flex justify-between items-center mt-2 -ml-3">
           {`प्रश्‍न: ${faq.question}`}
 
         </h3>
 
-        {isOpen || <div className="text-gray-600 mt-4 text-xl">{faq.answer}</div>}
+        {isOpen || <div className="text-gray-600 mt-4 text-xl -ml-3">{faq.answer}</div>}
       </div>
     </>
 

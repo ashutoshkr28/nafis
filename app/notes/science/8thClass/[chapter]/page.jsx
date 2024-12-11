@@ -1361,6 +1361,11 @@ const FAQ = () => {
     /// chapter 4
     {
       chapterName: " पदार्थ धातु और अधातु",
+      imageUrl: "/image/8th-S-Chap-4.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
         {
           question: "1. पदार्थ किसे कहते हैं?",
@@ -1986,6 +1991,11 @@ const FAQ = () => {
 
     {
       chapterName: "कोयला और पेट्रोलियम",
+      imageUrl: "/image/8th-S-Chap-5.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
         {
           question: "1. जीवाश्म ईंधन किसे कहते हैं?",
@@ -2291,6 +2301,11 @@ const FAQ = () => {
 
     {
       chapterName: "दहन एवं ज्वाला",
+      imageUrl: "/image/8th-S-Chap-6.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
 
         {
@@ -2572,6 +2587,11 @@ const FAQ = () => {
 
     {
       chapterName: "पौधे एवं जंतुओं का संरक्षण",
+      imageUrl: "/image/8th-S-Chap-7.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
 
         {
@@ -2768,6 +2788,11 @@ const FAQ = () => {
 
     {
       chapterName: "कोशिका:  संरचना एवं प्रकार्य",
+      imageUrl: "/image/8th-S-Chap-8.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
 
         {
@@ -3011,6 +3036,11 @@ const FAQ = () => {
 
     {
       chapterName: "जंतुओं में जनन",
+      imageUrl: "/image/8th-S-Chap-9.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
 
         {
@@ -3233,6 +3263,11 @@ const FAQ = () => {
 
     {
       chapterName: "किशोरावस्था की ओर",
+      imageUrl: "/image/8th-S-Chap-10.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
 
         {
@@ -3463,6 +3498,11 @@ const FAQ = () => {
     // chapter 11 बल तथा दाब
     {
       chapterName: "बल तथा दाब",
+      imageUrl: "/image/8th-S-Chap-11.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
 
         {
@@ -3678,6 +3718,11 @@ const FAQ = () => {
 
     {
       chapterName: "घर्षण",
+      imageUrl: "/image/8th-S-Chap-12.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
 
         {
@@ -3804,6 +3849,11 @@ const FAQ = () => {
 
     {
       chapterName: "ध्वनि",
+      imageUrl: "/image/8th-S-Chap-13.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
 
         {
@@ -3931,6 +3981,11 @@ const FAQ = () => {
 
     {
       chapterName: "विद्युत धारा के रासानिक प्रभाव",
+      imageUrl: "/image/8th-S-Chap-14.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
 
         {
@@ -4086,6 +4141,11 @@ const FAQ = () => {
 
     {
       chapterName: "कुछ प्राकृतिक परिघटनाएँ",
+      imageUrl: "/image/8th-S-Chap-15.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
 
 
@@ -4381,6 +4441,11 @@ const FAQ = () => {
 
     {
       chapterName: "प्रकाश",
+      imageUrl: "/image/8th-S-Chap-16.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
 
         {
@@ -4638,6 +4703,11 @@ const FAQ = () => {
 
     {
       chapterName: "तारे एवं सौर परिवार",
+      imageUrl: "/image/8th-S-Chap-17.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
 
         {
@@ -4855,6 +4925,11 @@ const FAQ = () => {
 
     {
       chapterName: "वायु तथा जल का प्रदूषण",
+      imageUrl: "/image/8th-S-Chap-18.png", // 🖼️ Image for this chapter
+      description: (
+        <h1><b style={{color:"blue"}}> इस अध्याय में ह उर्वरक।</b></h1>
+       
+      ),
       questions: [
 
         {

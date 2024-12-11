@@ -5188,9 +5188,9 @@ const FAQ = () => {
     <div className="max-w-8xl mx-auto px-4 py-12 ">
       <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">Class 8th Science Question and Answer with Chapter Name</h1>
       
-          <h1> बिहार बोर्ड  परीक्षा (Class 8) 2025 के लिए सभी विषयों के महत्वपूर्ण ऑब्जेक्टिव प्रश्न (Bihar Board Objective Question Class 8) और उनके उत्तर दिए गए हैं। यह आपके परीक्षा की तैयारी के लिए अत्यंत महत्वपूर्ण हैं और बेहतर अंक प्राप्त करने में सहायक होंगे। <span style={{ color: "blue" }}> Nafis Sir </span> ने class 8 के लिए बेहद महत्वपूर्ण प्रश्न चुने हैं, जिन्हें अवश्य पढ़ें। बेहतर अंक प्राप्त करने के लिए नियमित रूप से <br /> <span style={{ color: "blue" }}> <Link href={"/"} className="" > Nafis Sir Chhaurahi </Link></span> पर विजिट करें और सभी नवीनतम अपडेट्स प्राप्त करें।</h1>
+          <h1> बिहार बोर्ड  परीक्षा (Class 8) 2025 के लिए सभी विषयों के महत्वपूर्ण सब्जेक्टिव  प्रश्न (Bihar Board Subjective Question Class 8) और उनके उत्तर दिए गए हैं। यह आपके परीक्षा की तैयारी के लिए अत्यंत महत्वपूर्ण हैं और बेहतर अंक प्राप्त करने में सहायक होंगे। <span style={{ color: "blue" }}> Nafis Sir </span> ने class 8 के लिए बेहद महत्वपूर्ण प्रश्न चुने हैं, जिन्हें अवश्य पढ़ें। बेहतर अंक प्राप्त करने के लिए नियमित रूप से <br /> <span style={{ color: "blue" }}> <Link href={"/"} className="" > Nafis Sir Chhaurahi </Link></span> पर विजिट करें और सभी नवीनतम अपडेट्स प्राप्त करें।</h1>
           <br /><br />
-          <p className="mb-4">सभी विषयों के chapters के link नीचे दिए गए हैं, जिससे आप आसानी से अपनी तैयारी को बेहतर बना सकते हैं। सबसे पहले हम कक्षा 8 विज्ञान के सभी विषयों के ऑब्जेक्टिव प्रश्नों की सूची देखेंगे। ये प्रश्न  <b style={{ color: "blue" }}>Nafis Sir </b> द्वारा सावधानीपूर्वक चयनित किए गए हैं और ये आगामी परीक्षाओं के लिए बेहद महत्वपूर्ण हैं।</p>
+          <p className="mb-4">सभी विषयों के chapters के link नीचे दिए गए हैं, जिससे आप आसानी से अपनी तैयारी को बेहतर बना सकते हैं। सबसे पहले हम कक्षा 8 विज्ञान के सभी विषयों के सब्जेक्टिव प्रश्नों की सूची देखेंगे। ये प्रश्न  <b style={{ color: "blue" }}>Nafis Sir </b> द्वारा सावधानीपूर्वक चयनित किए गए हैं और ये आगामी परीक्षाओं के लिए बेहद महत्वपूर्ण हैं।</p>
        
       {chapters.map((chapter, chapterIndex) => (
         <Chapter
@@ -5233,7 +5233,7 @@ const Chapter = ({ chapter, chapterIndex }) => {
     <div className="border border-gray-300 rounded-lg mb-4">
 
       <h2
-        className="text-4xl font-semibold bg-fuchsia-800  text-cyan-400  px-4 py-2 cursor-pointer"
+        className="text-2xl font-semibold bg-fuchsia-800  text-cyan-400  px-4 py-2 cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
         {/* bg-indigo-200 */}

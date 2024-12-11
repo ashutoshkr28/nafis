@@ -7,6 +7,7 @@ import bihar1 from "./biharboard1.jpg"
 import lnmu from "./LNMU.webp"
 import test from "./onlinetest.jpg"
 import abtimg from "./nafis.jpg"
+import banner8th from "./banner-8th.png"
 // import blog_pic_1 from './blog_pic_1.png';
 // import blog_pic_2 from './blog_pic_2.png';
 import blog_pic_3 from './blog_pic_3.png';
@@ -36,6 +37,7 @@ import email_icon from './email_icon.png'
 import upload_area from './upload_area.png'
 
 export const assets = {
+    banner8th,
     newblack,
     newnafis,
     log,

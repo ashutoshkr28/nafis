@@ -138,6 +138,8 @@
 
 
 
+import { assets } from "@/assets/assets";
+import Image from "next/image";
 import Link from "next/link";
 
 // List of all the classes with their respective slugs for routing
@@ -152,8 +154,10 @@ const chapters = [
 export default function ScienceNotes() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-50">
-      <h1 className="text-3xl font-bold mb-6">Science Subject</h1>
-      <div className="overflow-x-auto w-full max-w-4xl">
+      {/* <h1 className="text-3xl font-bold mb-6">Science Subject</h1> */}
+      <Image src={assets.banner8th} width={900} height={400}></Image>
+      <br />
+      <div className="overflow-x-auto w-full max-w-4xl mb-48 mt-10">
         <table className="table-auto w-full border-collapse border border-gray-300 shadow-lg">
           <thead>
             <tr className="bg-gray-200">

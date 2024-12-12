@@ -5171,7 +5171,7 @@ const HomePage = () => {
       <div className="p-6 max-w-3xl mx-auto bg-white rounded-xl shadow-md space-y-6">
         <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">Class 8th Science Question and Answer with Chapter Name</h1>
 
-        <div className="space-y-4 text-2xl">
+        <div className="space-y-4 text-xl">
           <Link href="/8th-science/chapter1" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 rounded-lg hover:bg-indigo-700 transition-all">
             अध्याय 1: फसल उत्पादन एवं प्रबंधन
           </Link>

@@ -66,7 +66,15 @@ const Header = () => {
 
 
 
-<Link href={"/subject"}> got subject</Link>
+{/* <Link href={"/subject"}> got subject</Link>
+<p>The fraction is &frac12;</p>
+<p>The fraction is {'\u00BD'}</p>
+<p>The fraction is &frac12;</p>
+<div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center' }}>
+      <span>1</span>
+      <span style={{ borderTop: '1px solid black', width: '100%' }}></span>
+      <span>2</span>
+    </div> */}
 
         {/* Subscription Form */}
         <form className="flex justify-between items-center max-w-xs sm:max-w-md lg:max-w-lg mx-auto mt-8 md:mt-10 border border-black shadow-[-4px_4px_0px_#000000]" action="">

@@ -15,6 +15,7 @@
     "dotenv": "^16.4.5",
     "formidable": "^3.5.2",
     "lucide-react": "^0.464.0",
+    "mathjax-react": "^2.0.1",
     "mongoose": "^8.8.1",
     "next": "15.0.3",
     "react": "^18.3.1",

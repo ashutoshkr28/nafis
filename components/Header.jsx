@@ -31,6 +31,7 @@
 
 import { assets } from '@/assets/assets';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -62,6 +63,10 @@ const Header = () => {
 हमारी टीम मेहनत से काम कर रही है ताकि हम आपको जल्द ही एक बेहतरीन अनुभव प्रदान कर सकें। कृपया थोड़ा इंतजार करें और हमारी वेबसाइट को फिर से विजिट करें।
 <br />
 धन्यवाद! &quot;</b></p>
+
+
+
+<Link href={"/subject"}> got subject</Link>
 
         {/* Subscription Form */}
         <form className="flex justify-between items-center max-w-xs sm:max-w-md lg:max-w-lg mx-auto mt-8 md:mt-10 border border-black shadow-[-4px_4px_0px_#000000]" action="">

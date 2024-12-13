@@ -1125,11 +1125,11 @@
 //               {/* <b style={{ color: 'blue' }}>ठोस: </b> पदार्थ की वह अवस्थाएँ जिनका आकार एवं आयतन दोनों निश्‍चित हो। <br />
 //                   <b>जैसे:</b> पत्थर, फुटबॉल इत्यादि।
 //                   <br />
-            
+
 //                   <b style={{ color: 'blue' }}>द्रव्य: </b> पदार्थ की वह अवस्थाएँ जिनका आकार अनिश्‍चित एवं आयतन निश्‍चित हो। <br />
 //                   <b>जैसे:</b> पानी, डीजल, पेट्रोल इत्यादि।
 //                   <br />
-            
+
 //                   <b style={{ color: 'blue' }}>गैस: </b> पदार्थ की वह अवस्थाएँ जिनका आकार एवं आयतन दोनों अनिश्‍चित हो। <br />
 //                   <b>जैसे:</b> कार्बन डाई ऑक्साइड, नाइट्रोजन गैस। */}
 //             </div>
@@ -4904,11 +4904,11 @@
 //   return (
 //     <div className="max-w-8xl mx-auto px-4 py-12 ">
 //       <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">Class 8th Science Question and Answer with Chapter Name</h1>
-      
+
 //           <h1> बिहार बोर्ड  परीक्षा (Class 8) 2025 के लिए सभी विषयों के महत्वपूर्ण सब्जेक्टिव  प्रश्न (Bihar Board Subjective Question Class 8) और उनके उत्तर दिए गए हैं। यह आपके परीक्षा की तैयारी के लिए अत्यंत महत्वपूर्ण हैं और बेहतर अंक प्राप्त करने में सहायक होंगे। <span style={{ color: "blue" }}> Nafis Sir </span> ने class 8 के लिए बेहद महत्वपूर्ण प्रश्न चुने हैं, जिन्हें अवश्य पढ़ें। बेहतर अंक प्राप्त करने के लिए नियमित रूप से <br /> <span style={{ color: "blue" }}> <Link href={"/"} className="" > Nafis Sir Chhaurahi </Link></span> पर विजिट करें और सभी नवीनतम अपडेट्स प्राप्त करें।</h1>
 //           <br /><br />
 //           <p className="mb-4">सभी विषयों के chapters के link नीचे दिए गए हैं, जिससे आप आसानी से अपनी तैयारी को बेहतर बना सकते हैं। सबसे पहले हम कक्षा 8 विज्ञान के सभी विषयों के सब्जेक्टिव प्रश्नों की सूची देखेंगे। ये प्रश्न  <b style={{ color: "blue" }}>Nafis Sir </b> द्वारा सावधानीपूर्वक चयनित किए गए हैं और ये आगामी परीक्षाओं के लिए बेहद महत्वपूर्ण हैं।</p>
-       
+
 //       {chapters.map((chapter, chapterIndex) => (
 //         <Chapter
 //           key={chapterIndex}
@@ -5011,11 +5011,11 @@
 //   return (
 //     <div className="p-6 max-w-xl mx-auto bg-white rounded-xl shadow-md space-y-6">
 //        <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">Class 8th Science Question and Answer with Chapter Name</h1>
-      
+
 //                  <h1> बिहार बोर्ड  परीक्षा (Class 8) 2025 के लिए सभी विषयों के महत्वपूर्ण सब्जेक्टिव  प्रश्न (Bihar Board Subjective Question Class 8) और उनके उत्तर दिए गए हैं। यह आपके परीक्षा की तैयारी के लिए अत्यंत महत्वपूर्ण हैं और बेहतर अंक प्राप्त करने में सहायक होंगे। <span style={{ color: "blue" }}> Nafis Sir </span> ने class 8 के लिए बेहद महत्वपूर्ण प्रश्न चुने हैं, जिन्हें अवश्य पढ़ें। बेहतर अंक प्राप्त करने के लिए नियमित रूप से <br /> <span style={{ color: "blue" }}> <Link href={"/"} className="" > Nafis Sir Chhaurahi </Link></span> पर विजिट करें और सभी नवीनतम अपडेट्स प्राप्त करें।</h1>
 //                  <br /><br />
 //                  <p className="mb-4">सभी विषयों के chapters के link नीचे दिए गए हैं, जिससे आप आसानी से अपनी तैयारी को बेहतर बना सकते हैं। सबसे पहले हम कक्षा 8 विज्ञान के सभी विषयों के सब्जेक्टिव प्रश्नों की सूची देखेंगे। ये प्रश्न  <b style={{ color: "blue" }}>Nafis Sir </b> द्वारा सावधानीपूर्वक चयनित किए गए हैं और ये आगामी परीक्षाओं के लिए बेहद महत्वपूर्ण हैं।</p>
-             
+
 //       {/* <h1 className="text-2xl font-bold text-center text-indigo-600">अध्याय सूची</h1>
 //        */}
 //        {/* <Image src={"/image/banner-8th.png"}></Image> */}
@@ -5075,7 +5075,7 @@
 //         <Link href="/8th-science/chapter18" className="block w-full text-center bg-indigo-600 text-white font-bold py-3 rounded-lg hover:bg-indigo-700 transition-all">
 //           अध्याय 18: वायु तथा जल का प्रदूषण
 //         </Link>
-        
+
 
 //       </div>
 //     </div>
@@ -5156,8 +5156,8 @@ const HomePage = () => {
       <div className="w-full bg-white p-6 sm:p-8">
         <h1 className="text-xl sm:text-2xl font-medium leading-relaxed text-gray-800 text-center">
           बिहार बोर्ड परीक्षा (Class 8) 2025 के लिए विज्ञान  के महत्वपूर्ण सब्जेक्टिव प्रश्‍न और उनके उत्तर दिए गए हैं।
-          <span className="text-blue-600 font-bold"> Nafis Sir </span> ने class 8 के लिए बेहद महत्वपूर्ण प्रश्‍न चुने हैं, जिन्हें अवश्य पढ़ें। 
-          बेहतर अंक प्राप्त करने के लिए नियमित रूप से 
+          <span className="text-blue-600 font-bold"> Nafis Sir </span> ने class 8 के लिए बेहद महत्वपूर्ण प्रश्‍न चुने हैं, जिन्हें अवश्य पढ़ें।
+          बेहतर अंक प्राप्त करने के लिए नियमित रूप से
           <Link href="/" className="text-blue-600 font-bold"> Nafis Sir Chhaurahi </Link> पर विजिट करें और सभी नवीनतम अपडेट्स प्राप्त करें।
         </h1>
 
@@ -5172,7 +5172,14 @@ const HomePage = () => {
         <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">Class 8th Science Question and Answer with Chapter Name</h1>
 
         <div className="space-y-4 text-xl ">
-          <Link href="/8th-science/chapter1" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600  transition-all">
+          {/* <Link href="/8th-science/chapter1" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600  transition-all">
+            अध्याय 1: फसल उत्पादन एवं प्रबंधन
+          </Link> */}
+          <Link
+            href="/8th-science/chapter1"
+            className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 transition-all 
+  transform hover:scale-110 hover:animate-shake"
+          >
             अध्याय 1: फसल उत्पादन एवं प्रबंधन
           </Link>
           <Link href="/8th-science/chapter2" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
@@ -5182,7 +5189,7 @@ const HomePage = () => {
             अध्याय 3: संश्लेषित रेशे और प्लास्टिक
           </Link>
           <Link href="/8th-science/chapter4" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
-            अध्याय 4: पदार्थ धातु और अधातु 
+            अध्याय 4: पदार्थ धातु और अधातु
           </Link>
           <Link href="/8th-science/chapter5" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
             अध्याय 5: कोयला और पेट्रोलियम
@@ -5191,34 +5198,34 @@ const HomePage = () => {
             अध्याय 6: दहन एवं ज्वाला
           </Link>
           <Link href="/8th-science/chapter7" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
-            अध्याय 7: पौधा एवं जंतुओं का संरक्षण 
+            अध्याय 7: पौधा एवं जंतुओं का संरक्षण
           </Link>
           <Link href="/8th-science/chapter8" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
-            अध्याय 8: कोशिका: संरचना एवं प्रकार्य 
+            अध्याय 8: कोशिका: संरचना एवं प्रकार्य
           </Link>
           <Link href="/8th-science/chapter9" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
-            अध्याय 9: जन्तुओं में जनन 
+            अध्याय 9: जन्तुओं में जनन
           </Link>
           <Link href="/8th-science/chapter10" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
-            अध्याय 10: किशोरावस्था की और 
+            अध्याय 10: किशोरावस्था की और
           </Link>
           <Link href="/8th-science/chapter11" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
-            अध्याय 11: बल तथा दाब 
+            अध्याय 11: बल तथा दाब
           </Link>
           <Link href="/8th-science/chapter12" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
-            अध्याय 12: घर्षण 
+            अध्याय 12: घर्षण
           </Link>
           <Link href="/8th-science/chapter13" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
-            अध्याय 13: ध्वनि 
+            अध्याय 13: ध्वनि
           </Link>
           <Link href="/8th-science/chapter14" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
-            अध्याय 14: विधुत धारा के रासानिक प्रभाव  
+            अध्याय 14: विधुत धारा के रासानिक प्रभाव
           </Link>
           <Link href="/8th-science/chapter15" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
-            अध्याय 15: कुछ प्राकृतिक परिघटनाएँ  
+            अध्याय 15: कुछ प्राकृतिक परिघटनाएँ
           </Link>
           <Link href="/8th-science/chapter16" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
-            अध्याय 16: प्रकाश 
+            अध्याय 16: प्रकाश
           </Link>
           <Link href="/8th-science/chapter17" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
             अध्याय 17: तारे एवं सौर परिवार

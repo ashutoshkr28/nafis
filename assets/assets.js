@@ -317,3 +317,14 @@ export const notes = [
 
     }
 ]
+
+
+
+// List of chapters for reuse across pages
+export const chapters = [
+  { id: 1, title: "अध्याय 1: फसल उत्पादन एवं प्रबंधन", slug: "chapter1" },
+  { id: 2, title: "अध्याय 2: सूक्ष्मजीव मित्र एवं शत्रु", slug: "chapter2" },
+  { id: 3, title: "अध्याय 3: संश्लेषित रेशे और प्लास्टिक", slug: "chapter3" },
+  { id: 4, title: "अध्याय 4: पदार्थ धातु और अधातु", slug: "chapter4" },
+  // Add all chapters here
+];

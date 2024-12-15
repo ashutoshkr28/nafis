@@ -5178,11 +5178,11 @@ const HomePage = () => {
           <Link
             href="/8th-science/chapter1"
             className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 transition-all 
-  transform hover:scale-110 hover:animate-shake"
+  transform hover:scale-110 hover:animate-shake "
           >
             अध्याय 1: फसल उत्पादन एवं प्रबंधन
           </Link>
-          <Link href="/8th-science/chapter2" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter2" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 2: सूक्ष्मजीव मित्र एवं शत्रु
           </Link>
           <Link href="/8th-science/chapter3" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
@@ -5240,3 +5240,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+

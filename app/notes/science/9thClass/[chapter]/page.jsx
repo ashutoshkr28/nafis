@@ -2481,7 +2481,7 @@ export default function SubjectsPage() {
     <div className="p-10 space-y-10">
       {Object.entries(chapters).map(([subject, chapterList]) => (
         <div key={subject} className="border rounded-lg p-5 shadow-lg">
-          <h2 className="text-2xl font-bold capitalize mb-4">{subject}</h2>
+          <h2 className="text-2xl font-bold capitalize text-red-500 items-center mb-4">{subject}</h2>
           <table className="w-full table-auto border-collapse border border-gray-300">
             <thead>
               <tr>

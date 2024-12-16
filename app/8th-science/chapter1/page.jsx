@@ -61,8 +61,9 @@ const questions = [
         question: "7.  तीन उर्वरकों के नाम लिखें।",
         answer: (
           <div>
+            <p>
             <b style={{ color: "green" }} className="text-xl">उत्तर: </b>
-            <b style={{ color: "blue" }}>  यूरिया, अमोनियम, सल्फेट </b>
+              यूरिया, अमोनियम, सल्फेट। </p>
           </div>
         ),
       },
@@ -72,7 +73,7 @@ const questions = [
         answer: (
           <div>
 
-            <h3 className="font-bold text-lg mb-2 text-indigo-700"> <b style={{ color: "green" }} className="text-xl">उत्तर: </b>खाद और उर्वरक में निम्न अंतर है:</h3>
+            <h3 className="font-bold text-lg mb-2 text-indigo-700"> <b style={{ color: "green" }} className="text-xl">उत्तर: </b>खाद और उर्वरक में निम्न  अंतर है:</h3>
             <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-indigo-100">
@@ -142,8 +143,15 @@ const questions = [
             <b style={{ color: "green" }} className="text-xl">उत्तर: </b>
 
             <b style={{ color: "blue" }}> सिंचाई के पारम्परिक तरीके निम्न हैं: </b>
+            <ul className=" ml-10 list-none pl-5">
+              <li className="relative before:content-['●'] before:absolute before:-left-5 before:text-violet-500">मोटर</li>
+              <li className="relative before:content-['●'] before:absolute before:-left-5 before:text-violet-500">चेन पम्प</li>
+              <li className="relative before:content-['●'] before:absolute before:-left-5 before:text-violet-500">ढकली</li>
+              <li className="relative before:content-['●'] before:absolute before:-left-5 before:text-violet-500">रिहट आदि।</li>
+              {/* <li className="relative before:content-['●'] before:absolute before:-left-5 before:text-violet-500">बांध और नहर आदि।</li> */}
+            </ul>
 
-            <p className="ml-10">मोटर, चेन पम्प, ढकली, रिहट आदि।</p>
+            {/* <p className="ml-10">मोटर, चेन पम्प, ढकली, रिहट आदि।</p> */}
 
           </div>
         ),
@@ -169,11 +177,12 @@ const questions = [
         question: " 11. उर्वरक किसे कहते हैं? किन्हीं दो उर्वरकों के नाम लिखे।",
         answer: (
           <div>
+            <p>
             <b style={{ color: "green" }}>उत्तर: </b>
-            मिट्टी की उर्वरक शक्ति को बढ़ाने वाले तत्वों को <b style={{ color: 'blue' }}>उर्वरक</b> कहते हैं।<br />
-            <b style={{ color: "blue" }} className="ml-10"> दो उर्वरकों के नाम निम्न हैं: </b>
+            मिट्टी की उर्वरक शक्ति को बढ़ाने वाले तत्वों को <b style={{ color: 'blue' }}>उर्वरक</b> कहते हैं।</p>
+           <p className='ml-2 mt-3 '> <b style={{ color: "blue" }} className="ml-10"> दो उर्वरकों के नाम निम्न हैं:</b>
 
-            <p className="ml-10"> (I) यूरिया  (II) फास्फेट </p>
+             <span className='justify-between ml-2'> (I) यूरिया  (II) फास्फेट </span>  </p>
             {/* <ul className="list-decimal ml-8">
                 <li><b style={{ color: "blue" }}></b></li>
                 <li><b style={{ color: "blue" }}></b></li>
@@ -213,7 +222,7 @@ const questions = [
       },
 
       {
-        question: " 15.  दालों की फसलों की जड़ों में कौनसा जीवाणु पाया जाता है?",
+        question: " 15.  दालों की फसलों की जड़ों में कौन सा जीवाणु पाया जाता है?",
         answer: (
           <div>
             <b style={{ color: "green" }}>उत्तर: </b>
@@ -259,8 +268,9 @@ const questions = [
             <b style={{ color: "green" }}>उत्तर: </b>
             वह फसल जिन्हें वर्षा ऋतु में बोया जाता है उन्हें <b style={{ color: 'blue' }}>खरीफ फसल</b> कहते हैं।
             <br /> <br />
-            <p><b style={{ color: "violet" }}>उदाहरण: </b>धान, मक्का, कपास, सोयाबीन, मूंगफली इत्यादि।</p>
+            <p><b style={{ color: "deeppink" }}>उदाहरण: </b>धान, मक्का, कपास, सोयाबीन, मूंगफली इत्यादि।</p>
             {/* <h1> </h1> */}
+            <br />
 
             <p style={{ color: "blue" }}><b>नोट:</b> भारत में वर्षा ऋतु सामान्यतः जून से सितंबर तक होती है।</p>
           </div>
@@ -273,7 +283,7 @@ const questions = [
             <b style={{ color: "green" }}>उत्तर: </b>
             शीत ऋतु (अक्टूबर से मार्च तक) उगाई जाने वाली फसलें <b style={{ color: 'blue' }}>रबी फसल</b> कहलाती हैं।
             <br /> <br />
-            <p><b style={{ color: "violet" }}>उदाहरण: </b>गेहूं, चना, मटर, सरसों इत्यादि।</p>
+            <p><b style={{ color: "deeppink" }}>उदाहरण: </b>गेहूं, चना, मटर, सरसों इत्यादि।</p>
             {/* <ul className="list-disc ml-6 text-gray-800">
                 <li></li>
                 <li></li>
@@ -289,12 +299,12 @@ const questions = [
           <div>
             <b style={{ color: "green" }}>उत्तर: </b>
             <b style={{ color: "blue" }} >  समय-समय पर खेतों में खाद देने के निम्न फायदे हैं: </b>
-            <ul className="ml-16 mt-2 list-none">
-              <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"> <b style={{ color: "red" }} >मिट्टी की उर्वरता बढ़ती है:</b> खाद में पोषक तत्व होते हैं जो मिट्टी की उर्वरता बढ़ाते हैं। इससे मिट्टी की क्षमता बढ़ती है और वह अधिक पौधों को सहारा दे सकती है।</li>
-              <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }} >पौधों की वृद्धि बढ़ती है:</b> खाद में पोषक तत्व पौधों की वृद्धि को बढ़ावा देते हैं। इससे पौधे अधिक तेजी से बढ़ते हैं और उनकी पत्तियाँ और फल अधिक स्वस्थ होते हैं।</li>
-              <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की गुणवत्ता में सुधार होता है:</b> खाद के उपयोग से फसल की गुणवत्ता में सुधार होता है। इससे फसल का स्वाद, रंग और पौष्टिकता बढ़ती है।</li>
-              <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }} >मिट्टी की संरचना में सुधार होता है:</b> खाद के उपयोग से मिट्टी की संरचना में सुधार होता है। इससे मिट्टी की जल धारण क्षमता बढ़ती है और वह अधिक पौधों को सहारा दे सकती है।</li>
-              <li className="relative before:content-['(V)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }} >कीटों और रोगों का प्रभाव कम होता है:</b> खाद के उपयोग से कीटों और रोगों का प्रभाव कम होता है। इससे फसल की सुरक्षा बढ़ती है और वह अधिक स्वस्थ होती है।</li>
+            <ul className="ml-12 mt-2 list-none">
+              <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2"> <b style={{ color: "red" }} >(I) मिट्टी की उर्वरता बढ़ती है:</b> <br /> <span className='ml-7'> खाद में पोषक तत्व होते हैं जो मिट्टी की उर्वरता बढ़ाते हैं। इससे मिट्टी की क्षमता बढ़ती है और वह अधिक पौधों को सहारा दे सकती है।</span></li> 
+              <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: "red" }} >(II) पौधों की वृद्धि बढ़ती है:</b> <br /> <span className='ml-7'> खाद में पोषक तत्व पौधों की वृद्धि को बढ़ावा देते हैं। इससे पौधे अधिक तेजी से बढ़ते हैं और उनकी पत्तियाँ और फल अधिक स्वस्थ होते हैं।</span></li>
+              <li className="relative before:content before:absolute before:-left-10 before:text-red-500 my-2 "><b style={{ color: "red" }} >(III) फसल की गुणवत्ता में सुधार होता है:</b> <br /> <span className='ml-7'>खाद के उपयोग से फसल की गुणवत्ता में सुधार होता है। इससे फसल का स्वाद, रंग और पौष्टिकता बढ़ती है।</span></li>
+              <li className="relative before:content before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: "red" }} >(IV) मिट्टी की संरचना में सुधार होता है:</b> <br /> <span className='ml-7'>खाद के उपयोग से मिट्टी की संरचना में सुधार होता है। इससे मिट्टी की जल धारण क्षमता बढ़ती है और वह अधिक पौधों को सहारा दे सकती है।</span></li>
+              <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: "red" }} >(V) कीटों और रोगों का प्रभाव कम होता है:</b> <br /><span className='ml-7'> खाद के उपयोग से कीटों और रोगों का प्रभाव कम होता है। इससे फसल की सुरक्षा बढ़ती है और वह अधिक स्वस्थ होती है।</span></li>
             </ul>
           </div>
         ),
@@ -306,13 +316,13 @@ const questions = [
           <div>
             <b style={{ color: "green" }}>उत्तर: </b>
             <b style={{ color: "blue" }} > अच्छी फसल के लिए हमें निम्नलिखित बातों पर ध्यान देना चाहिए: </b>
-            <ul className="ml-16 mt-2 list-none">
-              <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >मिट्टी की तैयारी:</b> मिट्टी की जाँच करें और उसमें आवश्यक पोषक तत्व मिलाएं। <br /><b style={{ color: "violet" }} > (उदाहरण: गोबर की खाद)</b> </li>
-              <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >बीज का चयन:</b> अच्छी गुणवत्ता वाले बीज का चयन करें। <br /><b style={{ color: "violet" }} > (उदाहरण: हाइब्रिड बीज)</b></li>
-              <li className="relative before:content-['(III)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >सिंचाई:</b> पौधों को आवश्यक पानी दें। <br /> <b style={{ color: "violet" }} >  (उदाहरण: ड्रिप सिंचाई) </b></li>
-              <li className="relative before:content-['(IV)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >उर्वरकों का उपयोग:</b> अच्छी गुणवत्ता वाले उर्वरकों का उपयोग करें। <br /><b style={{ color: "violet" }} > (उदाहरण: यूरिया) </b></li>
-              <li className="relative before:content-['(V)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >कीट और रोग नियंत्रण:</b> कीट और रोग की पहचान करें और उनके नियंत्रण के लिए आवश्यक कदम उठाएं। <br /><b style={{ color: "violet" }} > (उदाहरण: कीटनाशकों का उपयोग)</b></li>
-              <li className="relative before:content-['(VI)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की देखभाल:</b> फसल की नियमित जाँच करें और उसकी आवश्यकताओं को पूरा करें। <br /><b style={{ color: "violet" }} > (उदाहरण: फसल की पत्तियों की जाँच)</b></li>
+            <ul className="ml-12 mt-2 list-none">
+              <li className="relative before:content before:absolute before:-left-8 before:text-red-500  my-2"><b style={{ color: "red" }} >(I) मिट्टी की तैयारी:</b> मिट्टी की जाँच करें और उसमें आवश्यक पोषक तत्व मिलाएं। <br /><b style={{ color: "deeppink" }} > <span className='ml-7'>उदाहरण: गोबर की खाद</span></b> </li>
+              <li className="relative before:content  before:absolute before:-left-8 before:text-red-500 my-2 "><b style={{ color: "red" }} >(II) बीज का चयन:</b> अच्छी गुणवत्ता वाले बीज का चयन करें। <br /><b style={{ color: "deeppink" }} > <span className='ml-9'>उदाहरण: हाइब्रिड बीज</span></b></li>
+              <li className="relative before:content  before:absolute before:-left-8 before:text-red-500 my-2 "><b style={{ color: "red" }} >(III) सिंचाई:</b> पौधों को आवश्यक पानी दें। <br /> <b style={{ color: "deeppink" }} ><span className='ml-10'> उदाहरण: ड्रिप सिंचाई </span></b></li>
+              <li className="relative before:content  before:absolute before:-left-8 before:text-red-500 my-2 "><b style={{ color: "red" }} >(IV) उर्वरकों का उपयोग:</b> अच्छी गुणवत्ता वाले उर्वरकों का उपयोग करें। <br /><b style={{ color: "deeppink" }} ><span className='ml-10'> उदाहरण: यूरिया </span></b></li>
+              <li className="relative before:content before:absolute before:-left-8 before:text-red-500  my-2"><b style={{ color: "red" }} >(V) कीट और रोग नियंत्रण:</b> कीट और रोग की पहचान करें और उनके नियंत्रण के लिए आवश्यक कदम उठाएं। <br /><b style={{ color: "deeppink" }} ><span className='ml-9'> उदाहरण: कीटनाशकों का उपयोग</span></b></li>
+              <li className="relative before:content  before:absolute before:-left-8 before:text-red-500 my-2 "><b style={{ color: "red" }} >(VI) फसल की देखभाल:</b> फसल की नियमित जाँच करें और उसकी आवश्यकताओं को पूरा करें। <br /><b style={{ color: "deeppink" }} ><span className='ml-10'> उदाहरण: फसल की पत्तियों की जाँच</span></b></li>
             </ul>
           </div>
         ),
@@ -324,12 +334,12 @@ const questions = [
             <b style={{ color: "green" }}>उत्तर: </b>
             <b style={{ color: "blue" }}>
               फसल का संरक्षण करने के लिए निम्नलिखित तरीकों का पालन किया जा सकता है:</b>
-            <ul className="ml-16 mt-2 list-none ">
-              <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >कीट और रोग नियंत्रण:</b><span className=""> कीटनाशकों का उपयोग या जैविक नियंत्रण विधियों का प्रयोग।</span></li>
-              <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की नियमित जाँच:</b> पौधों को पानी देना, उर्वरकों का उपयोग करना आदि।</li>
-              <li className="relative before:content-['(III)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की सुरक्षा:</b> फसल को जानवरों से बचाने के लिए बाड़ लगाना।</li>
-              <li className="relative before:content-['(IV)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }} >मौसम की भविष्यवाणी:</b> मौसम की भविष्यवाणी करें और उसके अनुसार फसल की देखभाल करें।</li>
-              <li className="relative before:content-['(V)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }} >फसल की कटाई और भंडारण:</b> फसल को सही समय पर काटना और उसे सूखे और सुरक्षित स्थान पर भंडारण करना।</li>
+            <ul className="ml-12 mt-2 list-none ">
+              <li className="relative before:content before:absolute before:-left-8 before:text-red-500 my-2"><b style={{ color: "red" }} >(I) कीट और रोग नियंत्रण:</b><span className=""> कीटनाशकों का उपयोग या जैविक नियंत्रण विधियों का प्रयोग।</span></li>
+              <li className="relative before:content  before:absolute before:-left-8 before:text-red-500 my-2"><b style={{ color: "red" }} >(II) फसल की नियमित जाँच:</b> पौधों को पानी देना, उर्वरकों का उपयोग करना आदि।</li>
+              <li className="relative before:content  before:absolute before:-left-9 before:text-red-500 my-2 "><b style={{ color: "red" }} >(III) फसल की सुरक्षा:</b> फसल को जानवरों से बचाने के लिए बाड़ लगाना।</li>
+              <li className="relative before:content  before:absolute before:-left-9 before:text-red-500 my-2 "><b style={{ color: "red" }} >(IV) मौसम की भविष्यवाणी:</b> मौसम की भविष्यवाणी करें और उसके अनुसार फसल की देखभाल करें।</li>
+              <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: "red" }} >(V) फसल की कटाई और भंडारण:</b> फसल को सही समय पर काटना और उसे सूखे और सुरक्षित स्थान पर भंडारण करना।</li>
             </ul>
           </div>
         ),
@@ -348,14 +358,14 @@ const questions = [
         answer: (
           <div>
 
-            <p >    <b style={{ color: "green" }} className="text-xl">उत्तर: </b>
-              सिंचाई एक ऐसी प्रक्रिया है जिसमें पौधों को पानी दिया जाता है ताकि वे स्वस्थ और उत्पादक बने रहें।</p>
-            <p className="ml-12  "><b style={{ color: "blue" }}> सिंचाई की आवश्यकता निम्नलिखित कारणों से होती है:</b></p>
-            <ul className="ml-16   list-none">
-              <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>पौधों की वृद्धि:</b> पौधों को पानी की आवश्यकता होती है ताकि वे स्वस्थ और उत्पादक बने रहें।</li>
-              <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की नमी:</b> मिट्टी में नमी की कमी होने पर पौधों को पानी देना आवश्यक होता है।</li>
-              <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>मौसम की परिस्थितियाँ:</b> शुष्क मौसम में पौधों को पानी देना आवश्यक होता है ताकि वे सूखने से बचें।</li>
-              <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>फसल की उत्पादकता:</b> सिंचाई से फसल की उत्पादकता में वृद्धि होती है और फसल की गुणवत्ता में सुधार होता है।</li>
+            <p className='my-2'><b style={{ color: "green" }} className="text-xl">उत्तर: </b>
+           <span className=''> सिंचाई एक ऐसी प्रक्रिया है जिसमें पौधों को पानी दिया जाता है ताकि वे स्वस्थ और उत्पादक बने रहें।</span></p>
+            <p className="ml-12  "><b style={{ color: "blue" }}> सिंचाई की आवश्यकता निम्नलिखित कारणों से होती है:</b></p> 
+            <ul className="ml-12   list-none">
+              <li className="relative before:content before:absolute before:-left-8 before:text-red-500 my-2 "><b style={{ color: "red" }}>(I) पौधों की वृद्धि:</b> पौधों को पानी की आवश्यकता होती है ताकि वे स्वस्थ और उत्पादक बने रहें।</li>
+              <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: "red" }}>(II) मिट्टी की नमी:</b> मिट्टी में नमी की कमी होने पर पौधों को पानी देना आवश्यक होता है।</li>
+              <li className="relative before:content before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: "red" }}>(III) मौसम की परिस्थितियाँ:</b> शुष्क मौसम में पौधों को पानी देना आवश्यक होता है ताकि वे सूखने से बचें।</li>
+              <li className="relative before:content before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: "red" }}>(IV) फसल की उत्पादकता:</b> सिंचाई से फसल की उत्पादकता में वृद्धि होती है और फसल की गुणवत्ता में सुधार होता है।</li>
             </ul>
           </div>
         ),
@@ -366,12 +376,12 @@ const questions = [
           <div>
             <b style={{ color: "green" }}>उत्तर: </b>
             <b style={{ color: "blue" }}> जैविक खाद के निम्नलिखित लाभ हैं:</b>
-            <ul className="ml-16 list-none">
-              <li className="relative before:content-['(I)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की उर्वरता में वृद्धि:</b> जैविक खाद मिट्टी की उर्वरता में वृद्धि करती है, जिससे पौधों को आवश्यक पोषक तत्व मिलते हैं।</li>
-              <li className="relative before:content-['(II)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>पौधों की वृद्धि में वृद्धि:</b> जैविक खाद पौधों की वृद्धि में वृद्धि करती है, जिससे पौधे स्वस्थ और मजबूत होते हैं।</li>
-              <li className="relative before:content-['(III)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की संरचना में सुधार:</b> जैविक खाद मिट्टी की संरचना में सुधार करती है, जिससे मिट्टी में पानी का अवशोषण और वायु का संचार बेहतर होता है।</li>
-              <li className="relative before:content-['(IV)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>कीटों और रोगों का नियंत्रण:</b> जैविक खाद कीटों और रोगों का नियंत्रण करने में मदद करती है, जिससे पौधों को नुकसान नहीं पहुंचता है।</li>
-              <li className="relative before:content-['(V)'] before:absolute before:-left-8 before:text-red-500 font-bold"><b style={{ color: "red" }}>पर्यावरण के अनुकूल:</b> जैविक खाद पर्यावरण के अनुकूल होती है, जिससे मिट्टी, पानी और वायु प्रदूषण नहीं होता है।</li>
+            <ul className="ml-12 mt-2 my-3 list-none">
+              <li className="relative before:content before:absolute before:-left-8 before:text-red-500 my-2"><b style={{ color: "red" }}>(I) मिट्टी की उर्वरता में वृद्धि:</b> जैविक खाद मिट्टी की उर्वरता में वृद्धि करती है, जिससे पौधों को आवश्यक पोषक तत्व मिलते हैं।</li>
+              <li className="relative before:content before:absolute before:-left-8 before:text-red-500 my-2"><b style={{ color: "red" }}>(II) पौधों की वृद्धि में वृद्धि:</b> जैविक खाद पौधों की वृद्धि में वृद्धि करती है, जिससे पौधे स्वस्थ और मजबूत होते हैं।</li>
+              <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: "red" }}>(III) मिट्टी की संरचना में सुधार:</b> जैविक खाद मिट्टी की संरचना में सुधार करती है, जिससे मिट्टी में पानी का अवशोषण और वायु का संचार बेहतर होता है।</li>
+              <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: "red" }}>(IV) कीटों और रोगों का नियंत्रण:</b> जैविक खाद कीटों और रोगों का नियंत्रण करने में मदद करती है, जिससे पौधों को नुकसान नहीं पहुंचता है।</li>
+              <li className="relative before:content before:absolute before:-left-8 before:text-red-500 my-2"><b style={{ color: "red" }}>(V) पर्यावरण के अनुकूल:</b> जैविक खाद पर्यावरण के अनुकूल होती है, जिससे मिट्टी, पानी और वायु प्रदूषण नहीं होता है।</li>
             </ul>
           </div>
         ),
@@ -383,11 +393,11 @@ const questions = [
             <b style={{ color: "green" }}>उत्तर: </b>
             <b style={{ color: "blue" }}>
               खेतों की बार-बार सिंचाई करने की आवश्यकता निम्नलिखित कारणों से होती है:</b>
-            <ul className="ml-16 list-none">
-              <l className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold" i><b style={{ color: "red" }}>मिट्टी की नमी की कमी:</b> मिट्टी में नमी की कमी होने पर पौधों को पानी की आवश्यकता होती है।</l>
-              <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>मौसम की परिस्थितियाँ:</b> शुष्क मौसम में पौधों को पानी की आवश्यकता होती है ताकि वे सूखने से बचें।</li>
-              <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>पौधों की वृद्धि:</b> पौधों की वृद्धि के लिए पानी की आवश्यकता होती है।</li>
-              <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की उर्वरता:</b> मिट्टी की उर्वरता बनाए रखने के लिए पानी की आवश्यकता होती है।</li>
+            <ul className="ml-12 mt-2 list-none">
+              <l className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2" ><b style={{ color: "red" }}>(I) मिट्टी की नमी की कमी:</b> मिट्टी में नमी की कमी होने पर पौधों को पानी की आवश्यकता होती है।</l>
+              <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: "red" }}>(II) मौसम की परिस्थितियाँ:</b> शुष्क मौसम में पौधों को पानी की आवश्यकता होती है ताकि वे सूखने से बचें।</li>
+              <li className="relative before:content before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: "red" }}>(III) पौधों की वृद्धि:</b> पौधों की वृद्धि के लिए पानी की आवश्यकता होती है।</li>
+              <li className="relative before:content before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: "red" }}>(IV) मिट्टी की उर्वरता:</b> मिट्टी की उर्वरता बनाए रखने के लिए पानी की आवश्यकता होती है।</li>
             </ul>
           </div>
         ),
@@ -398,14 +408,14 @@ const questions = [
           <div>
             <b style={{ color: "green" }}>उत्तर: </b>
             <b style={{ color: "blue" }}> फसलों की उपज में सुधार हेतु महत्वपूर्ण सुझाव निम्नलिखित हैं:</b>
-            <ul className="ml-16 list-none">
-              <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>उचित बीज चयन:</b> फसल की आवश्यकताओं के अनुसार उचित बीज का चयन करें।</li>
-              <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>मिट्टी की जाँच:</b> मिट्टी की जाँच करें और आवश्यक पोषक तत्वों का उपयोग करें।</li>
-              <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>सिंचाई प्रबंधन:</b> सिंचाई का सही तरीके से प्रबंधन करें ताकि पानी की बर्बादी न हो।</li>
-              <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>उर्वरकों का उपयोग:</b> उर्वरकों का उपयोग करें लेकिन उनकी मात्रा का ध्यान रखें।</li>
-              <li className="relative before:content-['(V)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>कीट और रोग नियंत्रण:</b> कीट और रोग का नियंत्रण करें ताकि फसल को नुकसान न हो।</li>
-              <li className="relative before:content-['(VI)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>फसल चक्र:</b> फसल चक्र का पालन करें ताकि मिट्टी की उर्वरता बनी रहे।</li>
-              <li className="relative before:content-['(VII)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>प्रौद्योगिकी का उपयोग:</b> प्रौद्योगिकी का उपयोग करें जैसे कि ड्रिप सिंचाई और प्रीसिजन फार्मिंग।</li>
+            <ul className="ml-12 list-none">
+              <li className="relative before:content before:absolute before:-left-9 before:text-red-500  my-2"><b style={{ color: "red" }}>(I) उचित बीज चयन:</b> फसल की आवश्यकताओं के अनुसार उचित बीज का चयन करें।</li>
+              <li className="relative before:content before:absolute before:-left-9 before:text-red-500  my-2"><b style={{ color: "red" }}>(II) मिट्टी की जाँच:</b> मिट्टी की जाँच करें और आवश्यक पोषक तत्वों का उपयोग करें।</li>
+              <li className="relative before:content before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: "red" }}>(III) सिंचाई प्रबंधन:</b> सिंचाई का सही तरीके से प्रबंधन करें ताकि पानी की बर्बादी न हो।</li>
+              <li className="relative before:content before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: "red" }}>(IV) उर्वरकों का उपयोग:</b> उर्वरकों का उपयोग करें लेकिन उनकी मात्रा का ध्यान रखें।</li>
+              <li className="relative before:content before:absolute before:-left-9 before:text-red-500  my-2"><b style={{ color: "red" }}>(V) कीट और रोग नियंत्रण:</b> कीट और रोग का नियंत्रण करें ताकि फसल को नुकसान न हो।</li>
+              <li className="relative before:content before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: "red" }}>(VI) फसल चक्र:</b> फसल चक्र का पालन करें ताकि मिट्टी की उर्वरता बनी रहे।</li>
+              <li className="relative before:content before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: "red" }}>(VI) प्रौद्योगिकी का उपयोग:</b> प्रौद्योगिकी का उपयोग करें जैसे कि ड्रिप सिंचाई और प्रीसिजन फार्मिंग।</li>
             </ul>
           </div>
         ),

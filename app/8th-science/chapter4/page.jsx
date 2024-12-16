@@ -24,18 +24,18 @@ const questions = [
                  <div>
                    <p> <b style={{ color: "green" }}>उत्तर: </b>
                      <b className="text-lg text-blue-600"> पदार्थ तीन अवस्थाओं में पाया जाता है:</b></p>
-                   <ul className="list-none ml-16 text-gray-800">
-                     <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'red' }}>ठोस</b> </li>
-                     <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'red' }}>द्रव्य</b> </li>
-                     <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: 'red' }}>गैस</b> </li>
+                   <ul className="list-none ml-10 text-gray-800">
+                     <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: 'red' }}>(I) ठोस</b> </li>
+                     <li className="relative before:content  before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: 'red' }} >(II) द्रव्य</b> </li>
+                     <li className="relative before:content  before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: 'red' }}>(III) गैस</b> </li>
                    </ul>
                    <ul className="ml-8">
                      <li><b style={{ color: 'blue' }}>ठोस: </b>पदार्थ की वह अवस्थाएँ जिनका आकार एवं आयतन दोनों निश्‍चित हो। <br />
-                       <b><b style={{ color: "violet" }}> जैसे:—</b></b> पत्थर, फुटबॉल इत्यादि।</li>
+                       <b><b style={{ color: "darkviolet" }}> जैसे:—</b></b> पत्थर, फुटबॉल इत्यादि।</li>
                      <li><b style={{ color: 'blue' }}>द्रव्य: </b> पदार्थ की वह अवस्थाएँ जिनका आकार अनिश्‍चित एवं आयतन निश्‍चित हो। <br />
-                       <b><b style={{ color: "violet" }}> जैसे:—</b></b> पानी, डीजल, पेट्रोल इत्यादि।</li>
+                       <b><b style={{ color: "darkviolet" }}> जैसे:—</b></b> पानी, डीजल, पेट्रोल इत्यादि।</li>
                      <li><b style={{ color: 'blue' }}>गैस: </b> पदार्थ की वह अवस्थाएँ जिनका आकार एवं आयतन दोनों अनिश्‍चित हो। <br />
-                       <b><b style={{ color: "violet" }}> जैसे:—</b></b> कार्बन डाई ऑक्साइड, नाइट्रोजन गैस।</li>
+                       <b><b style={{ color: "darkviolet" }}> जैसे:—</b></b> कार्बन डाई ऑक्साइड, नाइट्रोजन गैस।</li>
                    </ul>
     
                    {/* <b style={{ color: 'blue' }}>ठोस: </b> पदार्थ की वह अवस्थाएँ जिनका आकार एवं आयतन दोनों निश्‍चित हो। <br />
@@ -61,7 +61,7 @@ const questions = [
                      त्याग कर धन आयन बनाते हैं, एवं धातुओं को पीट-पीटकर चौड़ा किया जा सकता
                      है। <br />
                      <p className="ml-12">
-                       <b style={{ color: "violet" }}> जैसे:—</b> सोना, चांदी, सोडियम।
+                       <b style={{ color: "darkviolet" }}> जैसे:—</b> सोना, चांदी, सोडियम।
                      </p>
                    </p>
                  </div>

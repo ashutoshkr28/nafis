@@ -22,11 +22,11 @@ const questions = [
                       <p ><b style={{ color: "green" }}>उत्तर: </b>
         
                         <b style={{ color: "blue " }}>सूक्ष्मजीवों को मुख्य चार वर्गों में बाँटा गया है:</b ></p>
-                      <ul className="ml-16 list-none">
-                        <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red " }}>जीवाणु:</b> जीवाणु एक प्रकार के सूक्ष्मजीव होते हैं जो एककोशिकीय होते हैं।</li>
-                        <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red " }}>कवक:</b> कवक एक प्रकार के सूक्ष्मजीव होते हैं जो बहुकोशिकीय होते हैं।</li>
-                        <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red " }}>प्रोटोजोआ:</b> प्रोटोजोआ एक प्रकार के सूक्ष्मजीव होते हैं जो एककोशिकीय होते हैं।</li>
-                        <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red " }}>शैवाल:</b> शैवाल एक प्रकार के सूक्ष्मजीव होते हैं जो बहुकोशिकीय होते हैं।</li>
+                      <ul className="ml-12 list-none">
+                        <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2 "><b style={{ color: "red " }}> (I) जीवाणु:</b> जीवाणु एक प्रकार के सूक्ष्मजीव होते हैं जो एककोशिकीय होते हैं।</li>
+                        <li className="relative before:content  before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: "red " }}>(II) कवक:</b> कवक एक प्रकार के सूक्ष्मजीव होते हैं जो बहुकोशिकीय होते हैं।</li>
+                        <li className="relative before:content  before:absolute before:-left-10 before:text-red-500 my-2 "><b style={{ color: "red " }}> (III) प्रोटोजोआ:</b> प्रोटोजोआ एक प्रकार के सूक्ष्मजीव होते हैं जो एककोशिकीय होते हैं।</li>
+                        <li className="relative before:content  before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: "red " }}>(IV) शैवाल:</b> शैवाल एक प्रकार के सूक्ष्मजीव होते हैं जो बहुकोशिकीय होते हैं।</li>
                       </ul>
                     </div>
                   ),
@@ -72,7 +72,7 @@ const questions = [
                   answer: (
                     <div>
                       <b style={{ color: "green" }}>उत्तर: </b>
-                      शिशु एवं बच्चों के शरीर में प्रतिरक्षी उत्पन्न करके रोगकारक सूक्ष्मजीव को नष्ट करने के लिए टीका लगाया जाता है।<p className="ml-10 text-blue-600">  <b style={{ color: "violet" }}> जैसे:—</b> हैजा , क्षय आदि बीमारियों को टीके द्वारा रोका जा सकता है।</p>
+                      शिशु एवं बच्चों के शरीर में प्रतिरक्षी उत्पन्न करके रोगकारक सूक्ष्मजीव को नष्ट करने के लिए टीका लगाया जाता है।<p className="ml-10 text-blue-600">  <b style={{ color: "deeppink" }}> जैसे:—</b> <span style={{color:"blueviolet"}}> हैजा , क्षय आदि बीमारियों को टीके द्वारा रोका जा सकता है।</span></p>
                     </div>
                   ),
                 },
@@ -183,9 +183,9 @@ const questions = [
                       <p><b style={{ color: "green" }}>उत्तर: </b>
                         <b style={{ color: "blue" }}> मच्छर फैलाने से रोकने के तीन उपाई निम्न है:</b></p>
                       <ul className="ml-12 list-none">
-                        <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>हमें पानी को कहीं भी रुका नहीं रहने देना चाहिए।</b></li>
-                        <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>इकट्ठा हुए पानी को मिट्टी का तेल या पेट्रोल का छिड़काव करना चाहिए।</b></li>
-                        <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>हमें आस–पास के जगहों को साफ रखना चाहिए।</b></li>
+                        <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2">(I) हमें पानी को कहीं भी रुका नहीं रहने देना चाहिए।</li>
+                        <li className="relative before:content  before:absolute before:-left-9 before:text-red-500 my-2 ">(II) इकट्ठा हुए पानी को मिट्टी का तेल या पेट्रोल का छिड़काव करना चाहिए।</li>
+                        <li className="relative before:content  before:absolute before:-left-10 before:text-red-500 my-2">(III) हमें आस–पास के जगहों को साफ रखना चाहिए।</li>
                       </ul>
                     </div>
                   ),
@@ -197,12 +197,12 @@ const questions = [
                       <p>
                         <b style={{ color: "green" }}>उत्तर: </b>
                         <b style={{ color: "blue" }}>  सूक्ष्मजीव हमारे मित्र हैं क्योंकि वे:  </b></p>
-                      <ul className="ml-16 list-none">
-                        <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b>भोजन के उत्पादन में मदद करते हैं।</b></li>
-                        <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b>मिट्टी की उर्वरता में सुधार करते हैं।</b></li>
-                        <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b>रोग प्रतिरोधक क्षमता में सुधार करते हैं।</b></li>
-                        <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b>कचरे के प्रबंधन में मदद करते हैं।</b></li>
-                        <li className="relative before:content-['(V)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b>वैक्सीने और दवाओं के उत्पादन में मदद करते हैं।</b></li>
+                      <ul className="ml-12 list-none">
+                        <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2 ">(I) भोजन के उत्पादन में मदद करते हैं।</li>
+                        <li className="relative before:content  before:absolute before:-left-9 before:text-red-500  my-2">(II) मिट्टी की उर्वरता में सुधार करते हैं।</li>
+                        <li className="relative before:content  before:absolute before:-left-10 before:text-red-500  my-2">(III) रोग प्रतिरोधक क्षमता में सुधार करते हैं।</li>
+                        <li className="relative before:content  before:absolute before:-left-10 before:text-red-500  my-2">(IV) कचरे के प्रबंधन में मदद करते हैं।</li>
+                        <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2">(V) वैक्सीने और दवाओं के उत्पादन में मदद करते हैं।</li>
                       </ul>
                     </div>
                   ),
@@ -268,14 +268,14 @@ const questions = [
         
                       <p><b style={{ color: "green" }}>उत्तर: </b>
                         <b style={{ color: "blue" }}>  खाद्य परिरक्षण निम्न प्रकार से किया जाता है:</b></p>
-                      <ul className="ml-16 list-none">
-                        <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>निर्जलीकरण</b></li>
-                        <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>रासायनिक तरीका</b></li>
-                        <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>नमक और चीनी द्वारा परिरक्षण</b></li>
-                        <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>तेल एवं सिरके द्वारा परिरक्षण</b></li>
-                        <li className="relative before:content-['(V)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>गर्म एवं ठंडा करके</b></li>
-                        <li className="relative before:content-['(VI)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>पॉश्चुरीकरण</b></li>
-                        <li className="relative before:content-['(VII)'] before:absolute before:-left-11 before:text-red-500 font-bold"><b style={{ color: "red" }}>भंडारण एवं पैकिंग</b></li>
+                      <ul className="ml-12 list-none">
+                        <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2 ">(I) निर्जलीकरण</li>
+                        <li className="relative before:content  before:absolute before:-left-9 before:text-red-500 my-2">(II) रासायनिक तरीका</li>
+                        <li className="relative before:content  before:absolute before:-left-10 before:text-red-500 my-2 ">(III) नमक और चीनी द्वारा परिरक्षण</li>
+                        <li className="relative before:content  before:absolute before:-left-10 before:text-red-500 my-2 ">(IV) तेल एवं सिरके द्वारा परिरक्षण</li>
+                        <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2 ">(V) गर्म एवं ठंडा करके</li>
+                        <li className="relative before:content  before:absolute before:-left-10 before:text-red-500 my-2 ">(VI) पॉश्चुरीकरण</li>
+                        <li className="relative before:content  before:absolute before:-left-11 before:text-red-500 my-2 ">(VII)भंडारण एवं पैकिंग</li>
                       </ul>
                     </div>
                   ),
@@ -286,27 +286,28 @@ const questions = [
                     <div>
                       <p> <b style={{ color: "green" }}>उत्तर: </b>
                         <b style={{ color: "blue" }}> सूक्ष्मजीवों द्वारा होनेवाली हानियाँ:</b></p>
-                      <ul className="ml-16 list-none">
-                        <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>रोग पैदा करना:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया, वायरस और फंगस कई प्रकार के रोग पैदा कर सकते हैं।</li>
-                        <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>खाद्य का खराब होना:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया और फंगस खाद्य को खराब कर सकते हैं।</li>
-                        <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>पेयजल का प्रदूषण:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया और वायरस पेयजल को प्रदूषित कर सकते हैं।</li>
-                        <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>कृषि उत्पादों का नुकसान:</b> सूक्ष्मजीव जैसे कि फंगस और बैक्टीरिया कृषि उत्पादों को नुकसान पहुँचा सकते हैं।</li>
+                      <ul className="ml-12 list-none">
+                        <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: "red" }}>(I) रोग पैदा करना:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया, वायरस और फंगस कई प्रकार के रोग पैदा कर सकते हैं।</li>
+                        <li className="relative before:content  before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: "red" }}>(II) खाद्य का खराब होना:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया और फंगस खाद्य को खराब कर सकते हैं।</li>
+                        <li className="relative before:content  before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: "red" }}>(III) पेयजल का प्रदूषण:</b> सूक्ष्मजीव जैसे कि बैक्टीरिया और वायरस पेयजल को प्रदूषित कर सकते हैं।</li>
+                        <li className="relative before:content  before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: "red" }}>(IV) कृषि उत्पादों का नुकसान:</b> सूक्ष्मजीव जैसे कि फंगस और बैक्टीरिया कृषि उत्पादों को नुकसान पहुँचा सकते हैं।</li>
                       </ul>
-                    </div>
+                    </div>  
                   ),
                 },
                 {
                   question: " 29. रोगकारक सूक्ष्मजीव हमारे शरीर में किस प्रकार प्रवेश करते हैं?",
                   answer: (
                     <div>
+                      <p>
                       <b style={{ color: "green" }}>उत्तर: </b>
-                      रोगकारक सूक्ष्मजीव हमारे शरीर में निम्नलिखित तरीकों से प्रवेश कर सकते हैं:
-                      <ul className="ml-16 list-none">
-                        <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>वायुमार्ग:</b> जब हम संक्रमित व्यक्ति के साथ सांस लेते हैं या संक्रमित व्यक्ति के द्वारा छोड़े गए ड्रॉपलेट्स के संपर्क में आते हैं।</li>
-                        <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>जलमार्ग:</b> जब हम संक्रमित जल पीते हैं या संक्रमित जल में नहाते हैं।</li>
-                        <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>आहार:</b> जब हम संक्रमित भोजन खाते हैं या संक्रमित पेय पदार्थों का सेवन करते हैं।</li>
-                        <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: "red" }}>त्वचा:</b> जब हम संक्रमित व्यक्ति के संपर्क में आते हैं या संक्रमित वस्तुओं को छूते हैं।</li>
-                        <li className="relative before:content-['(V)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: "red" }}>कीट और जानवर:</b> जब कीट और जानवर संक्रमित होते हैं और हमारे संपर्क में आते हैं।</li>
+                      <b style={{color:"blue"}}>रोगकारक सूक्ष्मजीव हमारे शरीर में निम्नलिखित तरीकों से प्रवेश कर सकते हैं:</b></p>
+                      <ul className="ml-12 list-none">
+                        <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: "red" }}>(I) वायुमार्ग:</b> जब हम संक्रमित व्यक्ति के साथ सांस लेते हैं या संक्रमित व्यक्ति के द्वारा छोड़े गए ड्रॉपलेट्स के संपर्क में आते हैं।</li>
+                        <li className="relative before:content  before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: "red" }}>(II) जलमार्ग:</b> जब हम संक्रमित जल पीते हैं या संक्रमित जल में नहाते हैं।</li>
+                        <li className="relative before:content  before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: "red" }}>(III) आहार:</b> जब हम संक्रमित भोजन खाते हैं या संक्रमित पेय पदार्थों का सेवन करते हैं।</li>
+                        <li className="relative before:content  before:absolute before:-left-10 before:text-red-500 my-2"><b style={{ color: "red" }}>(IV) त्वचा:</b> जब हम संक्रमित व्यक्ति के संपर्क में आते हैं या संक्रमित वस्तुओं को छूते हैं।</li>
+                        <li className="relative before:content before:absolute before:-left-9 before:text-red-500 my-2"><b style={{ color: "red" }}>(V) कीट और जानवर:</b> जब कीट और जानवर संक्रमित होते हैं और हमारे संपर्क में आते हैं।</li>
                       </ul>
                     </div>
                   ),

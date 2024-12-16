@@ -177,10 +177,10 @@ const Page = () => {
             </p>
             <p className="text-gray-600 mt-4">
               <a
-                href="mailto:mdnafisakbar289@gmail.com"
+                href="mailto:nafissirchhaurahi@gmail.com"
                 className="hover:underline"
               >
-                Email: mdnafisakbar289@gmail.com
+                Email: nafissirchhaurahi@gmail.com
               </a>
             </p>
             <p className="text-gray-600">

@@ -1,671 +1,671 @@
-"use client";
-import { useState } from "react";
+// "use client";
+// import { useState } from "react";
 
-const FAQ = () => {
-  // Subjects with topics, questions, and answers
-  const subjects = [
-    {
-      subjectName: "Physics",
-      topics: [
-        {
-          topicName: "Motion",
-          questions: [
-            {
-              question: "What is uniform motion?",
-              answer: (
-                <div>
-                  <b style={{ color: "green" }}>Answer: </b>
-                  When an object travels equal distances in equal intervals of time, it is said to be in <b style={{ color: "blue" }}>uniform motion</b>.
-                </div>
-              ),
-            },
-            {
-              question: "What is acceleration?",
-              answer: (
-                <div>
-                  <b style={{ color: "green" }}>Answer: </b>
-                  The rate of change of velocity of an object with respect to time is called <b style={{ color: "blue" }}>acceleration</b>.
-                </div>
-              ),
-            },
-          ],
-        },
-        {
-          topicName: "Gravitation",
-          questions: [
-            {
-              question: "What is the universal law of gravitation?",
-              answer: (
-                <div>
-                  <b style={{ color: "green" }}>Answer: </b>
-                  Every particle in the universe attracts every other particle with a force directly proportional to the product of their masses and inversely proportional to the square of the distance between them.
-                </div>
-              ),
-            },
-          ],
-        },
-      ],
-    },
-    {
-      subjectName: "Chemistry",
-      topics: [
+// const FAQ = () => {
+//   // Subjects with topics, questions, and answers
+//   const subjects = [
+//     {
+//       subjectName: "Physics",
+//       topics: [
+//         {
+//           topicName: "Motion",
+//           questions: [
+//             {
+//               question: "What is uniform motion?",
+//               answer: (
+//                 <div>
+//                   <b style={{ color: "green" }}>Answer: </b>
+//                   When an object travels equal distances in equal intervals of time, it is said to be in <b style={{ color: "blue" }}>uniform motion</b>.
+//                 </div>
+//               ),
+//             },
+//             {
+//               question: "What is acceleration?",
+//               answer: (
+//                 <div>
+//                   <b style={{ color: "green" }}>Answer: </b>
+//                   The rate of change of velocity of an object with respect to time is called <b style={{ color: "blue" }}>acceleration</b>.
+//                 </div>
+//               ),
+//             },
+//           ],
+//         },
+//         {
+//           topicName: "Gravitation",
+//           questions: [
+//             {
+//               question: "What is the universal law of gravitation?",
+//               answer: (
+//                 <div>
+//                   <b style={{ color: "green" }}>Answer: </b>
+//                   Every particle in the universe attracts every other particle with a force directly proportional to the product of their masses and inversely proportional to the square of the distance between them.
+//                 </div>
+//               ),
+//             },
+//           ],
+//         },
+//       ],
+//     },
+//     {
+//       subjectName: "Chemistry",
+//       topics: [
 
-        //// Chapter 1
-
-
-        {
-          topicName: "Periodic Table",
-          questions: [
-            {
-              question: "What is the periodic law?",
-              answer: (
-                <div>
-                  <b style={{ color: "green" }}>Answer: </b>
-                  The properties of elements are the periodic function of their atomic numbers.
-                </div>
-              ),
-            },
-          ],
-        },
-
-        //// chapter 2
-
-        {
-          topicName: "Periodic Table",
-          questions: [
-            {
-              question: "What is the periodic law?",
-              answer: (
-                <div>
-                  <b style={{ color: "green" }}>Answer: </b>
-                  The properties of elements are the periodic function of their atomic numbers.
-                </div>
-              ),
-            },
-          ],
-        },
-
-        ///chapter 3
+//         //// Chapter 1
 
 
-        {
-          topicName: "Periodic Table",
-          questions: [
-            {
-              question: "What is the periodic law?",
-              answer: (
-                <div>
-                  <b style={{ color: "green" }}>Answer: </b>
-                  The properties of elements are the periodic function of their atomic numbers.
-                </div>
-              ),
-            },
-          ],
-        },
+//         {
+//           topicName: "Periodic Table",
+//           questions: [
+//             {
+//               question: "What is the periodic law?",
+//               answer: (
+//                 <div>
+//                   <b style={{ color: "green" }}>Answer: </b>
+//                   The properties of elements are the periodic function of their atomic numbers.
+//                 </div>
+//               ),
+//             },
+//           ],
+//         },
 
-        //// chapter 4
+//         //// chapter 2
 
-        {
-          topicName: "Periodic Table",
-          questions: [
-            {
-              question: "What is the periodic law?",
-              answer: (
-                <div>
-                  <b style={{ color: "green" }}>Answer: </b>
-                  The properties of elements are the periodic function of their atomic numbers.
-                </div>
-              ),
-            },
-          ],
-        },
+//         {
+//           topicName: "Periodic Table",
+//           questions: [
+//             {
+//               question: "What is the periodic law?",
+//               answer: (
+//                 <div>
+//                   <b style={{ color: "green" }}>Answer: </b>
+//                   The properties of elements are the periodic function of their atomic numbers.
+//                 </div>
+//               ),
+//             },
+//           ],
+//         },
 
-        //// chapter 5
-
-
-        {
-          topicName: "Periodic Table",
-          questions: [
-            {
-              question: "What is the periodic law?",
-              answer: (
-                <div>
-                  <b style={{ color: "green" }}>Answer: </b>
-                  The properties of elements are the periodic function of their atomic numbers.
-                </div>
-              ),
-            },
-          ],
-        },
+//         ///chapter 3
 
 
-        /// chapter 6
+//         {
+//           topicName: "Periodic Table",
+//           questions: [
+//             {
+//               question: "What is the periodic law?",
+//               answer: (
+//                 <div>
+//                   <b style={{ color: "green" }}>Answer: </b>
+//                   The properties of elements are the periodic function of their atomic numbers.
+//                 </div>
+//               ),
+//             },
+//           ],
+//         },
+
+//         //// chapter 4
+
+//         {
+//           topicName: "Periodic Table",
+//           questions: [
+//             {
+//               question: "What is the periodic law?",
+//               answer: (
+//                 <div>
+//                   <b style={{ color: "green" }}>Answer: </b>
+//                   The properties of elements are the periodic function of their atomic numbers.
+//                 </div>
+//               ),
+//             },
+//           ],
+//         },
+
+//         //// chapter 5
 
 
+//         {
+//           topicName: "Periodic Table",
+//           questions: [
+//             {
+//               question: "What is the periodic law?",
+//               answer: (
+//                 <div>
+//                   <b style={{ color: "green" }}>Answer: </b>
+//                   The properties of elements are the periodic function of their atomic numbers.
+//                 </div>
+//               ),
+//             },
+//           ],
+//         },
 
-        {
-          topicName: "Periodic Table",
-          questions: [
-            {
-              question: "What is the periodic law?",
-              answer: (
-                <div>
-                  <b style={{ color: "green" }}>Answer: </b>
-                  The properties of elements are the periodic function of their atomic numbers.
-                </div>
-              ),
-            },
-          ],
-        },
 
-        /// chapter 7
+//         /// chapter 6
 
 
 
-        {
-          topicName: "Periodic Table",
-          questions: [
-            {
-              question: "What is the periodic law?",
-              answer: (
-                <div>
-                  <b style={{ color: "green" }}>Answer: </b>
-                  The properties of elements are the periodic function of their atomic numbers.
-                </div>
-              ),
-            },
-          ],
-        },
+//         {
+//           topicName: "Periodic Table",
+//           questions: [
+//             {
+//               question: "What is the periodic law?",
+//               answer: (
+//                 <div>
+//                   <b style={{ color: "green" }}>Answer: </b>
+//                   The properties of elements are the periodic function of their atomic numbers.
+//                 </div>
+//               ),
+//             },
+//           ],
+//         },
+
+//         /// chapter 7
 
 
-        //// chapter 8
+
+//         {
+//           topicName: "Periodic Table",
+//           questions: [
+//             {
+//               question: "What is the periodic law?",
+//               answer: (
+//                 <div>
+//                   <b style={{ color: "green" }}>Answer: </b>
+//                   The properties of elements are the periodic function of their atomic numbers.
+//                 </div>
+//               ),
+//             },
+//           ],
+//         },
+
+
+//         //// chapter 8
 
 
 
-        {
-          topicName: "Periodic Table",
-          questions: [
-            {
-              question: "What is the periodic law?",
-              answer: (
-                <div>
-                  <b style={{ color: "green" }}>Answer: </b>
-                  The properties of elements are the periodic function of their atomic numbers.
-                </div>
-              ),
-            },
-          ],
-        },
+//         {
+//           topicName: "Periodic Table",
+//           questions: [
+//             {
+//               question: "What is the periodic law?",
+//               answer: (
+//                 <div>
+//                   <b style={{ color: "green" }}>Answer: </b>
+//                   The properties of elements are the periodic function of their atomic numbers.
+//                 </div>
+//               ),
+//             },
+//           ],
+//         },
 
 
         /// chapter 9
 
 
-        {
-          topicName: "Periodic Table",
-          questions: [
-            {
-              question: "What is the periodic law?",
-              answer: (
-                <div>
-                  <b style={{ color: "green" }}>Answer: </b>
-                  The properties of elements are the periodic function of their atomic numbers.
-                </div>
-              ),
-            },
-          ],
-        },
+        // {
+        //   topicName: "Periodic Table",
+        //   questions: [
+        //     {
+        //       question: "What is the periodic law?",
+        //       answer: (
+        //         <div>
+        //           <b style={{ color: "green" }}>Answer: </b>
+        //           The properties of elements are the periodic function of their atomic numbers.
+        //         </div>
+        //       ),
+        //     },
+        //   ],
+        // },
 
 
         /// chapter 10
 
 
-        {
-          topicName: "Periodic Table",
-          questions: [
-            {
-              question: "What is the periodic law?",
-              answer: (
-                <div>
-                  <b style={{ color: "green" }}>Answer: </b>
-                  The properties of elements are the periodic function of their atomic numbers.
-                </div>
-              ),
-            },
-          ],
-        },
+        // {
+        //   topicName: "Periodic Table",
+        //   questions: [
+        //     {
+        //       question: "What is the periodic law?",
+        //       answer: (
+        //         <div>
+        //           <b style={{ color: "green" }}>Answer: </b>
+        //           The properties of elements are the periodic function of their atomic numbers.
+        //         </div>
+        //       ),
+        //     },
+        //   ],
+        // },
 
         /// chapter 11
 
 
-        {
-          topicName: "Periodic Table",
-          questions: [
-            {
-              question: "What is the periodic law?",
-              answer: (
-                <div>
-                  <b style={{ color: "green" }}>Answer: </b>
-                  The properties of elements are the periodic function of their atomic numbers.
-                </div>
-              ),
-            },
-          ],
-        },
-      ],
-    },
-    {
-      subjectName: "Biology",
-      topics: [
-        {
-          topicName: "1. कोशिका - जीवन की आधारभूत इकाई",
-          questions: [
-              {
-                question: "1. कोशिका किसे कहते हैं?",
-                answer: (
-                  <div>
-                    <b style={{ color: "green" }}>उत्तर:—</b> कोशिका को सभी जीवों की आधारभूत संरचनात्मक और क्रियात्मक इकाई माना गया है जिसे कोशिका कहते हैं।
-                    <br />
-                    <ul>
-                      <li>सभी जीव का शरीर कोशिका का बना होता है।</li>
-                    </ul>
-                  </div>
-                ),
-              },
-              {
-                question: "2. कोशिकाओं में विविधता के बारे में लिखें?",
-                answer: (
-                  <div>
-                    <b style={{ color: "green" }}>उत्तर:—</b> कोशिकाओं के रूप और आकार में काफी भिन्नता होती है। यह कम से कम 0.1 माइक्रोमीटर का होता है।
-                  </div>
-                ),
-              },
-              {
-                question: "3. एक कोशिकीय जीव किसे कहते हैं?",
-                answer: (
-                  <div>
-                    <b style={{ color: "green" }}>उत्तर:—</b> जिन जीवों का शरीर एक कोशिका का बना होता है, उसे एक कोशिकीय जीव कहते हैं।
-                    <br />
-                    <b style={{color: "violet"}}>जैसे:—</b> अमीबा, पैरामिशियम आदि।
-                  </div>
-                ),
-              },
-                {
-                  question: "4. बहुकोशिकीय जीव किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> जिन जीवों का शरीर एक से अधिक कोशिकाओं का बना होता है, उसे बहुकोशिकीय जीव कहते हैं।
-                      <br />
-                      <b style={{ color: "violet" }}>जैसे:—</b> शैवाल, कवक, मॉस आदि।
-                    </div>
-                  ),
-                },
-                {
-                  question: "5. ऊतक किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> एक ही प्रकार की कोशिकाओं के समूह को ऊतक कहते हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "6. अंग किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> उत्तकों के समूह, जो किसी विशेष कार्य को संपन्न करते हैं तथा जिनका विशिष्ट संरचनात्मक संगठन होता है, अंग कहलाते हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "7. पाचन तंत्र किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> मुख, अमाशय, आँत, यकृत आदि सामूहिक रूप से एक विशेष तंत्र की रचना करते हैं जिसे पाचन तंत्र कहते हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "8. जीव का निर्माण कैसे होता है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> 
-                      <span>
-                        श्‍वसन तंत्र, परिसंचरण तंत्र, उत्सर्जन तंत्र, सभी अंग–तंत्र मिलकर जीव का निर्माण करते हैं।
-                      </span>
-                      <p className="ml-12">
-                      <b style={{ color: "blue" }}>मुख्य बिंदु:</b> श्‍वसन तंत्र, परिसंचरण तंत्र, उत्सर्जन तंत्र।
-                      </p>
-                    </div>
-                  ),
-                },
-  {
-    question: "9. कोशिका की खोज किसने और कब किया?",
-    answer: (
-      <div>
-        <b style={{ color: "green" }}>उत्तर:—</b> कोशिका की खोज रॉबर्ट हुक ने सन 1665 ई० में किया। वे एक अंग्रेज वैज्ञानिक थे, जिन्होंने माइक्रोस्कोप का निर्माण किया।
-        <ul style={{ color: "" }}>
-          <li>
-            माइक्रोस्कोप में कॉर्क की एक पतली काट में अनेक सूक्ष्म, मोटी भित्ति वाले, मधुमक्खी की छत्ते जैसी कोठरियाँ देखीं। इन कोठरियों को सेल नाम दिया गया।
-          </li>
-          <li>सन 1674 में डच वैज्ञानिक ने माइक्रोस्कोप में कोशिकाओं को देखा।</li>
-          <li>
-            1839 में कोशिका के अंदर अर्धतरल, दानेदार सजीव पदार्थ को **जीवद्रव्य** नाम दिया गया।
-          </li>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    question: "10. कोशिकांग किसे कहते हैं?",
-    answer: (
-      <div>
-        <b style={{ color: "green" }}>उत्तर:—</b> कोशिका का निर्माण विभिन्न घटकों से होता है, जिन्हें कोशिकांग कहते हैं।
-      </div>
-    ),
-  },
-  {
-    question: "11. कोशिका को कितने भागों में बांटा गया है?",
-    answer: (
-      <div>
-        <b style={{ color: "green" }}>उत्तर:—</b> कोशिका को तीन भागों में बांटा गया है:
-        <ul style={{ color: "blue" }}>
-          <li>कोशिका झिल्ली</li>
-          <li>कोशिका द्रव्य</li>
-          <li>केंद्रक</li>
-        </ul>
-        <b style={{ color: "blue" }}>कोशिका झिल्ली:</b> प्रत्येक कोशिका के सबसे बाहर चारों ओर एक पतली मुलायम और लचीली झिल्ली होती है, जिसे कोशिका झिल्ली कहते हैं।
-        <b>कार्य:</b>
-        <ol style={{ color: "blue" }}>
-          <li>यह एक सीमित झिल्ली का कार्य करती है।</li>
-          <li>कोशिका को निश्चित आकार बनाए रखने में सहायता करती है।</li>
-          <li>कोशिका को यांत्रिक सहायता प्रदान करती है।</li>
-        </ol>
-      </div>
-    ),
-  },
-  {
-    question: "11. कोशिका भित्ति किसे कहते हैं?",
-    answer: (
-      <div>
-        <b style={{ color: "green" }}>उत्तर:—</b> पादप कोशिकाएँ चारों ओर से एक मोटे और कठोर आवरण द्वारा घिरी होती हैं, जिसे कोशिका भित्ति कहते हैं।
-        <b>कार्य:</b>
-        <ol style={{ color: "blue" }}>
-          <li>कोशिका को निश्चित रूप प्रदान करती है।</li>
-          <li>कोशिका को सुरक्षा और सहारा देती है।</li>
-          <li>कोशिका झिल्ली की रक्षा करती है।</li>
-        </ol>
-      </div>
-    ),
-  },
-  {
-    question: "12. कोशिका द्रव्य या साइटोप्लाज्म किसे कहते हैं?",
-    answer: (
-      <div>
-        <b style={{ color: "green" }}>उत्तर:—</b> जीवद्रव्य का वह भाग जो कोशिका भित्ति और केंद्रक के बीच होता है, उसे कोशिका द्रव्य या साइटोप्लाज्म कहते हैं। इसमें:
-        <ul style={{ color: "blue" }}>
-          <li>खनिज लवण और जल (अकार्बनिक पदार्थ)</li>
-          <li>वसा और प्रोटीन (कार्बनिक पदार्थ)</li>
-        </ul>
-        पाए जाते हैं।
-      </div>
-    ),
-  },
-  {
-    question: "13. कोशिकांगक किसे कहते हैं?",
-    answer: (
-      <div>
-        <b style={{ color: "green" }}>उत्तर:—</b> कोशिका द्रव्य में छोटी-छोटी संरचनाओं को कोशिकांगक कहते हैं।
-      </div>
-    ),
-  },
-  {
-    question: "14. राइबोसोम किसे कहते हैं?",
-    answer: (
-      <div>
-        <b style={{ color: "green" }}>उत्तर:—</b> राइबोसोम ऐसे कण हैं जो केवल इलेक्ट्रॉन सूक्ष्मदर्शी में ही दिखाई पड़ते हैं। ये अंतः प्रद्रव्य जालिका की झिल्लियों की सतह पर सटे होते हैं या कोशिका द्रव्य में गुच्छों में बिखरे रहते हैं।
-        <b style={{ color: "blue" }}>कार्य:</b> राइबोसोम में प्रोटीन का संश्लेषण होता है।
-      </div>
-    ),
-  },
-    {
-      question: "15. गॉल्जी उपकरण या गॉल्जीकाय किसे कहते हैं?",
-      answer: (
-        <div>
-          <b style={{ color: "green" }}>उत्तर:—</b> सर्वप्रथम कैमिलो गॉल्जी ने 1898 में जंतु कोशिका में गॉल्जी उपकरण को देखा। साधारण सूक्ष्मदर्शी में यह मुड़ी हुई छड़ के गुच्छा के समान प्रतीत होता है।
-          <b style={{ color: "blue" }}>कार्य:</b>
-          <ol style={{ color: "blue" }}>
-            <li>यह कोशिका का मुख्य स्त्रवण अंगक है।</li>
-            <li>लाइसोसोम और पेरॉक्सिसोम के निर्माण में मदद करता है।</li>
-          </ol>
-        </div>
-      ),
-    },
-    {
-      question: "16. माइटोकॉण्ड्रिया क्या है?",
-      answer: (
-        <div>
-          <b style={{ color: "green" }}>उत्तर:—</b> माइटोकॉण्ड्रिया कोशिका द्रव्य में पाई जाने वाली महत्वपूर्ण संरचना है। यह प्रकाश सूक्ष्मदर्शी में सूक्ष्म कण, धागेनुमा, दानेदार या गोलाकार दिखाई देती है।
-          <b style={{ color: "blue" }}>कार्य:</b>
-          <ol style={{ color: "blue" }}>
-            <li>कोशिकीय श्वसन के एंजाइम्स के चलते भोजन का संपूर्ण ऑक्सीकरण होता है।</li>
-            <li>यह ऊर्जा को ATP (Adenosine Triphosphate) के रूप में संग्रहित करता है।</li>
-            <li>माइटोकॉण्ड्रिया को &quot; कोशिकीय पावरहाउस &quot; कहा जाता है।</li>
-          </ol>
-        </div>
-      ),
-    },
-    {
-      question: "17. लाइसोसोम किसे कहते हैं?",
-      answer: (
-        <div>
-          <b style={{ color: "green" }}>उत्तर:—</b> यह बहुत सूक्ष्म कोशिकांग है जिसे 1958 में क्रिश्चियन डि ड्यूवे ने देखा। ये छोटी-छोटी पुटिकाओं के रूप में पाए जाते हैं, जिनके चारों ओर पतली झिल्ली होती है।
-          <b style={{ color: "blue" }}>कार्य:</b>
-          <ol style={{ color: "blue" }}>
-            <li>कोशिका में प्रवेश करने वाले बड़े कणों और बाह्य पदार्थों का पाचन करता है।</li>
-            <li>अंतः कोशिकीय पदार्थों और अंगकों के टूटे-फूटे भागों को पचाकर कोशिका को साफ करता है।</li>
-          </ol>
-        </div>
-      ),
-    },
-    {
-      question: "18. लवक या प्लैस्टिड किसे कहते हैं?",
-      answer: (
-        <div>
-          <b style={{ color: "green" }}>उत्तर:—</b> लवक या प्लैस्टिड केवल पादप कोशिकाओं में पाए जाते हैं। ये कोशिका द्रव्य में बिखरे रहते हैं और अंडाकार या गोलाकार होते हैं।
-          <b style={{ color: "blue" }}>यह तीन प्रकार के होते हैं:</b>
-          <ul style={{ color: "blue" }}>
-            <li>अवर्णीलवक</li>
-            <li>वर्णीलवक</li>
-            <li>हरितलवक</li>
-          </ul>
-          <b style={{ color: "blue" }}>कार्य:</b>
-          <ol style={{ color: "blue" }}>
-            <li>ल्यूकोप्लास्ट मुख्यतः जड़ की कोशिकाओं में पाया जाता है।</li>
-            <li>क्रोमोप्लास्ट फूलों और बीजों को विभिन्न रंग प्रदान करता है।</li>
-            <li>क्लोरोप्लास्ट मुख्यतः पत्तियों में पाया जाता है और भोजन संश्लेषण में सहायक है।</li>
-          </ol>
-        </div>
-      ),
-    },
-    {
-      question: "19. रसचानी किसे कहते हैं?",
-      answer: (
-        <div>
-          <b style={{ color: "green" }}>उत्तर:—</b> कोशिका की रसधानियाँ चारों ओर से एक झिल्ली से घिरी होती हैं, जिसे टोनोप्लास्ट कहते हैं। इनके भीतर ठोस और तरल पदार्थ भरे रहते हैं।
-          <b style={{ color: "blue" }}>कार्य:</b>
-          <ol style={{ color: "blue" }}>
-            <li>जंतु कोशिका में जल संतुलन बनाए रखती है।</li>
-            <li>कोशिका रस में मौजूद विभिन्न पदार्थों को कोशिका द्रव्य से अलग रखती है।</li>
-            <li>पादप कोशिकाओं में स्फीति और कठोरता प्रदान करती है।</li>
-          </ol>
-        </div>
-      ),
-    },
-    {
-      question: "20. केंद्रक या न्यूक्लियस किसे कहते हैं?",
-      answer: (
-        <div>
-          <b style={{ color: "green" }}>उत्तर:—</b> कोशिका द्रव्य के बीच एक बड़ी, गोल, गाढ़ी संरचना पाई जाती है जिसे केंद्रक कहते हैं।
-        </div>
-      ),
-    },
-    {
-      question: "21. केंद्रक द्रव्य किसे कहते हैं?",
-      answer: (
-        <div>
-          <b style={{ color: "green" }}>उत्तर:—</b> केंद्रक के अंदर गाढ़ा, अर्धतरल द्रव्य भरा होता है, जिसे केंद्रक द्रव्य कहते हैं। इसमें महीन धागों की जाल जैसी संरचना होती है, जिसे क्रोमैटिन जालिका कहते हैं।
-          <b style={{ color: "blue" }}>कार्य:</b>
-          <ol style={{ color: "blue" }}>
-            <li>केंद्रक कोशिका की रक्षा करता है और कोशिका विभाजन में भाग लेता है।</li>
-            <li>केंद्रक की अनुपस्थिति में कोशिका विभाजन संभव नहीं है।</li>
-            <li>यह कोशिका के विकास और परिपक्वन को नियंत्रित करता है।</li>
-          </ol>
-        </div>
-      ),
-    },
-    {
-      question: "22. गुणसूत्र या क्रोमोसोम क्या है?",
-      answer: (
-        <div>
-          <b style={{ color: "green" }}>उत्तर:—</b> यह सामान्य कोशिका के केंद्रक में महीन, लंबे और अत्यधिक कुंडलित धागों के रूप में पाए जाते हैं। 
-          <b style={{ color: "blue" }}>क्रोमोसोम के तीन भाग होते हैं:</b>
-          <ul style={{ color: "blue" }}>
-            <li>पेलिकल</li>
-            <li>मैट्रिक्स</li>
-            <li>क्रोमैटिड्स</li>
-          </ul>
-          <p style={{ color: "blue" }}>
-            क्रोमोसोम का सबसे बाहरी आवरण **पेलिकल** कहलाता है। पेलिकल के अंदर का भाग **मैट्रिक्स** कहलाता है। मैट्रिक्स में समांतर कुंडलित धागों जैसी रचनाएँ होती हैं, जिन्हें **क्रोमैटिड्स** कहते हैं।
-          </p>
-        </div>
-      ),
-    },
-      {
-        question: "23. जीवों में क्रोमोसोम की संख्या कितनी है?",
-        answer: (
-          <div>
-            <b style={{ color: "green" }}>उत्तर:—</b> मानव शरीर की कोशिकाओं में 46 क्रोमोसोम, मकई के पौधों में 20 क्रोमोसोम, टमाटर के पौधों में 24 क्रोमोसोम, और आलू के पौधों में 48 क्रोमोसोम पाए जाते हैं। ये क्रोमोसोम जोड़े में रहते हैं।
-          </div>
-        ),
-      },
-      {
-        question: "24. प्रोकैरियोटिक एवं यूकैरियोटिक कोशिका में क्या अंतर है?",
-        answer: (
-          <div>
-            <b style={{ color: "green" }}>उत्तर:—</b> प्रोकैरियोटिक एवं यूकैरियोटिक कोशिकाओं के बीच निम्नलिखित अंतर होते हैं:
-            <b style={{ color: "blue" }}>प्रोकैरियोटिक:</b>
-            <ul style={{ color: "blue" }}>
-              <li>आकार: 0.1–5.0 µm</li>
-              <li>केंद्रिका अनुपस्थित।</li>
-              <li>सिर्फ एक क्रोमोसोम।</li>
-              <li>वास्तविक केंद्रक नहीं।</li>
-            </ul>
-            <b style={{ color: "blue" }}>यूकैरियोटिक:</b>
-            <ul style={{ color: "blue" }}>
-              <li>आकार: 5–100 µm</li>
-              <li>केंद्रिका उपस्थित।</li>
-              <li>अनेक क्रोमोसोम।</li>
-              <li>वास्तविक केंद्रक मौजूद।</li>
-            </ul>
-          </div>
-        ),
-      },
-      {
-        question: "25. पादप कोशिका और जंतु कोशिका में क्या अंतर है?",
-        answer: (
-          <div>
-            <b style={{ color: "green" }}>उत्तर:—</b> पादप कोशिका और जंतु कोशिका में मुख्य अंतर:
-            <b style={{ color: "blue" }}>पादप कोशिका:</b>
-            <ul style={{ color: "blue" }}>
-              <li>आकार जंतु कोशिका से बड़ा होता है।</li>
-              <li>मोटी और कड़ी कोशिका भित्ति के कारण नियमित आकार।</li>
-              <li>बड़ी रसधानी उपस्थित।</li>
-              <li>लवक उपस्थित।</li>
-            </ul>
-            <b style={{ color: "blue" }}>जंतु कोशिका:</b>
-            <ul style={{ color: "blue" }}>
-              <li>आकार छोटा।</li>
-              <li>कोशिका का अनियमित आकार।</li>
-              <li>छोटी या अनुपस्थित रसधानी।</li>
-              <li>लवक अनुपस्थित।</li>
-            </ul>
-          </div>
-        ),
-      },
-      {
-        question: "26. पदार्थों का परिवहन किसे कहते हैं?",
-        answer: (
-          <div>
-            <b style={{ color: "green" }}>उत्तर:—</b> पदार्थों को शरीर की कोशिकाओं तक पहुँचाना और हानिकारक पदार्थों को बाहर निकालने की प्रक्रिया को पदार्थों का परिवहन कहते हैं।
-          </div>
-        ),
-      },
-      {
-        question: "27. विसरण किसे कहते हैं?",
-        answer: (
-          <div>
-            <b style={{ color: "green" }}>उत्तर:—</b> गैस, द्रव, और विलयन के अणुओं की अधिक सांद्रता वाले क्षेत्र से कम सांद्रता वाले क्षेत्र की ओर गति को विसरण कहते हैं।
-          </div>
-        ),
-      },
-      {
-        question: "28. परासरण किसे कहते हैं?",
-        answer: (
-          <div>
-            <b style={{ color: "green" }}>उत्तर:—</b> जीवित कोशिकाओं में जल के अधिक सांद्रता वाले क्षेत्र से कम सांद्रता वाले क्षेत्र की ओर जल अणुओं की गति को परासरण कहते हैं।
-          </div>
-        ),
-      },
-      {
-        question: "29. विसरण एवं परासरण के क्या महत्व हैं?",
-        answer: (
-          <div>
-            <b style={{ color: "green" }}>उत्तर:—</b> विसरण और परासरण के महत्व:
-            <ol style={{ color: "blue" }}>
-              <li>विसरण द्वारा O₂ और CO₂ का आदान-प्रदान होता है।</li>
-              <li>वाष्पोत्सर्जन में जलवाष्प का बाहर निकलना विसरण से होता है।</li>
-              <li>कोशिका बाहरी वातावरण से पोषण ग्रहण करती है।</li>
-              <li>परासरण द्वारा पौधे अपने मूल रोम से जल अवशोषित करते हैं।</li>
-            </ol>
-          </div>
-        ),
-      },
-      {
-        question: "30. निष्क्रिय परिवहन किसे कहते हैं?",
-        answer: (
-          <div>
-            <b style={{ color: "green" }}>उत्तर:—</b> जब पदार्थों के परिवहन में ऊर्जा की आवश्यकता नहीं होती, तो उसे निष्क्रिय परिवहन कहते हैं।
-          </div>
-        ),
-      },
-      {
-        question: "प्रमुख कोशिकीय रचनाएँ और उनके कार्य",
-        answer: (
-          <div>
-            <b style={{ color: "green" }}>उत्तर:—</b>
-            <b style={{ color: "blue" }}>रचनाएँ:</b>
-            <ul style={{ color: "blue" }}>
-              <li>कोशिका भित्ति</li>
-              <li>माइटोकॉण्ड्रिया</li>
-              <li>राइबोसोम</li>
-              <li>लाइसोसोम</li>
-              <li>अवर्णीलवक</li>
-              <li>वर्णीलवक</li>
-              <li>केंद्रक</li>
-            </ul>
-            <b style={{ color: "blue" }}>कार्य:</b>
-            <ol style={{ color: "blue" }}>
-              <li>कोशिका को रूप और सहारा प्रदान करना।</li>
-              <li>ऊर्जा निर्माण और कोशिकीय श्वसन।</li>
-              <li>प्रोटीन संश्लेषण।</li>
-              <li>हाइड्रोलिटिक एंजाइम का भंडार।</li>
-              <li>खाद्य संग्रह।</li>
-              <li>फूलों और फलों को रंग प्रदान करना।</li>
-              <li>कोशिका विभाजन और उपापचयी कार्यों का नियंत्रण।</li>
-            </ol>
-          </div>
-        ),
-      },
+  //       {
+  //         topicName: "Periodic Table",
+  //         questions: [
+  //           {
+  //             question: "What is the periodic law?",
+  //             answer: (
+  //               <div>
+  //                 <b style={{ color: "green" }}>Answer: </b>
+  //                 The properties of elements are the periodic function of their atomic numbers.
+  //               </div>
+  //             ),
+  //           },
+  //         ],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     subjectName: "Biology",
+  //     topics: [
+  //       {
+  //         topicName: "1. कोशिका - जीवन की आधारभूत इकाई",
+  //         questions: [
+  //             {
+  //               question: "1. कोशिका किसे कहते हैं?",
+  //               answer: (
+  //                 <div>
+  //                   <b style={{ color: "green" }}>उत्तर:—</b> कोशिका को सभी जीवों की आधारभूत संरचनात्मक और क्रियात्मक इकाई माना गया है जिसे कोशिका कहते हैं।
+  //                   <br />
+  //                   <ul>
+  //                     <li>सभी जीव का शरीर कोशिका का बना होता है।</li>
+  //                   </ul>
+  //                 </div>
+  //               ),
+  //             },
+  //             {
+  //               question: "2. कोशिकाओं में विविधता के बारे में लिखें?",
+  //               answer: (
+  //                 <div>
+  //                   <b style={{ color: "green" }}>उत्तर:—</b> कोशिकाओं के रूप और आकार में काफी भिन्नता होती है। यह कम से कम 0.1 माइक्रोमीटर का होता है।
+  //                 </div>
+  //               ),
+  //             },
+  //             {
+  //               question: "3. एक कोशिकीय जीव किसे कहते हैं?",
+  //               answer: (
+  //                 <div>
+  //                   <b style={{ color: "green" }}>उत्तर:—</b> जिन जीवों का शरीर एक कोशिका का बना होता है, उसे एक कोशिकीय जीव कहते हैं।
+  //                   <br />
+  //                   <b style={{color: "violet"}}>जैसे:—</b> अमीबा, पैरामिशियम आदि।
+  //                 </div>
+  //               ),
+  //             },
+  //               {
+  //                 question: "4. बहुकोशिकीय जीव किसे कहते हैं?",
+  //                 answer: (
+  //                   <div>
+  //                     <b style={{ color: "green" }}>उत्तर:—</b> जिन जीवों का शरीर एक से अधिक कोशिकाओं का बना होता है, उसे बहुकोशिकीय जीव कहते हैं।
+  //                     <br />
+  //                     <b style={{ color: "violet" }}>जैसे:—</b> शैवाल, कवक, मॉस आदि।
+  //                   </div>
+  //                 ),
+  //               },
+  //               {
+  //                 question: "5. ऊतक किसे कहते हैं?",
+  //                 answer: (
+  //                   <div>
+  //                     <b style={{ color: "green" }}>उत्तर:—</b> एक ही प्रकार की कोशिकाओं के समूह को ऊतक कहते हैं।
+  //                   </div>
+  //                 ),
+  //               },
+  //               {
+  //                 question: "6. अंग किसे कहते हैं?",
+  //                 answer: (
+  //                   <div>
+  //                     <b style={{ color: "green" }}>उत्तर:—</b> उत्तकों के समूह, जो किसी विशेष कार्य को संपन्न करते हैं तथा जिनका विशिष्ट संरचनात्मक संगठन होता है, अंग कहलाते हैं।
+  //                   </div>
+  //                 ),
+  //               },
+  //               {
+  //                 question: "7. पाचन तंत्र किसे कहते हैं?",
+  //                 answer: (
+  //                   <div>
+  //                     <b style={{ color: "green" }}>उत्तर:—</b> मुख, अमाशय, आँत, यकृत आदि सामूहिक रूप से एक विशेष तंत्र की रचना करते हैं जिसे पाचन तंत्र कहते हैं।
+  //                   </div>
+  //                 ),
+  //               },
+  //               {
+  //                 question: "8. जीव का निर्माण कैसे होता है?",
+  //                 answer: (
+  //                   <div>
+  //                     <b style={{ color: "green" }}>उत्तर:—</b> 
+  //                     <span>
+  //                       श्‍वसन तंत्र, परिसंचरण तंत्र, उत्सर्जन तंत्र, सभी अंग–तंत्र मिलकर जीव का निर्माण करते हैं।
+  //                     </span>
+  //                     <p className="ml-12">
+  //                     <b style={{ color: "blue" }}>मुख्य बिंदु:</b> श्‍वसन तंत्र, परिसंचरण तंत्र, उत्सर्जन तंत्र।
+  //                     </p>
+  //                   </div>
+  //                 ),
+  //               },
+  // {
+  //   question: "9. कोशिका की खोज किसने और कब किया?",
+  //   answer: (
+  //     <div>
+  //       <b style={{ color: "green" }}>उत्तर:—</b> कोशिका की खोज रॉबर्ट हुक ने सन 1665 ई० में किया। वे एक अंग्रेज वैज्ञानिक थे, जिन्होंने माइक्रोस्कोप का निर्माण किया।
+  //       <ul style={{ color: "" }}>
+  //         <li>
+  //           माइक्रोस्कोप में कॉर्क की एक पतली काट में अनेक सूक्ष्म, मोटी भित्ति वाले, मधुमक्खी की छत्ते जैसी कोठरियाँ देखीं। इन कोठरियों को सेल नाम दिया गया।
+  //         </li>
+  //         <li>सन 1674 में डच वैज्ञानिक ने माइक्रोस्कोप में कोशिकाओं को देखा।</li>
+  //         <li>
+  //           1839 में कोशिका के अंदर अर्धतरल, दानेदार सजीव पदार्थ को **जीवद्रव्य** नाम दिया गया।
+  //         </li>
+  //       </ul>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   question: "10. कोशिकांग किसे कहते हैं?",
+  //   answer: (
+  //     <div>
+  //       <b style={{ color: "green" }}>उत्तर:—</b> कोशिका का निर्माण विभिन्न घटकों से होता है, जिन्हें कोशिकांग कहते हैं।
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   question: "11. कोशिका को कितने भागों में बांटा गया है?",
+  //   answer: (
+  //     <div>
+  //       <b style={{ color: "green" }}>उत्तर:—</b> कोशिका को तीन भागों में बांटा गया है:
+  //       <ul style={{ color: "blue" }}>
+  //         <li>कोशिका झिल्ली</li>
+  //         <li>कोशिका द्रव्य</li>
+  //         <li>केंद्रक</li>
+  //       </ul>
+  //       <b style={{ color: "blue" }}>कोशिका झिल्ली:</b> प्रत्येक कोशिका के सबसे बाहर चारों ओर एक पतली मुलायम और लचीली झिल्ली होती है, जिसे कोशिका झिल्ली कहते हैं।
+  //       <b>कार्य:</b>
+  //       <ol style={{ color: "blue" }}>
+  //         <li>यह एक सीमित झिल्ली का कार्य करती है।</li>
+  //         <li>कोशिका को निश्चित आकार बनाए रखने में सहायता करती है।</li>
+  //         <li>कोशिका को यांत्रिक सहायता प्रदान करती है।</li>
+  //       </ol>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   question: "11. कोशिका भित्ति किसे कहते हैं?",
+  //   answer: (
+  //     <div>
+  //       <b style={{ color: "green" }}>उत्तर:—</b> पादप कोशिकाएँ चारों ओर से एक मोटे और कठोर आवरण द्वारा घिरी होती हैं, जिसे कोशिका भित्ति कहते हैं।
+  //       <b>कार्य:</b>
+  //       <ol style={{ color: "blue" }}>
+  //         <li>कोशिका को निश्चित रूप प्रदान करती है।</li>
+  //         <li>कोशिका को सुरक्षा और सहारा देती है।</li>
+  //         <li>कोशिका झिल्ली की रक्षा करती है।</li>
+  //       </ol>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   question: "12. कोशिका द्रव्य या साइटोप्लाज्म किसे कहते हैं?",
+  //   answer: (
+  //     <div>
+  //       <b style={{ color: "green" }}>उत्तर:—</b> जीवद्रव्य का वह भाग जो कोशिका भित्ति और केंद्रक के बीच होता है, उसे कोशिका द्रव्य या साइटोप्लाज्म कहते हैं। इसमें:
+  //       <ul style={{ color: "blue" }}>
+  //         <li>खनिज लवण और जल (अकार्बनिक पदार्थ)</li>
+  //         <li>वसा और प्रोटीन (कार्बनिक पदार्थ)</li>
+  //       </ul>
+  //       पाए जाते हैं।
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   question: "13. कोशिकांगक किसे कहते हैं?",
+  //   answer: (
+  //     <div>
+  //       <b style={{ color: "green" }}>उत्तर:—</b> कोशिका द्रव्य में छोटी-छोटी संरचनाओं को कोशिकांगक कहते हैं।
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   question: "14. राइबोसोम किसे कहते हैं?",
+  //   answer: (
+  //     <div>
+  //       <b style={{ color: "green" }}>उत्तर:—</b> राइबोसोम ऐसे कण हैं जो केवल इलेक्ट्रॉन सूक्ष्मदर्शी में ही दिखाई पड़ते हैं। ये अंतः प्रद्रव्य जालिका की झिल्लियों की सतह पर सटे होते हैं या कोशिका द्रव्य में गुच्छों में बिखरे रहते हैं।
+  //       <b style={{ color: "blue" }}>कार्य:</b> राइबोसोम में प्रोटीन का संश्लेषण होता है।
+  //     </div>
+  //   ),
+  // },
+  //   {
+  //     question: "15. गॉल्जी उपकरण या गॉल्जीकाय किसे कहते हैं?",
+  //     answer: (
+  //       <div>
+  //         <b style={{ color: "green" }}>उत्तर:—</b> सर्वप्रथम कैमिलो गॉल्जी ने 1898 में जंतु कोशिका में गॉल्जी उपकरण को देखा। साधारण सूक्ष्मदर्शी में यह मुड़ी हुई छड़ के गुच्छा के समान प्रतीत होता है।
+  //         <b style={{ color: "blue" }}>कार्य:</b>
+  //         <ol style={{ color: "blue" }}>
+  //           <li>यह कोशिका का मुख्य स्त्रवण अंगक है।</li>
+  //           <li>लाइसोसोम और पेरॉक्सिसोम के निर्माण में मदद करता है।</li>
+  //         </ol>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     question: "16. माइटोकॉण्ड्रिया क्या है?",
+  //     answer: (
+  //       <div>
+  //         <b style={{ color: "green" }}>उत्तर:—</b> माइटोकॉण्ड्रिया कोशिका द्रव्य में पाई जाने वाली महत्वपूर्ण संरचना है। यह प्रकाश सूक्ष्मदर्शी में सूक्ष्म कण, धागेनुमा, दानेदार या गोलाकार दिखाई देती है।
+  //         <b style={{ color: "blue" }}>कार्य:</b>
+  //         <ol style={{ color: "blue" }}>
+  //           <li>कोशिकीय श्वसन के एंजाइम्स के चलते भोजन का संपूर्ण ऑक्सीकरण होता है।</li>
+  //           <li>यह ऊर्जा को ATP (Adenosine Triphosphate) के रूप में संग्रहित करता है।</li>
+  //           <li>माइटोकॉण्ड्रिया को &quot; कोशिकीय पावरहाउस &quot; कहा जाता है।</li>
+  //         </ol>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     question: "17. लाइसोसोम किसे कहते हैं?",
+  //     answer: (
+  //       <div>
+  //         <b style={{ color: "green" }}>उत्तर:—</b> यह बहुत सूक्ष्म कोशिकांग है जिसे 1958 में क्रिश्चियन डि ड्यूवे ने देखा। ये छोटी-छोटी पुटिकाओं के रूप में पाए जाते हैं, जिनके चारों ओर पतली झिल्ली होती है।
+  //         <b style={{ color: "blue" }}>कार्य:</b>
+  //         <ol style={{ color: "blue" }}>
+  //           <li>कोशिका में प्रवेश करने वाले बड़े कणों और बाह्य पदार्थों का पाचन करता है।</li>
+  //           <li>अंतः कोशिकीय पदार्थों और अंगकों के टूटे-फूटे भागों को पचाकर कोशिका को साफ करता है।</li>
+  //         </ol>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     question: "18. लवक या प्लैस्टिड किसे कहते हैं?",
+  //     answer: (
+  //       <div>
+  //         <b style={{ color: "green" }}>उत्तर:—</b> लवक या प्लैस्टिड केवल पादप कोशिकाओं में पाए जाते हैं। ये कोशिका द्रव्य में बिखरे रहते हैं और अंडाकार या गोलाकार होते हैं।
+  //         <b style={{ color: "blue" }}>यह तीन प्रकार के होते हैं:</b>
+  //         <ul style={{ color: "blue" }}>
+  //           <li>अवर्णीलवक</li>
+  //           <li>वर्णीलवक</li>
+  //           <li>हरितलवक</li>
+  //         </ul>
+  //         <b style={{ color: "blue" }}>कार्य:</b>
+  //         <ol style={{ color: "blue" }}>
+  //           <li>ल्यूकोप्लास्ट मुख्यतः जड़ की कोशिकाओं में पाया जाता है।</li>
+  //           <li>क्रोमोप्लास्ट फूलों और बीजों को विभिन्न रंग प्रदान करता है।</li>
+  //           <li>क्लोरोप्लास्ट मुख्यतः पत्तियों में पाया जाता है और भोजन संश्लेषण में सहायक है।</li>
+  //         </ol>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     question: "19. रसचानी किसे कहते हैं?",
+  //     answer: (
+  //       <div>
+  //         <b style={{ color: "green" }}>उत्तर:—</b> कोशिका की रसधानियाँ चारों ओर से एक झिल्ली से घिरी होती हैं, जिसे टोनोप्लास्ट कहते हैं। इनके भीतर ठोस और तरल पदार्थ भरे रहते हैं।
+  //         <b style={{ color: "blue" }}>कार्य:</b>
+  //         <ol style={{ color: "blue" }}>
+  //           <li>जंतु कोशिका में जल संतुलन बनाए रखती है।</li>
+  //           <li>कोशिका रस में मौजूद विभिन्न पदार्थों को कोशिका द्रव्य से अलग रखती है।</li>
+  //           <li>पादप कोशिकाओं में स्फीति और कठोरता प्रदान करती है।</li>
+  //         </ol>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     question: "20. केंद्रक या न्यूक्लियस किसे कहते हैं?",
+  //     answer: (
+  //       <div>
+  //         <b style={{ color: "green" }}>उत्तर:—</b> कोशिका द्रव्य के बीच एक बड़ी, गोल, गाढ़ी संरचना पाई जाती है जिसे केंद्रक कहते हैं।
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     question: "21. केंद्रक द्रव्य किसे कहते हैं?",
+  //     answer: (
+  //       <div>
+  //         <b style={{ color: "green" }}>उत्तर:—</b> केंद्रक के अंदर गाढ़ा, अर्धतरल द्रव्य भरा होता है, जिसे केंद्रक द्रव्य कहते हैं। इसमें महीन धागों की जाल जैसी संरचना होती है, जिसे क्रोमैटिन जालिका कहते हैं।
+  //         <b style={{ color: "blue" }}>कार्य:</b>
+  //         <ol style={{ color: "blue" }}>
+  //           <li>केंद्रक कोशिका की रक्षा करता है और कोशिका विभाजन में भाग लेता है।</li>
+  //           <li>केंद्रक की अनुपस्थिति में कोशिका विभाजन संभव नहीं है।</li>
+  //           <li>यह कोशिका के विकास और परिपक्वन को नियंत्रित करता है।</li>
+  //         </ol>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     question: "22. गुणसूत्र या क्रोमोसोम क्या है?",
+  //     answer: (
+  //       <div>
+  //         <b style={{ color: "green" }}>उत्तर:—</b> यह सामान्य कोशिका के केंद्रक में महीन, लंबे और अत्यधिक कुंडलित धागों के रूप में पाए जाते हैं। 
+  //         <b style={{ color: "blue" }}>क्रोमोसोम के तीन भाग होते हैं:</b>
+  //         <ul style={{ color: "blue" }}>
+  //           <li>पेलिकल</li>
+  //           <li>मैट्रिक्स</li>
+  //           <li>क्रोमैटिड्स</li>
+  //         </ul>
+  //         <p style={{ color: "blue" }}>
+  //           क्रोमोसोम का सबसे बाहरी आवरण **पेलिकल** कहलाता है। पेलिकल के अंदर का भाग **मैट्रिक्स** कहलाता है। मैट्रिक्स में समांतर कुंडलित धागों जैसी रचनाएँ होती हैं, जिन्हें **क्रोमैटिड्स** कहते हैं।
+  //         </p>
+  //       </div>
+  //     ),
+  //   },
+  //     {
+  //       question: "23. जीवों में क्रोमोसोम की संख्या कितनी है?",
+  //       answer: (
+  //         <div>
+  //           <b style={{ color: "green" }}>उत्तर:—</b> मानव शरीर की कोशिकाओं में 46 क्रोमोसोम, मकई के पौधों में 20 क्रोमोसोम, टमाटर के पौधों में 24 क्रोमोसोम, और आलू के पौधों में 48 क्रोमोसोम पाए जाते हैं। ये क्रोमोसोम जोड़े में रहते हैं।
+  //         </div>
+  //       ),
+  //     },
+  //     {
+  //       question: "24. प्रोकैरियोटिक एवं यूकैरियोटिक कोशिका में क्या अंतर है?",
+  //       answer: (
+  //         <div>
+  //           <b style={{ color: "green" }}>उत्तर:—</b> प्रोकैरियोटिक एवं यूकैरियोटिक कोशिकाओं के बीच निम्नलिखित अंतर होते हैं:
+  //           <b style={{ color: "blue" }}>प्रोकैरियोटिक:</b>
+  //           <ul style={{ color: "blue" }}>
+  //             <li>आकार: 0.1–5.0 µm</li>
+  //             <li>केंद्रिका अनुपस्थित।</li>
+  //             <li>सिर्फ एक क्रोमोसोम।</li>
+  //             <li>वास्तविक केंद्रक नहीं।</li>
+  //           </ul>
+  //           <b style={{ color: "blue" }}>यूकैरियोटिक:</b>
+  //           <ul style={{ color: "blue" }}>
+  //             <li>आकार: 5–100 µm</li>
+  //             <li>केंद्रिका उपस्थित।</li>
+  //             <li>अनेक क्रोमोसोम।</li>
+  //             <li>वास्तविक केंद्रक मौजूद।</li>
+  //           </ul>
+  //         </div>
+  //       ),
+  //     },
+  //     {
+  //       question: "25. पादप कोशिका और जंतु कोशिका में क्या अंतर है?",
+  //       answer: (
+  //         <div>
+  //           <b style={{ color: "green" }}>उत्तर:—</b> पादप कोशिका और जंतु कोशिका में मुख्य अंतर:
+  //           <b style={{ color: "blue" }}>पादप कोशिका:</b>
+  //           <ul style={{ color: "blue" }}>
+  //             <li>आकार जंतु कोशिका से बड़ा होता है।</li>
+  //             <li>मोटी और कड़ी कोशिका भित्ति के कारण नियमित आकार।</li>
+  //             <li>बड़ी रसधानी उपस्थित।</li>
+  //             <li>लवक उपस्थित।</li>
+  //           </ul>
+  //           <b style={{ color: "blue" }}>जंतु कोशिका:</b>
+  //           <ul style={{ color: "blue" }}>
+  //             <li>आकार छोटा।</li>
+  //             <li>कोशिका का अनियमित आकार।</li>
+  //             <li>छोटी या अनुपस्थित रसधानी।</li>
+  //             <li>लवक अनुपस्थित।</li>
+  //           </ul>
+  //         </div>
+  //       ),
+  //     },
+  //     {
+  //       question: "26. पदार्थों का परिवहन किसे कहते हैं?",
+  //       answer: (
+  //         <div>
+  //           <b style={{ color: "green" }}>उत्तर:—</b> पदार्थों को शरीर की कोशिकाओं तक पहुँचाना और हानिकारक पदार्थों को बाहर निकालने की प्रक्रिया को पदार्थों का परिवहन कहते हैं।
+  //         </div>
+  //       ),
+  //     },
+  //     {
+  //       question: "27. विसरण किसे कहते हैं?",
+  //       answer: (
+  //         <div>
+  //           <b style={{ color: "green" }}>उत्तर:—</b> गैस, द्रव, और विलयन के अणुओं की अधिक सांद्रता वाले क्षेत्र से कम सांद्रता वाले क्षेत्र की ओर गति को विसरण कहते हैं।
+  //         </div>
+  //       ),
+  //     },
+  //     {
+  //       question: "28. परासरण किसे कहते हैं?",
+  //       answer: (
+  //         <div>
+  //           <b style={{ color: "green" }}>उत्तर:—</b> जीवित कोशिकाओं में जल के अधिक सांद्रता वाले क्षेत्र से कम सांद्रता वाले क्षेत्र की ओर जल अणुओं की गति को परासरण कहते हैं।
+  //         </div>
+  //       ),
+  //     },
+  //     {
+  //       question: "29. विसरण एवं परासरण के क्या महत्व हैं?",
+  //       answer: (
+  //         <div>
+  //           <b style={{ color: "green" }}>उत्तर:—</b> विसरण और परासरण के महत्व:
+  //           <ol style={{ color: "blue" }}>
+  //             <li>विसरण द्वारा O₂ और CO₂ का आदान-प्रदान होता है।</li>
+  //             <li>वाष्पोत्सर्जन में जलवाष्प का बाहर निकलना विसरण से होता है।</li>
+  //             <li>कोशिका बाहरी वातावरण से पोषण ग्रहण करती है।</li>
+  //             <li>परासरण द्वारा पौधे अपने मूल रोम से जल अवशोषित करते हैं।</li>
+  //           </ol>
+  //         </div>
+  //       ),
+  //     },
+  //     {
+  //       question: "30. निष्क्रिय परिवहन किसे कहते हैं?",
+  //       answer: (
+  //         <div>
+  //           <b style={{ color: "green" }}>उत्तर:—</b> जब पदार्थों के परिवहन में ऊर्जा की आवश्यकता नहीं होती, तो उसे निष्क्रिय परिवहन कहते हैं।
+  //         </div>
+  //       ),
+  //     },
+  //     {
+  //       question: "प्रमुख कोशिकीय रचनाएँ और उनके कार्य",
+  //       answer: (
+  //         <div>
+  //           <b style={{ color: "green" }}>उत्तर:—</b>
+  //           <b style={{ color: "blue" }}>रचनाएँ:</b>
+  //           <ul style={{ color: "blue" }}>
+  //             <li>कोशिका भित्ति</li>
+  //             <li>माइटोकॉण्ड्रिया</li>
+  //             <li>राइबोसोम</li>
+  //             <li>लाइसोसोम</li>
+  //             <li>अवर्णीलवक</li>
+  //             <li>वर्णीलवक</li>
+  //             <li>केंद्रक</li>
+  //           </ul>
+  //           <b style={{ color: "blue" }}>कार्य:</b>
+  //           <ol style={{ color: "blue" }}>
+  //             <li>कोशिका को रूप और सहारा प्रदान करना।</li>
+  //             <li>ऊर्जा निर्माण और कोशिकीय श्वसन।</li>
+  //             <li>प्रोटीन संश्लेषण।</li>
+  //             <li>हाइड्रोलिटिक एंजाइम का भंडार।</li>
+  //             <li>खाद्य संग्रह।</li>
+  //             <li>फूलों और फलों को रंग प्रदान करना।</li>
+  //             <li>कोशिका विभाजन और उपापचयी कार्यों का नियंत्रण।</li>
+  //           </ol>
+  //         </div>
+  //       ),
+  //     },
     
   
 
@@ -673,1135 +673,1135 @@ const FAQ = () => {
              
               
             
-          ],
-        },
+  //         ],
+  //       },
 
         /// Chapter 2nd 
-        {
-          topicName: "2. ऊतक",
-          questions: [
-              {
-                question: "1. ऊत्तक किसे कहते हैं?",
-                answer: (
-                  <div>
-                    <b style={{ color: "green" }}>उत्तर:—</b> समान उत्पत्ति तथा समान कार्यों को संपादित करने वाली कोशिकाओं के समूह को <b>ऊत्तक</b> कहते हैं।
-                  </div>
-                ),
-              },
-              {
-                question: "2. ऊत्तक को कितने भागों में बाँटा गया है?",
-                answer: (
-                  <div>
-                    <b style={{ color: "green" }}>उत्तर:—</b> ऊत्तकों को दो भागों में बाँटा गया है:
-                    <ul style={{ color: "blue" }}>
-                      <li>विभज्योतिकी ऊतक</li>
-                      <li>स्थायी ऊतक</li>
-                    </ul>
-                    <b style={{ color: "blue" }}>विभज्योतिकी ऊतक:—</b>
-                    यह जीवित कोशिकाओं का बना होता है, जिसमें विभाजन की क्षमता होती है। इसकी कोशिकाएँ छोटी, अंडाकार या बहुभुजी होती हैं।
-                    <br />
-                    <b style={{ color: "blue" }}>स्थायी ऊतक:—</b>
-                    विभज्योतिकी ऊतक की वृद्धि के परिणामस्वरूप स्थायी ऊतक बनता है। इसमें विभाजन की क्षमता नहीं होती और ये मृत या सजीव हो सकते हैं।
-                  </div>
-                ),
-              },
-              {
-                question: "3. सरल स्थायी ऊतक किसे कहते हैं?",
-                answer: (
-                  <div>
-                    <b style={{ color: "green" }}>उत्तर:—</b> सरल स्थायी ऊतक समान कोशिकाओं से बना होता है। इसके तीन प्रकार हैं:
-                    <ul style={{ color: "blue" }}>
-                      <li>मृदूतक उत्तक</li>
-                      <li>स्थूलकोण उत्तक</li>
-                      <li>दृढ़ उत्तक</li>
-                    </ul>
-                    <b style={{ color: "blue" }}>★ मृदूतक उत्तक:—</b> 
-                    मृदूतक कोशिकाएँ जीवित, गोलाकार, अंडाकार या अनियमित आकार की होती हैं। इनमें केंद्रक पाया जाता है, और इसकी कोशिका भित्ति पतली एवं सेल्यूलोज की बनी होती है।
-                    <ul style={{ color: "blue" }}>
-                      <li>एपिडर्मिस के रूप में पौधों का संरक्षण करता है।</li>
-                      <li>पत्तियों में भोजन का निर्माण करता है।</li>
-                      <li>भोजन के पार्श्व–चालन में सहायक होता है।</li>
-                    </ul>
-                  </div>
-                ),
-              },
-              {
-                question: "4. स्थूलकोण ऊतक किसे कहते हैं?",
-                answer: (
-                  <div>
-                    <b style={{ color: "green" }}>उत्तर:—</b> स्थूलकोण ऊतक की कोशिकाएँ केंद्रयुक्त, लबी या अंडाकार, जीवित तथा रसधानीयुक्त होती हैं। इनमें हरितलवक पाया जाता है।
-                    <ul style={{ color: "blue" }}>
-                      <li>यह पौधों को यांत्रिक सहायता प्रदान करता है।</li>
-                      <li>हरितलवक होने पर भोजन निर्माण करता है।</li>
-                    </ul>
-                  </div>
-                ),
-              },
-              {
-                question: "5. दृढ़ ऊतक किसे कहते हैं?",
-                answer: (
-                  <div>
-                    <b style={{ color: "green" }}>उत्तर:—</b> दृढ़ ऊतक की कोशिकाएँ मृत, लंबी, सँकरी और दोनों सिरों पर नुकीली होती हैं। इनमें जीवद्रव्य नहीं होता। यह पौधों के तने, पत्तियों के शिरा, फलों एवं बीजों के कठोर आवरण में पाया जाता है।
-                    <ul style={{ color: "blue" }}>
-                      <li>यह पौधों को यांत्रिक शक्ति प्रदान करता है।</li>
-                      <li>यह रक्षात्मक ऊतक के रूप में कार्य करता है।</li>
-                    </ul>
-                  </div>
-                ),
-              },
-              {
-                question: "6. कॉर्क कोशिका किसे कहते हैं?",
-                answer: (
-                  <div>
-                    <b style={{ color: "green" }}>उत्तर:—</b> पुराने जड़ और तने के बाहरी ऊतक विभाजित होकर कॉर्क कोशिकाएँ या छाल बनाते हैं। यह सुरक्षा कवच का कार्य करता है। इसकी कोशिकाएँ मृत और मोटी दीवार वाली होती हैं, जिन पर सुबेरिन नामक कार्बनिक पदार्थ जमा रहता है।
-                  </div>
-                ),
-              },
-              {
-                question: "7. जटिल स्थायी ऊतक किसे कहते हैं?",
-                answer: (
-                  <div>
-                    <b style={{ color: "green" }}>उत्तर:—</b> सरल स्थायी ऊतक समान प्रकार की कोशिकाओं से बना होता है, जबकि जटिल स्थायी ऊतक विभिन्न प्रकार की कोशिकाओं से बना होता है।
-                    <b style={{ color: "blue" }}>★ प्रकार:</b>
-                    <ul style={{ color: "blue" }}>
-                      <li>जाइलम</li>
-                      <li>फ्लोएम</li>
-                    </ul>
-                  </div>
-                ),
-              },
-              {
-                question: "8. जाइलम किसे कहते हैं?",
-                answer: (
-                  <div>
-                    <b style={{ color: "green" }}>उत्तर:—</b> जाइलम पौधों के मूल, तना और पत्तियों में पाया जाता है। इसे <b>चालन ऊतक</b> कहते हैं।
-                    <b style={{ color: "blue" }}>★ जाइलम के चार भाग:</b>
-                    <ul style={{ color: "blue" }}>
-                      <li>
-                        <b>वाहिनिकाएँ: </b> लंबी, मृत, और दोनों सिरों पर नुकीली कोशिकाएँ होती हैं। 
-                        <ul>
-                          <li>कार्य: पौधों को यांत्रिक सहायता और जल परिवहन।</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <b>वाहिकाएँ: </b> मृत और लंबी नली के समान कोशिकाएँ।
-                        <ul>
-                          <li>कार्य: जल और खनिज लवण का परिवहन।</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <b>जाइलम तंतु: </b> लंबे, शंकुरूप मृत कोशिकाएँ। 
-                        <ul>
-                          <li>कार्य: पौधों को यांत्रिक सहायता।</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <b>जाइलम मृदूतक: </b> जीवित कोशिकाएँ। 
-                        <ul>
-                          <li>कार्य: भोजन संग्रह और जल संवहन।</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                ),
-              },
-                {
-                  question: "9. फ्लोएम किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> जाइलम की तरह फ्लोएम भी पौधे की जड़, तना एवं पत्तियों में पाया जाता है।
-                      <br />
-                      <b style={{ color: "blue" }}>★ फ्लोएम के चार तत्व:</b>
-                      <ul style={{ color: "blue" }}>
-                        <li>
-                          <b>चालनी नलिकाएँ:</b> लंबी, बेलनाकार तथा छिद्रित भित्तिवाली कोशिकाएँ। <br />
-                          <b>कार्य:</b> तैयार भोजन को वृद्धि क्षेत्र में ले जाना।
-                        </li>
-                        <li>
-                          <b>सहकोशिकाएँ:</b> चालनी नलिकाओं के पास स्थित लंबी और जीवित कोशिकाएँ। <br />
-                          <b>कार्य:</b> भोज्य पदार्थ के संवहन में मदद करना।
-                        </li>
-                        <li>
-                          <b>फ्लोएम तंतु:</b> लंबी कोशिकाओं से बने होते हैं। <br />
-                          <b>कार्य:</b> फ्लोएम को यांत्रिक सहायता प्रदान करना।
-                        </li>
-                        <li>
-                          <b>फ्लोएम मृदुतक:</b> जीवित और केंद्रकयुक्त कोशिकाएँ। <br />
-                          <b>कार्य:</b> भोजन संचित करना और संवहन में सहायता।
-                        </li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                {
-                  question: "10. जंतु ऊतक किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> ऊतक ऐसी कोशिकाओं के समूह हैं, जो उत्पत्ति, संरचना और कार्य के दृष्टिकोण से समान होती हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "11. जंतु ऊतक कितने प्रकार के होते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> जंतु ऊतक चार प्रकार के होते हैं:
-                      <ul style={{ color: "blue" }}>
-                        <li><b>उपकला ऊतक:</b> बाहरी परत और आंतरिक स्तर का निर्माण।</li>
-                        <li><b>संयोजी ऊतक:</b> अंगों को जोड़ता है और सहारा देता है।</li>
-                        <li><b>पेशी ऊतक:</b> गति और संकुचन में सहायक।</li>
-                        <li><b>तंत्रिका ऊतक:</b> मस्तिष्क, मेरुरज्जू और संवेदनाएँ भेजने का कार्य।</li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                {
-                  question: "12. सिनेप्स किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> एक न्यूरॉन के ऐक्सॉन के अंतिम छोर की शाखाएँ दूसरे न्यूरॉन के डेंड्राइट्स से जुड़कर सिनेप्स बनाती हैं। <br />
-                      <b style={{ color: "blue" }}>कार्य:</b> आवेग का संचार एक न्यूरॉन से दूसरे न्यूरॉन तक करना।
-                    </div>
-                  ),
-                },
-                {
-                  question: "13. मैट्रिक्स में कितने प्रकार के तंतु पाए जाते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> मैट्रिक्स में दो प्रकार के तंतु पाए जाते हैं:
-                      <ul style={{ color: "blue" }}>
-                        <li><b>श्वेत तंतु:</b> अशाखीय और अलचीले।</li>
-                        <li><b>पीला तंतु:</b> शाखीय और लचीले।</li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                {
-                  question: "14. कंकाल ऊतक किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> कंकाल ऊतक शरीर को सहारा देता है और मजबूती से जोड़ता है। यह दो प्रकार के होते हैं:
-                      <ul style={{ color: "blue" }}>
-                        <li>
-                          <b>उपास्थि ऊतक:</b> लसलसा मैट्रिक्स, जिसमें पतले कोलेजन तंतु होते हैं।
-                        </li>
-                        <li>
-                          <b>अस्थि ऊतक:</b> इसमें ऑस्टियोब्लास्ट कोशिकाएँ होती हैं, जो अस्थि निर्माण में सहायक होती हैं।
-                        </li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                  {
-                    question: "15. तरल या संवहनीय ऊतक किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> रक्त या रुधिर एवं लसीका को तरल संयोजी ऊतक कहते हैं। इसमें कोशिकाएँ बिखरी होती हैं।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "16. रक्त या रुधिर किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> रक्त या रुधिर के तरल भाग को प्लाज्मा कहते हैं।
-                        <ul style={{ color: "blue" }}>
-                          <li>
-                            <b>प्लाज्मा:</b> हल्के पीले रंग का चिपचिपा और क्षारीय द्रव्य, जो रुधिर का 55% होता है।
-                          </li>
-                          <li>
-                            <b>रुधिर कणिकाएँ:</b> तीन प्रकार की होती हैं:
-                            <ul>
-                              <li>
-                                <b>लाल रुधिरकणिकाएँ (RBC):</b> मेंढक में ये बड़ी और अंडाकार होती हैं। मनुष्यों में इनमें हीमोग्लोबिन पाया जाता है, जिससे इनका रंग लाल होता है।
-                              </li>
-                              <li>
-                                <b>श्वेत रुधिरकणिकाएँ (WBC):</b> अनियमित आकार की होती हैं, इनमें हीमोग्लोबिन नहीं होता है और इनकी संख्या RBC से कम होती है।
-                              </li>
-                              <li>
-                                <b>प्लेटलेट्स:</b> सूक्ष्म, रंगहीन और केंद्रहीन कोशिकाएँ, जो तर्क-आकार की होती हैं।
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "17. लसीका किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> लसीका एक वर्णहीन द्रव्य है, जिसमें लाल रुधिरकणिकाएँ और प्लेटलेट्स नहीं होते। इसमें कम मात्रा में कैल्सियम और फॉस्फोरस पाया जाता है।
-                        <br />
-                        <b>कार्य:</b>
-                        <ul style={{ color: "blue" }}>
-                          <li>यह पोषक पदार्थों का परिवहन करता है।</li>
-                          <li>यह रोगाणुओं को नष्ट करता है।</li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "18. अरेखित, रेखित एवं हृदपेशियों में क्या अंतर है?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> अरेखित, रेखित और हृदपेशियों में निम्नलिखित अंतर हैं:
-                        <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
-                          <thead>
-                            <tr>
-                              <th style={{ border: "1px solid black", padding: "8px", backgroundColor: "#f0f0f0" }}>पेशी प्रकार</th>
-                              <th style={{ border: "1px solid black", padding: "8px", backgroundColor: "#f0f0f0" }}>विशेषताएँ</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td style={{ border: "1px solid black", padding: "8px" }}>अरेखित पेशी</td>
-                              <td style={{ border: "1px solid black", padding: "8px" }}>
-                                <ul>
-                                  <li>आहारनाल, आँत, रक्तवाहिनियों और मूत्राशय में पाई जाती है।</li>
-                                  <li>अशाखित होती है।</li>
-                                  <li>अनैच्छिक होती है।</li>
-                                  <li>प्रत्येक तंतु में एक केंद्रक होता है।</li>
-                                </ul>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style={{ border: "1px solid black", padding: "8px" }}>रेखित पेशी</td>
-                              <td style={{ border: "1px solid black", padding: "8px" }}>
-                                <ul>
-                                  <li>कंकाल से जुड़ी रहती है, ग्रहणी में भी पाई जाती है।</li>
-                                  <li>अशाखित होती है।</li>
-                                  <li>ऐच्छिक होती है।</li>
-                                  <li>बहुकेंद्रीय होती है।</li>
-                                </ul>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style={{ border: "1px solid black", padding: "8px" }}>हृदपेशी</td>
-                              <td style={{ border: "1px solid black", padding: "8px" }}>
-                                <ul>
-                                  <li>हृदय की भित्ति में पाई जाती है।</li>
-                                  <li>एक दूसरे से जुड़ी रहती है।</li>
-                                  <li>अनैच्छिक होती है।</li>
-                                  <li>एककेंद्रीय होती है।</li>
-                                </ul>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    ),
-                  },
-            ]
-          },
+        // {
+        //   topicName: "2. ऊतक",
+        //   questions: [
+        //       {
+        //         question: "1. ऊत्तक किसे कहते हैं?",
+        //         answer: (
+        //           <div>
+        //             <b style={{ color: "green" }}>उत्तर:—</b> समान उत्पत्ति तथा समान कार्यों को संपादित करने वाली कोशिकाओं के समूह को <b>ऊत्तक</b> कहते हैं।
+        //           </div>
+        //         ),
+        //       },
+        //       {
+        //         question: "2. ऊत्तक को कितने भागों में बाँटा गया है?",
+        //         answer: (
+        //           <div>
+        //             <b style={{ color: "green" }}>उत्तर:—</b> ऊत्तकों को दो भागों में बाँटा गया है:
+        //             <ul style={{ color: "blue" }}>
+        //               <li>विभज्योतिकी ऊतक</li>
+        //               <li>स्थायी ऊतक</li>
+        //             </ul>
+        //             <b style={{ color: "blue" }}>विभज्योतिकी ऊतक:—</b>
+        //             यह जीवित कोशिकाओं का बना होता है, जिसमें विभाजन की क्षमता होती है। इसकी कोशिकाएँ छोटी, अंडाकार या बहुभुजी होती हैं।
+        //             <br />
+        //             <b style={{ color: "blue" }}>स्थायी ऊतक:—</b>
+        //             विभज्योतिकी ऊतक की वृद्धि के परिणामस्वरूप स्थायी ऊतक बनता है। इसमें विभाजन की क्षमता नहीं होती और ये मृत या सजीव हो सकते हैं।
+        //           </div>
+        //         ),
+        //       },
+        //       {
+        //         question: "3. सरल स्थायी ऊतक किसे कहते हैं?",
+        //         answer: (
+        //           <div>
+        //             <b style={{ color: "green" }}>उत्तर:—</b> सरल स्थायी ऊतक समान कोशिकाओं से बना होता है। इसके तीन प्रकार हैं:
+        //             <ul style={{ color: "blue" }}>
+        //               <li>मृदूतक उत्तक</li>
+        //               <li>स्थूलकोण उत्तक</li>
+        //               <li>दृढ़ उत्तक</li>
+        //             </ul>
+        //             <b style={{ color: "blue" }}>★ मृदूतक उत्तक:—</b> 
+        //             मृदूतक कोशिकाएँ जीवित, गोलाकार, अंडाकार या अनियमित आकार की होती हैं। इनमें केंद्रक पाया जाता है, और इसकी कोशिका भित्ति पतली एवं सेल्यूलोज की बनी होती है।
+        //             <ul style={{ color: "blue" }}>
+        //               <li>एपिडर्मिस के रूप में पौधों का संरक्षण करता है।</li>
+        //               <li>पत्तियों में भोजन का निर्माण करता है।</li>
+        //               <li>भोजन के पार्श्व–चालन में सहायक होता है।</li>
+        //             </ul>
+        //           </div>
+        //         ),
+        //       },
+        //       {
+        //         question: "4. स्थूलकोण ऊतक किसे कहते हैं?",
+        //         answer: (
+        //           <div>
+        //             <b style={{ color: "green" }}>उत्तर:—</b> स्थूलकोण ऊतक की कोशिकाएँ केंद्रयुक्त, लबी या अंडाकार, जीवित तथा रसधानीयुक्त होती हैं। इनमें हरितलवक पाया जाता है।
+        //             <ul style={{ color: "blue" }}>
+        //               <li>यह पौधों को यांत्रिक सहायता प्रदान करता है।</li>
+        //               <li>हरितलवक होने पर भोजन निर्माण करता है।</li>
+        //             </ul>
+        //           </div>
+        //         ),
+        //       },
+        //       {
+        //         question: "5. दृढ़ ऊतक किसे कहते हैं?",
+        //         answer: (
+        //           <div>
+        //             <b style={{ color: "green" }}>उत्तर:—</b> दृढ़ ऊतक की कोशिकाएँ मृत, लंबी, सँकरी और दोनों सिरों पर नुकीली होती हैं। इनमें जीवद्रव्य नहीं होता। यह पौधों के तने, पत्तियों के शिरा, फलों एवं बीजों के कठोर आवरण में पाया जाता है।
+        //             <ul style={{ color: "blue" }}>
+        //               <li>यह पौधों को यांत्रिक शक्ति प्रदान करता है।</li>
+        //               <li>यह रक्षात्मक ऊतक के रूप में कार्य करता है।</li>
+        //             </ul>
+        //           </div>
+        //         ),
+        //       },
+        //       {
+        //         question: "6. कॉर्क कोशिका किसे कहते हैं?",
+        //         answer: (
+        //           <div>
+        //             <b style={{ color: "green" }}>उत्तर:—</b> पुराने जड़ और तने के बाहरी ऊतक विभाजित होकर कॉर्क कोशिकाएँ या छाल बनाते हैं। यह सुरक्षा कवच का कार्य करता है। इसकी कोशिकाएँ मृत और मोटी दीवार वाली होती हैं, जिन पर सुबेरिन नामक कार्बनिक पदार्थ जमा रहता है।
+        //           </div>
+        //         ),
+        //       },
+        //       {
+        //         question: "7. जटिल स्थायी ऊतक किसे कहते हैं?",
+        //         answer: (
+        //           <div>
+        //             <b style={{ color: "green" }}>उत्तर:—</b> सरल स्थायी ऊतक समान प्रकार की कोशिकाओं से बना होता है, जबकि जटिल स्थायी ऊतक विभिन्न प्रकार की कोशिकाओं से बना होता है।
+        //             <b style={{ color: "blue" }}>★ प्रकार:</b>
+        //             <ul style={{ color: "blue" }}>
+        //               <li>जाइलम</li>
+        //               <li>फ्लोएम</li>
+        //             </ul>
+        //           </div>
+        //         ),
+        //       },
+        //       {
+        //         question: "8. जाइलम किसे कहते हैं?",
+        //         answer: (
+        //           <div>
+        //             <b style={{ color: "green" }}>उत्तर:—</b> जाइलम पौधों के मूल, तना और पत्तियों में पाया जाता है। इसे <b>चालन ऊतक</b> कहते हैं।
+        //             <b style={{ color: "blue" }}>★ जाइलम के चार भाग:</b>
+        //             <ul style={{ color: "blue" }}>
+        //               <li>
+        //                 <b>वाहिनिकाएँ: </b> लंबी, मृत, और दोनों सिरों पर नुकीली कोशिकाएँ होती हैं। 
+        //                 <ul>
+        //                   <li>कार्य: पौधों को यांत्रिक सहायता और जल परिवहन।</li>
+        //                 </ul>
+        //               </li>
+        //               <li>
+        //                 <b>वाहिकाएँ: </b> मृत और लंबी नली के समान कोशिकाएँ।
+        //                 <ul>
+        //                   <li>कार्य: जल और खनिज लवण का परिवहन।</li>
+        //                 </ul>
+        //               </li>
+        //               <li>
+        //                 <b>जाइलम तंतु: </b> लंबे, शंकुरूप मृत कोशिकाएँ। 
+        //                 <ul>
+        //                   <li>कार्य: पौधों को यांत्रिक सहायता।</li>
+        //                 </ul>
+        //               </li>
+        //               <li>
+        //                 <b>जाइलम मृदूतक: </b> जीवित कोशिकाएँ। 
+        //                 <ul>
+        //                   <li>कार्य: भोजन संग्रह और जल संवहन।</li>
+        //                 </ul>
+        //               </li>
+        //             </ul>
+        //           </div>
+        //         ),
+        //       },
+        //         {
+        //           question: "9. फ्लोएम किसे कहते हैं?",
+        //           answer: (
+        //             <div>
+        //               <b style={{ color: "green" }}>उत्तर:—</b> जाइलम की तरह फ्लोएम भी पौधे की जड़, तना एवं पत्तियों में पाया जाता है।
+        //               <br />
+        //               <b style={{ color: "blue" }}>★ फ्लोएम के चार तत्व:</b>
+        //               <ul style={{ color: "blue" }}>
+        //                 <li>
+        //                   <b>चालनी नलिकाएँ:</b> लंबी, बेलनाकार तथा छिद्रित भित्तिवाली कोशिकाएँ। <br />
+        //                   <b>कार्य:</b> तैयार भोजन को वृद्धि क्षेत्र में ले जाना।
+        //                 </li>
+        //                 <li>
+        //                   <b>सहकोशिकाएँ:</b> चालनी नलिकाओं के पास स्थित लंबी और जीवित कोशिकाएँ। <br />
+        //                   <b>कार्य:</b> भोज्य पदार्थ के संवहन में मदद करना।
+        //                 </li>
+        //                 <li>
+        //                   <b>फ्लोएम तंतु:</b> लंबी कोशिकाओं से बने होते हैं। <br />
+        //                   <b>कार्य:</b> फ्लोएम को यांत्रिक सहायता प्रदान करना।
+        //                 </li>
+        //                 <li>
+        //                   <b>फ्लोएम मृदुतक:</b> जीवित और केंद्रकयुक्त कोशिकाएँ। <br />
+        //                   <b>कार्य:</b> भोजन संचित करना और संवहन में सहायता।
+        //                 </li>
+        //               </ul>
+        //             </div>
+        //           ),
+        //         },
+        //         {
+        //           question: "10. जंतु ऊतक किसे कहते हैं?",
+        //           answer: (
+        //             <div>
+        //               <b style={{ color: "green" }}>उत्तर:—</b> ऊतक ऐसी कोशिकाओं के समूह हैं, जो उत्पत्ति, संरचना और कार्य के दृष्टिकोण से समान होती हैं।
+        //             </div>
+        //           ),
+        //         },
+        //         {
+        //           question: "11. जंतु ऊतक कितने प्रकार के होते हैं?",
+        //           answer: (
+        //             <div>
+        //               <b style={{ color: "green" }}>उत्तर:—</b> जंतु ऊतक चार प्रकार के होते हैं:
+        //               <ul style={{ color: "blue" }}>
+        //                 <li><b>उपकला ऊतक:</b> बाहरी परत और आंतरिक स्तर का निर्माण।</li>
+        //                 <li><b>संयोजी ऊतक:</b> अंगों को जोड़ता है और सहारा देता है।</li>
+        //                 <li><b>पेशी ऊतक:</b> गति और संकुचन में सहायक।</li>
+        //                 <li><b>तंत्रिका ऊतक:</b> मस्तिष्क, मेरुरज्जू और संवेदनाएँ भेजने का कार्य।</li>
+        //               </ul>
+        //             </div>
+        //           ),
+        //         },
+        //         {
+        //           question: "12. सिनेप्स किसे कहते हैं?",
+        //           answer: (
+        //             <div>
+        //               <b style={{ color: "green" }}>उत्तर:—</b> एक न्यूरॉन के ऐक्सॉन के अंतिम छोर की शाखाएँ दूसरे न्यूरॉन के डेंड्राइट्स से जुड़कर सिनेप्स बनाती हैं। <br />
+        //               <b style={{ color: "blue" }}>कार्य:</b> आवेग का संचार एक न्यूरॉन से दूसरे न्यूरॉन तक करना।
+        //             </div>
+        //           ),
+        //         },
+        //         {
+        //           question: "13. मैट्रिक्स में कितने प्रकार के तंतु पाए जाते हैं?",
+        //           answer: (
+        //             <div>
+        //               <b style={{ color: "green" }}>उत्तर:—</b> मैट्रिक्स में दो प्रकार के तंतु पाए जाते हैं:
+        //               <ul style={{ color: "blue" }}>
+        //                 <li><b>श्वेत तंतु:</b> अशाखीय और अलचीले।</li>
+        //                 <li><b>पीला तंतु:</b> शाखीय और लचीले।</li>
+        //               </ul>
+        //             </div>
+        //           ),
+        //         },
+        //         {
+        //           question: "14. कंकाल ऊतक किसे कहते हैं?",
+        //           answer: (
+        //             <div>
+        //               <b style={{ color: "green" }}>उत्तर:—</b> कंकाल ऊतक शरीर को सहारा देता है और मजबूती से जोड़ता है। यह दो प्रकार के होते हैं:
+        //               <ul style={{ color: "blue" }}>
+        //                 <li>
+        //                   <b>उपास्थि ऊतक:</b> लसलसा मैट्रिक्स, जिसमें पतले कोलेजन तंतु होते हैं।
+        //                 </li>
+        //                 <li>
+        //                   <b>अस्थि ऊतक:</b> इसमें ऑस्टियोब्लास्ट कोशिकाएँ होती हैं, जो अस्थि निर्माण में सहायक होती हैं।
+        //                 </li>
+        //               </ul>
+        //             </div>
+        //           ),
+        //         },
+        //           {
+        //             question: "15. तरल या संवहनीय ऊतक किसे कहते हैं?",
+        //             answer: (
+        //               <div>
+        //                 <b style={{ color: "green" }}>उत्तर:—</b> रक्त या रुधिर एवं लसीका को तरल संयोजी ऊतक कहते हैं। इसमें कोशिकाएँ बिखरी होती हैं।
+        //               </div>
+        //             ),
+        //           },
+        //           {
+        //             question: "16. रक्त या रुधिर किसे कहते हैं?",
+        //             answer: (
+        //               <div>
+        //                 <b style={{ color: "green" }}>उत्तर:—</b> रक्त या रुधिर के तरल भाग को प्लाज्मा कहते हैं।
+        //                 <ul style={{ color: "blue" }}>
+        //                   <li>
+        //                     <b>प्लाज्मा:</b> हल्के पीले रंग का चिपचिपा और क्षारीय द्रव्य, जो रुधिर का 55% होता है।
+        //                   </li>
+        //                   <li>
+        //                     <b>रुधिर कणिकाएँ:</b> तीन प्रकार की होती हैं:
+        //                     <ul>
+        //                       <li>
+        //                         <b>लाल रुधिरकणिकाएँ (RBC):</b> मेंढक में ये बड़ी और अंडाकार होती हैं। मनुष्यों में इनमें हीमोग्लोबिन पाया जाता है, जिससे इनका रंग लाल होता है।
+        //                       </li>
+        //                       <li>
+        //                         <b>श्वेत रुधिरकणिकाएँ (WBC):</b> अनियमित आकार की होती हैं, इनमें हीमोग्लोबिन नहीं होता है और इनकी संख्या RBC से कम होती है।
+        //                       </li>
+        //                       <li>
+        //                         <b>प्लेटलेट्स:</b> सूक्ष्म, रंगहीन और केंद्रहीन कोशिकाएँ, जो तर्क-आकार की होती हैं।
+        //                       </li>
+        //                     </ul>
+        //                   </li>
+        //                 </ul>
+        //               </div>
+        //             ),
+        //           },
+        //           {
+        //             question: "17. लसीका किसे कहते हैं?",
+        //             answer: (
+        //               <div>
+        //                 <b style={{ color: "green" }}>उत्तर:—</b> लसीका एक वर्णहीन द्रव्य है, जिसमें लाल रुधिरकणिकाएँ और प्लेटलेट्स नहीं होते। इसमें कम मात्रा में कैल्सियम और फॉस्फोरस पाया जाता है।
+        //                 <br />
+        //                 <b>कार्य:</b>
+        //                 <ul style={{ color: "blue" }}>
+        //                   <li>यह पोषक पदार्थों का परिवहन करता है।</li>
+        //                   <li>यह रोगाणुओं को नष्ट करता है।</li>
+        //                 </ul>
+        //               </div>
+        //             ),
+        //           },
+        //           {
+        //             question: "18. अरेखित, रेखित एवं हृदपेशियों में क्या अंतर है?",
+        //             answer: (
+        //               <div>
+        //                 <b style={{ color: "green" }}>उत्तर:—</b> अरेखित, रेखित और हृदपेशियों में निम्नलिखित अंतर हैं:
+        //                 <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
+        //                   <thead>
+        //                     <tr>
+        //                       <th style={{ border: "1px solid black", padding: "8px", backgroundColor: "#f0f0f0" }}>पेशी प्रकार</th>
+        //                       <th style={{ border: "1px solid black", padding: "8px", backgroundColor: "#f0f0f0" }}>विशेषताएँ</th>
+        //                     </tr>
+        //                   </thead>
+        //                   <tbody>
+        //                     <tr>
+        //                       <td style={{ border: "1px solid black", padding: "8px" }}>अरेखित पेशी</td>
+        //                       <td style={{ border: "1px solid black", padding: "8px" }}>
+        //                         <ul>
+        //                           <li>आहारनाल, आँत, रक्तवाहिनियों और मूत्राशय में पाई जाती है।</li>
+        //                           <li>अशाखित होती है।</li>
+        //                           <li>अनैच्छिक होती है।</li>
+        //                           <li>प्रत्येक तंतु में एक केंद्रक होता है।</li>
+        //                         </ul>
+        //                       </td>
+        //                     </tr>
+        //                     <tr>
+        //                       <td style={{ border: "1px solid black", padding: "8px" }}>रेखित पेशी</td>
+        //                       <td style={{ border: "1px solid black", padding: "8px" }}>
+        //                         <ul>
+        //                           <li>कंकाल से जुड़ी रहती है, ग्रहणी में भी पाई जाती है।</li>
+        //                           <li>अशाखित होती है।</li>
+        //                           <li>ऐच्छिक होती है।</li>
+        //                           <li>बहुकेंद्रीय होती है।</li>
+        //                         </ul>
+        //                       </td>
+        //                     </tr>
+        //                     <tr>
+        //                       <td style={{ border: "1px solid black", padding: "8px" }}>हृदपेशी</td>
+        //                       <td style={{ border: "1px solid black", padding: "8px" }}>
+        //                         <ul>
+        //                           <li>हृदय की भित्ति में पाई जाती है।</li>
+        //                           <li>एक दूसरे से जुड़ी रहती है।</li>
+        //                           <li>अनैच्छिक होती है।</li>
+        //                           <li>एककेंद्रीय होती है।</li>
+        //                         </ul>
+        //                       </td>
+        //                     </tr>
+        //                   </tbody>
+        //                 </table>
+        //               </div>
+        //             ),
+        //           },
+        //     ]
+        //   },
 
           // chapter 3
-          {
-            topicName: "3. जीवों में विविधता",
-            questions: [
-                {
-                  question: "1. जीवों में विविधता किस प्रकार से होती है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> जीवों में विभिन्नता रंग, रूप, आकार, आकृति, भोजन, आवास आदि के कारण होती है।
-                    </div>
-                  ),
-                },
-                {
-                  question: "2. वर्गीकरण किसे कहते है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> जीवों की विविधता के अध्ययन को सहज करने हेतु, हम उनकी समानताओं एवं विषमताओं के आधार पर विभिन्न भागों में बाँटते हैं, जिसे वर्गीकरण कहते हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "3. वर्गीकरण को किसने लिखा?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> कैरोलस लिन्नियस (1707-78) ने अठारहवीं शताब्दी में वर्गिकी की स्थापना की।
-                    </div>
-                  ),
-                },
-                {
-                  question: "4. वर्गीकरण के कितने इकाइयाँ थी?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> वर्गीकरण की चार इकाइयाँ थीं:
-                      <ul>
-                        <li>संघ</li>
-                        <li>वर्ग</li>
-                        <li>वंश</li>
-                        <li>जाति</li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                {
-                  question: "5. वर्गीकरण की संख्या को किस इकाइयों में बाँटा गया है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> वर्गीकरण को छोटी इकाइयों में बाँटा गया है:
-                      <ul>
-                        <li>उपसंघ</li>
-                        <li>उपवर्ग</li>
-                        <li>उपवंश</li>
-                        <li>उपजाति</li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                {
-                  question: "6. कैरोलस लिन्नियस ने जीवों को कितने भागों में बाँटा है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> दो भागों में:
-                      <ul>
-                        <li>पादप जगत</li>
-                        <li>जंतु जगत</li>
-                      </ul>
-                      <p>
-                        <b>आधार:</b> पौधे प्रचलन में असमर्थ होते हैं और उनकी कोशिकाओं में
-                        क्लोरोफिल एवं कोशिकाभित्ति पाई जाती है। जबकि जंतु प्रचलनशील होते हैं,
-                        उनमें क्लोरोफिल अनुपस्थित होता है और उनकी कोशिकाओं में कोशिकाभित्ति
-                        नहीं पाई जाती।
-                      </p>
-                    </div>
-                  ),
-                },
-                {
-                  question: "7. विकासवाद के संस्थापक कौन थे?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> विकासवाद के संस्थापक चार्ल्स डार्विन ने 1859 में अपनी पुस्तक *द ऑरिजिन ऑफ स्पीशीज* में विकासवाद के सिद्धांत को प्रकाशित किया।
-                    </div>
-                  ),
-                },
-                {
-                  question: "8. साधारण जीव किसे कहते है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> शुरू में जो जीव धरती पर अवतरित हुए, वे आदिम या पुराने जीव थे, जिन्हें साधारण जीव कहते हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "9. जीवों के वर्गीकरण के कितने स्तर है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> जीवों के वर्गीकरण के निम्नलिखित स्तर हैं:
-                      <ol>
-                        <li>जगत (किंगडम)</li>
-                        <li>उपजगत (सबकिंगडम)</li>
-                        <li>फाइलम या डिवीजन</li>
-                        <li>वर्ग (क्लास)</li>
-                        <li>गण (ऑर्डर)</li>
-                        <li>कुल (फैमिली)</li>
-                        <li>वंश (जेनेरा)</li>
-                        <li>जाति (स्पीशीज)</li>
-                      </ol>
-                    </div>
-                  ),
-                },
-                {
-                  question: "10. हिटेकर के पाँच जगत क्या है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> हिटेकर के पाँच जगत निम्न हैं:
-                      <ul>
-                        <li>जगत मोनेरा</li>
-                        <li>जगत प्रोटिस्टा</li>
-                        <li>जगत फंजाई</li>
-                        <li>जगत प्लांटी</li>
-                        <li>जगत एनिमेलिया</li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                {
-                  question: "11. मोनेरा क्या है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> मोनेरा जगत में प्राचीन, सरल और प्रोकैरियोटिक सूक्ष्मजीव सम्मिलित हैं, जैसे:
-                      <ul>
-                        <li>जीवाणु</li>
-                        <li>नीलहरित शैवाल</li>
-                      </ul>
-                      <p>जीवाणु मुख्यतः एककोशिकीय होते हैं और इनमें कुछ में क्लोरोफिल भी पाया जाता है।</p>
-                    </div>
-                  ),
-                },
-                {
-                  question: "12. प्रोटिस्टा क्या है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> प्रोटिस्टा जगत में जलीय एककोशिकीय सूक्ष्मजीव होते हैं। ये स्वपोषी और परपोषी होते हैं। 
-                      <p>उदाहरण: अमीबा, पैरामीशियम</p>
-                    </div>
-                  ),
-                },
-                {
-                  question: "13. फंजाई क्या है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> फंजाई जगत में बहुकोशिकीय यूकैरियोटिक जीव होते हैं, जिनमें क्लोरोफिल नहीं पाया जाता, लेकिन कोशिकाभित्ति होती है।
-                    </div>
-                  ),
-                },
-                {
-                  question: "14. प्लांटी क्या है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> प्लांटी जगत में यूकैरियोटिक, प्रकाश संश्लेषण करने वाले बहुकोशिकीय जीव होते हैं। इनमें जलीय और स्थलीय दोनों प्रकार के पौधे सम्मिलित हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "15. एनिमेलिया क्या है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> एनिमेलिया जगत में कोशिकाओं में कोशिकाभित्ति नहीं होती। ये जलीय और स्थलीय परपोषी जीव होते हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "16. आइकलर ने पादप जगत को कितने उपजगत में बाँटा?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> आइकलर ने पादप जगत को दो उपजगतों में बाँटा:
-                      <ul>
-                        <li>क्रिप्टोगैम्स</li>
-                        <li>फैनरोगैम्स</li>
-                      </ul>
-                      <p>
-                        <b>क्रिप्टोगैम्स:</b> बीज रहित पौधे, जिनमें जड़ और पत्ती नहीं होती।
-                        <br />
-                        <b>फैनरोगैम्स:</b> उच्च कोटि के पौधे, जिनमें जड़, तना, पत्ती और संवहन तंत्र होते हैं।
-                      </p>
-                    </div>
-                  ),
-                },
-                {
-                  question: "17. क्रिप्टोगैम्स को कितने भागों में बाँटा गया है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> क्रिप्टोगैम्स को तीन भागों में बाँटा गया है:
-                      <ul>
-                        <li>थैलोफाइटा</li>
-                        <li>ब्रायोफाइटा</li>
-                        <li>टेरिडोफाइटा</li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                  {
-                    question: "18. थैलोफाइटा किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> इनका शरीर जड़, तना एवं पत्तियों में विभाजित नहीं रहता है। यह एक थैलस के रूप में रहता है, इसलिए इन्हें थैलोफाइटा कहते हैं।
-                        <ul>
-                          <li>इनमें संवहनीय तंत्र नहीं पाया जाता है।</li>
-                          <li>शैवाल तथा लाइकेन को इसके अंतर्गत शामिल किया गया है।</li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "19. शैवाल या ऐल्गी क्या है?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> यह पादप जगत का सबसे सरल जलीय जीव है, जो प्रकाश संश्लेषण द्वारा भोजन का निर्माण करता है।
-                        <p>
-                          कुछ शैवाल एककोशिकीय होते हैं, जबकि अन्य बहुकोशिकीय धागे जैसी संरचना वाले
-                          होते हैं, जैसे *स्पाइरोगाइरा*। यह साफ जल में पाए जाते हैं।
-                        </p>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "20. लाइकेन क्या है?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> लाइकेन पेड़ों की छाल, पत्थरों तथा पुरानी दीवारों पर रंगीन धब्बों के रूप में दिखाई पड़ते हैं।
-                        <ul>
-                          <li>कवक शैवाल को नमी, खनिज-लवण तथा आश्रय प्रदान करता है।</li>
-                          <li>शैवाल भोजन का निर्माण कर कवक को सहयोग देता है।</li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "21. ब्रोयोफाइटा किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> इस विभाग के पौधे भूमि पर नम एवं छायादार स्थानों पर उगते हैं, इसलिए इन्हें उभरचर कहा जाता है। 
-                        <p>अधिकांश पौधे हरे एवं छोटे होते हैं।</p>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "22. टेरिडोफाइटा किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> इस विभाग के पौधों का शरीर जड़, तना और पत्तियों में विभाजित रहता है। 
-                        <ul>
-                          <li>ये छायादार और नम स्थानों में पाए जाते हैं।</li>
-                          <li>इन पौधों में बीज नहीं बनते, इसलिए इन्हें बीजरहित पौधे कहा जाता है।</li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "23. एनिमेलिया या जंतु जगत की विशेषताओं को लिखें?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b>
-                        <ul>
-                          <li>ये बहुकोशिकीय होते हैं, जिनकी कोशिका में केंद्रक झिल्ली एवं कोशिकांग पाए जाते हैं।</li>
-                          <li>ये परपोषी और विषमपोषी होते हैं, यानी भोजन के लिए अन्य जीवों पर निर्भर रहते हैं।</li>
-                          <li>इनके शरीर का आकार निम्न प्रकार का हो सकता है:
-                            <ul>
-                              <li><b>द्विपार्श्व सममित:</b> शरीर को एक काट द्वारा दो समान भागों में बाँट सकते हैं।</li>
-                              <li><b>अरीय सममित:</b> शरीर को केंद्र से कई भागों में बाँटा जा सकता है, जैसे हाइड्रा।</li>
-                              <li><b>असममित:</b> शरीर को किसी भी काट द्वारा समान भागों में नहीं बाँटा जा सकता।</li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "24. आर्थोपोडा क्या है?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> आर्थोपोडा जंतु जगत का सबसे बड़ा संघ है, जिसमें 75% जंतु शामिल हैं।
-                        <ul>
-                          <li>ये जल और स्थल के सभी वासस्थानों में पाए जाते हैं।</li>
-                          <li>इनका शरीर कठोर निर्जीव बाहरी कंकाल से ढका होता है।</li>
-                          <li>देहगुहा में रक्त भरा रहता है।</li>
-                          <li>आहार नाल पूर्ण होता है और मुख के चारों ओर मुखांग होते हैं।</li>
-                          <li>उदाहरण: केकड़ा, झींगा, मक्खी आदि।</li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "25. मोलस्का क्या है?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b>
-                        <ul>
-                          <li>इनका शरीर अखंडित होता है, लेकिन टॉर्सन प्रक्रिया के कारण असममित हो जाता है।</li>
-                          <li>इनका शरीर एक कोमल झिल्ली से ढका होता है, जिसे प्रावार (मेंटल) कहते हैं।</li>
-                          <li>देहगुहा छोटी होती है।</li>
-                          <li>उदाहरण: घोंघा।</li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "26. प्रोटोकॉर्डेटा किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> इस संघ के जंतुओं में नोटोकार्ड (लचीली छड़ जैसी संरचना) पाई जाती है, जो शरीर के पृष्ठीय तल पर स्थित होती है।
-                        <ul>
-                          <li>ये द्विपार्श्व सममित और ट्रिप्लोब्लास्टिक होते हैं।</li>
-                          <li>इनके शरीर में वास्तविक देहगुहा पाई जाती है।</li>
-                          <li>उदाहरण: हर्डमानिया, एम्फीओक्सस।</li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "27. कार्डेटा क्या है?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> कार्डेटा जल और स्थल दोनों स्थानों पर पाए जाने वाले जंतु हैं।
-                        <ul>
-                          <li>इनके शरीर में गुदा के पीछे पुच्छ स्थित होता है।</li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                    {
-                      question: "28. मत्स्य या पीसीज क्या है?",
-                      answer: (
-                        <div>
-                          <b style={{ color: "green" }}>उत्तर:—</b> यह उपसंघ वर्टिब्रेटा का पहला मारा है।
-                          <ul>
-                            <li>इसके अंतर्गत मछलियाँ आती हैं, जो मीठे जल में पाई जाती हैं।</li>
-                            <li>इनकी त्वचा शल्कों से ढकी होती है।</li>
-                            <li>तैरने के लिए पंख और मांसल पूंछ होती है।</li>
-                            <li>इसके हृदय में दो कक्ष होते हैं।</li>
-                          </ul>
-                        </div>
-                      ),
-                    },
-                    {
-                      question: "29. एम्फिबिया क्या है?",
-                      answer: (
-                        <div>
-                          <b style={{ color: "green" }}>उत्तर:—</b> यह जल और स्थल दोनों स्थानों पर निवास करते हैं, इसलिए इसे जलचर या उभयचर कहते हैं।
-                          <ul>
-                            <li>श्वसन त्वचा, गिल्स, और फेफड़ों द्वारा होता है।</li>
-                            <li>अंतः कंकाल अस्थि का बना होता है।</li>
-                          </ul>
-                        </div>
-                      ),
-                    },
-                    {
-                      question: "30. रेप्टीलिया क्या है?",
-                      answer: (
-                        <div>
-                          <b style={{ color: "green" }}>उत्तर:—</b>
-                          <ul>
-                            <li>ये जल में या जल के बाहर पाए जाते हैं।</li>
-                            <li>ये रेंगकर चलते हैं।</li>
-                            <li>श्वसन फेफड़ों द्वारा होता है।</li>
-                            <li>उदाहरण: कछुआ, छिपकली।</li>
-                          </ul>
-                          <p>
-                            <b>★ एवीज:</b> इसके अंतर्गत पक्षी आते हैं। इनका शरीर पंखों से ढका रहता है।
-                            <ul>
-                              <li>जबड़ों में दांत नहीं होते हैं।</li>
-                            </ul>
-                          </p>
-                        </div>
-                      ),
-                    },
-                    {
-                      question: "31. स्तनी या मैमेलिया क्या है?",
-                      answer: (
-                        <div>
-                          <b style={{ color: "green" }}>उत्तर:—</b> ये नियततापी होते हैं।
-                          <ul>
-                            <li>इनकी त्वचा बाल या रोम से ढकी होती है।</li>
-                            <li>श्वसन फेफड़ों द्वारा होता है।</li>
-                            <li>उदाहरण: बतख, चूहा, कुत्ता इत्यादि।</li>
-                          </ul>
-                        </div>
-                      ),
-                    },
+          // {
+          //   topicName: "3. जीवों में विविधता",
+          //   questions: [
+          //       {
+          //         question: "1. जीवों में विविधता किस प्रकार से होती है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> जीवों में विभिन्नता रंग, रूप, आकार, आकृति, भोजन, आवास आदि के कारण होती है।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "2. वर्गीकरण किसे कहते है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> जीवों की विविधता के अध्ययन को सहज करने हेतु, हम उनकी समानताओं एवं विषमताओं के आधार पर विभिन्न भागों में बाँटते हैं, जिसे वर्गीकरण कहते हैं।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "3. वर्गीकरण को किसने लिखा?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> कैरोलस लिन्नियस (1707-78) ने अठारहवीं शताब्दी में वर्गिकी की स्थापना की।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "4. वर्गीकरण के कितने इकाइयाँ थी?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> वर्गीकरण की चार इकाइयाँ थीं:
+          //             <ul>
+          //               <li>संघ</li>
+          //               <li>वर्ग</li>
+          //               <li>वंश</li>
+          //               <li>जाति</li>
+          //             </ul>
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "5. वर्गीकरण की संख्या को किस इकाइयों में बाँटा गया है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> वर्गीकरण को छोटी इकाइयों में बाँटा गया है:
+          //             <ul>
+          //               <li>उपसंघ</li>
+          //               <li>उपवर्ग</li>
+          //               <li>उपवंश</li>
+          //               <li>उपजाति</li>
+          //             </ul>
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "6. कैरोलस लिन्नियस ने जीवों को कितने भागों में बाँटा है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> दो भागों में:
+          //             <ul>
+          //               <li>पादप जगत</li>
+          //               <li>जंतु जगत</li>
+          //             </ul>
+          //             <p>
+          //               <b>आधार:</b> पौधे प्रचलन में असमर्थ होते हैं और उनकी कोशिकाओं में
+          //               क्लोरोफिल एवं कोशिकाभित्ति पाई जाती है। जबकि जंतु प्रचलनशील होते हैं,
+          //               उनमें क्लोरोफिल अनुपस्थित होता है और उनकी कोशिकाओं में कोशिकाभित्ति
+          //               नहीं पाई जाती।
+          //             </p>
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "7. विकासवाद के संस्थापक कौन थे?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> विकासवाद के संस्थापक चार्ल्स डार्विन ने 1859 में अपनी पुस्तक *द ऑरिजिन ऑफ स्पीशीज* में विकासवाद के सिद्धांत को प्रकाशित किया।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "8. साधारण जीव किसे कहते है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> शुरू में जो जीव धरती पर अवतरित हुए, वे आदिम या पुराने जीव थे, जिन्हें साधारण जीव कहते हैं।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "9. जीवों के वर्गीकरण के कितने स्तर है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> जीवों के वर्गीकरण के निम्नलिखित स्तर हैं:
+          //             <ol>
+          //               <li>जगत (किंगडम)</li>
+          //               <li>उपजगत (सबकिंगडम)</li>
+          //               <li>फाइलम या डिवीजन</li>
+          //               <li>वर्ग (क्लास)</li>
+          //               <li>गण (ऑर्डर)</li>
+          //               <li>कुल (फैमिली)</li>
+          //               <li>वंश (जेनेरा)</li>
+          //               <li>जाति (स्पीशीज)</li>
+          //             </ol>
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "10. हिटेकर के पाँच जगत क्या है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> हिटेकर के पाँच जगत निम्न हैं:
+          //             <ul>
+          //               <li>जगत मोनेरा</li>
+          //               <li>जगत प्रोटिस्टा</li>
+          //               <li>जगत फंजाई</li>
+          //               <li>जगत प्लांटी</li>
+          //               <li>जगत एनिमेलिया</li>
+          //             </ul>
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "11. मोनेरा क्या है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> मोनेरा जगत में प्राचीन, सरल और प्रोकैरियोटिक सूक्ष्मजीव सम्मिलित हैं, जैसे:
+          //             <ul>
+          //               <li>जीवाणु</li>
+          //               <li>नीलहरित शैवाल</li>
+          //             </ul>
+          //             <p>जीवाणु मुख्यतः एककोशिकीय होते हैं और इनमें कुछ में क्लोरोफिल भी पाया जाता है।</p>
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "12. प्रोटिस्टा क्या है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> प्रोटिस्टा जगत में जलीय एककोशिकीय सूक्ष्मजीव होते हैं। ये स्वपोषी और परपोषी होते हैं। 
+          //             <p>उदाहरण: अमीबा, पैरामीशियम</p>
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "13. फंजाई क्या है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> फंजाई जगत में बहुकोशिकीय यूकैरियोटिक जीव होते हैं, जिनमें क्लोरोफिल नहीं पाया जाता, लेकिन कोशिकाभित्ति होती है।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "14. प्लांटी क्या है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> प्लांटी जगत में यूकैरियोटिक, प्रकाश संश्लेषण करने वाले बहुकोशिकीय जीव होते हैं। इनमें जलीय और स्थलीय दोनों प्रकार के पौधे सम्मिलित हैं।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "15. एनिमेलिया क्या है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> एनिमेलिया जगत में कोशिकाओं में कोशिकाभित्ति नहीं होती। ये जलीय और स्थलीय परपोषी जीव होते हैं।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "16. आइकलर ने पादप जगत को कितने उपजगत में बाँटा?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> आइकलर ने पादप जगत को दो उपजगतों में बाँटा:
+          //             <ul>
+          //               <li>क्रिप्टोगैम्स</li>
+          //               <li>फैनरोगैम्स</li>
+          //             </ul>
+          //             <p>
+          //               <b>क्रिप्टोगैम्स:</b> बीज रहित पौधे, जिनमें जड़ और पत्ती नहीं होती।
+          //               <br />
+          //               <b>फैनरोगैम्स:</b> उच्च कोटि के पौधे, जिनमें जड़, तना, पत्ती और संवहन तंत्र होते हैं।
+          //             </p>
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "17. क्रिप्टोगैम्स को कितने भागों में बाँटा गया है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> क्रिप्टोगैम्स को तीन भागों में बाँटा गया है:
+          //             <ul>
+          //               <li>थैलोफाइटा</li>
+          //               <li>ब्रायोफाइटा</li>
+          //               <li>टेरिडोफाइटा</li>
+          //             </ul>
+          //           </div>
+          //         ),
+          //       },
+          //         {
+          //           question: "18. थैलोफाइटा किसे कहते हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> इनका शरीर जड़, तना एवं पत्तियों में विभाजित नहीं रहता है। यह एक थैलस के रूप में रहता है, इसलिए इन्हें थैलोफाइटा कहते हैं।
+          //               <ul>
+          //                 <li>इनमें संवहनीय तंत्र नहीं पाया जाता है।</li>
+          //                 <li>शैवाल तथा लाइकेन को इसके अंतर्गत शामिल किया गया है।</li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "19. शैवाल या ऐल्गी क्या है?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> यह पादप जगत का सबसे सरल जलीय जीव है, जो प्रकाश संश्लेषण द्वारा भोजन का निर्माण करता है।
+          //               <p>
+          //                 कुछ शैवाल एककोशिकीय होते हैं, जबकि अन्य बहुकोशिकीय धागे जैसी संरचना वाले
+          //                 होते हैं, जैसे *स्पाइरोगाइरा*। यह साफ जल में पाए जाते हैं।
+          //               </p>
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "20. लाइकेन क्या है?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> लाइकेन पेड़ों की छाल, पत्थरों तथा पुरानी दीवारों पर रंगीन धब्बों के रूप में दिखाई पड़ते हैं।
+          //               <ul>
+          //                 <li>कवक शैवाल को नमी, खनिज-लवण तथा आश्रय प्रदान करता है।</li>
+          //                 <li>शैवाल भोजन का निर्माण कर कवक को सहयोग देता है।</li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "21. ब्रोयोफाइटा किसे कहते हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> इस विभाग के पौधे भूमि पर नम एवं छायादार स्थानों पर उगते हैं, इसलिए इन्हें उभरचर कहा जाता है। 
+          //               <p>अधिकांश पौधे हरे एवं छोटे होते हैं।</p>
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "22. टेरिडोफाइटा किसे कहते हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> इस विभाग के पौधों का शरीर जड़, तना और पत्तियों में विभाजित रहता है। 
+          //               <ul>
+          //                 <li>ये छायादार और नम स्थानों में पाए जाते हैं।</li>
+          //                 <li>इन पौधों में बीज नहीं बनते, इसलिए इन्हें बीजरहित पौधे कहा जाता है।</li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "23. एनिमेलिया या जंतु जगत की विशेषताओं को लिखें?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b>
+          //               <ul>
+          //                 <li>ये बहुकोशिकीय होते हैं, जिनकी कोशिका में केंद्रक झिल्ली एवं कोशिकांग पाए जाते हैं।</li>
+          //                 <li>ये परपोषी और विषमपोषी होते हैं, यानी भोजन के लिए अन्य जीवों पर निर्भर रहते हैं।</li>
+          //                 <li>इनके शरीर का आकार निम्न प्रकार का हो सकता है:
+          //                   <ul>
+          //                     <li><b>द्विपार्श्व सममित:</b> शरीर को एक काट द्वारा दो समान भागों में बाँट सकते हैं।</li>
+          //                     <li><b>अरीय सममित:</b> शरीर को केंद्र से कई भागों में बाँटा जा सकता है, जैसे हाइड्रा।</li>
+          //                     <li><b>असममित:</b> शरीर को किसी भी काट द्वारा समान भागों में नहीं बाँटा जा सकता।</li>
+          //                   </ul>
+          //                 </li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "24. आर्थोपोडा क्या है?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> आर्थोपोडा जंतु जगत का सबसे बड़ा संघ है, जिसमें 75% जंतु शामिल हैं।
+          //               <ul>
+          //                 <li>ये जल और स्थल के सभी वासस्थानों में पाए जाते हैं।</li>
+          //                 <li>इनका शरीर कठोर निर्जीव बाहरी कंकाल से ढका होता है।</li>
+          //                 <li>देहगुहा में रक्त भरा रहता है।</li>
+          //                 <li>आहार नाल पूर्ण होता है और मुख के चारों ओर मुखांग होते हैं।</li>
+          //                 <li>उदाहरण: केकड़ा, झींगा, मक्खी आदि।</li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "25. मोलस्का क्या है?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b>
+          //               <ul>
+          //                 <li>इनका शरीर अखंडित होता है, लेकिन टॉर्सन प्रक्रिया के कारण असममित हो जाता है।</li>
+          //                 <li>इनका शरीर एक कोमल झिल्ली से ढका होता है, जिसे प्रावार (मेंटल) कहते हैं।</li>
+          //                 <li>देहगुहा छोटी होती है।</li>
+          //                 <li>उदाहरण: घोंघा।</li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "26. प्रोटोकॉर्डेटा किसे कहते हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> इस संघ के जंतुओं में नोटोकार्ड (लचीली छड़ जैसी संरचना) पाई जाती है, जो शरीर के पृष्ठीय तल पर स्थित होती है।
+          //               <ul>
+          //                 <li>ये द्विपार्श्व सममित और ट्रिप्लोब्लास्टिक होते हैं।</li>
+          //                 <li>इनके शरीर में वास्तविक देहगुहा पाई जाती है।</li>
+          //                 <li>उदाहरण: हर्डमानिया, एम्फीओक्सस।</li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "27. कार्डेटा क्या है?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> कार्डेटा जल और स्थल दोनों स्थानों पर पाए जाने वाले जंतु हैं।
+          //               <ul>
+          //                 <li>इनके शरीर में गुदा के पीछे पुच्छ स्थित होता है।</li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
+          //           {
+          //             question: "28. मत्स्य या पीसीज क्या है?",
+          //             answer: (
+          //               <div>
+          //                 <b style={{ color: "green" }}>उत्तर:—</b> यह उपसंघ वर्टिब्रेटा का पहला मारा है।
+          //                 <ul>
+          //                   <li>इसके अंतर्गत मछलियाँ आती हैं, जो मीठे जल में पाई जाती हैं।</li>
+          //                   <li>इनकी त्वचा शल्कों से ढकी होती है।</li>
+          //                   <li>तैरने के लिए पंख और मांसल पूंछ होती है।</li>
+          //                   <li>इसके हृदय में दो कक्ष होते हैं।</li>
+          //                 </ul>
+          //               </div>
+          //             ),
+          //           },
+          //           {
+          //             question: "29. एम्फिबिया क्या है?",
+          //             answer: (
+          //               <div>
+          //                 <b style={{ color: "green" }}>उत्तर:—</b> यह जल और स्थल दोनों स्थानों पर निवास करते हैं, इसलिए इसे जलचर या उभयचर कहते हैं।
+          //                 <ul>
+          //                   <li>श्वसन त्वचा, गिल्स, और फेफड़ों द्वारा होता है।</li>
+          //                   <li>अंतः कंकाल अस्थि का बना होता है।</li>
+          //                 </ul>
+          //               </div>
+          //             ),
+          //           },
+          //           {
+          //             question: "30. रेप्टीलिया क्या है?",
+          //             answer: (
+          //               <div>
+          //                 <b style={{ color: "green" }}>उत्तर:—</b>
+          //                 <ul>
+          //                   <li>ये जल में या जल के बाहर पाए जाते हैं।</li>
+          //                   <li>ये रेंगकर चलते हैं।</li>
+          //                   <li>श्वसन फेफड़ों द्वारा होता है।</li>
+          //                   <li>उदाहरण: कछुआ, छिपकली।</li>
+          //                 </ul>
+          //                 <p>
+          //                   <b>★ एवीज:</b> इसके अंतर्गत पक्षी आते हैं। इनका शरीर पंखों से ढका रहता है।
+          //                   <ul>
+          //                     <li>जबड़ों में दांत नहीं होते हैं।</li>
+          //                   </ul>
+          //                 </p>
+          //               </div>
+          //             ),
+          //           },
+          //           {
+          //             question: "31. स्तनी या मैमेलिया क्या है?",
+          //             answer: (
+          //               <div>
+          //                 <b style={{ color: "green" }}>उत्तर:—</b> ये नियततापी होते हैं।
+          //                 <ul>
+          //                   <li>इनकी त्वचा बाल या रोम से ढकी होती है।</li>
+          //                   <li>श्वसन फेफड़ों द्वारा होता है।</li>
+          //                   <li>उदाहरण: बतख, चूहा, कुत्ता इत्यादि।</li>
+          //                 </ul>
+          //               </div>
+          //             ),
+          //           },
                                     
 
              
               
-            ]
-          },
+          //   ]
+          // },
 
 
           ///// Chapter 4
 
-          {
-            topicName: "4.  स्वास्थ्य एवं रोग",
-            questions: [
+          // {
+          //   topicName: "4.  स्वास्थ्य एवं रोग",
+          //   questions: [
 
-                {
-                  question: "1. अच्छा स्वास्थ्य क्या है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> वह स्थिति जिसमें पूर्ण शारीरिक, मानसिक और सामाजिक संपन्नता हो, न कि केवल बीमारियों या पीड़ा का न होना, अच्छा स्वास्थ्य है।
-                    </div>
-                  ),
-                },
-                {
-                  question: "2. WHO क्या है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> विश्‍व स्वास्थ्य संगठन। <br />
-                      (World Health Organization)
-                      <ul>
-                        <li>W – World</li>
-                        <li>H – Health</li>
-                        <li>O – Organization</li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                {
-                  question: "3. अच्छे स्वास्थ्य के मूल शर्तें क्या है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> अच्छे स्वास्थ्य की मूल शर्तें निम्नलिखित हैं:
-                      <ul>
-                        <li>संतुलित आहार।</li>
-                        <li>व्यक्तिगत एवं घरेलू स्वास्थ्य।</li>
-                        <li>स्वच्छ भोजन एवं जल।</li>
-                        <li>शुद्ध एवं स्वच्छ हवा।</li>
-                        <li>व्यायाम एवं विश्राम।</li>
-                        <li>दुर्व्यसन का न होना।</li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                {
-                  question: "4. मानव रोग किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> रोग एक असामान्य शारीरिक स्थिति है, जिसमें शारीरिक अंग या अंगतंत्र सामान्य रूप से कार्य नहीं कर पाते हैं। इसे मानव रोग कहते हैं। <br />
-                      <b>उदाहरण:</b> गठिया, हैजा, मलेरिया, चेचक, डायरिया आदि।
-                    </div>
-                  ),
-                },
-                {
-                  question: "5. रोग लक्षण किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> वैसे संकेत जो शारीरिक अंगों के सामान्य कार्य न करने से मिलते हैं तथा जिसे केवल रोगी ही महसूस कर सकता है, उसे रोग लक्षण कहते हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "6. रोगों के सामान्य चिन्ह किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> रोगों के सामान्य चिन्ह वैसी स्थिति है जो शरीर की कायिक एवं रचना के आदर्श स्वरूप में परिवर्तन को दर्शाते हैं। इसे रोगों के सामान्य चिन्ह कहते हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "7. तीव्र रोग किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> ऐसे रोग जो अचानक उत्पन्न होते हैं और कम समय तक रहते हैं, उन्हें तीव्र रोग कहते हैं। <br />
-                      <b>उदाहरण:</b> सर्दी, मलेरिया, हैजा आदि।
-                    </div>
-                  ),
-                },
-                {
-                  question: "8. चिरकालिक रोग किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> ऐसे रोग जो बहुत समय तक बने रहते हैं, चिरकालिक रोग कहलाते हैं। <br />
-                      <b>उदाहरण:</b> दमा, गठिया, टीवी आदि।
-                    </div>
-                  ),
-                },
-                {
-                  question: "9. रोग के कितने प्रकार हैं? उनके कारण लिखें।",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> रोग दो प्रकार के होते हैं:
-                      <ul>
-                        <li>आंतरिक कारकों से होने वाला रोग।</li>
-                        <li>बाह्य कारकों या बाहरी कारणों से होने वाला रोग।</li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                {
-                  question: "10. आंतरिक कारक तथा उनसे होने वाला रोग किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> यह रोग शारीरिक रचना या शारीरिक क्रियाओं के दोषों के कारण स्वास्थ्य को प्रभावित करते हैं। <br />
-                      <b>उदाहरण:</b>
-                      <ul>
-                        <li>
-                          <b>आनुवंशिक:</b> अंगदोष जन्मकाल से माता-पिता से संतानों को मिलते हैं। इसे वंशानुगत रोग कहते हैं। जैसे हीमोफीलिया।
-                        </li>
-                        <li>
-                          <b>हार्मोन की गड़बड़ी:</b> अंतःस्त्रावी ग्रंथियों के असंतुलन के कारण कई बीमारियाँ उत्पन्न होती हैं।
-                        </li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                {
-                  question: "11. रोगाणु किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> रोग उत्पन्न करने वाले सूक्ष्मजीव रोगाणु कहलाते हैं। <br />
-                      <b>उदाहरण:</b> बैक्टीरिया, वायरस। जैसे हैजा, क्षयरोग।
-                    </div>
-                  ),
-                },
-                {
-                  question: "12. संक्रामक रोग किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> सूक्ष्मजीवों के शरीर में प्रवेश करने से शारीरिक रोग उत्पन्न होते हैं। इन्हें संक्रामक रोग कहते हैं। <br />
-                      <b>उदाहरण:</b> न्यूमोनिया, टीवी, एड्स, मलेरिया।
-                    </div>
-                  ),
-                },
-                {
-                  question: "13. असंक्रामक रोग किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> ऐसे रोग जो रोगाणुओं के कारण नहीं होते हैं, उन्हें असंक्रामक रोग कहते हैं। <br />
-                      <b>उदाहरण:</b> मधुमेह, कैंसर, गठिया।
-                    </div>
-                  ),
-                },
-                {
-                  question: "14. संचारित रोग किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> वैसे रोग जो संक्रमित व्यक्ति से दूसरों में बाहरी कारकों से फैलते हैं, उन्हें संचारित रोग कहते हैं। <br />
-                      <b>उदाहरण:</b> हवा, जल, भोजन या मच्छर के माध्यम से फैलने वाले रोग।
-                    </div>
-                  ),
-                },
-                {
-                  question: "15. संक्रामक रोगों के उपचार क्या हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> संक्रामक रोगों का उपचार दो प्रकार से किया जाता है:
-                      <ul>
-                        <li>दवाइयों के द्वारा।</li>
-                        <li>रोगाणुओं को समाप्त करके।</li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                  {
-                    question: "16. रोगों के लक्षण एवं प्रभाव को कम करने हेतु उपचार को लिखें?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> जब किसी रोग से ग्रसित व्यक्ति के शरीर में दर्द होता है या उसे मिचली आती है, तो उन्हें दवाइयाँ दी जाती हैं, जिससे यह कुछ देर के लिए समाप्त हो जाता है।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "17. रोगाणुओं को समाप्त करने हेतु उपचार?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> संक्रामक रोग सूक्ष्म जीवाणु, बैक्टीरिया, वायरस, फंजाई, प्रोटोजोआ तथा कृमि के कारण होता है। इसे नष्ट करने वाली दवाइयाँ दी जाती हैं ताकि यह दूसरों में न फैले।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "18. जैव रासायनिक प्रक्रम किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> एक कोशिका के भीतर ऊर्जा के उत्पादन के लिए कई जैव रासायनिक क्रियाएँ होती हैं, जिससे ऊर्जा इत्यादि का निर्माण होता है।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "19. टीका की खोज किसने और कब की?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> टीका की खोज एडवर्ड जेनर ने 1795 में की।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "20. टीकाकरण किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> टीके को शरीर में प्रवेश कराने की विधि को टीकाकरण कहते हैं।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "21. पल्स-पोलियो कार्यक्रम क्या है?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> पल्स-पोलियो कार्यक्रम पोलियो रोग के विरुद्ध हमारे देश में चलाया गया एक अभियान है। यह वायरस के कारण होने वाला रोग है, जिसमें लकवा जैसी स्थिति हो सकती है। इसके लिए 5 वर्ष तक के बच्चों को टीका लगाया जाता है।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "22. मलेरिया रोग क्या है? इसके लक्षण, नियंत्रण एवं रोकथाम को लिखें?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> मलेरिया एक प्रोटोजोआ *प्लाज्मोडियम* के विभिन्न प्रजातियों द्वारा होता है। यह मादा एनाफिलीज मच्छर के काटने से फैलता है।
-                        <ul>
-                          <li>
-                            <b>लक्षण:</b> शरीर में कंपन के बाद तेज बुखार, सिरदर्द, और मांसपेशियों में दर्द।
-                          </li>
-                          <li>
-                            <b>नियंत्रण:</b> मलेरिया से पीड़ित व्यक्ति को कुनैन दी जाती है, जो सिनकोना पेड़ की छाल से बनती है।
-                          </li>
-                          <li>
-                            <b>रोकथाम:</b>
-                            <ul>
-                              <li>मच्छरों से अपनी सुरक्षा करना।</li>
-                              <li>मच्छरों को नष्ट करना।</li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "23. डायरिया क्या है? इसके लक्षण एवं रोकथाम को लिखें?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> डायरिया कई प्रकार के रोगाणुओं के कारण उत्पन्न होता है। इसका अर्थ बार-बार पतला मल त्यागना है। यह रोग गर्मी और बरसात के मौसम में अधिक होता है।
-                        <ul>
-                          <li>
-                            <b>लक्षण:</b>
-                            <ul>
-                              <li>लगातार दस्त होना।</li>
-                              <li>पेट दर्द, मिचली, और उल्टी।</li>
-                              <li>रोगी के मुख और होंठ सूख जाना, और आँखें अंदर धंस जाना।</li>
-                            </ul>
-                          </li>
-                          <li>
-                            <b>रोकथाम:</b>
-                            <ul>
-                              <li>साफ-सफाई पर ध्यान देना।</li>
-                              <li>पीने का पानी शुद्ध होना चाहिए।</li>
-                              <li>भोजन गर्म और ताजा होना चाहिए।</li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "24. टाइफॉइड क्या है? इसके लक्षण एवं रोकथाम को लिखें?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> टाइफॉइड *सलमोनिला टाइफी* नामक बैक्टीरिया के कारण होने वाला संक्रामक रोग है। यह दूषित पेयजल, भोजन, दूध, कच्चे फल, और सब्जियों के सेवन से आहार नाल में पहुँचकर नुकसान पहुँचाता है।
-                        <ul>
-                          <li>
-                            <b>लक्षण:</b>
-                            <ul>
-                              <li>तेज बुखार, कमजोरी, सिरदर्द, और पसीना आना।</li>
-                              <li>यह बुखार लगभग तीन सप्ताह तक रहता है।</li>
-                            </ul>
-                          </li>
-                          <li>
-                            <b>रोकथाम:</b>
-                            <ul>
-                              <li>साफ-सफाई पर ध्यान देना।</li>
-                              <li>पास-पड़ोस में मक्खियों को पनपने से रोकना।</li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                    {
-                      question: "25. क्षयरोग या टी०वी० क्या है? इसके लक्षण एवं रोकथाम को लिखें?",
-                      answer: (
-                        <div>
-                          <b style={{ color: "green" }}>उत्तर:—</b> क्षयरोग या टी०वी० एक प्रकार के बैक्टीरिया *माइकोबैक्टेरियम ट्युबरकुलेसिस* के कारण होता है। यह बैक्टीरिया एक जहरीला पदार्थ *ट्युबरकुलीन* मुक्त करता है, जो सामान्यतः फेफड़ों को प्रभावित करता है और उनके उत्तकों को क्षतिग्रस्त कर देता है।
-                          <ul>
-                            <li>
-                              <b>लक्षण:</b>
-                              <ul>
-                                <li>हल्का बुखार, लगातार खाँसी, और खाँसते समय कफ के साथ रक्त आना।</li>
-                                <li>रात में पसीना आना और वजन का लगातार कम होना।</li>
-                              </ul>
-                            </li>
-                            <li>
-                              <b>रोकथाम:</b>
-                              <ul>
-                                <li>रोगी को परिवार के अन्य सदस्यों, विशेषकर बच्चों से अलग रखें।</li>
-                                <li>खाँसते समय मुँह ढकें और जहाँ-तहाँ थूकने से बचें।</li>
-                                <li>BCG का टीका लगवाएँ।</li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </div>
-                      ),
-                    },
-                    {
-                      question: "26. हेपेटाइटिस क्या है? इसके लक्षण, नियंत्रण और रोकथाम को लिखें?",
-                      answer: (
-                        <div>
-                          <b style={{ color: "green" }}>उत्तर:—</b> हेपेटाइटिस एक ऐसा रोग है जिसमें यकृत बड़ा हो जाता है। इसका प्रमुख लक्षण *जॉण्डिस* है, जिसमें त्वचा और आँखों का सफेद भाग पीला हो जाता है।
-                          <ul>
-                            <li>
-                              <b>लक्षण:</b> सिरदर्द, हल्का बुखार, जॉण्डिस (पीली त्वचा), और गहरे रंग का मूत्र।
-                            </li>
-                            <li>
-                              <b>नियंत्रण:</b>
-                              <ul>
-                                <li>उच्च कार्बोहाइड्रेट युक्त भोजन का सेवन।</li>
-                                <li>रोगी को अधिक आराम करना।</li>
-                                <li>इंटरफेरॉन की सूई का उपयोग।</li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </div>
-                      ),
-                    },
-                    {
-                      question: "27. एड्स क्या है? इसके लक्षण, प्रसारण और रोकथाम को लिखें?",
-                      answer: (
-                        <div>
-                          <b style={{ color: "green" }}>उत्तर:—</b> एड्स (*एक्वायर्ड इम्यून डिफिशिएंसी सिंड्रोम*) एक रोग है जो *ह्यूमन इम्यूनोडेफिशिएंसी वायरस (HIV)* के संक्रमण से होता है। यह रोग शरीर की प्रतिरक्षा प्रणाली को कमजोर कर देता है।
-                          <ul>
-                            <li>
-                              <b>लक्षण:</b>
-                              <ul>
-                                <li>फूली हुई लसीका ग्रंथियाँ।</li>
-                                <li>शरीर का भार कम होना।</li>
-                                <li>लगातार पेट खराब रहना और बीच-बीच में बीमार होना।</li>
-                              </ul>
-                            </li>
-                            <li>
-                              <b>प्रसारण:</b> एड्स मुख्य रूप से अनैतिक यौन संबंध, दूषित सुई, और संक्रमित रक्त के माध्यम से फैलता है।
-                            </li>
-                            <li>
-                              <b>रोकथाम:</b>
-                              <ul>
-                                <li>अनैतिक यौन संबंधों से बचें।</li>
-                                <li>केवल डिस्पोजेबल सुई का उपयोग करें।</li>
-                                <li>दूसरों के रेज़र या ब्लेड का उपयोग न करें।</li>
-                                <li>स्वास्थ्य शिक्षा और जागरूकता बढ़ाएँ।</li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </div>
-                      ),
-                    },
-                    {
-                      question: "28. रेबीज क्या है? इसके लक्षण एवं रोकथाम को लिखें?",
-                      answer: (
-                        <div>
-                          <b style={{ color: "green" }}>उत्तर:—</b> रेबीज एक घातक रोग है जो *रेबडोवायरस* के कारण होता है। यह कुत्तों, बिल्लियों, बंदरों आदि से मनुष्यों में फैलता है। संक्रमित जानवर के काटने से इसका वायरस शरीर में प्रवेश करता है।
-                          <ul>
-                            <li>
-                              <b>लक्षण:</b>
-                              <ul>
-                                <li>सिरदर्द, हल्का बुखार, और गर्दन में दर्द।</li>
-                                <li>मुख से लार टपकना और क्रोधित होकर चिल्लाना।</li>
-                              </ul>
-                            </li>
-                            <li>
-                              <b>रोकथाम:</b>
-                              <ul>
-                                <li>काटे गए स्थान को साबुन और पानी से धोएँ।</li>
-                                <li>एंटीरेबीज सीरम की सुई लगवाएँ।</li>
-                                <li>ह्यूमन डिप्लॉयड सेल टीके का उपयोग करें।</li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </div>
-                      ),
-                    },
-                    {
-                      question: "29. पोलियो क्या है? इसके लक्षण एवं रोकथाम को लिखें?",
-                      answer: (
-                        <div>
-                          <b style={{ color: "green" }}>उत्तर:—</b> पोलियो वायरस के कारण होने वाला एक संक्रामक रोग है। यह दूषित भोजन, दूध, और पानी के माध्यम से फैलता है। यह 6 महीने से 3 साल तक के बच्चों में अधिक होता है।
-                          <ul>
-                            <li>
-                              <b>लक्षण:</b>
-                              <ul>
-                                <li>बुखार, उल्टी, पतला मल, और सिरदर्द।</li>
-                                <li>शरीर की मांसपेशियों का सख्त और कमजोर होना।</li>
-                                <li>हाथ और पैरों पर प्रभाव।</li>
-                              </ul>
-                            </li>
-                            <li>
-                              <b>रोकथाम:</b>
-                              <ul>
-                                <li>OPV (Oral Polio Vaccine) का उपयोग।</li>
-                                <li>वातावरण को साफ और स्वच्छ बनाए रखना।</li>
-                                <li>पल्स पोलियो अभियान में सहयोग करना।</li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </div>
-                      ),
-                    },
+          //       {
+          //         question: "1. अच्छा स्वास्थ्य क्या है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> वह स्थिति जिसमें पूर्ण शारीरिक, मानसिक और सामाजिक संपन्नता हो, न कि केवल बीमारियों या पीड़ा का न होना, अच्छा स्वास्थ्य है।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "2. WHO क्या है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> विश्‍व स्वास्थ्य संगठन। <br />
+          //             (World Health Organization)
+          //             <ul>
+          //               <li>W – World</li>
+          //               <li>H – Health</li>
+          //               <li>O – Organization</li>
+          //             </ul>
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "3. अच्छे स्वास्थ्य के मूल शर्तें क्या है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> अच्छे स्वास्थ्य की मूल शर्तें निम्नलिखित हैं:
+          //             <ul>
+          //               <li>संतुलित आहार।</li>
+          //               <li>व्यक्तिगत एवं घरेलू स्वास्थ्य।</li>
+          //               <li>स्वच्छ भोजन एवं जल।</li>
+          //               <li>शुद्ध एवं स्वच्छ हवा।</li>
+          //               <li>व्यायाम एवं विश्राम।</li>
+          //               <li>दुर्व्यसन का न होना।</li>
+          //             </ul>
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "4. मानव रोग किसे कहते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> रोग एक असामान्य शारीरिक स्थिति है, जिसमें शारीरिक अंग या अंगतंत्र सामान्य रूप से कार्य नहीं कर पाते हैं। इसे मानव रोग कहते हैं। <br />
+          //             <b>उदाहरण:</b> गठिया, हैजा, मलेरिया, चेचक, डायरिया आदि।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "5. रोग लक्षण किसे कहते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> वैसे संकेत जो शारीरिक अंगों के सामान्य कार्य न करने से मिलते हैं तथा जिसे केवल रोगी ही महसूस कर सकता है, उसे रोग लक्षण कहते हैं।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "6. रोगों के सामान्य चिन्ह किसे कहते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> रोगों के सामान्य चिन्ह वैसी स्थिति है जो शरीर की कायिक एवं रचना के आदर्श स्वरूप में परिवर्तन को दर्शाते हैं। इसे रोगों के सामान्य चिन्ह कहते हैं।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "7. तीव्र रोग किसे कहते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> ऐसे रोग जो अचानक उत्पन्न होते हैं और कम समय तक रहते हैं, उन्हें तीव्र रोग कहते हैं। <br />
+          //             <b>उदाहरण:</b> सर्दी, मलेरिया, हैजा आदि।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "8. चिरकालिक रोग किसे कहते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> ऐसे रोग जो बहुत समय तक बने रहते हैं, चिरकालिक रोग कहलाते हैं। <br />
+          //             <b>उदाहरण:</b> दमा, गठिया, टीवी आदि।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "9. रोग के कितने प्रकार हैं? उनके कारण लिखें।",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> रोग दो प्रकार के होते हैं:
+          //             <ul>
+          //               <li>आंतरिक कारकों से होने वाला रोग।</li>
+          //               <li>बाह्य कारकों या बाहरी कारणों से होने वाला रोग।</li>
+          //             </ul>
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "10. आंतरिक कारक तथा उनसे होने वाला रोग किसे कहते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> यह रोग शारीरिक रचना या शारीरिक क्रियाओं के दोषों के कारण स्वास्थ्य को प्रभावित करते हैं। <br />
+          //             <b>उदाहरण:</b>
+          //             <ul>
+          //               <li>
+          //                 <b>आनुवंशिक:</b> अंगदोष जन्मकाल से माता-पिता से संतानों को मिलते हैं। इसे वंशानुगत रोग कहते हैं। जैसे हीमोफीलिया।
+          //               </li>
+          //               <li>
+          //                 <b>हार्मोन की गड़बड़ी:</b> अंतःस्त्रावी ग्रंथियों के असंतुलन के कारण कई बीमारियाँ उत्पन्न होती हैं।
+          //               </li>
+          //             </ul>
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "11. रोगाणु किसे कहते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> रोग उत्पन्न करने वाले सूक्ष्मजीव रोगाणु कहलाते हैं। <br />
+          //             <b>उदाहरण:</b> बैक्टीरिया, वायरस। जैसे हैजा, क्षयरोग।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "12. संक्रामक रोग किसे कहते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> सूक्ष्मजीवों के शरीर में प्रवेश करने से शारीरिक रोग उत्पन्न होते हैं। इन्हें संक्रामक रोग कहते हैं। <br />
+          //             <b>उदाहरण:</b> न्यूमोनिया, टीवी, एड्स, मलेरिया।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "13. असंक्रामक रोग किसे कहते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> ऐसे रोग जो रोगाणुओं के कारण नहीं होते हैं, उन्हें असंक्रामक रोग कहते हैं। <br />
+          //             <b>उदाहरण:</b> मधुमेह, कैंसर, गठिया।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "14. संचारित रोग किसे कहते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> वैसे रोग जो संक्रमित व्यक्ति से दूसरों में बाहरी कारकों से फैलते हैं, उन्हें संचारित रोग कहते हैं। <br />
+          //             <b>उदाहरण:</b> हवा, जल, भोजन या मच्छर के माध्यम से फैलने वाले रोग।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "15. संक्रामक रोगों के उपचार क्या हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> संक्रामक रोगों का उपचार दो प्रकार से किया जाता है:
+          //             <ul>
+          //               <li>दवाइयों के द्वारा।</li>
+          //               <li>रोगाणुओं को समाप्त करके।</li>
+          //             </ul>
+          //           </div>
+          //         ),
+          //       },
+          //         {
+          //           question: "16. रोगों के लक्षण एवं प्रभाव को कम करने हेतु उपचार को लिखें?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> जब किसी रोग से ग्रसित व्यक्ति के शरीर में दर्द होता है या उसे मिचली आती है, तो उन्हें दवाइयाँ दी जाती हैं, जिससे यह कुछ देर के लिए समाप्त हो जाता है।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "17. रोगाणुओं को समाप्त करने हेतु उपचार?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> संक्रामक रोग सूक्ष्म जीवाणु, बैक्टीरिया, वायरस, फंजाई, प्रोटोजोआ तथा कृमि के कारण होता है। इसे नष्ट करने वाली दवाइयाँ दी जाती हैं ताकि यह दूसरों में न फैले।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "18. जैव रासायनिक प्रक्रम किसे कहते हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> एक कोशिका के भीतर ऊर्जा के उत्पादन के लिए कई जैव रासायनिक क्रियाएँ होती हैं, जिससे ऊर्जा इत्यादि का निर्माण होता है।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "19. टीका की खोज किसने और कब की?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> टीका की खोज एडवर्ड जेनर ने 1795 में की।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "20. टीकाकरण किसे कहते हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> टीके को शरीर में प्रवेश कराने की विधि को टीकाकरण कहते हैं।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "21. पल्स-पोलियो कार्यक्रम क्या है?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> पल्स-पोलियो कार्यक्रम पोलियो रोग के विरुद्ध हमारे देश में चलाया गया एक अभियान है। यह वायरस के कारण होने वाला रोग है, जिसमें लकवा जैसी स्थिति हो सकती है। इसके लिए 5 वर्ष तक के बच्चों को टीका लगाया जाता है।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "22. मलेरिया रोग क्या है? इसके लक्षण, नियंत्रण एवं रोकथाम को लिखें?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> मलेरिया एक प्रोटोजोआ *प्लाज्मोडियम* के विभिन्न प्रजातियों द्वारा होता है। यह मादा एनाफिलीज मच्छर के काटने से फैलता है।
+          //               <ul>
+          //                 <li>
+          //                   <b>लक्षण:</b> शरीर में कंपन के बाद तेज बुखार, सिरदर्द, और मांसपेशियों में दर्द।
+          //                 </li>
+          //                 <li>
+          //                   <b>नियंत्रण:</b> मलेरिया से पीड़ित व्यक्ति को कुनैन दी जाती है, जो सिनकोना पेड़ की छाल से बनती है।
+          //                 </li>
+          //                 <li>
+          //                   <b>रोकथाम:</b>
+          //                   <ul>
+          //                     <li>मच्छरों से अपनी सुरक्षा करना।</li>
+          //                     <li>मच्छरों को नष्ट करना।</li>
+          //                   </ul>
+          //                 </li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "23. डायरिया क्या है? इसके लक्षण एवं रोकथाम को लिखें?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> डायरिया कई प्रकार के रोगाणुओं के कारण उत्पन्न होता है। इसका अर्थ बार-बार पतला मल त्यागना है। यह रोग गर्मी और बरसात के मौसम में अधिक होता है।
+          //               <ul>
+          //                 <li>
+          //                   <b>लक्षण:</b>
+          //                   <ul>
+          //                     <li>लगातार दस्त होना।</li>
+          //                     <li>पेट दर्द, मिचली, और उल्टी।</li>
+          //                     <li>रोगी के मुख और होंठ सूख जाना, और आँखें अंदर धंस जाना।</li>
+          //                   </ul>
+          //                 </li>
+          //                 <li>
+          //                   <b>रोकथाम:</b>
+          //                   <ul>
+          //                     <li>साफ-सफाई पर ध्यान देना।</li>
+          //                     <li>पीने का पानी शुद्ध होना चाहिए।</li>
+          //                     <li>भोजन गर्म और ताजा होना चाहिए।</li>
+          //                   </ul>
+          //                 </li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "24. टाइफॉइड क्या है? इसके लक्षण एवं रोकथाम को लिखें?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> टाइफॉइड *सलमोनिला टाइफी* नामक बैक्टीरिया के कारण होने वाला संक्रामक रोग है। यह दूषित पेयजल, भोजन, दूध, कच्चे फल, और सब्जियों के सेवन से आहार नाल में पहुँचकर नुकसान पहुँचाता है।
+          //               <ul>
+          //                 <li>
+          //                   <b>लक्षण:</b>
+          //                   <ul>
+          //                     <li>तेज बुखार, कमजोरी, सिरदर्द, और पसीना आना।</li>
+          //                     <li>यह बुखार लगभग तीन सप्ताह तक रहता है।</li>
+          //                   </ul>
+          //                 </li>
+          //                 <li>
+          //                   <b>रोकथाम:</b>
+          //                   <ul>
+          //                     <li>साफ-सफाई पर ध्यान देना।</li>
+          //                     <li>पास-पड़ोस में मक्खियों को पनपने से रोकना।</li>
+          //                   </ul>
+          //                 </li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
+          //           {
+          //             question: "25. क्षयरोग या टी०वी० क्या है? इसके लक्षण एवं रोकथाम को लिखें?",
+          //             answer: (
+          //               <div>
+          //                 <b style={{ color: "green" }}>उत्तर:—</b> क्षयरोग या टी०वी० एक प्रकार के बैक्टीरिया *माइकोबैक्टेरियम ट्युबरकुलेसिस* के कारण होता है। यह बैक्टीरिया एक जहरीला पदार्थ *ट्युबरकुलीन* मुक्त करता है, जो सामान्यतः फेफड़ों को प्रभावित करता है और उनके उत्तकों को क्षतिग्रस्त कर देता है।
+          //                 <ul>
+          //                   <li>
+          //                     <b>लक्षण:</b>
+          //                     <ul>
+          //                       <li>हल्का बुखार, लगातार खाँसी, और खाँसते समय कफ के साथ रक्त आना।</li>
+          //                       <li>रात में पसीना आना और वजन का लगातार कम होना।</li>
+          //                     </ul>
+          //                   </li>
+          //                   <li>
+          //                     <b>रोकथाम:</b>
+          //                     <ul>
+          //                       <li>रोगी को परिवार के अन्य सदस्यों, विशेषकर बच्चों से अलग रखें।</li>
+          //                       <li>खाँसते समय मुँह ढकें और जहाँ-तहाँ थूकने से बचें।</li>
+          //                       <li>BCG का टीका लगवाएँ।</li>
+          //                     </ul>
+          //                   </li>
+          //                 </ul>
+          //               </div>
+          //             ),
+          //           },
+          //           {
+          //             question: "26. हेपेटाइटिस क्या है? इसके लक्षण, नियंत्रण और रोकथाम को लिखें?",
+          //             answer: (
+          //               <div>
+          //                 <b style={{ color: "green" }}>उत्तर:—</b> हेपेटाइटिस एक ऐसा रोग है जिसमें यकृत बड़ा हो जाता है। इसका प्रमुख लक्षण *जॉण्डिस* है, जिसमें त्वचा और आँखों का सफेद भाग पीला हो जाता है।
+          //                 <ul>
+          //                   <li>
+          //                     <b>लक्षण:</b> सिरदर्द, हल्का बुखार, जॉण्डिस (पीली त्वचा), और गहरे रंग का मूत्र।
+          //                   </li>
+          //                   <li>
+          //                     <b>नियंत्रण:</b>
+          //                     <ul>
+          //                       <li>उच्च कार्बोहाइड्रेट युक्त भोजन का सेवन।</li>
+          //                       <li>रोगी को अधिक आराम करना।</li>
+          //                       <li>इंटरफेरॉन की सूई का उपयोग।</li>
+          //                     </ul>
+          //                   </li>
+          //                 </ul>
+          //               </div>
+          //             ),
+          //           },
+          //           {
+          //             question: "27. एड्स क्या है? इसके लक्षण, प्रसारण और रोकथाम को लिखें?",
+          //             answer: (
+          //               <div>
+          //                 <b style={{ color: "green" }}>उत्तर:—</b> एड्स (*एक्वायर्ड इम्यून डिफिशिएंसी सिंड्रोम*) एक रोग है जो *ह्यूमन इम्यूनोडेफिशिएंसी वायरस (HIV)* के संक्रमण से होता है। यह रोग शरीर की प्रतिरक्षा प्रणाली को कमजोर कर देता है।
+          //                 <ul>
+          //                   <li>
+          //                     <b>लक्षण:</b>
+          //                     <ul>
+          //                       <li>फूली हुई लसीका ग्रंथियाँ।</li>
+          //                       <li>शरीर का भार कम होना।</li>
+          //                       <li>लगातार पेट खराब रहना और बीच-बीच में बीमार होना।</li>
+          //                     </ul>
+          //                   </li>
+          //                   <li>
+          //                     <b>प्रसारण:</b> एड्स मुख्य रूप से अनैतिक यौन संबंध, दूषित सुई, और संक्रमित रक्त के माध्यम से फैलता है।
+          //                   </li>
+          //                   <li>
+          //                     <b>रोकथाम:</b>
+          //                     <ul>
+          //                       <li>अनैतिक यौन संबंधों से बचें।</li>
+          //                       <li>केवल डिस्पोजेबल सुई का उपयोग करें।</li>
+          //                       <li>दूसरों के रेज़र या ब्लेड का उपयोग न करें।</li>
+          //                       <li>स्वास्थ्य शिक्षा और जागरूकता बढ़ाएँ।</li>
+          //                     </ul>
+          //                   </li>
+          //                 </ul>
+          //               </div>
+          //             ),
+          //           },
+          //           {
+          //             question: "28. रेबीज क्या है? इसके लक्षण एवं रोकथाम को लिखें?",
+          //             answer: (
+          //               <div>
+          //                 <b style={{ color: "green" }}>उत्तर:—</b> रेबीज एक घातक रोग है जो *रेबडोवायरस* के कारण होता है। यह कुत्तों, बिल्लियों, बंदरों आदि से मनुष्यों में फैलता है। संक्रमित जानवर के काटने से इसका वायरस शरीर में प्रवेश करता है।
+          //                 <ul>
+          //                   <li>
+          //                     <b>लक्षण:</b>
+          //                     <ul>
+          //                       <li>सिरदर्द, हल्का बुखार, और गर्दन में दर्द।</li>
+          //                       <li>मुख से लार टपकना और क्रोधित होकर चिल्लाना।</li>
+          //                     </ul>
+          //                   </li>
+          //                   <li>
+          //                     <b>रोकथाम:</b>
+          //                     <ul>
+          //                       <li>काटे गए स्थान को साबुन और पानी से धोएँ।</li>
+          //                       <li>एंटीरेबीज सीरम की सुई लगवाएँ।</li>
+          //                       <li>ह्यूमन डिप्लॉयड सेल टीके का उपयोग करें।</li>
+          //                     </ul>
+          //                   </li>
+          //                 </ul>
+          //               </div>
+          //             ),
+          //           },
+          //           {
+          //             question: "29. पोलियो क्या है? इसके लक्षण एवं रोकथाम को लिखें?",
+          //             answer: (
+          //               <div>
+          //                 <b style={{ color: "green" }}>उत्तर:—</b> पोलियो वायरस के कारण होने वाला एक संक्रामक रोग है। यह दूषित भोजन, दूध, और पानी के माध्यम से फैलता है। यह 6 महीने से 3 साल तक के बच्चों में अधिक होता है।
+          //                 <ul>
+          //                   <li>
+          //                     <b>लक्षण:</b>
+          //                     <ul>
+          //                       <li>बुखार, उल्टी, पतला मल, और सिरदर्द।</li>
+          //                       <li>शरीर की मांसपेशियों का सख्त और कमजोर होना।</li>
+          //                       <li>हाथ और पैरों पर प्रभाव।</li>
+          //                     </ul>
+          //                   </li>
+          //                   <li>
+          //                     <b>रोकथाम:</b>
+          //                     <ul>
+          //                       <li>OPV (Oral Polio Vaccine) का उपयोग।</li>
+          //                       <li>वातावरण को साफ और स्वच्छ बनाए रखना।</li>
+          //                       <li>पल्स पोलियो अभियान में सहयोग करना।</li>
+          //                     </ul>
+          //                   </li>
+          //                 </ul>
+          //               </div>
+          //             ),
+          //           },
                   
                   
               
@@ -1813,425 +1813,697 @@ const FAQ = () => {
 
 
 
-            ]
-          },
+          //   ]
+          // },
 
           ///// Chapter 5
 
-          {
-            topicName: "5. खाद्य संसाधन - पौधे",
-            questions: [
+          // {
+          //   topicName: "5. खाद्य संसाधन - पौधे",
+          //   questions: [
  
-                {
-                  question: "1. भोजन की आवश्यकता क्यों होती है?",  
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> हमारी वृद्धि और विकास, शरीर के उत्तकों की टूट-फूट की मरम्मत, जीवद्रव्य में संश्लेषण और अन्य कार्यों के लिए भोजन की आवश्यकता होती है।
-                    </div>
-                  ),
-                },
-                {
-                  question: "2. इस पृथ्वी पर कितने प्रकार के जीव हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> इस पृथ्वी पर दो प्रकार के जीव हैं:
-                      <ul>
-                        <li>
-                          <b>स्वपोषी:</b> जो जीव अपना भोजन प्रकाश संश्लेषण की प्रक्रिया द्वारा स्वयं बनाते हैं। जैसे: हरे-पौधे।
-                        </li>
-                        <li>
-                          <b>परपोषी:</b> जो जीव अपना भोजन बनाने के लिए दूसरों पर निर्भर रहते हैं। जैसे: मनुष्य, कवक।
-                        </li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                {
-                  question: "3. 2020 तक हमारे देश की आबादी कितनी थी?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> 2020 तक हमारे देश की आबादी लगभग 134 करोड़ थी।
-                    </div>
-                  ),
-                },
-                {
-                  question: "4. फसल उत्पादन में किस प्रकार से वृद्धि हुई?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> भारतीय वैज्ञानिकों के प्रयास से उच्च किस्मों के बीजों के प्रयोग और उन्नत खेती के माध्यम से हरित क्रांति द्वारा फसल उत्पादन में वृद्धि हुई।
-                    </div>
-                  ),
-                },
-                {
-                  question: "5. श्वेत क्रांति किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> हमारे देश में दूध के उत्पादन में भारी मात्रा में वृद्धि को श्वेत क्रांति कहते हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "6. फसल उत्पादन क्या है?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> मानव और अन्य जीवों के शरीर के लिए आवश्यक पोषक तत्व (कार्बोहाइड्रेट, वसा, प्रोटीन, विटामिन और खनिज) फसलों के उत्पादन से प्राप्त होते हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "7. मौसम के अनुरूप कितने प्रकार के फसल होते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> मौसम के अनुरूप तीन प्रकार के फसल होते हैं:
-                      <ul>
-                        <li>
-                          <b>खरीफ फसल:</b> वर्षा ऋतु में उगाई जाती हैं। जैसे: धान, ज्वार, बाजरा। बोआई जून-जुलाई में और कटाई अक्टूबर-दिसंबर में होती है।
-                        </li>
-                        <li>
-                          <b>रबी फसल:</b> शीत ऋतु में उगाई जाती हैं। जैसे: गेहूँ, चना, तीसी। बोआई अक्टूबर में और कटाई मार्च में होती है।
-                        </li>
-                        <li>
-                          <b>ग्रीष्म फसल:</b> दलहनी फसलें होती हैं, जिनकी बुआई मार्च-जून में होती है। जैसे: मूंग, उरद, मटर, अरहर।
-                        </li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                {
-                  question: "8. पादप संकरण किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> कम गुण वाली और अधिक गुण वाली फसलों को मिलाकर नई प्रजाति विकसित करने की प्रक्रिया को पादप संकरण कहते हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "9. संकर या हाइब्रिड किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> पादप संकरण के फलस्वरूप विकसित नवीन समुन्नत फसल को संकर या हाइब्रिड कहते हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "10. पादप प्रजनन किसे कहते हैं?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> फसलों की समुन्नत प्रजातियों के सुधार के विज्ञान को पादप प्रजनन कहते हैं।
-                    </div>
-                  ),
-                },
-                {
-                  question: "11. फसल की समुन्नत किस्म के गुण और उनके लाभ को लिखें?",
-                  answer: (
-                    <div>
-                      <b style={{ color: "green" }}>उत्तर:—</b> फसल की समुन्नत किस्म के गुण और उनके लाभ निम्नलिखित हैं:
-                      <ul>
-                        <li>
-                          <b>उच्च उपज:</b> समुन्नत किस्में पारंपरिक किस्मों की अपेक्षा अधिक उपज देती हैं।
-                        </li>
-                        <li>
-                          <b>खाद्य का बेहतर असर:</b> रासायनिक उर्वरकों का प्रभाव समुन्नत किस्मों पर अधिक होता है, जिससे बेहतर पैदावार होती है।
-                        </li>
-                        <li>
-                          <b>बौनी प्रजातियाँ:</b> समुन्नत किस्में प्रायः बौनी होती हैं, जिससे वे अधिक मजबूत होती हैं।
-                        </li>
-                      </ul>
-                    </div>
-                  ),
-                },
-                  {
-                    question: "12. खाद्य एवं उर्वरक कितने प्रकार के होते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> खाद्य एवं उर्वरक दो प्रकार के होते हैं:
-                        <ul>
-                          <li>
-                            <b>प्राकृतिक उर्वरक:</b> इसका निर्माण जंतुओं के गोबर, मलमूत्र आदि से होता है, जिसमें नाइट्रोजन, फॉस्फोरस और पोटाश की मात्रा रहती है।
-                          </li>
-                          <li>
-                            <b>रासायनिक उर्वरक:</b> व्यावसायिक रूप से तैयार अकार्बनिक एवं कार्बनिक यौगिक, जिनमें नाइट्रोजन, पोटेशियम और फॉस्फोरस अधिक मात्रा में पाए जाते हैं।
-                          </li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "13. खाद्य के प्रकार क्या हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> खाद्य निम्नलिखित प्रकार के होते हैं:
-                        <ul>
-                          <li>
-                            <b>कम्पोस्ट:</b> इसे घास, भूसा, मलजल, सब्जी का कूड़ा, जानवरों का कचरा आदि से तैयार किया जाता है।
-                          </li>
-                          <li>
-                            <b>वर्मीकम्पोस्ट:</b> कम्पोस्ट को केंचुओं की मदद से तैयार किया जाता है।
-                          </li>
-                          <li>
-                            <b>हरी खाद:</b> हरे पौधों को जीवित अवस्था में मिट्टी में दबाकर सड़ने के बाद उर्वरक बनाया जाता है।
-                          </li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "14. कार्बनिक खेती किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> जिस खेती में कार्बनिक पदार्थों का उपयोग होता है, उसे कार्बनिक खेती कहते हैं। 
-                        <br />
-                        <b>जैसे:</b> पेड़-पौधों के अपशिष्ट, जानवरों के मलमूत्र आदि।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "15. सिंचाई किसे कहते हैं और इसके साधन क्या हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> फसलों में समय-समय पर जल प्रदान करने की प्रक्रिया को सिंचाई कहते हैं।
-                        <br />
-                        <b>साधन:</b> कुआँ, तालाब, नदियाँ, नहरे आदि।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "16. मिश्रित फसल उत्पादन किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> जिसमें एक से अधिक फसलों का उत्पादन एक साथ किया जाता है, उसे मिश्रित फसल उत्पादन कहते हैं।
-                        <br />
-                        <b>जैसे:</b> गेहूँ और सरसों, गेहूँ और चना, सोयाबीन और अरहर।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "17. फसल चक्रण किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> एक ही भूखंड पर अलग-अलग समय पर विभिन्न फसलें उगाने की प्रक्रिया को फसल चक्रण कहते हैं।
-                        <br />
-                        <b>जैसे:</b> गेहूँ, धान, मकई।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "18. पीड़क या पेस्टस किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> पौधों को कीटों, जीवाणुओं और कवक से होने वाली हानि को पीड़क या पेस्टस कहते हैं।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "19. फसल सुरक्षा किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> फसल पौधों को पीड़कों और अन्य हानिकारक जीवों से मुक्त रखने की प्रक्रिया को फसल सुरक्षा कहते हैं।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "20. खरपतवार या वीड्स किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> अवांछित पौधे, जो उगाए जाने वाले पौधों के साथ स्वतः उग आते हैं, उन्हें खरपतवार या वीड्स कहते हैं।
-                        <br />
-                        <b>जैसे:</b> बथुआ, घास-दूब, मोथा।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "21. निराई या वीडिंग किसे कहते हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> खेतों से खरपतवारों को हटाने की प्रक्रिया को निराई या वीडिंग कहते हैं।
-                        <br />
-                        <b>जैसे:</b> चौलाई, बथुआ, मोथा।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "22. खरपतवार नियंत्रण के तरीके क्या हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> खरपतवार नियंत्रण के तरीके निम्नलिखित हैं:
-                        <ul>
-                          <li>
-                            <b>यांत्रिक विधि:</b> खुरपी आदि से खरपतवारों को हटाया जाता है। 
-                            <br />
-                            <b>जैसे:</b> अरहर, मक्का।
-                          </li>
-                          <li>
-                            <b>कृषि क्रियाएँ:</b> अंतरफसल उत्पादन, सहफसली खेती और फसल चक्रण द्वारा खरपतवारों को नियंत्रित किया जा सकता है।
-                          </li>
-                        </ul>
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "23. फसल रोग क्या है?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> सूक्ष्मजीव (वायरस, जीवाणु, कवक आदि) मि‌ट्टी, पानी या हवा के माध्यम से पौधों के हिस्सों को प्रभावित करते हैं, जिससे फसलों को नुकसान होता है। इसे फसल रोग कहते हैं।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "24. फसलों को रोगों से सुरक्षित रखने के उपाय क्या हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> फसलों पर पीड़कनाशी (पेस्टिसाइड्स), कवकनाशी और कीटनाशी का छिड़काव करके रोगों से बचाया जा सकता है।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "25. अनाज का भंडारण क्यों आवश्यक है?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> अधिकांश मुख्य खाद्यान्न साल में एक बार काटे जाते हैं। इन्हें नष्ट होने से बचाने के लिए सुरक्षित भंडारण आवश्यक है।
-                      </div>
-                    ),
-                  },
-                  {
-                    question: "26. भंडारण के दौरान नष्ट करने वाले घटक कौन-कौन से हैं?",
-                    answer: (
-                      <div>
-                        <b style={{ color: "green" }}>उत्तर:—</b> भंडारण के दौरान अनाज को नष्ट करने वाले घटक:
-                        <ul>
-                          <li>
-                            <b>अजैविक घटक:</b> नमी (अधिकतम 14%), तापमान (कम तापमान में भंडारण)।
-                          </li>
-                          <li>
-                            <b>जैविक घटक:</b> खमीर, फफूँद, कवक आदि।
-                          </li>
-                        </ul>
-                      </div>
-                    ),
-                  },
+          //       {
+          //         question: "1. भोजन की आवश्यकता क्यों होती है?",  
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> हमारी वृद्धि और विकास, शरीर के उत्तकों की टूट-फूट की मरम्मत, जीवद्रव्य में संश्लेषण और अन्य कार्यों के लिए भोजन की आवश्यकता होती है।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "2. इस पृथ्वी पर कितने प्रकार के जीव हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> इस पृथ्वी पर दो प्रकार के जीव हैं:
+          //             <ul>
+          //               <li>
+          //                 <b>स्वपोषी:</b> जो जीव अपना भोजन प्रकाश संश्लेषण की प्रक्रिया द्वारा स्वयं बनाते हैं। जैसे: हरे-पौधे।
+          //               </li>
+          //               <li>
+          //                 <b>परपोषी:</b> जो जीव अपना भोजन बनाने के लिए दूसरों पर निर्भर रहते हैं। जैसे: मनुष्य, कवक।
+          //               </li>
+          //             </ul>
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "3. 2020 तक हमारे देश की आबादी कितनी थी?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> 2020 तक हमारे देश की आबादी लगभग 134 करोड़ थी।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "4. फसल उत्पादन में किस प्रकार से वृद्धि हुई?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> भारतीय वैज्ञानिकों के प्रयास से उच्च किस्मों के बीजों के प्रयोग और उन्नत खेती के माध्यम से हरित क्रांति द्वारा फसल उत्पादन में वृद्धि हुई।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "5. श्वेत क्रांति किसे कहते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> हमारे देश में दूध के उत्पादन में भारी मात्रा में वृद्धि को श्वेत क्रांति कहते हैं।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "6. फसल उत्पादन क्या है?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> मानव और अन्य जीवों के शरीर के लिए आवश्यक पोषक तत्व (कार्बोहाइड्रेट, वसा, प्रोटीन, विटामिन और खनिज) फसलों के उत्पादन से प्राप्त होते हैं।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "7. मौसम के अनुरूप कितने प्रकार के फसल होते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> मौसम के अनुरूप तीन प्रकार के फसल होते हैं:
+          //             <ul>
+          //               <li>
+          //                 <b>खरीफ फसल:</b> वर्षा ऋतु में उगाई जाती हैं। जैसे: धान, ज्वार, बाजरा। बोआई जून-जुलाई में और कटाई अक्टूबर-दिसंबर में होती है।
+          //               </li>
+          //               <li>
+          //                 <b>रबी फसल:</b> शीत ऋतु में उगाई जाती हैं। जैसे: गेहूँ, चना, तीसी। बोआई अक्टूबर में और कटाई मार्च में होती है।
+          //               </li>
+          //               <li>
+          //                 <b>ग्रीष्म फसल:</b> दलहनी फसलें होती हैं, जिनकी बुआई मार्च-जून में होती है। जैसे: मूंग, उरद, मटर, अरहर।
+          //               </li>
+          //             </ul>
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "8. पादप संकरण किसे कहते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> कम गुण वाली और अधिक गुण वाली फसलों को मिलाकर नई प्रजाति विकसित करने की प्रक्रिया को पादप संकरण कहते हैं।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "9. संकर या हाइब्रिड किसे कहते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> पादप संकरण के फलस्वरूप विकसित नवीन समुन्नत फसल को संकर या हाइब्रिड कहते हैं।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "10. पादप प्रजनन किसे कहते हैं?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> फसलों की समुन्नत प्रजातियों के सुधार के विज्ञान को पादप प्रजनन कहते हैं।
+          //           </div>
+          //         ),
+          //       },
+          //       {
+          //         question: "11. फसल की समुन्नत किस्म के गुण और उनके लाभ को लिखें?",
+          //         answer: (
+          //           <div>
+          //             <b style={{ color: "green" }}>उत्तर:—</b> फसल की समुन्नत किस्म के गुण और उनके लाभ निम्नलिखित हैं:
+          //             <ul>
+          //               <li>
+          //                 <b>उच्च उपज:</b> समुन्नत किस्में पारंपरिक किस्मों की अपेक्षा अधिक उपज देती हैं।
+          //               </li>
+          //               <li>
+          //                 <b>खाद्य का बेहतर असर:</b> रासायनिक उर्वरकों का प्रभाव समुन्नत किस्मों पर अधिक होता है, जिससे बेहतर पैदावार होती है।
+          //               </li>
+          //               <li>
+          //                 <b>बौनी प्रजातियाँ:</b> समुन्नत किस्में प्रायः बौनी होती हैं, जिससे वे अधिक मजबूत होती हैं।
+          //               </li>
+          //             </ul>
+          //           </div>
+          //         ),
+          //       },
+          //         {
+          //           question: "12. खाद्य एवं उर्वरक कितने प्रकार के होते हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> खाद्य एवं उर्वरक दो प्रकार के होते हैं:
+          //               <ul>
+          //                 <li>
+          //                   <b>प्राकृतिक उर्वरक:</b> इसका निर्माण जंतुओं के गोबर, मलमूत्र आदि से होता है, जिसमें नाइट्रोजन, फॉस्फोरस और पोटाश की मात्रा रहती है।
+          //                 </li>
+          //                 <li>
+          //                   <b>रासायनिक उर्वरक:</b> व्यावसायिक रूप से तैयार अकार्बनिक एवं कार्बनिक यौगिक, जिनमें नाइट्रोजन, पोटेशियम और फॉस्फोरस अधिक मात्रा में पाए जाते हैं।
+          //                 </li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "13. खाद्य के प्रकार क्या हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> खाद्य निम्नलिखित प्रकार के होते हैं:
+          //               <ul>
+          //                 <li>
+          //                   <b>कम्पोस्ट:</b> इसे घास, भूसा, मलजल, सब्जी का कूड़ा, जानवरों का कचरा आदि से तैयार किया जाता है।
+          //                 </li>
+          //                 <li>
+          //                   <b>वर्मीकम्पोस्ट:</b> कम्पोस्ट को केंचुओं की मदद से तैयार किया जाता है।
+          //                 </li>
+          //                 <li>
+          //                   <b>हरी खाद:</b> हरे पौधों को जीवित अवस्था में मिट्टी में दबाकर सड़ने के बाद उर्वरक बनाया जाता है।
+          //                 </li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "14. कार्बनिक खेती किसे कहते हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> जिस खेती में कार्बनिक पदार्थों का उपयोग होता है, उसे कार्बनिक खेती कहते हैं। 
+          //               <br />
+          //               <b>जैसे:</b> पेड़-पौधों के अपशिष्ट, जानवरों के मलमूत्र आदि।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "15. सिंचाई किसे कहते हैं और इसके साधन क्या हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> फसलों में समय-समय पर जल प्रदान करने की प्रक्रिया को सिंचाई कहते हैं।
+          //               <br />
+          //               <b>साधन:</b> कुआँ, तालाब, नदियाँ, नहरे आदि।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "16. मिश्रित फसल उत्पादन किसे कहते हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> जिसमें एक से अधिक फसलों का उत्पादन एक साथ किया जाता है, उसे मिश्रित फसल उत्पादन कहते हैं।
+          //               <br />
+          //               <b>जैसे:</b> गेहूँ और सरसों, गेहूँ और चना, सोयाबीन और अरहर।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "17. फसल चक्रण किसे कहते हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> एक ही भूखंड पर अलग-अलग समय पर विभिन्न फसलें उगाने की प्रक्रिया को फसल चक्रण कहते हैं।
+          //               <br />
+          //               <b>जैसे:</b> गेहूँ, धान, मकई।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "18. पीड़क या पेस्टस किसे कहते हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> पौधों को कीटों, जीवाणुओं और कवक से होने वाली हानि को पीड़क या पेस्टस कहते हैं।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "19. फसल सुरक्षा किसे कहते हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> फसल पौधों को पीड़कों और अन्य हानिकारक जीवों से मुक्त रखने की प्रक्रिया को फसल सुरक्षा कहते हैं।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "20. खरपतवार या वीड्स किसे कहते हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> अवांछित पौधे, जो उगाए जाने वाले पौधों के साथ स्वतः उग आते हैं, उन्हें खरपतवार या वीड्स कहते हैं।
+          //               <br />
+          //               <b>जैसे:</b> बथुआ, घास-दूब, मोथा।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "21. निराई या वीडिंग किसे कहते हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> खेतों से खरपतवारों को हटाने की प्रक्रिया को निराई या वीडिंग कहते हैं।
+          //               <br />
+          //               <b>जैसे:</b> चौलाई, बथुआ, मोथा।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "22. खरपतवार नियंत्रण के तरीके क्या हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> खरपतवार नियंत्रण के तरीके निम्नलिखित हैं:
+          //               <ul>
+          //                 <li>
+          //                   <b>यांत्रिक विधि:</b> खुरपी आदि से खरपतवारों को हटाया जाता है। 
+          //                   <br />
+          //                   <b>जैसे:</b> अरहर, मक्का।
+          //                 </li>
+          //                 <li>
+          //                   <b>कृषि क्रियाएँ:</b> अंतरफसल उत्पादन, सहफसली खेती और फसल चक्रण द्वारा खरपतवारों को नियंत्रित किया जा सकता है।
+          //                 </li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "23. फसल रोग क्या है?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> सूक्ष्मजीव (वायरस, जीवाणु, कवक आदि) मि‌ट्टी, पानी या हवा के माध्यम से पौधों के हिस्सों को प्रभावित करते हैं, जिससे फसलों को नुकसान होता है। इसे फसल रोग कहते हैं।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "24. फसलों को रोगों से सुरक्षित रखने के उपाय क्या हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> फसलों पर पीड़कनाशी (पेस्टिसाइड्स), कवकनाशी और कीटनाशी का छिड़काव करके रोगों से बचाया जा सकता है।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "25. अनाज का भंडारण क्यों आवश्यक है?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> अधिकांश मुख्य खाद्यान्न साल में एक बार काटे जाते हैं। इन्हें नष्ट होने से बचाने के लिए सुरक्षित भंडारण आवश्यक है।
+          //             </div>
+          //           ),
+          //         },
+          //         {
+          //           question: "26. भंडारण के दौरान नष्ट करने वाले घटक कौन-कौन से हैं?",
+          //           answer: (
+          //             <div>
+          //               <b style={{ color: "green" }}>उत्तर:—</b> भंडारण के दौरान अनाज को नष्ट करने वाले घटक:
+          //               <ul>
+          //                 <li>
+          //                   <b>अजैविक घटक:</b> नमी (अधिकतम 14%), तापमान (कम तापमान में भंडारण)।
+          //                 </li>
+          //                 <li>
+          //                   <b>जैविक घटक:</b> खमीर, फफूँद, कवक आदि।
+          //                 </li>
+          //               </ul>
+          //             </div>
+          //           ),
+          //         },
              
                 
               
               
-            ]
-          },
+          //   ]
+          // },
 
-          // Chapter 6
+//           // Chapter 6
 
-          {
-            topicName: "6. /////",
-            questions: [
-            ]
-          },
-
-
-          /// Chapter 7
+//           {
+//             topicName: "6. /////",
+//             questions: [
+//             ]
+//           },
 
 
-          {
-            topicName: "7. ////",
-            questions: [
-            ]
-          },
+//           /// Chapter 7
 
 
+//           {
+//             topicName: "7. ////",
+//             questions: [
+//             ]
+//           },
 
 
 
 
 
-      ],
-    },
-  ];
 
-  return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">
-        9th Class All Subject and Their Chapter Name with Question and Answer
-      </h1>
-      {subjects.map((subject, subjectIndex) => (
-        <Subject
-          key={subjectIndex}
-          subject={subject}
-          subjectIndex={subjectIndex + 1} // Add subject number
-        />
-      ))}
-    </div>
-  );
-};
 
-// Subject Component
-const Subject = ({ subject, subjectIndex }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className="border border-gray-300 rounded-lg mb-4">
-      <h2
-        className="text-2xl font-semibold bg-indigo-300 px-4 py-2 text-red-600 cursor-pointer"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        {`Subject ${subjectIndex}: ${subject.subjectName}`}
-      </h2>
-      {isOpen &&
-        subject.topics.map((topic, topicIndex) => (
-          <Topic
-            key={topicIndex}
-            topic={topic}
-            topicIndex={topicIndex + 1}
-            subjectIndex={subjectIndex}
-          />
-        ))}
-    </div>
-  );
-};
-
-// Topic Component
-const Topic = ({ topic, topicIndex, subjectIndex }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className="border border-gray-300 rounded-lg my-2">
-      <h3
-        className="text-xl font-semibold bg-indigo-100 px-4 py-2 cursor-pointer"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        {`अध्याय  ${topic.topicName}`}
-      </h3>
-      {isOpen &&
-        topic.questions.map((faq, questionIndex) => (
-          <QuestionAnswer key={questionIndex} faq={faq} />
-        ))}
-    </div>
-  );
-};
-
-// QuestionAnswer Component
-const QuestionAnswer = ({ faq }) => {
-  const [isAnswerOpen, setIsAnswerOpen] = useState(false);
-
-  return (
-    <div className="border border-gray-200 rounded-lg my-2 px-4 py-2">
-      <h4
-        className="text-lg font-bold cursor-pointer text-red-600"
-        onClick={() => setIsAnswerOpen(!isAnswerOpen)}
-      >
-        {faq.question}
-      </h4>
-      {isAnswerOpen || <div className="mt-2">{faq.answer}</div>}
-    </div>
-  );
-};
-// const QuestionAnswer = ({ faq, questionNumber }) => {
-//   const [isOpen, setIsOpen] = useState(false);
+//       ],
+//     },
+//   ];
 
 //   return (
-//     <div className="border-b-2 border-gray-300 pb-8 cursor-pointer">
-//       <h3 className="text-xl font-bold text-red-600 flex justify-between items-center mt-2">
-//         {`प्रश्‍न: ${faq.question}`}
-//       </h3>
-//       {isOpen || <div className="text-gray-600 mt-4 text-xl">{faq.answer}</div>}
+//     <div className="max-w-6xl mx-auto px-4 py-12">
+//       <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">
+//         9th Class All Subject and Their Chapter Name with Question and Answer
+//       </h1>
+//       {subjects.map((subject, subjectIndex) => (
+//         <Subject
+//           key={subjectIndex}
+//           subject={subject}
+//           subjectIndex={subjectIndex + 1} // Add subject number
+//         />
+//       ))}
 //     </div>
 //   );
 // };
 
-export default FAQ;
+// // Subject Component
+// const Subject = ({ subject, subjectIndex }) => {
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   return (
+//     <div className="border border-gray-300 rounded-lg mb-4">
+//       <h2
+//         className="text-2xl font-semibold bg-indigo-300 px-4 py-2 text-red-600 cursor-pointer"
+//         onClick={() => setIsOpen(!isOpen)}
+//       >
+//         {`Subject ${subjectIndex}: ${subject.subjectName}`}
+//       </h2>
+//       {isOpen &&
+//         subject.topics.map((topic, topicIndex) => (
+//           <Topic
+//             key={topicIndex}
+//             topic={topic}
+//             topicIndex={topicIndex + 1}
+//             subjectIndex={subjectIndex}
+//           />
+//         ))}
+//     </div>
+//   );
+// };
+
+// // Topic Component
+// const Topic = ({ topic, topicIndex, subjectIndex }) => {
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   return (
+//     <div className="border border-gray-300 rounded-lg my-2">
+//       <h3
+//         className="text-xl font-semibold bg-indigo-100 px-4 py-2 cursor-pointer"
+//         onClick={() => setIsOpen(!isOpen)}
+//       >
+//         {`अध्याय  ${topic.topicName}`}
+//       </h3>
+//       {isOpen &&
+//         topic.questions.map((faq, questionIndex) => (
+//           <QuestionAnswer key={questionIndex} faq={faq} />
+//         ))}
+//     </div>
+//   );
+// };
+
+// // QuestionAnswer Component
+// const QuestionAnswer = ({ faq }) => {
+//   const [isAnswerOpen, setIsAnswerOpen] = useState(false);
+
+//   return (
+//     <div className="border border-gray-200 rounded-lg my-2 px-4 py-2">
+//       <h4
+//         className="text-lg font-bold cursor-pointer text-red-600"
+//         onClick={() => setIsAnswerOpen(!isAnswerOpen)}
+//       >
+//         {faq.question}
+//       </h4>
+//       {isAnswerOpen || <div className="mt-2">{faq.answer}</div>}
+//     </div>
+//   );
+// };
+// // const QuestionAnswer = ({ faq, questionNumber }) => {
+// //   const [isOpen, setIsOpen] = useState(false);
+
+// //   return (
+// //     <div className="border-b-2 border-gray-300 pb-8 cursor-pointer">
+// //       <h3 className="text-xl font-bold text-red-600 flex justify-between items-center mt-2">
+// //         {`प्रश्‍न: ${faq.question}`}
+// //       </h3>
+// //       {isOpen || <div className="text-gray-600 mt-4 text-xl">{faq.answer}</div>}
+// //     </div>
+// //   );
+// // };
+
+// export default FAQ;
+
+
+
+// import React from 'react';
+// import Link from 'next/link';
+
+// const SubjectTable = ({ subject, chapters, subjectKey }) => {
+//   return (
+//     <div className="mb-8">
+//       <h2 className="text-center text-2xl text-blue-600 font-semibold">{subject}</h2>
+//       <div className="overflow-x-auto mt-4">
+//         <table className="min-w-full table-auto border-collapse border border-gray-300">
+//           <thead>
+//             <tr className="bg-blue-600 text-white uppercase">
+//               <th className="py-2 px-4">Serial Number</th>
+//               <th className="py-3 px-4">Chapter Name</th>
+//             </tr>
+//           </thead>
+//           <tbody>
+//             {chapters.map((chapter, index) => (
+//               <tr
+//                 key={index}
+//                 className={`${index % 2 === 0 ? 'bg-gray-100' : 'bg-white'} hover:bg-gray-200 transition-colors duration-300`}
+//               >
+//                 <td className="py-1 px-4 border border-gray-300 text-sm sm:text-base">{index + 1}</td> {/* Smaller serial number on small screens */}
+//                 <td className="py-3 px-4 border border-gray-300">
+//                   <Link
+//                     href={`/${subjectKey}/chapter-${index + 1}`}
+//                     className="text-blue-600 font-semibold hover:underline"
+//                   >
+//                     {chapter}
+//                   </Link>
+//                 </td>
+//               </tr>
+//             ))}
+//           </tbody>
+//         </table>
+//       </div>
+//     </div>
+//   );
+// };
+
+// const Home = () => {
+//   const subjects = [
+//     {
+//       key: 'physics',
+//       name: 'Physics',
+//       chapters: [
+//         'Kinematics',
+//         'Laws of Motion',
+//         'Work, Energy and Power',
+//         'Gravitation',
+//       ],
+//     },
+//     {
+//       key: 'chemistry',
+//       name: 'Chemistry',
+//       chapters: [
+//         'Atomic Structure',
+//         'Periodic Table',
+//         'Chemical Bonding',
+//         'Thermodynamics',
+//       ],
+//     },
+//     {
+//       key: 'biology',
+//       name: 'Biology',
+//       chapters: [
+//         'Cell Structure',
+//         'Genetics',
+//         'Human Physiology',
+//         'Plant Physiology',
+//       ],
+//     },
+//   ];
+
+//   return (
+//     <div className="p-8 bg-gray-50">
+//       <h1 className="text-center text-4xl text-gray-800 font-bold mb-6">Subjects and Chapters</h1>
+//       {subjects.map((subject) => (
+//         <SubjectTable
+//           key={subject.key}
+//           subject={subject.name}
+//           chapters={subject.chapters}
+//           subjectKey={subject.key}
+//         />
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default Home;
+
+
+
+
+
+
+// app/subjects/page.jsx (Main page displaying the tables)
+// import Link from 'next/link';
+
+// const chapters = {
+//   physics: [
+//     'Motion in a Straight Line',
+//     'Motion in a Plane',
+//     'Laws of Motion',
+//     'Work, Energy, and Power',
+//     'System of Particles and Rotational Motion',
+//     'Gravitation',
+//     'Properties of Matter',
+//     'Thermodynamics',
+//     'Kinetic Theory',
+//     'Oscillations',
+//     'Waves',
+//     'Electrostatics',
+//     'Current Electricity',
+//     'Magnetic Effects of Current and Magnetism',
+//     'Electromagnetic Induction and Alternating Currents',
+//     'Electromagnetic Waves',
+//     'Optics',
+//     'Dual Nature of Matter and Radiation',
+//     'Atoms and Nuclei',
+//     'Semiconductor Electronics: Materials, Devices, and Simple Circuits'
+//   ],
+//   chemistry: [
+//     'Some Basic Concepts of Chemistry',
+//     'Structure of Atom',
+//     'Classification of Elements and Periodicity in Properties',
+//     'Chemical Bonding and Molecular Structure',
+//     'States of Matter: Gases and Liquids',
+//     'Thermodynamics',
+//     'Equilibrium',
+//     'Redox Reactions',
+//     'The Hydrogen Element',
+//     'The s-Block Elements (Alkali and Alkaline Earth metals)',
+//     'The p-Block Elements (Group 13-18)',
+//     'Organic Chemistry - Some Basic Principles and Techniques',
+//     'Hydrocarbons',
+//     'Environmental Chemistry',
+//     'The Solid State',
+//     'Solutions',
+//     'Electrochemistry',
+//     'Chemical Kinetics',
+//     'Surface Chemistry',
+//     'Coordination Compounds'
+//   ],
+//   mathematics: [
+//     'Sets',
+//     'Relations and Functions',
+//     'Trigonometric Functions',
+//     'Principle of Mathematical Induction',
+//     'Complex Numbers and Quadratic Equations',
+//     'Linear Inequalities',
+//     'Permutations and Combinations',
+//     'Binomial Theorem',
+//     'Sequences and Series',
+//     'Straight Lines',
+//     'Conic Sections',
+//     'Introduction to Three-dimensional Geometry',
+//     'Limits and Derivatives',
+//     'Mathematical Reasoning',
+//     'Statistics',
+//     'Probability',
+//     'Matrices',
+//     'Determinants',
+//     'Continuity and Differentiability',
+//     'Application of Derivatives'
+//   ]
+// };
+
+// export default function SubjectsPage() {
+//   return (
+//     <div className="p-10 space-y-10">
+//       {Object.entries(chapters).map(([subject, chapterList]) => (
+//         <div key={subject} className="border rounded-lg p-5 shadow-lg">
+//           <h2 className="text-2xl font-bold capitalize mb-4">{subject}</h2>
+//           <table className="w-full table-auto border-collapse border border-gray-300">
+//             <thead>
+//               <tr>
+//                 <th className="border border-gray-300 px-4 py-2">S. No.</th>
+//                 <th className="border border-gray-300 px-4 py-2">Chapter Name</th>
+//               </tr>
+//             </thead>
+//             <tbody>
+//               {chapterList.map((chapter, index) => (
+//                 <tr key={chapter} className="hover:bg-gray-100">
+//                   <td className="border border-gray-300 px-4 py-2 text-center">{index + 1}</td>
+//                   <td className="border border-gray-300 px-4 py-2">
+//                     <Link href={`/subjects/${subject}/chapter-${index + 1}`}> 
+//                       <a className="text-blue-600 hover:underline">{chapter}</a>
+//                     </Link>
+//                   </td>
+//                 </tr>
+//               ))}
+//             </tbody>
+//           </table>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// }
+
+// // app/subjects/[subject]/[chapter]/page.jsx (Chapter detail page)
+// export default function ChapterPage({ params }) {
+//   const { subject, chapter } = params;
+  
+//   return (
+//     <div className="p-10">
+//       <h1 className="text-3xl font-bold mb-4">{`Subject: ${subject.charAt(0).toUpperCase() + subject.slice(1)}`}</h1>
+//       <h2 className="text-2xl font-semibold mb-4">{`Chapter: ${chapter.replace('-', ' ')}`}</h2>
+//       <p className="text-lg text-gray-700">This page contains detailed information about {chapter.replace('-', ' ')} of {subject}.</p>
+//       <Link href="/subjects">
+//         <a className="mt-4 inline-block text-blue-600 hover:underline">Back to Subjects</a>
+//       </Link>
+//     </div>
+//   );
+// }
+
+// app/subjects/layout.jsx (Optional layout for subjects pages)
+// export default function SubjectsLayout({ children }) {
+//   return (
+//     <div>
+//       <header className="bg-blue-500 text-white p-4 text-center">
+//         <h1 className="text-xl font-bold">Subject Chapters</h1>
+//       </header>
+//       <main>{children}</main>
+//     </div>
+//   );
+// } 
+
+
+
+
+import Link from 'next/link';
+
+const chapters = {
+  physics: ['विज्ञान और मापन', 'गति', 'बल तथा गति के नियम', 'गुरुत्वाकर्षण', 'कार्य, ऊर्जा और शक्ति', 'ध्वनि'],
+  chemistry: ['हमारे परिवेश के पदार्थ', 'पदार्थ का वर्गीकरण', 'परमाणु अणु और आयन', 'परमाणु - संरचना', 'प्राकृतिक संसाधन'],
+  biology: ['कोशिका - जीवन की आधारभूत इकाई', 'ऊतक', 'जीवों में विविधता', 'स्वास्थ्य एवं रोग', 'खाद्य संसाधन - पौधे', 'खाद्य संसाधन–पशु'],
+};
+
+export default function SubjectsPage() {
+  return (
+    <div className="p-10 space-y-10">
+      {Object.entries(chapters).map(([subject, chapterList]) => (
+        <div key={subject} className="border rounded-lg p-5 shadow-lg">
+          <h2 className="text-2xl font-bold capitalize mb-4">{subject}</h2>
+          <table className="w-full table-auto border-collapse border border-gray-300">
+            <thead>
+              <tr>
+                <th className="border border-gray-300 px-4 py-2">S. No.</th>
+                <th className="border border-gray-300 px-4 py-2">Chapter Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              {chapterList.map((chapter, index) => (
+                <tr key={chapter} className="hover:bg-gray-100">
+                  <td className="border border-gray-300 px-4 py-2 text-center">{index + 1}</td>
+                  <td className="border border-gray-300 px-4 py-2">
+                    <Link href={`/9th-science/${subject}/chapter${index + 1}`}>
+                      {chapter}
+                    </Link>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ))}
+    </div>
+  );
+}

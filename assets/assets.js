@@ -8,6 +8,14 @@ import lnmu from "./LNMU.webp"
 import test from "./onlinetest.jpg"
 import abtimg from "./nafis.jpg"
 import banner8th from "./banner-8th.png"
+import banner10th from "./10th-subjective-math-banner.png"
+// import obj10thchapter1 from "./10th-math-objective-chapter-1.png"
+// import obj10thchapter2 from "./10th-math-objective-chapter-1.png"
+// import obj10thchapter3 from "./10th-math-objective-chapter-1.png"
+// import obj10thchapter4 from "./10th-math-objective-chapter-1.png"
+// import obj10thchapter5 from "./10th-math-objective-chapter-1.png"
+// import obj10thchapter6 from "./10th-math-objective-chapter-1.png"
+// import obj10thchapter7 from "./10th-math-objective-chapter-1.png"
 // import blog_pic_1 from './blog_pic_1.png';
 // import blog_pic_2 from './blog_pic_2.png';
 import blog_pic_3 from './blog_pic_3.png';
@@ -37,6 +45,7 @@ import email_icon from './email_icon.png'
 import upload_area from './upload_area.png'
 
 export const assets = {
+    banner10th,
     banner8th,
     newblack,
     newnafis,
@@ -66,7 +75,7 @@ export const assets = {
         date:Date.now(),
         category:"Blog",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:2,
@@ -76,7 +85,7 @@ export const assets = {
         date:Date.now(),
         category:"Latest Update",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:3,
@@ -86,7 +95,7 @@ export const assets = {
         date:Date.now(),
         category:"Latest Update",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:4,
@@ -96,7 +105,7 @@ export const assets = {
         date:Date.now(),
         category:"Blog",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:5,
@@ -106,7 +115,7 @@ export const assets = {
         date:Date.now(),
         category:"Blog",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:6,
@@ -116,7 +125,7 @@ export const assets = {
         date:Date.now(),
         category:"Blog",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:7,
@@ -126,7 +135,7 @@ export const assets = {
         date:Date.now(),
         category:"Blog",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:8,
@@ -136,7 +145,7 @@ export const assets = {
         date:Date.now(),
         category:"Blog",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:9,
@@ -146,7 +155,7 @@ export const assets = {
         date:Date.now(),
         category:"Blog",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:10,
@@ -156,7 +165,7 @@ export const assets = {
         date:Date.now(),
         category:"Blog",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:11,
@@ -166,7 +175,7 @@ export const assets = {
         date:Date.now(),
         category:"Latest Update",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:12,
@@ -176,7 +185,7 @@ export const assets = {
         date:Date.now(),
         category:"Blog",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:13,
@@ -186,7 +195,7 @@ export const assets = {
         date:Date.now(),
         category:"Latest Update",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:14,
@@ -196,7 +205,7 @@ export const assets = {
         date:Date.now(),
         category:"Blog",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:15,
@@ -206,7 +215,7 @@ export const assets = {
         date:Date.now(),
         category:"Latest Update",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
     {
         id:16,
@@ -216,7 +225,7 @@ export const assets = {
         date:Date.now(),
         category:"Blog",
         author:"Nafis Sir",
-        author_img:abtimg
+        author_img:abtimg,
     },
 ]
 

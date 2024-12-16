@@ -5185,52 +5185,52 @@ const HomePage = () => {
           <Link href="/8th-science/chapter2" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 2: सूक्ष्मजीव मित्र एवं शत्रु
           </Link>
-          <Link href="/8th-science/chapter3" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter3" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 3: संश्लेषित रेशे और प्लास्टिक
           </Link>
-          <Link href="/8th-science/chapter4" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter4" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 4: पदार्थ धातु और अधातु
           </Link>
-          <Link href="/8th-science/chapter5" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter5" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 5: कोयला और पेट्रोलियम
           </Link>
-          <Link href="/8th-science/chapter6" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter6" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 6: दहन एवं ज्वाला
           </Link>
-          <Link href="/8th-science/chapter7" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter7" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 7: पौधा एवं जंतुओं का संरक्षण
           </Link>
-          <Link href="/8th-science/chapter8" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter8" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 8: कोशिका: संरचना एवं प्रकार्य
           </Link>
-          <Link href="/8th-science/chapter9" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter9" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 9: जन्तुओं में जनन
           </Link>
-          <Link href="/8th-science/chapter10" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter10" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 10: किशोरावस्था की और
           </Link>
-          <Link href="/8th-science/chapter11" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter11" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 11: बल तथा दाब
           </Link>
-          <Link href="/8th-science/chapter12" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter12" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 12: घर्षण
           </Link>
-          <Link href="/8th-science/chapter13" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter13" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 13: ध्वनि
           </Link>
-          <Link href="/8th-science/chapter14" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter14" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 14: विधुत धारा के रासानिक प्रभाव
           </Link>
-          <Link href="/8th-science/chapter15" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter15" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 15: कुछ प्राकृतिक परिघटनाएँ
           </Link>
-          <Link href="/8th-science/chapter16" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter16" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 16: प्रकाश
           </Link>
-          <Link href="/8th-science/chapter17" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter17" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 17: तारे एवं सौर परिवार
           </Link>
-          <Link href="/8th-science/chapter18" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all">
+          <Link href="/8th-science/chapter18" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-indigo-700 transition-all shadow-sky-700 shadow-lg">
             अध्याय 18: वायु तथा जल का प्रदूषण
           </Link>
         </div>

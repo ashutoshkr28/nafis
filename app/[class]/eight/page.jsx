@@ -3,7 +3,8 @@
 
 import { useState } from "react";
 import { sixtques } from "@/assets/assets";
-import Banner from "@/components/banner";
+import Image from "next/image";
+// import Banner from "@/components/banner";
 // import Image from "next/image";
 
 const Quiz = () => {
@@ -59,7 +60,10 @@ const Quiz = () => {
   return (
     <>
     <div className="flex justify-center">
-    <Banner></Banner>
+      <div>
+      <Image src={"/image/8th-online-math-test.png"} className=' rounded mb-12 mt-5 transition-all transform hover:animate-shake' width={2300} height={300} alt='img'></Image>
+    {/* <Banner></Banner> */}
+    </div>
     </div>
 
     <div className="p-6 max-w-md mx-auto bg-white rounded-xl shadow-md text-center border border-yellow-300 mt-9">

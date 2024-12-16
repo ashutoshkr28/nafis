@@ -242,8 +242,8 @@ export default function ScienceNotes() {
                 <td className="px-4 py-2 border text-2xl text-left border-gray-300">
                   {/* Update the link to handle both class and chapter dynamically */}
                   <Link
-                    href={`/objective /math/${chapter.slug}/[chapter]`} // Add chapter specific URL part
-                    as={`/objective /math/${chapter.slug}/chapter1`} // Example, you will adjust to fetch the correct chapter dynamically
+                    href={`/objective/math/${chapter.slug}/[chapter]`} // Add chapter specific URL part
+                    as={`/objective/math/${chapter.slug}/chapter1`} // Example, you will adjust to fetch the correct chapter dynamically
                     className="text-blue-600 hover:underline"
                   >
                     {chapter.name}

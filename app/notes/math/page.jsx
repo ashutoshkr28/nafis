@@ -48,6 +48,27 @@ export default function ScienceNotes() {
           </tbody>
         </table>
       </div>
+
+
+      <div>
+     <table>
+      <thead>
+        <tr>
+          <th>
+            All Math Formula Chapter 
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><Link href={"/formula-bijganit"}>बीजगणित </Link></td>
+        </tr>
+        <tr> 
+          <td><Link href={"./formula-bijganit"}> Trignometric </Link></td>
+        </tr>
+      </tbody>
+     </table>
+      </div>
     </div>
   );
 }

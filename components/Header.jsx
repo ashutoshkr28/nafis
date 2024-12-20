@@ -76,6 +76,8 @@ const Header = () => {
       <span>2</span>
     </div> */}
 
+    {/* <Link href={"/check"}>go to math page</Link> */}
+
         {/* Subscription Form */}
         <form className="flex justify-between items-center max-w-xs sm:max-w-md lg:max-w-lg mx-auto mt-8 md:mt-10 border border-black shadow-[-4px_4px_0px_#000000]" action="">
           <input 

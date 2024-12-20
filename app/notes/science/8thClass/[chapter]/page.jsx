@@ -5148,6 +5148,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const HomePage = () => {
   return (
@@ -5160,16 +5161,18 @@ const HomePage = () => {
           बेहतर अंक प्राप्त करने के लिए नियमित रूप से
           <Link href="/" className="text-blue-600 font-bold"> Nafis Sir Chhaurahi </Link> पर विजिट करें और सभी नवीनतम अपडेट्स प्राप्त करें।
         </h1>
+        <Image src={"/image/8th-science-banner.png"} width={2300} height={350} alt='loading' className=' rounded mb-12 transition-all transform hover:animate-shake'></Image>
 
         <p className="mt-4 text-lg text-gray-700 text-center">
           वर्ग 8 के विज्ञान  के chapters के link नीचे दिए गए हैं, जिससे आप आसानी से अपनी तैयारी को बेहतर बना सकते हैं।
           ये प्रश्‍न <span className="text-blue-600 font-bold"> Nafis Sir </span> द्वारा सावधानीपूर्वक चयनित किए गए हैं।
         </p>
+       
       </div>
 
       {/* Chapter List Section */}
       <div className="p-6 max-w-3xl mx-auto bg-white rounded-xl shadow-lg shadow-blue-500 mb-16 space-y-6 mt-5">
-        <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">Class 8th Science Question and Answer with Chapter Name</h1>
+        {/* <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">Class 8th Science Question and Answer with Chapter Name</h1> */}
 
         <div className="space-y-4 text-xl ">
           {/* <Link href="/8th-science/chapter1" className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600  transition-all">

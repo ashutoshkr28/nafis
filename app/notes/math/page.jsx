@@ -51,23 +51,64 @@ export default function ScienceNotes() {
 
 
       <div>
-     <table>
+     <table className="table-auto w-full border-collapse border border-gray-300 shadow-lg">
       <thead>
-        <tr>
-          <th>
+        <tr className="bg-gray-200">
+          <th className="px-4 py-2 border border-red-500 bg-red-500 text-white text-4xl text-center">
             All Math Formula Chapter 
           </th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><Link href={"/formula-bijganit"}>बीजगणित </Link></td>
+          <td><Link href={"/formula/real-number"}>वास्तविक संख्याएँ </Link></td>
         </tr>
         <tr> 
-          <td><Link href={"./formula-bijganit"}> Trignometric </Link></td>
+          <td><Link href={"/formula/polynomiyal"}> बहुपद </Link></td>
+        </tr>
+        <tr> 
+          <td><Link href={"/formula/raikhik-smikaran"}> दो चरों वाले रैखिक समीकरणों का युग्म </Link></td>
+        </tr>
+        <tr>
+          <td > <Link href={"/formula/dwighat-samikaran"}> द्विघात समीकरण</Link></td>
+        </tr>
+        <tr>
+          <td> <Link href={"/formula/samantar-sredhi"}>समान्तर श्रेढ़ी</Link></td>
+        </tr>
+        <tr>
+          <td><Link href={"/formula/tribhuj"}> त्रिभुज</Link></td>
+        </tr>
+        <tr>
+          <td> <Link href={"/formula/nirdesank"}>निर्देशांक ज्यामिति</Link></td>
+        </tr>
+        <tr>
+          <td><Link href={"/formula/trikonmiti"}>त्रिकोणमिति</Link></td>
+        </tr>
+       
+        <tr>
+          <td><Link href={"/formula/vrit"}>वृत्त</Link></td>
+        </tr>
+        <tr>
+          <td><Link href={"/formula/vrit-se-sambandhit-kshtraphal"}>वृतों से सम्बंधित क्षेत्रफल</Link></td>
+        </tr>
+        <tr>
+          <td><Link href={"/formula/pristhiye-kshetraphal-and-aaytan"}>पृष्ठीय क्षेत्रफल एवं आयतन</Link></td>
+        </tr>
+        <tr>
+          <td><Link href={"/formula/sankhiki"}>सांख्यिकी</Link></td>
         </tr>
       </tbody>
      </table>
+      </div>
+
+
+
+
+
+
+      <div className="min-h-screen mt-20 font-bold text-8xl">
+        <Link href = {"/important-notes"}   className="border-orange-300">  Important Formula</Link >
+       
       </div>
     </div>
   );

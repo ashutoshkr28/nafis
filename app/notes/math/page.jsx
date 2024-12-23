@@ -50,66 +50,240 @@ export default function ScienceNotes() {
       </div>
 
 
-      <div>
-     <table className="table-auto w-full border-collapse border border-gray-300 shadow-lg">
-      <thead>
-        <tr className="bg-gray-200">
-          <th className="px-4 py-2 border border-red-500 bg-red-500 text-white text-4xl text-center">
-            All Math Formula Chapter 
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><Link href={"/formula/real-number"}>वास्तविक संख्याएँ </Link></td>
-        </tr>
-        <tr> 
-          <td><Link href={"/formula/polynomiyal"}> बहुपद </Link></td>
-        </tr>
-        <tr> 
-          <td><Link href={"/formula/raikhik-smikaran"}> दो चरों वाले रैखिक समीकरणों का युग्म </Link></td>
-        </tr>
-        <tr>
-          <td > <Link href={"/formula/dwighat-samikaran"}> द्विघात समीकरण</Link></td>
-        </tr>
-        <tr>
-          <td> <Link href={"/formula/samantar-sredhi"}>समान्तर श्रेढ़ी</Link></td>
-        </tr>
-        <tr>
-          <td><Link href={"/formula/tribhuj"}> त्रिभुज</Link></td>
-        </tr>
-        <tr>
-          <td> <Link href={"/formula/nirdesank"}>निर्देशांक ज्यामिति</Link></td>
-        </tr>
-        <tr>
-          <td><Link href={"/formula/trikonmiti"}>त्रिकोणमिति</Link></td>
-        </tr>
-       
-        <tr>
-          <td><Link href={"/formula/vrit"}>वृत्त</Link></td>
-        </tr>
-        <tr>
-          <td><Link href={"/formula/vrit-se-sambandhit-kshtraphal"}>वृतों से सम्बंधित क्षेत्रफल</Link></td>
-        </tr>
-        <tr>
-          <td><Link href={"/formula/pristhiye-kshetraphal-and-aaytan"}>पृष्ठीय क्षेत्रफल एवं आयतन</Link></td>
-        </tr>
-        <tr>
-          <td><Link href={"/formula/sankhiki"}>सांख्यिकी</Link></td>
-        </tr>
-      </tbody>
-     </table>
-      </div>
+      <div className="overflow-x-auto w-full max-w-7xl mx-auto p-6 mb-48 mt-10">
+  <h1 className="text-3xl md:text-5xl font-extrabold text-center text-indigo-700 mb-10">
+    All Mathematics Formula
+  </h1>
+  <div className="p-6 max-w-4xl mx-auto bg-gradient-to-r from-white via-gray-100 to-blue-50 rounded-xl shadow-lg space-y-6">
+    <div className="grid gap-y-4 text-xl">
+      {[
+        { href: "/formula/real-number", label: "वास्तविक संख्याएँ" },
+        { href: "/formula/polynomiyal", label: "बहुपद" },
+        { href: "/formula/raikhik-smikaran", label: "दो चरों वाले रैखिक समीकरणों का युग्म" },
+        { href: "/formula/dwighat-samikaran", label: "द्विघात समीकरण" },
+        { href: "/formula/samantar-sredhi", label: "समान्तर श्रेढ़ी" },
+        { href: "/formula/tribhuj", label: "त्रिभुज" },
+        { href: "/formula/nirdesank", label: "निर्देशांक ज्यामिति" },
+        { href: "/formula/trikonmiti", label: "त्रिकोणमिति" },
+        { href: "/formula/vrit", label: "वृत्त" },
+        { href: "/formula/vrit-se-sambandhit-kshtraphal", label: "वृतों से सम्बंधित क्षेत्रफल" },
+        { href: "/formula/pristhiye-kshetraphal-and-aaytan", label: "पृष्ठीय क्षेत्रफल एवं आयतन" },
+        { href: "/formula/sankhiki", label: "सांख्यिकी" },
+      ].map((item) => (
+        <Link
+          key={item.href}
+          href={item.href}
+          className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 hover:scale-105 hover:shadow-lg transition-all"
+        >
+          {item.label}
+        </Link>
+      ))}
+    </div>
+  </div>
+</div>
+
+
+
+{/* 
+      <div className="overflow-x-auto w-full max-w-4xl mb-48 mt-10">
+
+        <h1>All Mathematics Formula</h1>
+
+      <div className="p-6 max-w-20xl min-h-screen mx-auto bg-white rounded-xl shadow-lg shadow-blue-500 mb-16 space-y-6 mt-5">
+  <div className="space-y-4 text-xl">
+    <Link
+      href="/formula/real-number"
+      className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 transition-all transform hover:scale-110 hover:animate-shake"
+    >
+      वास्तविक संख्याएँ
+    </Link>
+    <Link
+      href="/formula/polynomiyal"
+      className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 transition-all transform hover:scale-110 hover:animate-shake"
+    >
+      बहुपद
+    </Link>
+    <Link
+      href="/formula/raikhik-smikaran"
+      className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 transition-all transform hover:scale-110 hover:animate-shake"
+    >
+      दो चरों वाले रैखिक समीकरणों का युग्म
+    </Link>
+    <Link
+      href="/formula/dwighat-samikaran"
+      className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 transition-all transform hover:scale-110 hover:animate-shake"
+    >
+      द्विघात समीकरण
+    </Link>
+    <Link
+      href="/formula/samantar-sredhi"
+      className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 transition-all transform hover:scale-110 hover:animate-shake"
+    >
+      समान्तर श्रेढ़ी
+    </Link>
+    <Link
+      href="/formula/tribhuj"
+      className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 transition-all transform hover:scale-110 hover:animate-shake"
+    >
+      त्रिभुज
+    </Link>
+    <Link
+      href="/formula/nirdesank"
+      className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 transition-all transform hover:scale-110 hover:animate-shake"
+    >
+      निर्देशांक ज्यामिति
+    </Link>
+    <Link
+      href="/formula/trikonmiti"
+      className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 transition-all transform hover:scale-110 hover:animate-shake"
+    >
+      त्रिकोणमिति
+    </Link>
+    <Link
+      href="/formula/vrit"
+      className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 transition-all transform hover:scale-110 hover:animate-shake"
+    >
+      वृत्त
+    </Link>
+    <Link
+      href="/formula/vrit-se-sambandhit-kshtraphal"
+      className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 transition-all transform hover:scale-110 hover:animate-shake"
+    >
+      वृतों से सम्बंधित क्षेत्रफल
+    </Link>
+    <Link
+      href="/formula/pristhiye-kshetraphal-and-aaytan"
+      className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 transition-all transform hover:scale-110 hover:animate-shake"
+    >
+      पृष्ठीय क्षेत्रफल एवं आयतन
+    </Link>
+    <Link
+      href="/formula/sankhiki"
+      className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 transition-all transform hover:scale-110 hover:animate-shake"
+    >
+      सांख्यिकी
+    </Link>
+  </div>
+</div>
+</div> */}
+
+
+      {/* <div className="overflow-x-auto">
+  <table className="table-auto w-full border-collapse border border-gray-300 shadow-lg">
+    <thead>
+      <tr className="bg-gray-200">
+        <th className="px-4 py-2 border border-red-500 bg-red-500 text-white text-lg sm:text-2xl md:text-3xl lg:text-4xl text-center">
+          All Math Formula Chapter
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="px-4 py-2 border">
+          <Link href="/formula/real-number" className="hover:underline">
+            वास्तविक संख्याएँ
+          </Link>
+        </td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">
+          <Link href="/formula/polynomiyal" className="hover:underline">
+            बहुपद
+          </Link>
+        </td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">
+          <Link href="/formula/raikhik-smikaran" className="hover:underline">
+            दो चरों वाले रैखिक समीकरणों का युग्म
+          </Link>
+        </td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">
+          <Link href="/formula/dwighat-samikaran" className="hover:underline">
+            द्विघात समीकरण
+          </Link>
+        </td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">
+          <Link href="/formula/samantar-sredhi" className="hover:underline">
+            समान्तर श्रेढ़ी
+          </Link>
+        </td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">
+          <Link href="/formula/tribhuj" className="hover:underline">
+            त्रिभुज
+          </Link>
+        </td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">
+          <Link href="/formula/nirdesank" className="hover:underline">
+            निर्देशांक ज्यामिति
+          </Link>
+        </td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">
+          <Link href="/formula/trikonmiti" className="hover:underline">
+            त्रिकोणमिति
+          </Link>
+        </td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">
+          <Link href="/formula/vrit" className="hover:underline">
+            वृत्त
+          </Link>
+        </td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">
+          <Link href="/formula/vrit-se-sambandhit-kshtraphal" className="hover:underline">
+            वृतों से सम्बंधित क्षेत्रफल
+          </Link>
+        </td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">
+          <Link href="/formula/pristhiye-kshetraphal-and-aaytan" className="hover:underline">
+            पृष्ठीय क्षेत्रफल एवं आयतन
+          </Link>
+        </td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">
+          <Link href="/formula/sankhiki" className="hover:underline">
+            सांख्यिकी
+          </Link>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div> */}
 
 
 
 
 
 
-      <div className="min-h-screen mt-20 font-bold text-8xl">
-        <Link href = {"/important-notes"}   className="border-orange-300">  Important Formula</Link >
-       
-      </div>
+
+<div className="min-h-screen flex items-center justify-center bg-gray-100">
+  <Link
+    href="/important-notes"
+    className="px-8 py-4 text-lg md:text-2xl lg:text-4xl font-bold text-white bg-orange-500 rounded-lg shadow-md hover:bg-orange-600 hover:shadow-lg transition-all"
+    aria-label="Go to Important Formula page"
+  >
+    Important Formula
+  </Link>
+</div>
+
+
+
     </div>
   );
 }

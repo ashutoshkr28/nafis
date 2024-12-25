@@ -272,16 +272,19 @@ export default function ScienceNotes() {
 
 
 
-
-<div className="min-h-screen flex items-center justify-center bg-gray-100">
+<div className="min-h-screen flex items-center justify-center shadow-md w-full px-4 text-center">
   <Link
     href="/important-notes"
-    className="px-8 py-4 text-lg md:text-2xl lg:text-4xl font-bold text-white bg-orange-500 rounded-lg shadow-md hover:bg-orange-600 hover:shadow-lg transition-all"
+    className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl px-8 py-4 text-lg md:text-2xl lg:text-4xl font-bold text-white bg-orange-500 rounded-lg shadow-md hover:bg-orange-600 hover:shadow-lg transition-transform transform hover:scale-105 md:hover:scale-110 lg:hover:scale-115 origin-center overflow-hidden"
     aria-label="Go to Important Formula page"
   >
     Important Formula
   </Link>
 </div>
+
+
+
+
 
 
 

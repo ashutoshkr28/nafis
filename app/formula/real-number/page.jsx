@@ -28,26 +28,117 @@
 
 
 
-import Image from "next/image";
+// import Image from "next/image";
+// import React from "react";
+
+// const RealNumbers = () => {
+//   return (
+//     <div className="">
+
+//         {/* <Image src={"/image/8th-S-Chap-1.png"} width={2300} height={230}></Image> */}
+     
+   
+//       <ul className=" ml-16 text-left text-2xl">
+//         <li>
+//         i) युक्लिड विभाजन प्रमेयिका से:
+//           <p>a = bq + r जहाँ 0 ≤ r &lt; b</p>
+//         </li>
+//         <li>
+//         ii) भाज्य = भाजक × भागफल + शेषफल
+//         </li>
+//         <li>
+//         iii) महत्तम (a, b) × लघुत्तम (a, b) = a × b
+//         </li>
+//       </ul>
+//     </div>
+//   );
+// };
+
+// export default RealNumbers;
+
+
+// import React from "react";
+
+// const RealNumbers = () => {
+//   return (
+//     <div className="bg-gray-100 py-10 px-5 sm:px-10 md:px-20 lg:px-40">
+//       {/* Uncomment this if the image is needed */}
+//       {/* <div className="mb-8">
+//         <Image
+//           src="/image/8th-S-Chap-1.png"
+//           alt="Real Numbers Diagram"
+//           width={2300}
+//           height={230}
+//           className="rounded-lg shadow-md"
+//         />
+//       </div> */}
+
+//       <h1 className="text-center text-4xl font-bold text-gray-800 mb-8">
+//         Real Numbers: Key Concepts
+//       </h1>
+
+//       <ul className="list-disc pl-8 sm:pl-16 text-left text-xl sm:text-2xl text-gray-700 space-y-6">
+//         <li>
+//           <strong>i) युक्लिड विभाजन प्रमेयिका:</strong>
+//           <p className="pl-4 mt-2 text-lg sm:text-xl">
+//             a = bq + r जहाँ 0 ≤ r &lt; b
+//           </p>
+//         </li>
+//         <li>
+//           <strong>ii) भाज्य = भाजक × भागफल + शेषफल</strong>
+//         </li>
+//         <li>
+//           <strong>iii) मo सo  (a, b) × लo सo  (a, b) = a × b</strong>
+//         </li>
+//       </ul>
+//     </div>
+//   );
+// };
+
+// export default RealNumbers;
+
+
+
+
+
 import React from "react";
 
 const RealNumbers = () => {
   return (
-    <div className="">
+    <div className="bg-gray-100 py-10 px-5 sm:px-10 md:px-20 lg:px-40">
+      {/* Uncomment this if the image is needed */}
+      {/* <div className="mb-8">
+        <Image
+          src="/image/8th-S-Chap-1.png"
+          alt="Real Numbers Diagram"
+          width={2300}
+          height={230}
+          className="rounded-lg shadow-md"
+        />
+      </div> */}
 
-        {/* <Image src={"/image/8th-S-Chap-1.png"} width={2300} height={230}></Image> */}
-     
-   
-      <ul className=" ml-16 text-left text-4xl">
-        <li>
-        i) युक्लिड विभाजन प्रमेयिका से:
-          <p>a = bq + r जहाँ 0 ≤ r &lt; b</p>
+      <h1 className="text-center text-4xl font-bold text-gray-800 mb-8">
+        Real Numbers: Key Concepts
+      </h1>
+
+      <ul className="list-disc pl-8 sm:pl-16 text-left text-xl sm:text-2xl text-gray-700 space-y-6">
+        <li className="space-y-4">
+          <div className="p-4 bg-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+            <strong className="text-lg sm:text-xl block">i) युक्लिड विभाजन प्रमेयिका:</strong>
+            <p className="pl-4 text-lg sm:text-xl">
+              a = bq + r जहाँ 0 ≤ r &lt; b
+            </p>
+          </div>
         </li>
-        <li>
-        ii) भाज्य = भाजक × भागफल + शेषफल
+        <li className="space-y-4">
+          <div className="p-4 bg-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+            <strong className="text-lg sm:text-xl block">ii) भाज्य = भाजक × भागफल + शेषफल</strong>
+          </div>
         </li>
-        <li>
-        iii) महत्तम (a, b) × लघुत्तम (a, b) = a × b
+        <li className="space-y-4">
+          <div className="p-4 bg-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+            <strong className="text-lg sm:text-xl block">iii) मo सo  (a, b) × लo सo  (a, b) = a × b</strong>
+          </div>
         </li>
       </ul>
     </div>
@@ -55,3 +146,4 @@ const RealNumbers = () => {
 };
 
 export default RealNumbers;
+

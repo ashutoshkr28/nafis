@@ -74,6 +74,7 @@ export default function ScienceNotes() {
         { href: "/formula/vrit", label: "वृतों से सम्बंधित क्षेत्रफल" },
         { href: "/formula/pristhiye-kshetraphal-and-aaytan", label: "पृष्ठीय क्षेत्रफल एवं आयतन" },
         { href: "/formula/sankhiki", label: "सांख्यिकी" },
+        { href: "/formula/proved", label: "Proved" },
       ].map((item) => (
         <Link
           key={item.href}

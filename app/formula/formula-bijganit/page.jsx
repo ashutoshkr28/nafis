@@ -125,7 +125,7 @@ export default function Identities() {
   return (
     <div className="p-4 sm:p-6 md:p-8 bg-gray-50 min-h-screen">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-700 mb-8">
-        महत्वपूर्ण गणितीय सर्वसमिकाएँ (Algebraic Identities)
+      बीजगणितीय सूत्र (Algebraic Identities)
       </h1>
 
       <div className="flex flex-col space-y-4">
@@ -137,7 +137,7 @@ export default function Identities() {
             {/* <h2 className="text-xl font-semibold text-blue-600 mb-2">
               {index + 1}. पहचान {item.id}:
             </h2> */}
-            <div className="w-full overflow-x-auto text-2xl font-bold">
+            <div className="w-full overflow-x-auto text-lg font-bold">
               <Math math={item.formula} block={true} />
             </div>
           </div>

@@ -63,7 +63,7 @@ export default function ScienceNotes() {
 
       {[
         { href: "/formula/real-number", label: "वास्तविक संख्याएँ" },
-        {href: "/formula/bijganit", label: "बीजगणित "},
+        {href: "/formula/formula-bijganit", label: "बीजगणित "},
         { href: "/formula/polynomiyal", label: "बहुपद" },
         { href: "/formula/raikhik-smikaran", label: "दो चरों वाले रैखिक समीकरणों का युग्म" },
         { href: "/formula/dwighat-samikaran", label: "द्विघात समीकरण" },

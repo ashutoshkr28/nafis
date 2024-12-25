@@ -121,23 +121,23 @@ const RealNumbers = () => {
         Real Numbers: Key Concepts
       </h1>
 
-      <ul className="list-disc pl-8 sm:pl-16 text-left text-xl sm:text-2xl text-gray-700 space-y-6">
+      <ul className="list-none pl-8 sm:pl-16 text-left text-xl sm:text-2xl text-gray-700 space-y-6">
         <li className="space-y-4">
           <div className="p-4 bg-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
-            <strong className="text-lg sm:text-xl block">i) युक्लिड विभाजन प्रमेयिका:</strong>
+            <p className="text-lg sm:text-xl block ">युक्लिड विभाजन प्रमेयिका:</p>
             <p className="pl-4 text-lg sm:text-xl">
-              a = bq + r जहाँ 0 ≤ r &lt; b
+              a = bq + r जहाँ <span className="ml-2">  0 ≤ r &lt; b </span>
             </p>
           </div>
         </li>
         <li className="space-y-4">
           <div className="p-4 bg-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
-            <strong className="text-lg sm:text-xl block">ii) भाज्य = भाजक × भागफल + शेषफल</strong>
+            <p className="text-lg sm:text-xl block"> भाज्य = भाजक × भागफल + शेषफल</p>
           </div>
         </li>
         <li className="space-y-4">
           <div className="p-4 bg-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
-            <strong className="text-lg sm:text-xl block">iii) मo सo  (a, b) × लo सo  (a, b) = a × b</strong>
+            <p className="text-lg sm:text-xl block"> मo सo  (a, b) × लo सo  (a, b) = a × b</p>
           </div>
         </li>
       </ul>

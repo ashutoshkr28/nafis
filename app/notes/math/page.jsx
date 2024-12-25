@@ -48,14 +48,19 @@ export default function ScienceNotes() {
           </tbody>
         </table>
       </div>
+      <Image src={"/image/math-important.png"} className=' rounded mb-12 transition-all transform hover:animate-shake' width={2500} height={300} alt='img'></Image>
 
+      <div className="p-10 max-w-3xl mx-auto bg-white rounded-xl shadow-lg shadow-blue-500 mb-16 space-y-6 mt-5">
+        
 
-      <div className="overflow-x-auto w-full max-w-7xl mx-auto p-6 mb-48 mt-10">
+      {/* <div className="overflow-x-auto w-full max-w-4xl  p-6 mb-48 mt-10"> */}
   <h1 className="text-3xl md:text-5xl font-extrabold text-center text-indigo-700 mb-10">
     All Mathematics Formula
   </h1>
-  <div className="p-6 max-w-4xl mx-auto bg-gradient-to-r from-white via-gray-100 to-blue-50 rounded-xl shadow-lg space-y-6">
-    <div className="grid gap-y-4 text-xl">
+  <div className=" max-w-6xl  bg-gradient-to-r from-white via-gray-100 to-blue-50 rounded-xl shadow-lg space-y-6">
+    {/* <div className="grid gap-y-4 text-xl"> */}
+    <div className="space-y-4  px-0 text-xl ">
+
       {[
         { href: "/formula/real-number", label: "वास्तविक संख्याएँ" },
         {href: "/formula/bijganit", label: "बीजगणित "},
@@ -66,15 +71,14 @@ export default function ScienceNotes() {
         { href: "/formula/tribhuj", label: "त्रिभुज" },
         { href: "/formula/nirdesank", label: "निर्देशांक ज्यामिति" },
         { href: "/formula/trikonmiti", label: "त्रिकोणमिति" },
-        { href: "/formula/vrit", label: "वृत्त" },
-        { href: "/formula/vrit-se-sambandhit-kshtraphal", label: "वृतों से सम्बंधित क्षेत्रफल" },
+        { href: "/formula/vrit", label: "वृतों से सम्बंधित क्षेत्रफल" },
         { href: "/formula/pristhiye-kshetraphal-and-aaytan", label: "पृष्ठीय क्षेत्रफल एवं आयतन" },
         { href: "/formula/sankhiki", label: "सांख्यिकी" },
       ].map((item) => (
         <Link
           key={item.href}
           href={item.href}
-          className="block w-full text-left bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 hover:scale-105 hover:shadow-lg transition-all"
+          className="block w-full text-center bg-indigo-600 text-white font-bold py-3 px-3 rounded-lg hover:bg-teal-600 hover:scale-105 hover:shadow-lg transition-all"
         >
           {item.label}
         </Link>

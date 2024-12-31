@@ -48,7 +48,18 @@ export default function ScienceNotes() {
           </tbody>
         </table>
       </div>
-      <Image src={"/image/math-important.png"} className=' rounded mb-12 transition-all transform hover:animate-shake' width={2500} height={300} alt='img'></Image>
+      {/* <Image src={"/image/math-important.png"} className=' rounded mb-12 transition-all transform hover:animate-shake' width={2500} height={300} alt='img'></Image> */}
+
+      <Image 
+  src="/image/math-important.png" 
+  className="rounded mb-12 transition-all transform hover:animate-shake" 
+  alt="img" 
+  width={800} 
+  height={960} 
+  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw" 
+  priority // Optional: If this image is important and you want it to load faster
+/>
+
 
       <div className="p-10 max-w-3xl mx-auto bg-white rounded-xl shadow-lg shadow-blue-500 mb-16 space-y-6 mt-5">
         

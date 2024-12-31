@@ -51,13 +51,15 @@ export default function ScienceNotes() {
       {/* <Image src={"/image/math-important.png"} className=' rounded mb-12 transition-all transform hover:animate-shake' width={2500} height={300} alt='img'></Image> */}
 
       <Image 
-  src="/image/math-important.png" 
+  src="/image/math-important.webp" 
   className="rounded mb-12 transition-all transform hover:animate-shake w-full sm:w-3/4 lg:w-1/2 max-w-full" 
   alt="img" 
+  layout="intrinsic"
   width={800} 
   height={960} 
   priority 
 />
+
 
 
       <div className="p-10 max-w-3xl mx-auto bg-white rounded-xl shadow-lg shadow-blue-500 mb-16 space-y-6 mt-5">

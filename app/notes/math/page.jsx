@@ -52,12 +52,11 @@ export default function ScienceNotes() {
 
       <Image 
   src="/image/math-important.png" 
-  className="rounded mb-12 transition-all transform hover:animate-shake" 
+  className="rounded mb-12 transition-all transform hover:animate-shake w-full sm:w-3/4 lg:w-1/2 max-w-full" 
   alt="img" 
   width={800} 
   height={960} 
-  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw" 
-  priority // Optional: If this image is important and you want it to load faster
+  priority 
 />
 
 

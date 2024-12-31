@@ -62,7 +62,7 @@ const GeometryConcepts = () => {
       <Question
         question="त्रिभुज क्या है?"
         answer="त्रिभुज एक बंद आकृति होती है जिसमें तीन भुजाएँ और तीन कोण होते हैं। अर्थात तीन रेखाओं से घिरे हुए आकृति को त्रिभुज कहते हैं।"
-        image="/image/triangle.png"
+        image="/image/new-image.png"
       />
 
       <Question

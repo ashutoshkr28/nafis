@@ -175,12 +175,13 @@ const Chapter3 = () => {
       <section className="mb-10">
         <div className="bg-white shadow p-4 sm:p-6 rounded hover:scale-105 transition duration-300 ease-in-out">
           <h2 className="text-xl sm:text-3xl font-semibold text-blue-700 mb-4 sm:mb-6">
-            ➤ दो चर वाले रैखिक समीकरण का व्याप्त रूप:
+            ➤ दो चर वाले रैखिक समीकरण का व्यापक रूप:
           </h2>
           <p className="text-lg sm:text-2xl mb-4 sm:mb-6">
             <strong>
               <InlineMath math="a_1 x + b_1 y + c_1 = 0" />
-            </strong>,{" "}
+            </strong>{" "}
+            <br /> 
             <strong>
               <InlineMath math="a_2 x + b_2 y + c_2 = 0" />
             </strong>
@@ -188,38 +189,37 @@ const Chapter3 = () => {
 
           <ul className="text-lg sm:text-2xl space-y-4 sm:space-y-6">
             <li>
-              <strong>जब</strong>{" "}
+              <strong>➤ जब</strong>{" "}
               <em>
                 <InlineMath math="\frac{a_1}{a_2} \neq \frac{b_1}{b_2}" />
-              </em>:
+              </em>
               <ul className="list-disc pl-6 sm:pl-8 mt-2 space-y-2">
-                <li>i) प्रतिछेदी रेखा</li>
-                <li>ii) केवल एक हल (अद्वितीय हल)</li>
-                <li>iii) युग्म संगत (अविरोधी)</li>
-              </ul>
+                <li> प्रतिछेदी रेखा</li>
+                <li> केवल एक हल (अद्वितीय हल)</li>
+                <li> युग्म संगत (अविरोधी)</li>            </ul>
             </li>
 
             <li>
-              <strong>जब</strong>{" "}
+              <strong>➤ जब</strong>{" "}
               <em>
                 <InlineMath math="\frac{a_1}{a_2} = \frac{b_1}{b_2} \neq \frac{c_1}{c_2}" />
-              </em>:
+              </em>
               <ul className="list-disc pl-6 sm:pl-8 mt-2 space-y-2">
-                <li>i) रेखा समानांतर</li>
-                <li>ii) कोई हल नहीं</li>
-                <li>iii) युग्म असंगत (विरोधी)</li>
+                <li> रेखा समांतर</li>
+                <li> कोई हल नहीं</li>
+                <li> युग्म असंगत (विरोधी)</li>
               </ul>
             </li>
 
             <li>
-              <strong>जब</strong>{" "}
+              <strong>➤ जब</strong>{" "}
               <em>
                 <InlineMath math="\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}" />
-              </em>:
+              </em>
               <ul className="list-disc pl-6 sm:pl-8 mt-2 space-y-2">
-                <li>i) रेखा संपाती</li>
-                <li>ii) अपरिमित रूप से अनेक हल होंगे</li>
-                <li>iii) युग्म संगत (आश्रित)</li>
+                <li> रेखा संपाती</li>
+                <li> अपरिमित रूप से अनेक हल होंगे</li>
+                <li> युग्म संगत (आश्रित)</li>
               </ul>
             </li>
           </ul>
@@ -230,11 +230,11 @@ const Chapter3 = () => {
       <section>
         <div className="bg-white shadow p-4 sm:p-6 rounded hover:scale-105 transition duration-300 ease-in-out">
           <h2 className="text-xl sm:text-3xl font-semibold text-blue-700 mb-4 sm:mb-6">
-            ➤ बर्ज गुणन विधि:
+            ➤ वज्र गुणन विधि:
           </h2>
-          <p className="text-lg sm:text-2xl">
-            <strong>
-              <InlineMath math="x = \frac{b_1 c_2 - b_2 c_1}{b_1 a_2 - b_2 a_1}" />,{" "}
+          <p className="text-lg sm:text-2xl justify-between ">
+            <strong className="p-8  ">
+              <InlineMath math="x = \frac{b_1 c_2 - b_2 c_1}{a_1 b_2 - a_2 b_1}" />,{" "}
               <InlineMath math="y = \frac{c_1 a_2 - c_2 a_1}{a_1 b_2 - a_2 b_1}" />
             </strong>
           </p>

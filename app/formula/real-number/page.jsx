@@ -118,13 +118,13 @@ const RealNumbers = () => {
       </div> */}
 
       <h1 className="text-center text-4xl font-bold text-gray-800 mb-8">
-        Real Numbers: Key Concepts
+        Real Numbers (वास्तविक संख्या)
       </h1>
 
       <ul className="list-none pl-8 sm:pl-16 text-left text-xl sm:text-2xl text-gray-700 space-y-6">
         <li className="space-y-4">
           <div className="p-4 bg-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
-            <p className="text-lg sm:text-xl block ">युक्लिड विभाजन प्रमेयिका:</p>
+            <p className="text-lg sm:text-xl block ">युक्लिड विभाजन प्रमेयिका से :</p>
             <p className="pl-4 text-lg sm:text-xl">
               a = bq + r जहाँ <span className="ml-2">  0 ≤ r &lt; b </span>
             </p>

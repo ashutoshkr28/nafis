@@ -3,37 +3,41 @@ import Image from "next/image";
 
 // Question Component
 const Question = ({ question, answer, image }) => (
-  <div className="mb-8 p-4 border-2 border-gray-300 rounded-lg">
-    <h2 className="text-xl font-semibold mb-4">{question}</h2>
-    <p className="text-gray-700 text-base mb-4">{answer}</p>
+  <div className="mb-8 p-4 border-2 border-gray-300 rounded-lg  ">
+    <h2 className="text-xl text-red-600 font-semibold mb-4">{question}</h2>
+    <p className="text-gray-700 text-xl mb-4 ">{answer}</p>
     <div className="relative w-full h-64">
-      <Image src={image} alt={question} layout="fill" objectFit="contain" />
+      <Image src={image}  layout="fill" objectFit="contain" />
     </div>
   </div>
 );
 
 const GeometryConcepts = () => {
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center mb-8">रेखागणित (Geometry)</h1>
+   <div className="min-h-screen ">
+    <h1 className="text-3xl font-bold text-center  mt-10">रेखागणित (Geometry)</h1>
+      {/* extra ques */}
+      <div className=" p-6 ">
+       <div className="mb-6 p-4  border border-gray-300 rounded-lg text-xl">
+      <p className="text-red-600 font-bold">रेखागणित क्या है?</p>
+      
+        <p>  रेखागणित गणित की वह शाखा है जिसमें रेखा अथवा रेखाखंड से घिरे क्षेत्र के गुणों एवं बनावटों का अध्ययन करते हैं।</p>
+        </div>
+        <div className="mb-4 p-4 border-2 border-gray-300 rounded-lg text-xl">
+      <p className="text-red-600 font-bold">बिंदु क्या है?</p>
+      
+        <p> बिंदु वह है जिसकी मात्र कल्पना की जा सके एवं जिसमें लंबाई, चौड़ाई तथा मोटाई कुछ भी न हो किंतु स्थान अवश्य छेंकता हो उसे बिंदु कहते हैं।</p>
+        </div>
+        <div className=" p-4 border-2 border-gray-300 rounded-lg text-xl">
+      <p className="text-red-600 font-bold">समतल क्या है?</p>
+      <p>जिस तल में सभी बिंदु एक ही सतह में होते हैं उसे समतल कहते हैं।</p>
+        </div>
+      </div>
 
-      <Question
-        question="रेखागणित क्या है?"
-        answer="रेखागणित गणित की वह शाखा है जिसमें रेखा अथवा रेखाखंड से घिरे क्षेत्र के गुणों एवं बनावटों का अध्ययन करते हैं।"
-        image="/image/geometry.png"
-      />
+    <div className="   p-5 ">
 
-      <Question
-        question="बिंदु क्या है?"
-        answer="बिंदु वह है जिसकी मात्र कल्पना की जा सके एवं जिसमें लंबाई, चौड़ाई तथा मोटाई कुछ भी न हो किंतु स्थान अवश्य छेंकता हो उसे बिंदु कहते हैं।"
-        image="/image/point.png"
-      />
 
-      <Question
-        question="समतल क्या है?"
-        answer="जिस तल में सभी बिंदु एक ही सतह में होते हैं उसे समतल कहते हैं।"
-        image="/image/plane.png"
-      />
+    
 
       <Question
         question="रेखाखंड क्या है?"
@@ -62,7 +66,7 @@ const GeometryConcepts = () => {
       <Question
         question="त्रिभुज क्या है?"
         answer="त्रिभुज एक बंद आकृति होती है जिसमें तीन भुजाएँ और तीन कोण होते हैं। अर्थात तीन रेखाओं से घिरे हुए आकृति को त्रिभुज कहते हैं।"
-        image="/image/new-image.png"
+        image="/image/triangle.png"
       />
 
       <Question
@@ -101,6 +105,8 @@ const GeometryConcepts = () => {
         image="/image/obtuse-angled-triangle.png"
       />
 
+    
+
       <Question
         question="चतुर्भुज क्या है?"
         answer="चार सरल रेखाओं से घिरी बन्द आकृति को चतुर्भुज कहते हैं। यूक्लिडियन समतल ज्यामिति में, चतुर्भुज एक बहुभुज है जिसमें चार किनारे (या भुजा) और चार शीर्ष (या कोने) होते हैं।"
@@ -137,6 +143,8 @@ const GeometryConcepts = () => {
         image="/image/trapezoid.png"
       />
     </div>
+    </div>
+
   );
 };
 

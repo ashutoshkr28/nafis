@@ -123,16 +123,16 @@ export default function Identities() {
 //   <Math math={"a^3 + b^3 + c^3 - 3abc = \\frac{1}{2} (a + b + c) \\left( (a - b)^2 + (b - c)^2 + (c - a)^2 \\right)"} block={true} />
 
   return (
-    <div className="p-4 sm:p-6 md:p-8 bg-gray-50 min-h-screen">
+    <div className="p-4 sm:p-6 md:p-8 bg-gray-50 min-h-screen ">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-700 mb-8">
       बीजगणितीय सूत्र (Algebraic Identities)
       </h1>
 
-      <div className="flex flex-col space-y-4">
+      <div className="flex flex-col space-y-4 ">
         {identities.map((item, index) => (
           <div 
             key={item.id} 
-            className="bg-white shadow-lg rounded-lg p-6 border border-gray-200 flex flex-col items-start space-y-4"
+            className="bg-white shadow-lg rounded-lg p-6 border border-gray-200 flex flex-col items-start space-y-4 hover:scale-105 transition duration-300 ease-in-out"
           >
             {/* <h2 className="text-xl font-semibold text-blue-600 mb-2">
               {index + 1}. पहचान {item.id}:

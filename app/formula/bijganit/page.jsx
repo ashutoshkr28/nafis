@@ -355,7 +355,7 @@ export default function AlgebraicFormulas() {
   return (
     <div className="min-h-screen bg-gray-100 p-4 md:p-6">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-4 md:p-6">
-        <h2 className="text-2xl font-semibold text-blue-600 mb-6 text-center">
+        <h2 className="text-2xl font-semibold text-blue-800 mb-6 text-center">
           बीजगणितीय सूत्र (Algebraic Identities)
         </h2>
 

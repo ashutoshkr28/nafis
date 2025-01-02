@@ -168,16 +168,16 @@ import { InlineMath } from 'react-katex';
 
 export default function CircleMath() {
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <div className="max-w-6xl mx-auto bg-white shadow-md rounded-lg p-6">
+    <div className="min-h-screen bg-blue-100 p-6">
+      <div className="max-w-6xl mx-auto bg-white shadow-md rounded-lg p-4">
         <h1 className="text-2xl font-bold text-center text-blue-600 mb-4">
-          वृत्त से संबंधित क्षेत्र (Circle and Related Areas)
+          वृत्त से संबंधित क्षेत्र <br /> (Circle and Related Areas)
         </h1>
-        <section aria-labelledby="circle-formulas" className="space-y-4">
+        <section aria-labelledby="circle-formulas" className="space-y-6">
           <h2 id="circle-formulas" className="text-xl font-semibold text-gray-800">
             महत्वपूर्ण सूत्र
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
             {[
               "\\text{वृत्त का क्षेत्रफल} = \\pi r^2",
               "\\text{आधार का क्षेत्रफल} = \\pi r^2",
@@ -193,7 +193,7 @@ export default function CircleMath() {
               "\\text{वृत्तखंड का क्षेत्रफल} = r^2 \\left(\\frac{\\pi \\theta}{360^\\circ} - \\frac{1}{2} \\sin \\theta \\right)",
               "\\text{त्रिज्याखंड की परिधि} = r \\left(2 + \\frac{\\pi \\theta}{180^\\circ} \\right)",
               "\\text{वृत्तखंड की परिधि} = l + \\frac{\\pi r \\theta}{180^\\circ}",
-              "\\text{चाप की लंबाई} = \\frac{\\pi r \\theta}{180^\\circ}",
+              "\\text{चाप की लंबाई  ℓ} = \\frac{\\pi r \\theta}{180^\\circ}",
             ].map((formula, index) => (
               <div
                 key={index}

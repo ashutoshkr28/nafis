@@ -182,8 +182,8 @@ import 'katex/dist/katex.min.css';
 
 export default function Chapter7() {
   return (
-    <div className="bg-gray-50 px-4 py-6 sm:px-6 lg:px-20 lg:py-10">
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-800 text-center mb-6">
+    <div className="bg-blue-100 px-4 py-6 sm:px-6 lg:px-20 lg:py-10">
+      <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-blue-800 text-center mb-6">
         नियामक ज्यामिति (Coordinate Geometry)
       </h2>
 
@@ -191,27 +191,27 @@ export default function Chapter7() {
         {/* Boxed sections for each formula */}
         <div className="bg-white shadow p-4 sm:p-6 rounded hover:scale-105 transition duration-300 ease-in-out">
           <p className="text-lg sm:text-xl lg:text-2xl">
-            <span>मूलबिंदु से किसी बिंदु की दूरी:</span>{' '}
+            <span>मूलबिंदु से किसी बिंदु की दूरी:</span>{' '} <br />
             <InlineMath math="OP = \sqrt{x^2 + y^2}" />
           </p>
         </div>
 
         <div className="bg-white shadow p-4 sm:p-6 rounded hover:scale-105 transition duration-300 ease-in-out">
           <p className="text-lg sm:text-xl lg:text-2xl">
-            <span>दो बिंदुओं के बीच की दूरी:</span>{' '}
+            <span>दो बिंदुओं के बीच की दूरी:</span>{' '} <br />
             <InlineMath math="PQ = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}" />
           </p>
         </div>
 
         <div className="bg-white shadow p-4 sm:p-6 rounded hover:scale-105 transition duration-300 ease-in-out">
           <p className="text-lg sm:text-xl lg:text-2xl">
-            <span>मध्यबिंदु का निर्देशांक:</span>{' '}
+            <span>मध्यबिंदु का निर्देशांक =</span>{' '}
             <InlineMath math="\left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)" />
           </p>
         </div>
 
         <div className="bg-white shadow p-4 sm:p-6 rounded hover:scale-105 transition duration-300 ease-in-out">
-          <p className="text-lg sm:text-xl lg:text-2xl">
+          <p className="text-base sm:text-xl lg:text-2xl">
             <span>त्रिभुज का क्षेत्रफल:</span>{' '}
             <InlineMath math="\text{Area} = \frac{1}{2} \left[x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)\right]" />
           </p>
@@ -219,21 +219,21 @@ export default function Chapter7() {
 
         <div className="bg-white shadow p-4 sm:p-6 rounded hover:scale-105 transition duration-300 ease-in-out">
           <p className="text-lg sm:text-xl lg:text-2xl">
-            <span>त्रिभुज के केंद्रक का निर्देशांक:</span>{' '}
+            <span>त्रिभुज के केंद्रक का निर्देशांक =</span>{' '} <br />
             <InlineMath math="\left(\frac{x_1 + x_2 + x_3}{3}, \frac{y_1 + y_2 + y_3}{3}\right)" />
           </p>
         </div>
 
         <div className="bg-white shadow p-4 sm:p-6 rounded hover:scale-105 transition duration-300 ease-in-out">
           <p className="text-lg sm:text-xl lg:text-2xl">
-            <span>विभाजन सूत्र:</span>{' '}
+            <span>विभाजन सूत्र =</span>{' '}
             <InlineMath math="\left(\frac{m_1x_2 + m_2x_1}{m_1 + m_2}, \frac{m_1y_2 + m_2y_1}{m_1 + m_2}\right)" />
           </p>
         </div>
 
         <div className="bg-white shadow p-4 sm:p-6 rounded hover:scale-105 transition duration-300 ease-in-out">
           <p className="text-lg sm:text-xl lg:text-2xl">
-            <span>त्रिभुज के अंतःकेंद्र का निर्देशांक:</span>{' '}
+            <span>त्रिभुज के अंतःकेंद्र का निर्देशांक =</span>{' '} <br />
             <InlineMath math="\left(\frac{ax_1 + bx_2 + cx_3}{a + b + c}, \frac{ay_1 + by_2 + cy_3}{a + b + c}\right)" />
           </p>
         </div>

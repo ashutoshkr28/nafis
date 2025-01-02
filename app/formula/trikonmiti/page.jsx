@@ -873,7 +873,7 @@ const Chapter8 = () => {
     <div className="p-6 bg-gray-100 min-h-screen">
       {/* Header Section */}
       <h1 className="text-3xl font-semibold text-center text-blue-700 mb-6">
-        Chapter-8: त्रिकोणमिति (Trigonometry)
+        त्रिकोणमिति (Trigonometry)
       </h1>
 
       {/* Trigonometric Table with Formulas */}

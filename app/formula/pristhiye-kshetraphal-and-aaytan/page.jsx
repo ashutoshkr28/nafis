@@ -272,19 +272,19 @@ import { InlineMath } from 'react-katex';
 
 export default function GeometryFormulas() {
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
+    <div className="min-h-screen bg-blue-100 p-6">
       <div className="max-w-7xl mx-auto bg-white shadow-md rounded-lg p-6">
         <h1 className="text-2xl font-bold text-center text-blue-600 mb-4">
-          आयतन और पृष्ठीय क्षेत्रफल
+           पृष्ठीय क्षेत्रफल और आयतन 
         </h1>
 
         {/* Section for Formulas */}
         {[
           {
-            title: "घन तथा घनाभ में:",
+            title: " ➤ घन तथा घनाभ में:",
             formulas: [
               "\\text{घन का आयतन} = (\\text{भुजा})^3",
-              "\\text{घन का कुल पृष्ठीय क्षेत्रफल} = 6 \\times (\\text{भुजा})^2",
+              "\\text{घन का कुल पृष्ठीय क्षेत्रफल}  = 6 \\times (\\text{भुजा})^2",
               "\\text{घन का पार्श्व पृष्ठ क्षेत्रफल} = 4 \\times (\\text{भुजा})^2",
               "\\text{घन का विकर्ण} = \\sqrt{3} \\times \\text{भुजा}",
               "\\text{घनाभ का आयतन} = l \\times b \\times h",
@@ -292,10 +292,11 @@ export default function GeometryFormulas() {
               "\\text{घनाभ का पार्श्व पृष्ठ क्षेत्रफल} = 2(l + b)h",
               "\\text{घनाभ का विकर्ण} = \\sqrt{l^2 + b^2 + h^2}",
               "\\text{चारों दीवारों का क्षेत्रफल} = 2(l + b)h",
+              
             ],
           },
           {
-            title: "बेलन में:",
+            title: "➤ बेलन में:",
             formulas: [
               "\\text{बेलन का आयतन} = \\pi r^2 h",
               "\\text{बेलन का वक्र पृष्ठीय क्षेत्रफल} = 2 \\pi r h",
@@ -304,7 +305,7 @@ export default function GeometryFormulas() {
             ],
           },
           {
-            title: "गोला तथा अर्धगोला में:",
+            title: "➤ गोला तथा अर्धगोला में:",
             formulas: [
               "\\text{गोले का आयतन} = \\frac{4}{3} \\pi r^3",
               "\\text{गोले का सम्पूर्ण पृष्ठीय क्षेत्रफल} = 4 \\pi r^2",
@@ -315,7 +316,7 @@ export default function GeometryFormulas() {
             ],
           },
           {
-            title: "शंकु में:",
+            title: " ➤ शंकु में:",
             formulas: [
               "\\text{शंकु का आयतन} = \\frac{1}{3} \\pi r^2 h",
               "\\text{शंकु का वक्र पृष्ठीय क्षेत्रफल} = \\pi r l",
@@ -329,7 +330,7 @@ export default function GeometryFormulas() {
           },
         ].map((section, sectionIndex) => (
           <section key={sectionIndex} className="mb-8">
-            <h2 className="text-xl font-semibold text-gray-700 mt-6 mb-4">
+            <h2 className="text-xl font-semibold text-blue-800 mt-6 mb-4">
               {section.title}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

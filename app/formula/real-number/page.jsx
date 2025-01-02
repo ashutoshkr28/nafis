@@ -105,7 +105,7 @@ import React from "react";
 
 const RealNumbers = () => {
   return (
-    <div className="bg-gray-100 py-10 px-5 sm:px-10 md:px-20 lg:px-40">
+    <div className="bg-blue-100 py-10 px-5 sm:px-10 md:px-20 lg:px-20">
       {/* Uncomment this if the image is needed */}
       {/* <div className="mb-8">
         <Image
@@ -117,27 +117,27 @@ const RealNumbers = () => {
         />
       </div> */}
 
-      <h1 className="text-center text-4xl font-bold text-gray-800 mb-8">
-        Real Numbers (वास्तविक संख्या)
+      <h1 className="text-center text-4xl font-bold text-blue-800 mb-8">
+         वास्तविक संख्याएँ (Real Numbers)
       </h1>
 
-      <ul className="list-none pl-8 sm:pl-16 text-left text-xl sm:text-2xl text-gray-700 space-y-6">
+      <ul className="list-none pl-2 sm:pl-10 text-left text-xl sm:text-2xl text-gray-700 space-y-6">
         <li className="space-y-4">
           <div className="p-4 bg-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
-            <p className="text-lg sm:text-xl block ">युक्लिड विभाजन प्रमेयिका से :</p>
-            <p className="pl-4 text-lg sm:text-xl">
+            <p className="text-2xl sm:text-3xl block ">युक्लिड विभाजन प्रमेयिका से :</p>
+            <p className="pl-4 text-2xl sm:text-3xl">
               a = bq + r जहाँ <span className="ml-2">  0 ≤ r &lt; b </span>
             </p>
           </div>
         </li>
         <li className="space-y-4">
           <div className="p-4 bg-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
-            <p className="text-lg sm:text-xl block"> भाज्य = भाजक × भागफल + शेषफल</p>
+            <p className="text-2xl sm:text-3xl block"> भाज्य = भाजक × भागफल + शेषफल</p>
           </div>
         </li>
         <li className="space-y-4">
           <div className="p-4 bg-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
-            <p className="text-lg sm:text-xl block"> मo सo  (a, b) × लo सo  (a, b) = a × b</p>
+            <p className="text-2xl sm:text-3xl block"> मo सo  (a, b) × लo सo  (a, b) = a × b</p>
           </div>
         </li>
       </ul>

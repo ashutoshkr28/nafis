@@ -7,28 +7,35 @@ const ProofPage = () => {
 
       <h1 className='text-center font-bold text-4xl mb-6 mt-4'>Some Important</h1>
       
-      <div className='border border-gray-400 shadow  p-6 text-3xl'>
-      <p className="mb-4 text-red-600 text-4xl font-bold">
+      <div className='border border-gray-400 shadow  p-6 text-2xl'>
+      <p className="mb-4 text-red-600 text-2xl font-bold">
         <span>प्रश्‍न 1:</span> सिद्ध करें कि 
         <InlineMath>{'\\sqrt{2}'}</InlineMath> एक अपरिमेय संख्या है?
       </p>
       
-      <p className="mb-4 text-4xl ">
+      <p className="mb-4 text-xl ">
         <span className="font-semibold text-green-700">उत्तर:</span> 
         माना कि <InlineMath>{'\\sqrt{2}'}</InlineMath> एक परिमेय संख्या है। <br />
         तब, <InlineMath>{'\\sqrt{2} = \\frac{p}{q}'}</InlineMath> जहाँ, p और q कोई धन पूर्णांक हैं। जिसका कोई भी उभयनिष्ठ गुणनखंड नहीं है। <br />
-        दोनों तरफ वर्ग करने पर, <br />
-        <InlineMath>{'\\left( \\sqrt{2} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> <br />
-        2 = <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath>
+        दोनों तरफ वर्ग करने पर, <br /> 
+        <span className='ml-16'>
+        <InlineMath>{'\\left( \\sqrt{2} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> 
+        </span> <br />
+        <span className='ml-28'>        2 = <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath></span>
+
+        
       </p>
 
-      <p className="mb-4 text-4xl">
-        p<sup>2</sup> = 2q<sup>2</sup>  .................(i) <br />  
-        p = सम संख्या है। <br /> ∵ सम संख्या का वर्ग सम ही होता है।  <br />
+      <p className="mb-4 text-2xl ml-4">
+        <span className='ml-14'>
+        p<sup>2</sup> = 2q<sup>2</sup>  .................(i) </span> <br />  
+        <span className='ml-12'>
+        p = सम संख्या है। </span><br /> ∵ सम संख्या का वर्ग सम ही होता है।  <br />
         माना कि p = 2m
       </p>
 
-      <p className="mb-4 text-4xl">
+      <p className="mb-4 text-2xl ml-14">
+
         समीकरण (i) से, <br />
         <InlineMath>{'(2m)^2 = 2q^2'}</InlineMath> <br />
         4m<sup>2</sup> = 2q<sup>2</sup> 
@@ -36,20 +43,20 @@ const ProofPage = () => {
         2m<sup>2</sup> = q<sup>2</sup>
       </p>
 
-      <p className="mb-4 text-4xl">
-        q = सम संख्या है। <br /> अब, p और q में उभयनिष्ठ गुणनखंड 2 है।
+      <p className="mb-4 text-2xl">
+       <span className='ml-12'> q = सम संख्या है। </span> <br /> अब, p और q में उभयनिष्ठ गुणनखंड 2 है।
         <br />
         अतः हमारी मान्यता गलत है।
       </p>
 
-    <p className=' text-4xl'>      
+    <p className=' text-2xl'>      
       <InlineMath>{'{\\therefore \\sqrt{2} \\text{ एक परिमेय संख्या नहीं  है।}}'}</InlineMath>
 </p>
 
 
 
 
-      <p className=" text-4xl font-bold py-5 ">
+      <p className=" text-2xl font-bold py-5 ">
 
 
         <InlineMath>{'\\boxed{\\therefore \\sqrt{2} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>

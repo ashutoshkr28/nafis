@@ -16,7 +16,8 @@ const ProofPage = () => {
       <p className="mb-4 text-xl ">
         <span className="font-semibold text-green-700">उत्तर:</span> 
         माना कि <InlineMath>{'\\sqrt{2}'}</InlineMath> एक परिमेय संख्या है। <br />
-        तब, <InlineMath>{'\\sqrt{2} = \\frac{p}{q}'}</InlineMath> जहाँ, p और q कोई धन पूर्णांक हैं। जिसका कोई भी उभयनिष्ठ गुणनखंड नहीं है। <br />
+        तब, <InlineMath>{'\\sqrt{2} = \\frac{p}{q}'}</InlineMath> जहाँ, p और q कोई धन पूर्णांक हैं। <br />
+         जिसका कोई भी उभयनिष्ठ गुणनखंड नहीं है। <br />
         दोनों तरफ वर्ग करने पर, <br /> 
         <span className='ml-16'>
         <InlineMath>{'\\left( \\sqrt{2} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> 
@@ -38,7 +39,8 @@ const ProofPage = () => {
 
         समीकरण (i) से, <br />
         <InlineMath>{'(2m)^2 = 2q^2'}</InlineMath> <br />
-        4m<sup>2</sup> = 2q<sup>2</sup> 
+
+        <span className='line-through'>4</span>m<sup>2</sup> = <span className='line-through'>2</span>q<sup>2</sup> 
         <br />
         2m<sup>2</sup> = q<sup>2</sup>
       </p>

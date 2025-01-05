@@ -22,7 +22,7 @@
 //         <span className='ml-16'>
 //         <InlineMath>{'\\left( \\sqrt{2} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> 
 //         </span> <br />
-//         <span className='ml-28'>        2 = <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath></span>
+//         <span className=''>        2 = <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath></span>
 
         
 //       </p>
@@ -259,12 +259,12 @@ import 'katex/dist/katex.min.css';
 
 const ProofPage = () => {
   return (
-    <div className="p-6 min-h-screen mx-auto text-lg leading-relaxed mb-8">
+    <div className="p-6 min-h-screen mx-auto text-lg leading-relaxed mb-8 items-center text-center ">
 
-      <h1 className="text-center font-bold text-4xl mb-6 mt-4">Some Important Proofs</h1>
+      <h1 className="text-center font-bold text-4xl mb-6 mt-4 text-blue-500">Some Important Proofs</h1>
 
       {/* Proof for Root 2 */}
-      <div className="border border-gray-400 shadow p-6 text-xl">
+      <div className="border border-blue-600 -mx-4 shadow my-20  text-xl">
         <p className="mb-4 text-red-600 text-xl font-bold">
           <span className="font-bold">प्रश्‍न 1:</span> सिद्ध करें कि 
           <InlineMath>{'\\sqrt{2}'}</InlineMath> एक अपरिमेय संख्या है?
@@ -272,24 +272,31 @@ const ProofPage = () => {
         <p className="mb-4 text-xl">
           <span className="font-semibold text-green-700">उत्तर:</span> 
           माना कि <InlineMath>{'\\sqrt{2}'}</InlineMath> एक परिमेय संख्या है। <br />
-          तब, <InlineMath>{'\\sqrt{2} = \\frac{p}{q}'}</InlineMath>, जहाँ p और q कोई धन पूर्णांक हैं। <br />
-          दोनों तरफ वर्ग करने पर: <br />
-          <InlineMath>{'\\left( \\sqrt{2} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> <br />
-          2 = <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath>
+          <span className='ml-10'>
+          तब, <InlineMath>{'\\sqrt{2} = \\frac{p}{q}'}</InlineMath>, जहाँ p और q कोई धन पूर्णांक हैं। </span><br />
+          <span className='ml-10'>  जिसका  कोई भी उभयनिष्ठ गुणनखंड नहीं है। </span> <br />
+         <span className='ml-24'>  दोनों तरफ वर्ग करने पर, </span><br />
+
+         <span className=''>
+          <InlineMath>{'\\left( \\sqrt{2} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> </span><br />
+          <span className=''> 2 = 
+          <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath></span>
+          
         </p>
-        <p className="mb-4 text-xl">
+        <p className="mb-4  text-xl">
           p<sup>2</sup> = 2q<sup>2</sup>  ...............(i)   <br />
-          p = सम संख्या है। ∵ सम संख्या का वर्ग सम ही होता है। <br />
+          p = सम संख्या है। <br />
+          <span className=''> ∵ सम संख्या का वर्ग सम ही होता है। </span><br />
           माना कि p = 2m
         </p>
-        <p className="mb-4 text-xl">
+        <p className="mb-4 text-xl ">
           समीकरण (i) से, <br />
           <InlineMath>{'(2m)^2 = 2q^2'}</InlineMath> <br />
-          4m<sup>2</sup> = 2q<sup>2</sup> <br />
+          <span className='line-through'>4</span>m<sup>2</sup> =<span className='line-through'> 2</span>q<sup>2</sup> <br />
           2m<sup>2</sup> = q<sup>2</sup>
         </p>
-        <p className="mb-4 text-xl">
-          q = सम संख्या है। <br /> अब, p और q में उभयनिष्ठ गुणनखंड 2 है। <br />
+        <p className="mb-4 text-xl ml-24">
+          q = सम संख्या है। <br /> <span className='-ml-14'> अब, p और q में उभयनिष्ठ गुणनखंड 2 है। </span><br />
           अतः हमारी मान्यता गलत है।
         </p>
         <p className="text-xl">

@@ -273,7 +273,7 @@ const ProofPage = () => {
           <span className="font-semibold text-green-700 -ml-16">उत्तर:</span> 
          <span className='ml-1'> माना कि <InlineMath>{'\\sqrt{2}'}</InlineMath> एक परिमेय संख्या है। </span> <br />
           
-         <p className='-ml-10 mt-2 '> तब, <InlineMath>{'\\sqrt{2} = \\frac{p}{q}'}</InlineMath> जहाँ, p और q कोई धन पूर्णांक हैं।</p><br />
+         <p className='-ml-6 mt-2 '> तब, <InlineMath>{'\\sqrt{2} = \\frac{p}{q}'}</InlineMath> जहाँ, p और q कोई धन पूर्णांक हैं।</p><br />
           <p className='-mt-4'>  जिसका  कोई भी उभयनिष्ठ गुणनखंड नहीं है। </p> <br />
          <p className='-mt-4'>  दोनों तरफ वर्ग करने पर, </p><br />
 

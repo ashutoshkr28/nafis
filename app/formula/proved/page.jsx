@@ -259,47 +259,52 @@ import 'katex/dist/katex.min.css';
 
 const ProofPage = () => {
   return (
-    <div className="p-6 min-h-screen mx-auto text-lg leading-relaxed mb-8 items-center text-center ">
+    <div className="p-6 min-h-screen mx-auto text-lg leading-relaxed  mb-8 items-center text-center ">
 
-      <h1 className="text-center font-bold text-4xl mb-6 mt-4 text-blue-500">Some Important Proofs</h1>
+      <h1 className="text-center font-bold text-xl mb-6 mt-4 text-blue-500">Some Important Proofs</h1>
 
       {/* Proof for Root 2 */}
-      <div className="border border-blue-600 -mx-4 shadow my-20  text-xl">
-        <p className="mb-4 mt-4 text-red-600 text-xl font-bold">
+      <div className="border border-blue-600 -mx-4 shadow   text-xl">
+        <p className="mb-4 mt-4 text-red-600 text-xl font-bold ">
           <span className="font-bold">प्रश्‍न 1:</span> सिद्ध करें कि 
           <InlineMath>{'\\sqrt{2}'}</InlineMath> एक अपरिमेय संख्या है?
         </p>
         <p className="mb-4 text-xl">
           <span className="font-semibold text-green-700 -ml-16">उत्तर:</span> 
          <span className='ml-1'> माना कि <InlineMath>{'\\sqrt{2}'}</InlineMath> एक परिमेय संख्या है। </span> <br />
-          <span className='ml-10'>
-         <span className='-ml-4'> तब, <InlineMath>{'\\sqrt{2} = \\frac{p}{q}'}</InlineMath> जहाँ, p और q कोई धन पूर्णांक हैं।</span> </span><br />
-          <span className='ml-10'>  जिसका  कोई भी उभयनिष्ठ गुणनखंड नहीं है। </span> <br />
-         <span className=''>  दोनों तरफ वर्ग करने पर, </span><br />
+          
+         <p className='-ml-10 mt-2 '> तब, <InlineMath>{'\\sqrt{2} = \\frac{p}{q}'}</InlineMath> जहाँ, p और q कोई धन पूर्णांक हैं।</p><br />
+          <p className='-mt-4'>  जिसका  कोई भी उभयनिष्ठ गुणनखंड नहीं है। </p> <br />
+         <p className='-mt-4'>  दोनों तरफ वर्ग करने पर, </p><br />
 
-         <span className=''>
-          <InlineMath>{'\\left( \\sqrt{2} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> </span><br />
-          <span className=''> 2 = 
-          <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath></span>
+         <p className='-mt-4'>
+          <InlineMath>{'\\left( \\sqrt{2} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> </p><br />
+          <p className=' text-2xl -mt-4'> 2 = 
+          <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath></p>
           
         </p>
-        <p className="mb-4  text-xl">
-          p<sup>2</sup> = 2q<sup>2</sup>  ...............(i)   <br />
-          p = सम संख्या है। <br />
-          <span className=''> ∵ सम संख्या का वर्ग सम ही होता है। </span><br />
-          माना कि p = 2m
+        <p className=" -mt-4  text-xl">
+          p<sup>2</sup> = 2q<sup>2</sup>  ...............(i)  </p> <br />
+          <p className='-mt-4'>p = सम संख्या है। </p> <br />
+          <p className='-mt-4'> ∵ सम संख्या का वर्ग सम ही होता है। </p><br />
+         <p className='-mt-4'> माना कि p = 2m
         </p>
-        <p className="mb-4 text-xl ">
-          समीकरण (i) से, <br />
-          <InlineMath>{'(2m)^2 = 2q^2'}</InlineMath> <br />
-          <span className='line-through'>4</span>m<sup>2</sup> =<span className='line-through'> 2</span>q<sup>2</sup> <br />
+        <p className=" text-xl mt-2 ">
+          समीकरण (i) से, </p><br />
+         <p className='-mt-4'> <InlineMath>{'(2m)^2 = 2q^2'}</InlineMath> </p>
+          <p className='mt-2'><span className='line-through'>4</span>m<sup>2</sup> =<span className='line-through'> 2</span>q<sup>2</sup> <br />
           2m<sup>2</sup> = q<sup>2</sup>
         </p>
-        <p className="mb-4 text-xl ml-24">
-          q = सम संख्या है। <br /> <span className='-ml-14'> अब, p और q में उभयनिष्ठ गुणनखंड 2 है। </span><br />
-          अतः हमारी मान्यता गलत है।
+        <p className="mt-2 text-xl">
+          q = सम संख्या है। </p> 
+          <p className='mt-2'> <span className=''> अब, p और q में उभयनिष्ठ गुणनखंड 2 है। </span></p>
+        <p className='mt-2'> अतः हमारी मान्यता गलत है।
         </p>
-        <p className="text-xl">
+        <p className='mt-2 text-xl '>
+    <InlineMath>{'{\\therefore \\sqrt{2} \\text{ एक परिमेय  संख्या नहीं  है।}}'}</InlineMath>
+
+        </p>
+        <p className="text-xl mt-4">
           <InlineMath>{'\\boxed{\\therefore \\sqrt{2} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
         </p>
         <p className="mt-4">Proved</p>

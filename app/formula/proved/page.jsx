@@ -69,7 +69,7 @@
 
 //       <hr className="my-8" />
 
-//       <div className='border border-gray-400 shadow  p-6 text-3xl'>
+//       <div className='border border-gray-400 shadow  p-6 text-xl -mx-4'>
 
 //       <p className="mb-4 text-red-600 text-xl font-bold">
 //         <span className="font-bold">प्रश्‍न 2:</span> सिद्ध करें कि 
@@ -265,17 +265,17 @@ const ProofPage = () => {
 
       {/* Proof for Root 2 */}
       <div className="border border-blue-600 -mx-4 shadow my-20  text-xl">
-        <p className="mb-4 text-red-600 text-xl font-bold">
+        <p className="mb-4 mt-4 text-red-600 text-xl font-bold">
           <span className="font-bold">प्रश्‍न 1:</span> सिद्ध करें कि 
           <InlineMath>{'\\sqrt{2}'}</InlineMath> एक अपरिमेय संख्या है?
         </p>
         <p className="mb-4 text-xl">
-          <span className="font-semibold text-green-700">उत्तर:</span> 
-          माना कि <InlineMath>{'\\sqrt{2}'}</InlineMath> एक परिमेय संख्या है। <br />
+          <span className="font-semibold text-green-700 -ml-16">उत्तर:</span> 
+         <span className='ml-1'> माना कि <InlineMath>{'\\sqrt{2}'}</InlineMath> एक परिमेय संख्या है। </span> <br />
           <span className='ml-10'>
-          तब, <InlineMath>{'\\sqrt{2} = \\frac{p}{q}'}</InlineMath>, जहाँ p और q कोई धन पूर्णांक हैं। </span><br />
+         <span className='-ml-4'> तब, <InlineMath>{'\\sqrt{2} = \\frac{p}{q}'}</InlineMath> जहाँ, p और q कोई धन पूर्णांक हैं।</span> </span><br />
           <span className='ml-10'>  जिसका  कोई भी उभयनिष्ठ गुणनखंड नहीं है। </span> <br />
-         <span className='ml-24'>  दोनों तरफ वर्ग करने पर, </span><br />
+         <span className=''>  दोनों तरफ वर्ग करने पर, </span><br />
 
          <span className=''>
           <InlineMath>{'\\left( \\sqrt{2} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> </span><br />
@@ -308,15 +308,15 @@ const ProofPage = () => {
       <hr className="my-8" />
 
       {/* Proof for Root 3 */}
-      <div className="border border-gray-400 shadow p-6 text-3xl">
+      <div className="border border-gray-400 shadow p-6 text-xl -mx-4">
         <p className="mb-4 text-red-600 text-xl font-bold">
           <span className="font-bold">प्रश्‍न 2:</span> सिद्ध करें कि 
           <InlineMath>{'\\sqrt{3}'}</InlineMath> एक अपरिमेय संख्या है?
         </p>
         <p className="mb-4 text-xl">
-          <span className="font-semibold text-green-700">उत्तर:</span> 
-          माना कि <InlineMath>{'\\sqrt{3}'}</InlineMath> एक परिमेय संख्या है। <br />
-          तब, <InlineMath>{'\\sqrt{3} = \\frac{p}{q}'}</InlineMath>, जहाँ p और q कोई धन पूर्णांक हैं। <br />
+          <span className="font-semibold text-green-700 -ml-16">उत्तर:</span> 
+          <span className='ml-2'> माना कि <InlineMath>{'\\sqrt{3}'}</InlineMath> एक परिमेय संख्या है।</span> <br />
+           <span className='-ml-4'>तब, <InlineMath>{'\\sqrt{3} = \\frac{p}{q}'}</InlineMath>, जहाँ p और q कोई धन पूर्णांक हैं।</span> <br />
           दोनों तरफ वर्ग करने पर: <br />
           <InlineMath>{'\\left( \\sqrt{3} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> <br />
           3 = <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath>
@@ -345,7 +345,7 @@ const ProofPage = () => {
       <hr className="my-8" />
 
       {/* Proof for Root 7 */}
-      <div className="border border-gray-400 shadow p-6 text-3xl">
+      <div className="border border-gray-400 shadow p-6 text-xl -mx-4">
         <p className="mb-4 text-red-600 text-xl font-bold">
           <span className="font-bold">प्रश्‍न 3:</span> सिद्ध करें कि 
           <InlineMath>{'\\sqrt{7}'}</InlineMath> एक अपरिमेय संख्या है?
@@ -382,7 +382,7 @@ const ProofPage = () => {
       <hr className="my-8" />
 
       {/* Proof for Root 5 */}
-      <div className="border border-gray-400 shadow p-6 text-3xl">
+      <div className="border border-gray-400 shadow p-6 text-xl -mx-4">
         <p className="mb-4 text-red-600 text-xl font-bold">
           <span className="font-bold">प्रश्‍न 4:</span> सिद्ध करें कि 
           <InlineMath>{'\\sqrt{5}'}</InlineMath> एक अपरिमेय संख्या है?
@@ -415,11 +415,12 @@ const ProofPage = () => {
         </p>
         <p className="mt-4">Proved</p>
       </div>
+      <hr className="my-8" />
 
       {/* root 11 proved */}
 
       
-      <div className="border border-gray-400 shadow p-6 text-3xl">
+      <div className="border border-gray-400 shadow p-6 text-xl -mx-4">
   <p className="mb-4 text-red-600 text-xl font-bold">
     <span className="font-bold">प्रश्‍न 5:</span> सिद्ध करें कि 
     <InlineMath>{'\\sqrt{11}'}</InlineMath> एक अपरिमेय संख्या है?
@@ -453,11 +454,12 @@ const ProofPage = () => {
   </p>
   <p className="mt-4">Proved</p>
 </div>
+<hr className="my-8" />
 
 {/* root 13 proved   */}
 
 
-<div className="border border-gray-400 shadow p-6 text-3xl">
+<div className="border border-gray-400 shadow p-6 text-xl -mx-4">
   <p className="mb-4 text-red-600 text-xl font-bold">
     <span className="font-bold">प्रश्‍न 6:</span> सिद्ध करें कि 
     <InlineMath>{'\\sqrt{13}'}</InlineMath> एक अपरिमेय संख्या है?
@@ -492,6 +494,7 @@ const ProofPage = () => {
   <p className="mt-4">Proved</p>
 </div>
 
+<hr className="my-8" />
 
 
 
@@ -506,7 +509,8 @@ const ProofPage = () => {
 
 
 
-<div className="border border-gray-400 shadow p-6 text-3xl">
+
+<div className="border border-gray-400 shadow p-6 text-xl -mx-4">
   <p className="mb-4 text-red-600 text-xl font-bold">
     <span className="font-bold">प्रश्‍न 6:</span> सिद्ध करें कि 
     <InlineMath>{'\\sqrt{13}'}</InlineMath> एक अपरिमेय संख्या है?
@@ -540,6 +544,8 @@ const ProofPage = () => {
   </p>
   <p className="mt-4">Proved</p>
 </div>
+
+<hr className="my-8" />
 
 
 
@@ -549,7 +555,7 @@ const ProofPage = () => {
 
 
 
-<div className="border border-gray-400 shadow p-6 text-3xl">
+<div className="border border-gray-400 shadow p-6 text-xl -mx-4">
   <p className="mb-4 text-red-600 text-xl font-bold">
     <span className="font-bold">प्रश्‍न 7:</span> सिद्ध करें कि 
     <InlineMath>{'\\sqrt{15}'}</InlineMath> एक अपरिमेय संख्या है?
@@ -585,12 +591,14 @@ const ProofPage = () => {
 </div>
 
 
+<hr className="my-8" />
+
 
 {/* 1 by root 2   */}
 
 
 
-<div className="border border-purple-500 p-6 shadow text-3xl">
+<div className="border border-purple-500 p-6 shadow text-xl -mx-4">
   <p className="mb-4 text-red-600 text-xl font-bold">
     प्रश्‍न: 8. सिद्ध करें कि <InlineMath>{'\\frac{1}{\\sqrt{2}}'}</InlineMath> एक अपरिमेय संख्या है।
   </p>
@@ -612,11 +620,14 @@ const ProofPage = () => {
 </div>
 
 
+<hr className="my-8" />
+
+
 
 {/* 1 by root 3   */}
 
 
-<div className="border border-purple-500 p-6 shadow text-3xl">
+<div className="border border-purple-500 p-6 shadow text-xl -mx-4">
   <p className="mb-4 text-red-600 text-xl font-bold">
     प्रश्‍न: 9. सिद्ध करें कि <InlineMath>{'\\frac{1}{\\sqrt{3}}'}</InlineMath> एक अपरिमेय संख्या है।
   </p>
@@ -636,13 +647,15 @@ const ProofPage = () => {
   </p>
   <p className="text-xl font-semibold text-blue-700">Proved</p>
 </div>
+
+<hr className="my-8" />
   
 
   {/* 1 by root 5   */}
 
 
 
-  <div className="border border-purple-500 p-6 shadow text-3xl">
+  <div className="border border-purple-500 p-6 shadow text-xl -mx-4">
   <p className="mb-4 text-red-600 text-xl font-bold">
     प्रश्‍न: 10. सिद्ध करें कि <InlineMath>{'\\frac{1}{\\sqrt{5}}'}</InlineMath> एक अपरिमेय संख्या है।
   </p>
@@ -664,11 +677,13 @@ const ProofPage = () => {
 </div>
 
 
+<hr className="my-8" />
+
 {/* root 2 by 3   */}
 
 
 
-<div className="border border-purple-500 p-6 shadow text-3xl">
+<div className="border border-purple-500 p-6 shadow text-xl -mx-4">
       <p className="mb-4 text-red-600 text-xl font-bold">
         प्रश्‍न: 11. सिद्ध करें कि <InlineMath math={'2\\sqrt{3}'} /> एक अपरिमेय संख्या है।
       </p>
@@ -690,11 +705,14 @@ const ProofPage = () => {
     </div>
 
 
+
+    <hr className="my-8" />
+
     {/* root 7 by 2   */}
 
 
 
-    <div className="border border-purple-500 p-6 shadow text-3xl">
+    <div className="border border-purple-500 p-6 shadow text-xl -mx-4">
   <p className="mb-4 text-red-600 text-xl font-bold">
     प्रश्‍न: 12. सिद्ध करें कि <InlineMath math={'7\\sqrt{2}'} /> एक अपरिमेय संख्या है।
   </p>
@@ -713,14 +731,17 @@ const ProofPage = () => {
     <InlineMath math={'\\boxed{\\therefore 7\\sqrt{2} \\text{ एक अपरिमेय संख्या है।}}'} />
   </p>
   <p className="text-xl font-semibold text-blue-700">Proved</p>
+
 </div>
+
+<hr className="my-8" />
 
 
 {/* 3 - root 2  */}
 
 
 
-<div className="border border-purple-500 p-6 shadow text-3xl">
+<div className="border border-purple-500 p-6 shadow text-xl -mx-4">
   <p className="mb-4 text-red-600 text-xl font-bold">
     प्रश्‍न: 13. सिद्ध करें कि <InlineMath math={'3 - \\sqrt{2}'} /> एक अपरिमेय संख्या है।
   </p>
@@ -742,11 +763,14 @@ const ProofPage = () => {
   <p className="text-xl font-semibold text-blue-700">Proved</p>
 </div>
 
+<hr className="my-8" />
 
 
 
 
-<div className="border border-purple-500 p-6 shadow text-3xl">
+
+
+<div className="border border-purple-500 p-6 shadow text-xl -mx-4">
   <p className="mb-4 text-red-600 text-xl font-bold">
     प्रश्‍न: 14. सिद्ध करें कि <InlineMath math={'5 - \\sqrt{3}'} /> एक अपरिमेय संख्या है।
   </p>
@@ -768,6 +792,7 @@ const ProofPage = () => {
   <p className="text-xl font-semibold text-blue-700">Proved</p>
 </div>
 
+<hr className="my-8" />
 
 
 
@@ -784,7 +809,7 @@ const ProofPage = () => {
 
 
 
-<div className="border border-purple-500 p-6 shadow text-3xl">
+<div className="border border-purple-500 p-6 shadow text-xl -mx-4">
   <p className="mb-4 text-red-600 text-xl font-bold">
     प्रश्‍न: 15. सिद्ध करें कि <InlineMath math={'3 + 2\\sqrt{5}'} /> एक अपरिमेय संख्या है।
   </p>
@@ -805,6 +830,7 @@ const ProofPage = () => {
   </p>
   <p className="text-xl font-semibold text-blue-700">Proved</p>
 </div>
+<hr className="my-8" />
 
 
 

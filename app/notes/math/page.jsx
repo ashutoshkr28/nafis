@@ -300,6 +300,15 @@ export default function ScienceNotes() {
 </div>
 
 
+<Image 
+  src="/image/notice.png" 
+  className="rounded mb-12 transition-all transform hover:animate-shake w-full sm:w-3/4 lg:w-1/2 max-w-full" 
+  alt="img" 
+  layout="intrinsic"
+  width={800} 
+  height={960} 
+  priority 
+/>
 
 
 

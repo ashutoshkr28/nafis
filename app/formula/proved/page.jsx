@@ -264,23 +264,23 @@ const ProofPage = () => {
       <h1 className="text-center font-bold text-xl mb-6 mt-4 text-blue-500">Some Important Proofs</h1>
 
       {/* Proof for Root 2 */}
-      <div className="border border-blue-600 -mx-4 shadow   text-xl">
+      <div className="border border-gray-400 shadow p-4 text-xl -mx-4">
         <p className="mb-4 mt-4 text-red-600 text-xl font-bold ">
           <span className="font-bold">प्रश्‍न 1:</span> सिद्ध करें कि 
           <InlineMath>{'\\sqrt{2}'}</InlineMath> एक अपरिमेय संख्या है?
         </p>
         <p className="mb-4 text-xl">
           <span className="font-semibold text-green-700 -ml-16">उत्तर:</span> 
-         <span className='ml-1'> माना कि <InlineMath>{'\\sqrt{2}'}</InlineMath> एक परिमेय संख्या है। </span> <br />
+         <span className='ml-4'> माना कि <InlineMath>{'\\sqrt{2}'}</InlineMath> एक परिमेय संख्या है। </span> <br />
           
-         <p className='-ml-6 mt-2 '> तब, <InlineMath>{'\\sqrt{2} = \\frac{p}{q}'}</InlineMath> जहाँ, p और q कोई धन पूर्णांक हैं।</p><br />
+         <p className='-ml-3 mt-2 '> तब, <InlineMath>{'\\sqrt{2} = \\frac{p}{q}'}</InlineMath> जहाँ, p और q कोई धन पूर्णांक हैं।</p><br />
           <p className='-mt-4'>  जिसका  कोई भी उभयनिष्ठ गुणनखंड नहीं है। </p> <br />
          <p className='-mt-4'>  दोनों तरफ वर्ग करने पर, </p><br />
 
          <p className='-mt-4'>
           <InlineMath>{'\\left( \\sqrt{2} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> </p><br />
-          <p className=' text-2xl -mt-4'> 2 = 
-          <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath></p>
+          <p className=' text-xl -mt-4'>  
+          <InlineMath>{' 2 =\\frac{p^2}{q^2}'}</InlineMath></p>
           
         </p>
         <p className=" -mt-4  text-xl">
@@ -304,8 +304,8 @@ const ProofPage = () => {
     <InlineMath>{'{\\therefore \\sqrt{2} \\text{ एक परिमेय  संख्या नहीं  है।}}'}</InlineMath>
 
         </p>
-        <p className="text-xl mt-4">
-          <InlineMath>{'\\boxed{\\therefore \\sqrt{2} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
+        <p className="text-xl mt-4 border border-blue-600 p-2">
+          <InlineMath>{'{\\therefore \\sqrt{2} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
         </p>
         <p className="mt-4">Proved</p>
       </div>
@@ -320,31 +320,35 @@ const ProofPage = () => {
         </p>
         <p className="mb-4 text-xl">
           <span className="font-semibold text-green-700 -ml-16">उत्तर:</span> 
-          <span className='ml-2'> माना कि <InlineMath>{'\\sqrt{3}'}</InlineMath> एक परिमेय संख्या है।</span> <br />
-           <span className='-ml-4'>तब, <InlineMath>{'\\sqrt{3} = \\frac{p}{q}'}</InlineMath>, जहाँ p और q कोई धन पूर्णांक हैं।</span> <br />
-          दोनों तरफ वर्ग करने पर: <br />
-          <InlineMath>{'\\left( \\sqrt{3} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> <br />
-          3 = <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath>
-        </p>
+          <span className='ml-2'> माना कि <InlineMath>{'\\sqrt{3}'}</InlineMath> एक परिमेय संख्या है।</span> </p> <br />
+           <p className='-ml-1 -mt-6'>तब, <InlineMath>{'\\sqrt{3} = \\frac{p}{q}'}</InlineMath>, जहाँ p और q कोई धन पूर्णांक हैं।</p> <br />
+           <p className='-mt-4'>  जिसका  कोई भी उभयनिष्ठ गुणनखंड नहीं है। </p>
+        <p className='mt-2'>  दोनों तरफ वर्ग करने पर: </p>
+         <p> <InlineMath>{'\\left( \\sqrt{3} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> </p><br />
+          <p className='-mt-4'> <InlineMath>{' 3 =\\frac{p^2}{q^2}'}</InlineMath></p>
+        
+        <p className="-mb-3 text-xl">
+          p<sup>2</sup> = 3q<sup>2</sup>  ...............(i) </p>  <br />
+         <p className='mb-2'>p = विषम संख्या है। </p>
+          <p className='-mb-4'>  ∵ विषम संख्या का वर्ग विषम ही होता है। </p> <br />
+        <p className='mb-2'>  माना कि p = 3m </p>
         <p className="mb-4 text-xl">
-          p<sup>2</sup> = 3q<sup>2</sup>  ...............(i)   <br />
-          p = विषम संख्या है। ∵ विषम संख्या का वर्ग विषम ही होता है। <br />
-          माना कि p = 3m
+          समीकरण (i) से, </p><br />
+         <p className='-mt-10'> <InlineMath>{'(3m)^2 = 3q^2'}</InlineMath> </p>
+          <p className='mb-2'>  9m<sup>2</sup> = 3q<sup>2</sup> </p>
+          <p className='mb-2'> 3m<sup>2</sup> = q<sup>2</sup> </p>
+        
+        <p className="mb-3 text-xl">
+          q = विषम संख्या है। </p>
+          <p className='mb-2'> अब, p और q में उभयनिष्ठ गुणनखंड 3 है। </p>
+         <p className='mb-2'> अतः हमारी मान्यता गलत है। </p>
+         <p className='mt-2 text-xl '>
+         <InlineMath>{'{\\therefore \\sqrt{3} \\text{ एक परिमेय  संख्या नहीं  है।}}'}</InlineMath>
         </p>
-        <p className="mb-4 text-xl">
-          समीकरण (i) से, <br />
-          <InlineMath>{'(3m)^2 = 3q^2'}</InlineMath> <br />
-          9m<sup>2</sup> = 3q<sup>2</sup> <br />
-          3m<sup>2</sup> = q<sup>2</sup>
+        <p className="text-xl mt-2 border border-blue-500 p-2 text-blue-500">
+          <InlineMath>{'{\\therefore \\sqrt{3} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
         </p>
-        <p className="mb-4 text-xl">
-          q = विषम संख्या है। <br /> अब, p और q में उभयनिष्ठ गुणनखंड 3 है। <br />
-          अतः हमारी मान्यता गलत है।
-        </p>
-        <p className="text-xl">
-          <InlineMath>{'\\boxed{\\therefore \\sqrt{3} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
-        </p>
-        <p className="mt-4">Proved</p>
+        <p className="mt-4 text-violet-600 font-bold text-2xl">Proved</p>
       </div>
 
       <hr className="my-8" />
@@ -357,29 +361,36 @@ const ProofPage = () => {
         </p>
         <p className="mb-4 text-xl">
           <span className="font-semibold text-green-700">उत्तर:</span> 
-          माना कि <InlineMath>{'\\sqrt{7}'}</InlineMath> एक परिमेय संख्या है। <br />
-          तब, <InlineMath>{'\\sqrt{7} = \\frac{p}{q}'}</InlineMath>, जहाँ p और q कोई धन पूर्णांक हैं। <br />
-          दोनों तरफ वर्ग करने पर: <br />
-          <InlineMath>{'\\left( \\sqrt{7} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> <br />
-          7 = <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath>
+          माना कि <InlineMath>{'\\sqrt{7}'}</InlineMath> एक परिमेय संख्या है। </p> 
+         <p className='-mt-2'>  तब, <InlineMath>{'\\sqrt{7} = \\frac{p}{q}'}</InlineMath> जहाँ, p और q कोई धन पूर्णांक हैं। 
+          
+          <p className='mt-2'>  जिसका  कोई भी उभयनिष्ठ गुणनखंड नहीं है। </p>
+          <p className='mt-2'>  दोनों तरफ वर्ग करने पर: </p>
+           <p> <InlineMath>{'\\left( \\sqrt{7} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> </p>
+          <p> <InlineMath>{' 7 = \\frac{p^2}{q^2}'}</InlineMath> </p>
         </p>
         <p className="mb-4 text-xl">
-          p<sup>2</sup> = 7q<sup>2</sup>  ...............(i)   <br />
-          p = विषम संख्या है। ∵ विषम संख्या का वर्ग विषम ही होता है। <br />
-          माना कि p = 7m
+          p<sup>2</sup> = 7q<sup>2</sup>  ...............(i)  </p>
+          <p className='mt-2'> p = विषम संख्या है।</p>
+          <p className='mt-2'> ∵ विषम संख्या का वर्ग विषम ही होता है। </p>
+          <p className='mt-2'> माना कि p = 7m</p>
+        
+        <p className="mt-1 text-xl">
+          समीकरण (i) से, </p>
+           <p className='mt-2'><InlineMath>{'(7m)^2 = 7q^2'}</InlineMath> </p>
+          <p className='mt-2'> 49m<sup>2</sup> = 7q<sup>2</sup> </p>
+           <p className='mt-2'>   7m<sup>2</sup> = q<sup>2</sup>
         </p>
-        <p className="mb-4 text-xl">
-          समीकरण (i) से, <br />
-          <InlineMath>{'(7m)^2 = 7q^2'}</InlineMath> <br />
-          49m<sup>2</sup> = 7q<sup>2</sup> <br />
-          7m<sup>2</sup> = q<sup>2</sup>
+        <p className="mt-2 text-xl">
+          q = विषम संख्या है। </p>
+          <p className='mt-2'> अब, p और q में उभयनिष्ठ गुणनखंड 7 है। </p>
+         <p className='mt-2'> अतः हमारी मान्यता गलत है।</p>
+        
+        <p className='mt-2 text-xl '>
+         <InlineMath>{'{\\therefore \\sqrt{7} \\text{ एक परिमेय  संख्या नहीं  है।}}'}</InlineMath>
         </p>
-        <p className="mb-4 text-xl">
-          q = विषम संख्या है। <br /> अब, p और q में उभयनिष्ठ गुणनखंड 7 है। <br />
-          अतः हमारी मान्यता गलत है।
-        </p>
-        <p className="text-xl">
-          <InlineMath>{'\\boxed{\\therefore \\sqrt{7} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
+        <p className="text-xl mt-2 border p-3 border-blue-600">
+          <InlineMath>{'{\\therefore \\sqrt{7} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
         </p>
         <p className="mt-4">Proved</p>
       </div>
@@ -392,31 +403,38 @@ const ProofPage = () => {
           <span className="font-bold">प्रश्‍न 4:</span> सिद्ध करें कि 
           <InlineMath>{'\\sqrt{5}'}</InlineMath> एक अपरिमेय संख्या है?
         </p>
-        <p className="mb-4 text-xl">
-          <span className="font-semibold text-green-700">उत्तर:</span> 
-          माना कि <InlineMath>{'\\sqrt{5}'}</InlineMath> एक परिमेय संख्या है। <br />
-          तब, <InlineMath>{'\\sqrt{5} = \\frac{p}{q}'}</InlineMath>, जहाँ p और q कोई धन पूर्णांक हैं। <br />
-          दोनों तरफ वर्ग करने पर: <br />
-          <InlineMath>{'\\left( \\sqrt{5} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> <br />
-          5 = <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath>
+        <p className="-ml-16 mb-4 text-xl">
+          <span className="font-semibold text-green-700 -ml-4">उत्तर:</span> 
+          माना कि <InlineMath>{'\\sqrt{5}'}</InlineMath> एक परिमेय संख्या है। </p>
+          <p className='ml-6 -mt-2'>
+          तब, <InlineMath>{'\\sqrt{5} = \\frac{p}{q}'}</InlineMath>, जहाँ p और q कोई धन पूर्णांक हैं। </p>
+          <p className='mt-2'> जिसका  कोई भी उभयनिष्ठ गुणनखंड नहीं है। </p>
+           <p className='mt-2'>दोनों तरफ वर्ग करने पर: </p>
+         <p> <InlineMath>{'\\left( \\sqrt{5} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> </p>
+          <p className='mt-2'> <InlineMath>{'5 = \\frac{p^2}{q^2}'}</InlineMath></p>
+        
+        <p className="mb-2 text-xl">
+          p<sup>2</sup> = 5q<sup>2</sup>  ...............(i)   </p>
+         <p className='mt-2'>  p = विषम संख्या है। </p>
+         <p className='mt-2'>∵ विषम संख्या का वर्ग विषम ही होता है। </p>
+          <p className='mt-2'>  माना कि p = 5m</p>
+        
+        <p className="mb-2 mt-2 text-xl">
+          समीकरण (i) से, </p>
+          <p className='mt-2'><InlineMath>{'(5m)^2 = 5q^2'}</InlineMath> </p>
+          <p className='mt-2'>25m<sup>2</sup> = 5q<sup>2</sup> </p>
+           <p className='mt-2'> 5m<sup>2</sup> = q<sup>2</sup></p>
+        
+        <p className="mb-2 mt-2 text-xl">
+          q = विषम संख्या है। </p>
+          <p className='mt-2'> अब, p और q में उभयनिष्ठ गुणनखंड 5 है। </p>
+         <p className='mt-2'>   अतः हमारी मान्यता गलत है। </p>
+        
+        <p className='mt-2 text-xl '>
+         <InlineMath>{'{\\therefore \\sqrt{5} \\text{ एक परिमेय  संख्या नहीं  है।}}'}</InlineMath>
         </p>
-        <p className="mb-4 text-xl">
-          p<sup>2</sup> = 5q<sup>2</sup>  ...............(i)   <br />
-          p = विषम संख्या है। ∵ विषम संख्या का वर्ग विषम ही होता है। <br />
-          माना कि p = 5m
-        </p>
-        <p className="mb-4 text-xl">
-          समीकरण (i) से, <br />
-          <InlineMath>{'(5m)^2 = 5q^2'}</InlineMath> <br />
-          25m<sup>2</sup> = 5q<sup>2</sup> <br />
-          5m<sup>2</sup> = q<sup>2</sup>
-        </p>
-        <p className="mb-4 text-xl">
-          q = विषम संख्या है। <br /> अब, p और q में उभयनिष्ठ गुणनखंड 5 है। <br />
-          अतः हमारी मान्यता गलत है।
-        </p>
-        <p className="text-xl">
-          <InlineMath>{'\\boxed{\\therefore \\sqrt{5} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
+        <p className="mt-2 text-xl border border-blue-600 p-2">
+          <InlineMath>{'{\\therefore \\sqrt{5} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
         </p>
         <p className="mt-4">Proved</p>
       </div>
@@ -430,32 +448,37 @@ const ProofPage = () => {
     <span className="font-bold">प्रश्‍न 5:</span> सिद्ध करें कि 
     <InlineMath>{'\\sqrt{11}'}</InlineMath> एक अपरिमेय संख्या है?
   </p>
-  <p className="mb-4 text-xl">
-    <span className="font-semibold text-green-700">उत्तर:</span> 
-    माना कि <InlineMath>{'\\sqrt{11}'}</InlineMath> एक परिमेय संख्या है। <br />
-    तब, <InlineMath>{'\\sqrt{11} = \\frac{p}{q}'}</InlineMath>, जहाँ p और q कोई धन पूर्णांक हैं, <br />
-    जिनका कोई भी उभयनिष्ठ गुणनखंड नहीं है। <br />
-    दोनों तरफ वर्ग करने पर: <br />
-    <InlineMath>{'\\left( \\sqrt{11} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> <br />
-    11 = <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath>
-  </p>
-  <p className="mb-4 text-xl">
-    <InlineMath>{'p^2 = 11q^2'}</InlineMath> ...............(i)   <br />
-    p = विषम संख्या है। ∵ विषम संख्या का वर्ग विषम ही होता है। <br />
-    माना कि p = 11m
-  </p>
-  <p className="mb-4 text-xl">
-    समीकरण (i) से, <br />
-    <InlineMath>{'(11m)^2 = 11q^2'}</InlineMath> <br />
-    121m<sup>2</sup> = 11q<sup>2</sup> <br />
-    11m<sup>2</sup> = q<sup>2</sup>
-  </p>
-  <p className="mb-4 text-xl">
-    q = विषम संख्या है। <br /> अब, p और q में उभयनिष्ठ गुणनखंड 11 है। <br />
-    अतः हमारी मान्यता गलत है।
-  </p>
-  <p className="text-xl">
-    <InlineMath>{'\\boxed{\\therefore \\sqrt{11} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
+  <p className="mb-4 text-xl -ml-16">
+    <span className="font-semibold text-green-700 -ml-4">उत्तर:</span> 
+    माना कि <InlineMath>{'\\sqrt{11}'}</InlineMath> एक परिमेय संख्या है। </p>
+    <p className='-mt-2'> तब, <InlineMath>{'\\sqrt{11} = \\frac{p}{q}'}</InlineMath> जहाँ, p और q कोई धन पूर्णांक हैं। </p>
+     <p className='mt-2'> जिनका कोई भी उभयनिष्ठ गुणनखंड नहीं है। </p>
+
+   <p className='mt-2'> दोनों तरफ वर्ग करने पर: </p>
+   <p className='mt-2'> <InlineMath>{'\\left( \\sqrt{11} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> </p>
+    <p className='mt-2'> <InlineMath>{'11 = \\frac{p^2}{q^2}'}</InlineMath></p>
+  
+  <p className="mb-2 text-xl">
+    <InlineMath>{'p^2 = 11q^2'}</InlineMath> ...............(i)  </p>
+   <p className='mt-2'> p = विषम संख्या है।</p>
+   <p className='mt-2'> ∵ विषम संख्या का वर्ग विषम ही होता है। </p>
+   <p className='mt-2'> माना कि p = 11m </p>
+  
+  <p className="mt-2 text-xl">
+    समीकरण (i) से,</p>
+   <p className='mt-2'> <InlineMath>{'(11m)^2 = 11q^2'}</InlineMath></p>
+   <p className='mt-2'> 121m<sup>2</sup> = 11q<sup>2</sup></p>
+  <p className='mt-2'>  11m<sup>2</sup> = q<sup>2</sup> </p>
+  <p className="mt-2 text-xl">
+    q = विषम संख्या है। </p>
+    <p className='mt-2'>  अब, p और q में उभयनिष्ठ गुणनखंड 11 है। </p>
+     <p className='mt-2'>अतः हमारी मान्यता गलत है।</p>
+  
+  <p className='mt-2 text-xl '>
+         <InlineMath>{'{\\therefore \\sqrt{11} \\text{ एक परिमेय  संख्या नहीं  है।}}'}</InlineMath>
+        </p>
+  <p className="text-xl mt-2 border border-blue-600 p-2">
+    <InlineMath>{'{\\therefore \\sqrt{11} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
   </p>
   <p className="mt-4">Proved</p>
 </div>
@@ -469,71 +492,23 @@ const ProofPage = () => {
     <span className="font-bold">प्रश्‍न 6:</span> सिद्ध करें कि 
     <InlineMath>{'\\sqrt{13}'}</InlineMath> एक अपरिमेय संख्या है?
   </p>
-  <p className="mb-4 text-xl">
-    <span className="font-semibold text-green-700">उत्तर:</span> 
-    माना कि <InlineMath>{'\\sqrt{13}'}</InlineMath> एक परिमेय संख्या है। <br />
-    तब, <InlineMath>{'\\sqrt{13} = \\frac{p}{q}'}</InlineMath>, जहाँ p और q कोई धन पूर्णांक हैं, <br />
-    जिनका कोई भी उभयनिष्ठ गुणनखंड नहीं है। <br />
-    दोनों तरफ वर्ग करने पर: <br />
-    <InlineMath>{'\\left( \\sqrt{13} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> <br />
-    13 = <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath>
+  <p className="mb-4 text-xl -ml-16">
+    <span className="font-semibold text-green-700 -ml-4">उत्तर:</span> 
+    माना कि <InlineMath>{'\\sqrt{13}'}</InlineMath> एक परिमेय संख्या है। 
+    </p>
+    <p className='-mt-2'>तब, <InlineMath>{'\\sqrt{13} = \\frac{p}{q}'}</InlineMath> जहाँ, p और q कोई धन पूर्णांक हैं </p>
+   <p className='mt-2'> जिनका कोई भी उभयनिष्ठ गुणनखंड नहीं है। </p>
+   <p className='mt-2'> दोनों तरफ वर्ग करने पर: </p>
+   <p className='mt-2'> <InlineMath>{'\\left( \\sqrt{13} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> </p>
+    <p> <InlineMath>{'13 = \\frac{p^2}{q^2}'}</InlineMath>
   </p>
   <p className="mb-4 text-xl">
-    <InlineMath>{'p^2 = 13q^2'}</InlineMath> ...............(i)   <br />
-    p = विषम संख्या है। ∵ विषम संख्या का वर्ग विषम ही होता है। <br />
-    माना कि p = 13m
-  </p>
-  <p className="mb-4 text-xl">
-    समीकरण (i) से, <br />
-    <InlineMath>{'(13m)^2 = 13q^2'}</InlineMath> <br />
-    169m<sup>2</sup> = 13q<sup>2</sup> <br />
-    13m<sup>2</sup> = q<sup>2</sup>
-  </p>
-  <p className="mb-4 text-xl">
-    q = विषम संख्या है। <br /> अब, p और q में उभयनिष्ठ गुणनखंड 13 है। <br />
-    अतः हमारी मान्यता गलत है।
-  </p>
-  <p className="text-xl">
-    <InlineMath>{'\\boxed{\\therefore \\sqrt{13} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
-  </p>
-  <p className="mt-4">Proved</p>
-</div>
-
-<hr className="my-8" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div className="border border-gray-400 shadow p-6 text-xl -mx-4">
-  <p className="mb-4 text-red-600 text-xl font-bold">
-    <span className="font-bold">प्रश्‍न 6:</span> सिद्ध करें कि 
-    <InlineMath>{'\\sqrt{13}'}</InlineMath> एक अपरिमेय संख्या है?
-  </p>
-  <p className="mb-4 text-xl">
-    <span className="font-semibold text-green-700">उत्तर:</span> 
-    माना कि <InlineMath>{'\\sqrt{13}'}</InlineMath> एक परिमेय संख्या है। <br />
-    तब, <InlineMath>{'\\sqrt{13} = \\frac{p}{q}'}</InlineMath>, जहाँ p और q कोई धन पूर्णांक हैं, <br />
-    जिनका कोई भी उभयनिष्ठ गुणनखंड नहीं है। <br />
-    दोनों तरफ वर्ग करने पर: <br />
-    <InlineMath>{'\\left( \\sqrt{13} \\right)^2 = \\left( \\frac{p}{q} \\right)^2'}</InlineMath> <br />
-    13 = <InlineMath>{'\\frac{p^2}{q^2}'}</InlineMath>
-  </p>
-  <p className="mb-4 text-xl">
-    <InlineMath>{'p^2 = 13q^2'}</InlineMath> ...............(i)   <br />
-    p = विषम संख्या है। ∵ विषम संख्या का वर्ग विषम ही होता है। <br />
-    माना कि p = 13m
-  </p>
+    <InlineMath>{'p^2 = 13q^2'}</InlineMath> ...............(i)  </p>
+    <p>
+    p = विषम संख्या है। </p> 
+    <p>∵ विषम संख्या का वर्ग विषम ही होता है। </p>
+   <p> माना कि p = 13m </p>
+  
   <p className="mb-4 text-xl">
     समीकरण (i) से, <br />
     <InlineMath>{'(13m)^2 = 13q^2'}</InlineMath> <br />
@@ -544,6 +519,9 @@ const ProofPage = () => {
     q = विषम संख्या है। <br /> अब, p और q में उभयनिष्ठ गुणनखंड 13 है। <br />
     अतः हमारी मान्यता गलत है।
   </p>
+  <p className='mt-2 text-xl '>
+         <InlineMath>{'{\\therefore \\sqrt{13} \\text{ एक परिमेय  संख्या नहीं  है।}}'}</InlineMath>
+        </p>
   <p className="text-xl">
     <InlineMath>{'\\boxed{\\therefore \\sqrt{13} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
   </p>
@@ -551,8 +529,6 @@ const ProofPage = () => {
 </div>
 
 <hr className="my-8" />
-
-
 
 
 
@@ -589,6 +565,9 @@ const ProofPage = () => {
     q = विषम संख्या है। <br /> अब, p और q में उभयनिष्ठ गुणनखंड 15 है। <br />
     अतः हमारी मान्यता गलत है।
   </p>
+  <p className='mt-2 text-xl '>
+         <InlineMath>{'{\\therefore \\sqrt{15} \\text{ एक परिमेय  संख्या नहीं  है।}}'}</InlineMath>
+        </p>
   <p className="text-xl">
     <InlineMath>{'\\boxed{\\therefore \\sqrt{15} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
   </p>

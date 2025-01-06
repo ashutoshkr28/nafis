@@ -265,13 +265,13 @@ const ProofPage = () => {
 
       {/* Proof for Root 2 */}
       <div className="border border-gray-400 shadow p-4 text-xl -mx-4">
-        <p className="mb-4 mt-4 text-red-600 text-xl font-bold ">
+        <p className="mb-4 mt-4 text-red-600 text-xl font-bold text-left sm:text-center ">
           <span className="font-bold">प्रश्‍न 1:</span> सिद्ध करें कि 
           <InlineMath>{'\\sqrt{2}'}</InlineMath> एक अपरिमेय संख्या है?
         </p>
-        <p className="mb-4 text-xl">
-          <span className="font-semibold text-green-700 -ml-16">उत्तर:</span> 
-         <span className='ml-4'> माना कि <InlineMath>{'\\sqrt{2}'}</InlineMath> एक परिमेय संख्या है। </span> <br />
+        <p className="mb-4 text-xl text-left sm:text-center">
+          <span className="font-semibold text-green-700">उत्तर:</span> 
+          माना कि <InlineMath>{'\\sqrt{2}'}</InlineMath> एक परिमेय संख्या है।</p> 
           
          <p className='-ml-3 mt-2 '> तब, <InlineMath>{'\\sqrt{2} = \\frac{p}{q}'}</InlineMath> जहाँ, p और q कोई धन पूर्णांक हैं।</p><br />
           <p className='-mt-4'>  जिसका  कोई भी उभयनिष्ठ गुणनखंड नहीं है। </p> <br />
@@ -282,7 +282,7 @@ const ProofPage = () => {
           <p className=' text-xl -mt-4'>  
           <InlineMath>{' 2 =\\frac{p^2}{q^2}'}</InlineMath></p>
           
-        </p>
+        
         <p className=" -mt-4  text-xl">
           p<sup>2</sup> = 2q<sup>2</sup>  ...............(i)  </p> <br />
           <p className='-mt-4'>p = सम संख्या है। </p> <br />
@@ -314,12 +314,12 @@ const ProofPage = () => {
 
       {/* Proof for Root 3 */}
       <div className="border border-gray-400 shadow p-6 text-xl -mx-4">
-        <p className="mb-4 text-red-600 text-xl font-bold">
+        <p className="mb-4 text-red-600 text-xl font-bold text-left sm:text-center">
           <span className="font-bold">प्रश्‍न 2:</span> सिद्ध करें कि 
           <InlineMath>{'\\sqrt{3}'}</InlineMath> एक अपरिमेय संख्या है?
         </p>
-        <p className="mb-4 text-xl">
-          <span className="font-semibold text-green-700 -ml-16">उत्तर:</span> 
+        <p className="mb-4 text-xl text-left sm:text-center">
+          <span className="font-semibold text-green-700 ">उत्तर:</span> 
           <span className='ml-2'> माना कि <InlineMath>{'\\sqrt{3}'}</InlineMath> एक परिमेय संख्या है।</span> </p> <br />
            <p className='-ml-1 -mt-6'>तब, <InlineMath>{'\\sqrt{3} = \\frac{p}{q}'}</InlineMath>, जहाँ p और q कोई धन पूर्णांक हैं।</p> <br />
            <p className='-mt-4'>  जिसका  कोई भी उभयनिष्ठ गुणनखंड नहीं है। </p>

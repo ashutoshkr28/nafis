@@ -3,19 +3,19 @@ import Link from "next/link";
 
 const UserDownloads = () => {
   const pdfFiles = [
-    { name: "Science 2025", file: "/science_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Science-Model-Paper-2025.webp" },
-    { name: "Science 2024", file: "/uploads/science.pdf", image: "/path/to/science.jpg" },
-    { name: "Science 2023", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Science 2022", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Science 2021", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Science 2020", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
+    { name: "Urdu 2025", file: "/Urdu_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Urdu-Model-Paper-2025.webp" },
+    { name: "Urdu 2024", file: "/uploads/Urdu.pdf", image: "/path/to/Urdu.jpg" },
+    { name: "Urdu 2023", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
+    { name: "Urdu 2022", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
+    { name: "Urdu 2021", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
+    { name: "Urdu 2020", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
   ];
 
   return (
     <>
       <div className="mx-10 my-6">
         <p className="text-4xl text-center mx-4">
-          Bihar Board 10th Science Model Paper 2023 (BSEB) क्लास 10th विज्ञान मॉडल पेपर PDF Download बिहार बोर्ड मैट्रिक परीक्षा 2023
+          Bihar Board 10th Urdu Model Paper  (BSEB) क्लास 10th उर्दू मॉडल पेपर PDF Download बिहार बोर्ड मैट्रिक परीक्षा 
         </p>
       </div>
       <div className="flex flex-col items-center space-y-4 mt-10">

@@ -3,12 +3,12 @@ import Link from "next/link";
 
 const UserDownloads = () => {
   const pdfFiles = [
-    { name: "Hindi 2025", file: "/hindi_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Hindi-Model-Paper-2025.webp" },
-    { name: "Hindi 2024", file: "/uploads/Hindi.pdf", image: "/path/to/Hindi.jpg" },
-    { name: "Hindi 2023", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Hindi 2022", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Hindi 2021", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Hindi 2020", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
+    { name: "Hindi 2025", file: "/hindi_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Hindi-Model-Paper-2025.png" },
+    { name: "Hindi 2024", file: "/hindi_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Hindi-Model-Paper-2024.png" },
+    { name: "Hindi 2023", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Hindi-Model-Paper-2023.png" },
+    { name: "Hindi 2022", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Hindi-Model-Paper-2022.png" },
+    { name: "Hindi 2021", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Hindi-Model-Paper-2021.png" },
+    { name: "Hindi 2020", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Hindi-Model-Paper-2020.png" },
   ];
 
   return (

@@ -4,11 +4,11 @@ import Link from "next/link";
 const UserDownloads = () => {
   const pdfFiles = [
     { name: "Science 2025", file: "/science_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Science-Model-Paper-2025.webp" },
-    { name: "Science 2024", file: "/uploads/science.pdf", image: "/path/to/science.jpg" },
-    { name: "Science 2023", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Science 2022", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Science 2021", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Science 2020", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
+    { name: "Science 2024", file: "/uploads/science.pdf", image: "/image/Bihar-Board-Class-10th-Science-Model-Paper-2024.png" },
+    { name: "Science 2023", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Science-Model-Paper-2023.png" },
+    { name: "Science 2022", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Science-Model-Paper-2022.png" },
+    { name: "Science 2021", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Science-Model-Paper-2021.png" },
+    { name: "Science 2020", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Science-Model-Paper-2020.png" },
   ];
 
   return (
@@ -26,9 +26,9 @@ const UserDownloads = () => {
               <img
                 src={pdf.image}
                 alt={pdf.name}
-                className="w-96 h-56 object-cover mb-4"
-                // height={300}
-                // width={800}
+                className=" object-cover mb-4"
+                height={700}
+                width={1200}
               />
               <p className="text-lg font-medium mb-2">{pdf.name}</p>
               <Link

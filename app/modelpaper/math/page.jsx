@@ -184,12 +184,12 @@ import Link from "next/link";
 
 const UserDownloads = () => {
   const pdfFiles = [
-    { name: "Mathematics 2025", file: "/math_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Mathematics-Model-Paper-2025.webp" },
-    { name: "Mathematics 2024", file: "/uploads/science.pdf", image: "/path/to/science.jpg" },
-    { name: "Mathematics 2023", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Mathematics 2022", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Mathematics 2021", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Mathematics 2020", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
+    { name: "Mathematics 2025", file: "/math_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Mathematics-Model-Paper-2025.png" },
+    { name: "Mathematics 2024", file: "/uploads/science.pdf", image: "/image/Bihar-Board-Class-10th-Mathematics-Model-Paper-2024.png" },
+    { name: "Mathematics 2023", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Mathematics-Model-Paper-2023.png" },
+    { name: "Mathematics 2022", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Mathematics-Model-Paper-2022.png" },
+    { name: "Mathematics 2021", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Mathematics-Model-Paper-2021.png" },
+    { name: "Mathematics 2020", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Mathematics-Model-Paper-2020.png" },
   ];
 
   return (
@@ -208,8 +208,8 @@ const UserDownloads = () => {
                 src={pdf.image}
                 alt={pdf.name}
                 className="w-96 h-56 object-cover mb-4"
-                // height={300}
-                // width={800}
+                height={300}
+                width={800}
               />
               <p className="text-lg font-medium mb-2">{pdf.name}</p>
               <Link

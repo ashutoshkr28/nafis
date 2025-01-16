@@ -61,7 +61,7 @@
 //       <p className=" text-2xl font-bold py-5 ">
 
 
-//         <InlineMath>{'\\boxed{\\therefore \\sqrt{2} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
+//         <InlineMath>{'{\\therefore \\sqrt{2} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
 //       </p>
 
 //       <p className="mt-4">Proved</p>
@@ -521,7 +521,7 @@ const ProofPage = () => {
          <InlineMath>{'{\\therefore \\sqrt{13} \\text{ एक परिमेय  संख्या नहीं  है।}}'}</InlineMath>
         </p>
   <p className="text-lg mt-2 border border-blue-600 text-blue-600 p-3 sm:text-4xl">
-    <InlineMath>{'\\boxed{\\therefore \\sqrt{13} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
+    <InlineMath>{'{\\therefore \\sqrt{13} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
   </p>
   <p className="mt-4 text-violet-600 font-bold text-2xl mb-4">Proved</p>
 </div>
@@ -569,7 +569,7 @@ const ProofPage = () => {
          <InlineMath>{'{\\therefore \\sqrt{15} \\text{ एक परिमेय  संख्या नहीं  है।}}'}</InlineMath>
         </p>
   <p className="text-lg mt-2 border border-blue-600 text-blue-600 p-3 sm:text-4xl">
-    <InlineMath>{'\\boxed{\\therefore \\sqrt{15} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
+    <InlineMath>{'{\\therefore \\sqrt{15} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
   </p>
   <p className="mt-4 text-violet-600 font-bold text-2xl mb-4">Proved</p>
 </div>
@@ -590,7 +590,7 @@ const ProofPage = () => {
     <span className="font-semibold text-green-700">उत्तर:</span> 
     माना कि <InlineMath>{'\\frac{1}{\\sqrt{2}}'}</InlineMath> एक परिमेय संख्या r है। </p>
    <p className='mt-2 sm:text-4xl'>अब, <InlineMath>{'\\frac{1}{\\sqrt{2}} = r'}</InlineMath>, जहाँ r कोई धन पूर्णांक है।</p> 
-   <p className='mt-2 sm:text-4xl'>  या, <InlineMath>{'\\sqrt{2} = \\frac{1}{r}'}</InlineMath> </p>
+   <p className='mt-2 -ml-56 sm:text-4xl'> या, <InlineMath>{'\\sqrt{2} = \\frac{1}{r}'}</InlineMath> </p>
    <p className='mt-2 sm:text-4xl'> यहाँ, <InlineMath>{'\\sqrt{2}'}</InlineMath> एक अपरिमेय संख्या है। </p>
    <p className='mt-2 sm:text-4xl'> एवं, <InlineMath>{'\\frac{1}{r}'}</InlineMath> एक परिमेय संख्या है। </p>
    <p className='mt-2 sm:text-4xl'> अपरिमेय संख्या = परिमेय संख्या  </p>
@@ -599,7 +599,7 @@ const ProofPage = () => {
   
   <p className="mb-4 text-lg mt-2 sm:text-4xl">
     <InlineMath>{'\\therefore \\frac{1}{\\sqrt{2}}'}</InlineMath> एक परिमेय संख्या नहीं है। </p>
-    <p className='border border-blue-600 text-blue-600 p-3 sm:text-4xl'><InlineMath>{'\\boxed{\\therefore \\frac{1}{\\sqrt{2}} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
+    <p className='border border-blue-600 text-blue-600 p-3 sm:text-4xl'><InlineMath>{'{\\therefore \\frac{1}{\\sqrt{2}} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
   </p>
   <p className="mt-4 text-violet-600 font-bold text-2xl mb-4">Proved</p>
 </div>
@@ -620,7 +620,7 @@ const ProofPage = () => {
     <span className="font-semibold text-green-700">उत्तर:</span> 
     माना कि <InlineMath>{'\\frac{1}{\\sqrt{3}}'}</InlineMath> एक परिमेय संख्या r है।</p> 
     <p className='mt-2 sm:text-4xl'>अब, <InlineMath>{'\\frac{1}{\\sqrt{3}} = r'}</InlineMath>, जहाँ r कोई धन पूर्णांक है। </p>
-    <p className='mt-2 sm:text-4xl'>या, <InlineMath>{'\\sqrt{3} = \\frac{1}{r}'}</InlineMath> </p>
+    <p className='mt-2 -ml-56 sm:text-4xl'>या, <InlineMath>{'\\sqrt{3} = \\frac{1}{r}'}</InlineMath> </p>
     <p className='mt-2 sm:text-4xl'> यहाँ, <InlineMath>{'\\sqrt{3}'}</InlineMath> एक अपरिमेय संख्या है। </p>
     <p className='mt-2 sm:text-4xl'> एवं, <InlineMath>{'\\frac{1}{r}'}</InlineMath> एक परिमेय संख्या है। </p>
     <p className='mt-2 sm:text-4xl'>अपरिमेय संख्या = परिमेय संख्या </p>
@@ -629,7 +629,7 @@ const ProofPage = () => {
   
   <p className="mb-4 text-lg mt-2 sm:text-4xl">
     <InlineMath>{'\\therefore \\frac{1}{\\sqrt{3}}'}</InlineMath> एक परिमेय संख्या नहीं है। </p>
-   <p className='border border-blue-600 text-blue-600 p-3 sm:text-4xl'> <InlineMath>{'\\boxed{\\therefore \\frac{1}{\\sqrt{3}} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
+   <p className='border border-blue-600 text-blue-600 p-3 sm:text-4xl'> <InlineMath>{'{\\therefore \\frac{1}{\\sqrt{3}} \\text{ एक अपरिमेय संख्या है।}}'}</InlineMath>
   </p>
   <p className="mt-4 text-violet-600 font-bold text-2xl mb-4">Proved</p>
 </div>
@@ -649,7 +649,7 @@ const ProofPage = () => {
     <span className="font-semibold text-green-700">उत्तर:</span> 
     माना कि <InlineMath>{'\\frac{1}{\\sqrt{5}}'}</InlineMath> एक परिमेय संख्या r है। </p> 
     <p className='mt-2 sm:text-4xl'> अब, <InlineMath>{'\\frac{1}{\\sqrt{5}} = r'}</InlineMath>, जहाँ r कोई धन पूर्णांक है। </p>
-    <p className='mt-2 sm:text-4xl'>या, <InlineMath>{'\\sqrt{5} = \\frac{1}{r}'}</InlineMath> </p>
+    <p className='mt-2 -ml-56 sm:text-4xl'>या, <InlineMath>{'\\sqrt{5} = \\frac{1}{r}'}</InlineMath> </p>
     <p className='mt-2 sm:text-4xl'>यहाँ, <InlineMath>{'\\sqrt{5}'}</InlineMath> एक अपरिमेय संख्या है। </p>
     <p className='mt-2 sm:text-4xl'>एवं, <InlineMath>{'\\frac{1}{r}'}</InlineMath> एक परिमेय संख्या है। </p>
     <p className='mt-2 sm:text-4xl'>अपरिमेय संख्या = परिमेय संख्या  </p>
@@ -671,14 +671,14 @@ const ProofPage = () => {
 
 
 <div className="border border-purple-500 p-2 shadow text-lg -mx-4">
-      <p className="mb-4 mt-4 text-red-600 text-lg font-bold text-left sm:text-center sm:text-4xl">
+      <p className="mb-4 mt-4 text-red-600 text-lg font-bold text-left sm:text-center sm:text-2xl">
         प्रश्‍न: 11. सिद्ध करें कि <InlineMath math={'2\\sqrt{3}'} /> एक अपरिमेय संख्या है।
       </p>
       <p className="mb-4 text-lg text-left sm:text-center sm:text-4xl">
         <span className="font-semibold text-green-700">उत्तर:</span> 
         माना कि <InlineMath math={'2\\sqrt{3}'} /> एक परिमेय संख्या <InlineMath math={'r'} /> है। </p>
        <p className='mt-2 sm:text-4xl'> अब, <InlineMath math={'2\\sqrt{3} = r'} />, जहाँ <InlineMath math={'r'} /> कोई धन पूर्णांक है। </p>
-       <p className='mt-2 sm:text-4xl'> या, <InlineMath math={'\\sqrt{3} = \\frac{r}{2}'} /> </p>
+       <p className='mt-2 -ml-56 sm:text-4xl'> या, <InlineMath math={'\\sqrt{3} = \\frac{r}{2}'} /> </p>
        <p className='mt-2 sm:text-4xl'> यहाँ, <InlineMath math={'\\sqrt{3}'} /> एक अपरिमेय संख्या है। </p>
        <p className='mt-2 sm:text-4xl'> एवं, <InlineMath math={'\\frac{r}{2}'} /> एक परिमेय संख्या है। </p>
        <p className='mt-2 sm:text-4xl'> अपरिमेय संख्या = परिमेय संख्या  </p>
@@ -701,14 +701,14 @@ const ProofPage = () => {
 
 
     <div className="border border-purple-500 p-2 shadow text-lg -mx-4">
-  <p className="mb-4 mt-4 text-red-600 text-lg font-bold text-left sm:text-center sm:text-4xl">
+  <p className="mb-4 mt-4 text-red-600 text-lg font-bold text-left sm:text-center sm:text-2xl">
     प्रश्‍न: 12. सिद्ध करें कि <InlineMath math={'7\\sqrt{2}'} /> एक अपरिमेय संख्या है।
   </p>
   <p className="mb-4 text-lg text-left sm:text-center sm:text-4xl">
     <span className="font-semibold text-green-700">उत्तर:</span> 
     माना कि <InlineMath math={'7\\sqrt{2}'} /> एक परिमेय संख्या <InlineMath math={'r'} /> है। </p>
    <p className='mt-2 sm:text-4xl'> अब, <InlineMath math={'7\\sqrt{2} = r'} />, जहाँ <InlineMath math={'r'} /> कोई धन पूर्णांक है। </p>
-   <p className='mt-2 sm:text-4xl'>  या, <InlineMath math={'\\sqrt{2} = \\frac{r}{7}'} /> </p>
+   <p className='mt-2 -ml-56 sm:text-4xl'>  या, <InlineMath math={'\\sqrt{2} = \\frac{r}{7}'} /> </p>
    <p className='mt-2 sm:text-4xl'> यहाँ, <InlineMath math={'\\sqrt{2}'} /> एक अपरिमेय संख्या है। </p>
    <p className='mt-2 sm:text-4xl'> एवं, <InlineMath math={'\\frac{r}{7}'} /> एक परिमेय संख्या है। </p>
    <p className='mt-2 sm:text-4xl'> अपरिमेय संख्या = परिमेय संख्या  </p>
@@ -731,15 +731,15 @@ const ProofPage = () => {
 
 
 <div className="border border-purple-500 p-2 shadow text-lg -mx-4">
-  <p className="mb-4 mt-4 text-red-600 text-lg font-bold text-left sm:text-center sm:text-4xl">
+  <p className="mb-4 mt-4 text-red-600 text-lg font-bold text-left sm:text-center sm:text-2xl">
     प्रश्‍न: 13. सिद्ध करें कि <InlineMath math={'3 - \\sqrt{2}'} /> एक अपरिमेय संख्या है।
   </p>
   <p className="mb-4 text-lg text-left sm:text-center sm:text-4xl">
     <span className="font-semibold text-green-700">उत्तर:</span> 
     माना कि <InlineMath math={'3 - \\sqrt{2}'} /> एक परिमेय संख्या <InlineMath math={'r'} /> है। </p>
    <p className='mt-2 sm:text-4xl'>अब, <InlineMath math={'3 - \\sqrt{2} = r'} />, जहाँ <InlineMath math={'r'} /> कोई धन पूर्णांक है। </p>
-   <p className='mt-2 sm:text-4xl'> या, <InlineMath math={'-\\sqrt{2} = r - 3'} /> </p>
-   <p className='mt-2 sm:text-4xl'> या, <InlineMath math={'\\sqrt{2} = 3 - r'} /> </p>
+   <p className='mt-2 -ml-56 sm:text-4xl'> या, <InlineMath math={'-\\sqrt{2} = r - 3'} /> </p>
+   <p className='mt-2 -ml-56 sm:text-4xl'> या, <InlineMath math={'\\sqrt{2} = 3 - r'} /> </p>
    <p className='mt-2 sm:text-4xl'> यहाँ, <InlineMath math={'\\sqrt{2}'} /> एक अपरिमेय संख्या है। </p>
    <p className='mt-2 sm:text-4xl'> एवं, <InlineMath math={'(3 - r)'} /> परिमेय संख्याओं का अंतर है। </p>
    <p className='mt-2 sm:text-4xl'> अपरिमेय संख्या = परिमेय संख्या  </p>
@@ -748,7 +748,7 @@ const ProofPage = () => {
   </p>
   <p className="mb-4 text-lg mt-2 sm:text-4xl">
     <InlineMath math={'\\therefore 3 - \\sqrt{2}'} /> एक परिमेय संख्या नहीं है। </p>
-   <p className='sm:text-4xl'> <InlineMath math={'\\boxed{\\therefore 3 - \\sqrt{2} \\text{ एक अपरिमेय संख्या है।}}'} />
+   <p className='mt-2 border border-blue-600 text-blue-600 p-3   sm:text-4xl'> <InlineMath math={'{\\therefore 3 - \\sqrt{2} \\text{ एक अपरिमेय संख्या है।}}'} />
   </p>
   <p className="mt-4 text-violet-600 font-bold text-2xl mb-4">Proved</p>
 </div>
@@ -761,15 +761,15 @@ const ProofPage = () => {
 
 
 <div className="border border-purple-500 p-2 shadow text-lg -mx-4">
-  <p className="mb-4 mt-4 text-red-600 text-lg font-bold text-left sm:text-center sm:text-4xl">
+  <p className="mb-4 mt-4 text-red-600 text-lg font-bold text-left sm:text-center sm:text-2xl">
     प्रश्‍न: 14. सिद्ध करें कि <InlineMath math={'5 - \\sqrt{3}'} /> एक अपरिमेय संख्या है।
   </p>
   <p className="mb-4 text-lg text-left sm:text-center sm:text-4xl">
     <span className="font-semibold text-green-700">उत्तर:</span> 
     माना कि <InlineMath math={'5 - \\sqrt{3}'} /> एक परिमेय संख्या <InlineMath math={'r'} /> है। </p>
     <p className='mt-2 sm:text-4xl'> अब, <InlineMath math={'5 - \\sqrt{3} = r'} />, जहाँ <InlineMath math={'r'} /> कोई धन पूर्णांक है। </p>
-    <p className='mt-2 sm:text-4xl'>या, <InlineMath math={'-\\sqrt{3} = r - 5'} /> </p>
-    <p className='mt-2 sm:text-4xl'>या, <InlineMath math={'\\sqrt{3} = 5 - r'} /> </p>
+    <p className='mt-2 -ml-56 sm:text-4xl'>या, <InlineMath math={'-\\sqrt{3} = r - 5'} /> </p>
+    <p className='mt-2 -ml-56 sm:text-4xl'>या, <InlineMath math={'\\sqrt{3} = 5 - r'} /> </p>
     <p className='mt-2 sm:text-4xl'> यहाँ, <InlineMath math={'\\sqrt{3}'} /> एक अपरिमेय संख्या है। </p>
     <p className='mt-2 sm:text-4xl'>एवं, <InlineMath math={'(5 - r)'} /> परिमेय संख्याओं का अंतर है। </p>
     <p className='mt-2 sm:text-4xl'>अपरिमेय संख्या = परिमेय संख्या  </p>
@@ -778,7 +778,7 @@ const ProofPage = () => {
   </p>
   <p className="mb-4 text-lg mt-2 sm:text-4xl">
     <InlineMath math={'\\therefore 5 - \\sqrt{3}'} /> एक परिमेय संख्या नहीं है। </p>
-    <p className='mt-2 sm:text-4xl border border-blue-600 text-blue-600 p-3'><InlineMath math={'\\boxed{\\therefore 5 - \\sqrt{3} \\text{ एक अपरिमेय संख्या है।}}'} />
+    <p className='mt-2 sm:text-4xl border border-blue-600 text-blue-600 p-3'><InlineMath math={'{\\therefore 5 - \\sqrt{3} \\text{ एक अपरिमेय संख्या है।}}'} />
   </p>
   <p className="mt-4 text-violet-600 font-bold text-2xl mb-4">Proved</p>
 </div>
@@ -801,15 +801,15 @@ const ProofPage = () => {
 
 
 <div className="border border-purple-500 p-2 shadow text-lg -mx-4  ">
-  <p className="mb-4 mt-4 text-red-600 text-lg font-bold text-left sm:text-center sm:text-4xl">
+  <p className="mb-4 mt-4 text-red-600 text-lg font-bold text-left sm:text-center sm:text-2xl">
     प्रश्‍न: 15. सिद्ध करें कि <InlineMath math={'3 + 2\\sqrt{5}'} /> एक अपरिमेय संख्या है।
   </p>
   <p className="mb-4 text-lg text-left sm:text-center sm:text-4xl">
     <span className="font-semibold text-green-700">उत्तर:</span> 
     माना कि <InlineMath math={'3 + 2\\sqrt{5}'} /> एक परिमेय संख्या <InlineMath math={'r'} /> है। </p>
   <p className='mt-2 sm:text-4xl'> अब, <InlineMath math={'3 + 2\\sqrt{5} = r'} />, जहाँ <InlineMath math={'r'} /> कोई धन पूर्णांक है। </p>
-  <p className='mt-2 sm:text-4xl'> या, <InlineMath math={'2\\sqrt{5} = r - 3'} /> </p>
-  <p className='mt-2 sm:text-4xl'>या, <InlineMath math={'\\sqrt{5} = \\frac{r - 3}{2}'} /> </p>
+  <p className='mt-2 -ml-56 sm:text-4xl'> या, <InlineMath math={'2\\sqrt{5} = r - 3'} /> </p>
+  <p className='mt-2 -ml-56 sm:text-4xl'>या, <InlineMath math={'\\sqrt{5} = \\frac{r - 3}{2}'} /> </p>
   <p className='mt-2 sm:text-4xl'>  यहाँ, <InlineMath math={'\\sqrt{5}'} /> एक अपरिमेय संख्या है। </p>
   <p className='mt-2 sm:text-4xl'> एवं, <InlineMath math={'\\frac{r - 3}{2}'} /> परिमेय संख्याओं का अंतर है। </p>
   <p className='mt-2 sm:text-4xl'> अपरिमेय संख्या = परिमेय संख्या  </p>
@@ -818,7 +818,7 @@ const ProofPage = () => {
   </p>
   <p className="mb-4 text-lg mt-2 sm:text-4xl">
     <InlineMath math={'\\therefore 3 + 2\\sqrt{5}'} /> एक परिमेय संख्या नहीं है। </p>
-   <p className='mt-2 border border-blue-600 text-blue-600 p-3   sm:text-4xl'> <InlineMath math={'\\boxed{\\therefore 3 + 2\\sqrt{5} \\text{ एक अपरिमेय संख्या है।}}'} /> </p>
+   <p className='mt-2 border border-blue-600 text-blue-600 p-3   sm:text-4xl'> <InlineMath math={'{\\therefore 3 + 2\\sqrt{5} \\text{ एक अपरिमेय संख्या है।}}'} /> </p>
   
   <p className="mt-4 text-violet-600 font-bold text-2xl mb-4">Proved</p>
 </div>

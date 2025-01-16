@@ -184,7 +184,7 @@ import Link from "next/link";
 
 const UserDownloads = () => {
   const pdfFiles = [
-    { name: "Mathematics 2025", file: "/math_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Mathematics-Model-Paper-2025.png" },
+    { name: "Mathematics 2025", file: "/math_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Math-Model-Paper-2025.png" },
     { name: "Mathematics 2024", file: "/uploads/science.pdf", image: "/image/Bihar-Board-Class-10th-Mathematics-Model-Paper-2024.png" },
     { name: "Mathematics 2023", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Mathematics-Model-Paper-2023.png" },
     { name: "Mathematics 2022", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Mathematics-Model-Paper-2022.png" },
@@ -207,7 +207,7 @@ const UserDownloads = () => {
               <img
                 src={pdf.image}
                 alt={pdf.name}
-                className=" object-cover mb-4"
+                className="object-cover mb-4"
                 height={600}
                 width={800}
               />

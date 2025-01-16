@@ -3,12 +3,12 @@ import Link from "next/link";
 
 const UserDownloads = () => {
   const pdfFiles = [
-    { name: "Urdu 2025", file: "/Urdu_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Urdu-Model-Paper-2025.webp" },
-    { name: "Urdu 2024", file: "/uploads/Urdu.pdf", image: "/path/to/Urdu.jpg" },
-    { name: "Urdu 2023", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Urdu 2022", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Urdu 2021", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
-    { name: "Urdu 2020", file: "/uploads/english.pdf", image: "/path/to/english.jpg" },
+    { name: "Urdu 2025", file: "/Urdu_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Urdu-Model-Paper-2025.png" },
+    { name: "Urdu 2024", file: "/uploads/Urdu.pdf", image: "/image/Bihar-Board-Class-10th-Urdu-Model-Paper-2024.png" },
+    { name: "Urdu 2023", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Urdu-Model-Paper-2023.png" },
+    { name: "Urdu 2022", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Urdu-Model-Paper-2022.png" },
+    { name: "Urdu 2021", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Urdu-Model-Paper-2021.png" },
+    { name: "Urdu 2020", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Urdu-Model-Paper-2020.png" },
   ];
 
   return (
@@ -26,9 +26,9 @@ const UserDownloads = () => {
               <img
                 src={pdf.image}
                 alt={pdf.name}
-                className="w-96 h-56 object-cover mb-4"
-                // height={300}
-                // width={800}
+                className=" object-cover mb-4"
+                height={700}
+                width={1200}
               />
               <p className="text-lg font-medium mb-2">{pdf.name}</p>
               <Link

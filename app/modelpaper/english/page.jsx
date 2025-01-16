@@ -26,9 +26,9 @@ const UserDownloads = () => {
               <img
                 src={pdf.image}
                 alt={pdf.name}
-                className="w-96 h-56 object-cover mb-4"
-                // height={300}
-                // width={800}
+                className=" object-cover mb-4"
+                height={700}
+                width={1200}
               />
               <p className="text-lg font-medium mb-2">{pdf.name}</p>
               <Link

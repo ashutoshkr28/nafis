@@ -51,12 +51,12 @@ export default function ScienceNotes() {
       {/* <Image src={"/image/math-important.png"} className=' rounded mb-12 transition-all transform hover:animate-shake' width={2500} height={300} alt='img'></Image> */}
 
       <Image 
-  src="/image/math-important.png" 
+  src="/image/math_formula_banner.png" 
   className="rounded mb-12 transition-all transform hover:animate-shake w-full sm:w-3/4 lg:w-1/2 max-w-full" 
   alt="img" 
   layout="intrinsic"
-  width={800} 
-  height={960} 
+  width={1200} 
+  height={2300} 
   priority 
 />
 

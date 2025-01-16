@@ -967,7 +967,7 @@ const Navbar = () => {
 
   const menus = [
     { name: "Objective", links: ["/objective/math", "/objective/science", "/objective/english"] },
-    { name: "Model Paper", links: ["/modelpaper/math", "/modelpaper/science", "/modelpaper/english", "/modelpaper/hindi", "/modelpaper/sanskrit","/modelpaper/urdu"] },
+    { name: "Model Paper", links: ["/modelpaper/math", "/modelpaper/science", "/modelpaper/english", "/modelpaper/hindi", "/modelpaper/sanskrit","/modelpaper/urdu", "/modelpaper/maithili", "/modelpaper/non-hindi"] },
     { name: "Notes", links: ["/notes/math", "/notes/science", "/notes/english"] },
     { name: "Test Quiz", links: ["/testquiz/math", "/testquiz/science", "/testquiz/english"] },
     { name: "About Us", links: ["/about"], isDirect: true }, // Direct link without dropdown

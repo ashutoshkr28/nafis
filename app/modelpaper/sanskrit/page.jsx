@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const UserDownloads = () => {
   const pdfFiles = [
-    { name: "Sanskrit 2025", file: "/Sanskrit_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Sanskrit-Model-Paper-2025.webp" },
+    { name: "Sanskrit 2025", file: "/sanskrit_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Sanskrit-Model-Paper-2025.webp" },
     { name: "Sanskrit 2024", file: "/uploads/Sanskrit.pdf", image: "/image/Bihar-Board-Class-10th-Sanskrit-Model-Paper-2024.png" },
     { name: "Sanskrit 2023", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Sanskrit-Model-Paper-2023.png" },
     { name: "Sanskrit 2022", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Sanskrit-Model-Paper-2022.png" },

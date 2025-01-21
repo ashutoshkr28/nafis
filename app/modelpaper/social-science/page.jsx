@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const UserDownloads = () => {
   const pdfFiles = [
-    { name: "Social-Science 2025", file: "/Social-Science_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Social-Science-Model-Paper-2025.png" },
+    { name: "Social-Science 2025", file: "/social_science_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Social-Science-Model-Paper-2025.png" },
     { name: "Social-Science 2024", file: "/uploads/Social-Science.pdf", image: "/image/Bihar-Board-Class-10th-Social-Science-Model-Paper-2024.png" },
     { name: "Social-Science 2023", file: "/uploads/Social-Science.pdf", image: "/image/Bihar-Board-Class-10th-Social-Science-Model-Paper-2023.png" },
     { name: "Social-Science 2022", file: "/uploads/Social-Science.pdf", image: "/image/Bihar-Board-Class-10th-Social-Science-Model-Paper-2022.png" },

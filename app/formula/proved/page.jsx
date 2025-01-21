@@ -786,20 +786,6 @@ const ProofPage = () => {
 <hr className="my-8" />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div className="border border-purple-500 p-2 shadow text-lg -mx-4  ">
   <p className="mb-4 mt-4 text-red-600 text-sm font-bold text-left sm:text-center sm:text-2xl">
     प्रश्‍न: 15. सिद्ध करें कि <InlineMath math={'3 + 2\\sqrt{5}'} /> एक अपरिमेय संख्या है।

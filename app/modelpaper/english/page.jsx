@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const UserDownloads = () => {
   const pdfFiles = [
-    { name: "English 2025", file: "/English_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-English-Model-Paper-2025.png" },
+    { name: "English 2025", file: "/english_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-English-Model-Paper-2025.png" },
     { name: "English 2024", file: "/uploads/English.pdf", image: "/image/Bihar-Board-Class-10th-English-Model-Paper-2024.png" },
     { name: "English 2023", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-English-Model-Paper-2023.png" },
     { name: "English 2022", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-English-Model-Paper-2022.png" },

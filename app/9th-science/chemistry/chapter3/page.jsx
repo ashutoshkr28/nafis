@@ -110,7 +110,7 @@ const questions = [
       answer: (
         <div>
           <b style={{ color: "green" }}>उत्तर:—</b>
-          <p><b>तत्वों के नाम:</b></p>
+          <p><b style={{color: "blue"}}>तत्वों के नाम:</b></p>
           <ul>
             <li>Sodium</li>
             <li>Potassium</li>
@@ -121,7 +121,7 @@ const questions = [
             <li>Mercury</li>
             <li>Lead</li>
           </ul>
-          <p><b>लैटिन नाम:</b></p>
+          <p><b style={{color: "blue"}}>लैटिन नाम:</b></p>
           <ul>
             <li>नात्रियम (Natrium)</li>
             <li>कालियम (Kalium)</li>
@@ -132,7 +132,7 @@ const questions = [
             <li>हाइड्रार जाइरम (Hydrargyrum)</li>
             <li>प्लंबम (Plumbum)</li>
           </ul>
-          <p><b>संकेत:</b></p>
+          <p><b style={{color: "blue"}}>संकेत:</b></p>
           <ul>
             <li>Na</li>
             <li>K</li>
@@ -156,7 +156,7 @@ const questions = [
             <li>(ii) संकेत तत्व के परमाणु संख्या को व्यक्त करता है।</li>
             <li>(iii) संकेत किसी तत्व का परमाणु द्रव्यमान को व्यक्त करता है।</li>
           </ul>
-          <p>जैसे:— संकेत = C (Carbon) परमाणु संख्या = 6 परमाणु द्रव्यमान = 12g</p>
+          <p><b style={{color:"violet"}}> जैसे:—</b> संकेत = C (Carbon) परमाणु संख्या = 6 परमाणु द्रव्यमान = 12g</p>
         </div>
       ),
     },
@@ -189,7 +189,7 @@ const questions = [
           <b style={{ color: "green" }}>उत्तर:—</b>
           <ul>
             <li>किसी यौगिक में उपस्थित दो या दो से अधिक परमाणु को यौगिक के अणु कहते हैं।</li>
-            <li>जैसे:— 
+            <li><b style={{color:"violet"}}> जैसे:—</b> 
               <ul>
                 <li>ग्लूकोस (C₆H₁₂O₆)</li>
                 <li>चीनी (सुक्रोज) (C₁₂H₂₂O₁₁)</li>
@@ -229,7 +229,7 @@ const questions = [
           <div>
             <b style={{ color: "green" }}>उत्तर:—</b>
             <p>एक परमाणु से बने अणु को एक परमाणुक अणु कहते हैं।</p>
-            <p>जैसे:— He, Ar</p>
+            <p><b style={{color:"violet"}}> जैसे:—</b> He, Ar</p>
           </div>
         ),
       },
@@ -239,7 +239,7 @@ const questions = [
           <div>
             <b style={{ color: "green" }}>उत्तर:—</b>
             <p>दो परमाणु से बने अणु को द्विपरमाणुक अणु कहते हैं।</p>
-            <p>जैसे:— H₂, O₂, N₂</p>
+            <p><b style={{color:"violet"}}> जैसे:—</b> H₂, O₂, N₂</p>
           </div>
         ),
       },
@@ -249,7 +249,7 @@ const questions = [
           <div>
             <b style={{ color: "green" }}>उत्तर:—</b>
             <p>तीन परमाणु से बने अणु को त्रिपरमाणुक अणु कहते हैं।</p>
-            <p>जैसे:— H₂O, CO₂, O₃</p>
+            <p><b style={{color:"violet"}}> जैसे:—</b> H₂O, CO₂, O₃</p>
           </div>
         ),
       },
@@ -259,7 +259,7 @@ const questions = [
           <div>
             <b style={{ color: "green" }}>उत्तर:—</b>
             <p>चार परमाणु से बने अणु को चतुष्परमाणुक अणु कहते हैं।</p>
-            <p>जैसे:— NH₃, S</p>
+            <p><b style={{color:"violet"}}> जैसे:—</b> NH₃, S</p>
           </div>
         ),
       },
@@ -269,7 +269,7 @@ const questions = [
           <div>
             <b style={{ color: "green" }}>उत्तर:—</b>
             <p>चार से अधिक परमाणु से बने अणु बहुपरमाणुक अणु कहते हैं।</p>
-            <p>जैसे:— CH₄, H₂SO₄</p>
+            <p><b style={{color:"violet"}}> जैसे:—</b> CH₄, H₂SO₄</p>
           </div>
         ),
       },
@@ -279,7 +279,7 @@ const questions = [
           <div>
             <b style={{ color: "green" }}>उत्तर:—</b>
             <div>
-              <b>★ परमाणु:—</b>
+              <b style={{color: "blue"}}>★ परमाणु:—</b>
               <ul>
                 <li>(i) तत्व का सूक्ष्मतम कण जो मुक्त अवस्था में नहीं पाया जाता है।</li>
                 <li>(ii) परमाणु का आकार गोलीय होता है।</li>
@@ -288,7 +288,7 @@ const questions = [
               </ul>
             </div>
             <div>
-              <b>★ अणु:—</b>
+              <b style={{color: "blue"}}>★ अणु:—</b>
               <ul>
                 <li>(i) तत्व या यौगिक का सूक्ष्मतम कण जो मुक्त अवस्था में पाया जाता है।</li>
                 <li>(ii) अणु का आकृति रैखिक या त्रिकोणीय होता है।</li>
@@ -332,7 +332,7 @@ const questions = [
           <div>
             <b style={{ color: "green" }}>उत्तर:—</b>
             <p>किसी यौगिक के अणु में उपस्थित परमाणुओं की संख्या को सरल सूत्र कहते हैं।</p>
-            <p>जैसे:— ग्लूकोस (C₆H₁₂O₆), चीनी (C₁₂H₂₂O₁₁), जल (H₂O)</p>
+            <p><b style={{color:"violet"}}> जैसे:—</b> ग्लूकोस (C₆H₁₂O₆), चीनी (C₁₂H₂₂O₁₁), जल (H₂O)</p>
           </div>
         ),
       },
@@ -342,12 +342,12 @@ const questions = [
           <div>
             <b style={{ color: "green" }}>उत्तर:—</b>
             <p>किसी यौगिक के परमाणु में उपस्थित परमाणुओं की संख्या का अनुपात या वास्तविक संख्या को व्यक्त करता हो उसे अणु सूत्र या रासायनिक सूत्र कहते हैं।</p>
-            <p>जैसे:— एसिटिक अम्ल के लिए:</p>
+            <p><b style={{color:"violet"}}> जैसे:—</b> एसिटिक अम्ल के लिए:</p>
             <ul>
-              <li><b>अणु सूत्र:</b> C₂H₄O₂</li>
-              <li><b>सरल सूत्र:</b> CH₂O</li>
+              <li><b style={{color: "blue"}}>अणु सूत्र:</b> C₂H₄O₂</li>
+              <li><b style={{color: "blue"}}>सरल सूत्र:</b> CH₂O</li>
             </ul>
-            <p><b>★ सरल सूत्र प्राप्त करने की विधि:</b></p>
+            <p><b style={{color: "blue"}}>★ सरल सूत्र प्राप्त करने की विधि:</b></p>
             <ol>
               <li>अणु सूत्र के सभी तत्वों के परमाणुओं की संख्या लिखें:</li>
               <ul>
@@ -405,7 +405,7 @@ const questions = [
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b>
               <p>रासायनिक अभिक्रिया में भाग लेने वाले पदार्थ को अभिकारक कहते हैं।</p>
-              <p>जैसे:— C + O₂ → CO₂</p>
+              <p><b style={{color:"violet"}}> जैसे:—</b> C + O₂ → CO₂</p>
             </div>
           ),
         },
@@ -415,7 +415,7 @@ const questions = [
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b>
               <p>रासायनिक अभिक्रिया के बाद जो एक नया पदार्थ बनता है उसे प्रतिफल कहते हैं।</p>
-              <p>जैसे:— H₂ + O₂ → H₂O</p>
+              <p><b style={{color:"violet"}}> जैसे:—</b> H₂ + O₂ → H₂O</p>
               <p>अभिकारक → प्रतिफल</p>
             </div>
           ),
@@ -466,7 +466,7 @@ const questions = [
               <div>
                 <b style={{ color: "green" }}>उत्तर:—</b>
                 <p>किसी अणु में उपस्थित परमाणुओं के द्रव्यमान का योगफल आणविक द्रव्यमान कहलाता है।</p>
-                <p>जैसे:</p>
+                <p><b style={{color:"violet"}}> जैसे:—</b></p>
                 <ol>
                   <li>
                     (i) H₂O का आणविक द्रव्यमान ज्ञात करें।
@@ -497,7 +497,7 @@ const questions = [
                 </p>
                 <p>1 मोल = 6.0022×10²³</p>
                 <p>मोलों की संख्या = तत्व का ग्राम द्रव्यमान / आणविक द्रव्यमान</p>
-                <p>जैसे:</p>
+                <p><b style={{color:"violet"}}> जैसे:—</b></p>
                 <ol>
                   <li>
                     (i) 36g ग्राम जल (H₂O) में मोलों की संख्या ज्ञात करें।

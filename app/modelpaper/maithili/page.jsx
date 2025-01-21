@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const UserDownloads = () => {
   const pdfFiles = [
-    { name: "Maithili 2025", file: "/Maithili_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Maithili-Model-Paper-2025.png" },
+    { name: "Maithili 2025", file: "/maithili_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Maithili-Model-Paper-2025.png" },
     { name: "Maithili 2024", file: "/Maithili_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Maithili-Model-Paper-2024.png" },
     { name: "Maithili 2023", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Maithili-Model-Paper-2023.png" },
     { name: "Maithili 2022", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Maithili-Model-Paper-2022.png" },

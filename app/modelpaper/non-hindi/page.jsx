@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const UserDownloads = () => {
   const pdfFiles = [
-    { name: "Non-Hindi 2025", file: "/Non-Hindi_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Non-Hindi-Model-Paper-2025.png" },
+    { name: "Non-Hindi 2025", file: "/non_hindi_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Non-Hindi-Model-Paper-2025.png" },
     { name: "Non-Hindi 2024", file: "/Non-Hindi_model_paper_2025.pdf", image: "/image/Bihar-Board-Class-10th-Non-Hindi-Model-Paper-2024.png" },
     { name: "Non-Hindi 2023", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Non-Hindi-Model-Paper-2023.png" },
     { name: "Non-Hindi 2022", file: "/uploads/english.pdf", image: "/image/Bihar-Board-Class-10th-Non-Hindi-Model-Paper-2022.png" },

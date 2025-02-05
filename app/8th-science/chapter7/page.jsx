@@ -158,14 +158,14 @@ const questions = [
           question: " 16. विनाश के मुख्य कारण एवं उसके प्रभाव बताइए?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> <b className="text-blue-600">विनाश के मुख्य कारण:</b>
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}>विनाश के मुख्य कारण:</span>
               <ul className="ml-16 ">
                 <li>वनस्पतिवृक्षों की कटाई</li>
                 <li>औद्योगिक प्रदूषण</li>
                 <li>जल प्रदूषण</li>
                 <li>मिट्टी का क्षरण</li>
               </ul>
-              <b className="ml-16 text-blue-600">विनाश के प्रभाव:</b>
+              <span className="ml-16 text-blue-600">विनाश के प्रभाव:</span>
               <ul className="ml-16">
                 <li>जैव विविधता की हानि</li>
                 <li>जलवायु परिवर्तन</li>

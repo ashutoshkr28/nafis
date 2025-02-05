@@ -25,7 +25,7 @@ const questions = [
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> वायु के संघटक वायु गैसों का मिश्रण है जिसमें 78% नाइट्रोजन 21% ऑक्सीजन 1% अन्य गैस
               <br />
-              <b style={{ color: "violet" }}> जैसे:—</b> <span style={{ color: "blue" }}>कार्बन डाइऑक्साइड, कार्बन मोनोऑक्साइड, जल–कण, आर्गन, मेथेन</span> इत्यादि।
+              <b style={{ color: "violet" }}> जैसे:—</b> <span style={{ color: "blue" }}>कार्बन डाइऑक्साइड, कार्बन मोनोऑक्साइड, जल–कण, आर्गन, मेथेन इत्यादि।</span>
             </div>
           ),
         },
@@ -33,7 +33,7 @@ const questions = [
           question: " 2. पर्यावरण की गुणवत्ता में कमी का उत्तरदायी कौन है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}>मानव और उसकी गतिविधियाँ</span>।
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "black" }}>मानव और उसकी गतिविधियाँ</span>।
             </div>
           ),
         },
@@ -41,7 +41,7 @@ const questions = [
           question: " 3. वातावरण की कौन–सी परिस्थितियाँ आजकल उपलब्ध नहीं है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}>साफ आकाश, ताजी हवा, साफ जल</span>।
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "black" }}>साफ आकाश, ताजी हवा, साफ जल</span>।
             </div>
           ),
         },
@@ -49,7 +49,7 @@ const questions = [
           question: " 4. कौन सा पदार्थ मुख्य वायु प्रदूषक है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}>धुँवा</span>।
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "black" }}>धुँवा</span>।
             </div>
           ),
         },
@@ -57,13 +57,13 @@ const questions = [
           question: " 5. धुएँ के मुख्य कारण है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }}> धुएँ के मुख्य कारण निम्न है:</b>
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}> धुएँ के मुख्य कारण निम्न है:</span>
               <ul className="ml-16">
-                <li><span style={{ color: "red" }}>(I) वाहनों का धुँआ</span></li>
-                <li><span style={{ color: "red" }}>(II) फैक्ट्रियों और उद्योगों का धुँआ</span></li>
-                <li><span style={{ color: "red" }}>(III) जंगलों की आग</span></li>
-                <li><span style={{ color: "red" }}>(IV) कूड़ा-कचरा जलाना</span></li>
-                <li><span style={{ color: "red" }}>(V) वायु प्रदूषण</span></li>
+                <li><span style={{ color: "black" }}>(I) वाहनों का धुँआ</span></li>
+                <li><span style={{ color: "black" }}>(II) फैक्ट्रियों और उद्योगों का धुँआ</span></li>
+                <li><span style={{ color: "black" }}>(III) जंगलों की आग</span></li>
+                <li><span style={{ color: "black" }}>(IV) कूड़ा-कचरा जलाना</span></li>
+                <li><span style={{ color: "black" }}>(V) वायु प्रदूषण</span></li>
               </ul>
             </div>
           ),
@@ -72,7 +72,7 @@ const questions = [
           question: " 6. वायु प्रदूषण से कौन–सा रोग फैलता है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}>श्‍वसन संबंधी रोग</span>।
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "black" }}>श्‍वसन संबंधी रोग</span>।
             </div>
           ),
         },
@@ -80,7 +80,7 @@ const questions = [
           question: " 7. वायु में कौन सी गैसे उत्सर्जित होती है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> वायु में <span style={{ color: "blue" }}>कार्बन डाइऑक्साइड, कार्बन मोनोऑक्साइड, नाइट्रोजन ऑक्साइड, धुँआ</span> आदि उत्सर्जित होती है।
+              <b style={{ color: "green" }}>उत्तर:—</b> वायु में <span style={{ color: "black" }}>कार्बन डाइऑक्साइड, कार्बन मोनोऑक्साइड, नाइट्रोजन ऑक्साइड, धुँआ</span> आदि उत्सर्जित होती है।
             </div>
           ),
         },
@@ -88,7 +88,7 @@ const questions = [
           question: " 8. कौन सी गैस रक्त में ऑक्सीजन ग्रहण करने की क्षमता को काम करती है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}>कार्बन मोनोऑक्साइड</span>।
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "black" }}>कार्बन मोनोऑक्साइड</span>।
             </div>
           ),
         },
@@ -104,7 +104,7 @@ const questions = [
           question: " 10. क्लोरो–फ्लोरो कार्बन के दुष्प्रभाव क्या है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}>क्लोरोफ्लोरो (CFC)</span> कार्बन ओजोन परत को नष्ट करते हैं।
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "black" }}>क्लोरोफ्लोरो (CFC)</span> कार्बन ओजोन परत को नष्ट करते हैं।
             </div>
           ),
         },
@@ -120,7 +120,7 @@ const questions = [
           question: " 12. C.N.G का पूरा नाम लिखें?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}>संपिड़ित प्राकृतिक गैस</span>
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "black" }}>संपिड़ित प्राकृतिक गैस</span>
             </div>
           ),
         },
@@ -128,7 +128,7 @@ const questions = [
           question: " 13. L.P.G का पूरा नाम लिखें?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}>द्रवित पेट्रोलियम गैस</span>
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "black" }}>द्रवित पेट्रोलियम गैस</span>
             </div>
           ),
         },
@@ -136,7 +136,7 @@ const questions = [
           question: " 14. C.F.C का पूरा नाम लिखें?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}>क्लोरो फ्लोरो कार्बन</span>
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "black" }}>क्लोरो फ्लोरो कार्बन</span>
             </div>
           ),
         },
@@ -146,11 +146,11 @@ const questions = [
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> अम्ल वर्षा एक प्रकार की वर्षा है जिसमें वायुमंडल में उपस्थित अम्लीय गैसें वर्षा के साथ पृथ्वी पर गिरती हैं।
               <ul className="ml-16">
-                <li><span style={{ color: "blue" }}>(I) पारिस्थितिकी तंत्र को नुकसान</span></li>
-                <li><span style={{ color: "blue" }}>(II) जल स्रोतों का प्रदूषण</span></li>
-                <li><span style={{ color: "blue" }}>(III) मिट्टी का प्रदूषण</span></li>
-                <li><span style={{ color: "blue" }}>(IV)स्वास्थ्य पर प्रभाव</span></li>
-                <li><span style={{ color: "blue" }}>(V) आर्थिक नुकसान</span></li>
+                <li><span style={{ color: "black" }}>(I) पारिस्थितिकी तंत्र को नुकसान</span></li>
+                <li><span style={{ color: "black" }}>(II) जल स्रोतों का प्रदूषण</span></li>
+                <li><span style={{ color: "black" }}>(III) मिट्टी का प्रदूषण</span></li>
+                <li><span style={{ color: "black" }}>(IV)स्वास्थ्य पर प्रभाव</span></li>
+                <li><span style={{ color: "black" }}>(V) आर्थिक नुकसान</span></li>
               </ul>
             </div>
           ),
@@ -159,7 +159,7 @@ const questions = [
           question: "16. शुद्ध वायु और प्रदूषित वायु में क्या अंतर है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> शुद्ध वायु और प्रदूषित वायु में निम्नलिखित अंतर हैं:
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}> शुद्ध वायु और प्रदूषित वायु में निम्नलिखित अंतर हैं:</span>
               <table style={{ border: "1px solid black", borderCollapse: "collapse", width: "100%" }}>
                 <thead>
                   <tr>
@@ -206,7 +206,7 @@ const questions = [
           question: " 17. हरित गृह प्रभाव किसे कहते हैं?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> वायुमंडल में अत्यधिक <span style={{ color: "blue" }}>(CO₂)</span> की उपस्थिति से पर्यावरण पर प्रतिकूल प्रभाव पड़ता है जिसे <span style={{ color: "blue" }}>हरित गृह प्रभाव</span> कहते हैं।
+              <b style={{ color: "green" }}>उत्तर:—</b> वायुमंडल में अत्यधिक <span style={{ color: "blue" }}>(CO₂)</span> की उपस्थिति से पर्यावरण पर प्रतिकूल प्रभाव पड़ता है जिसे हरित गृह प्रभाव कहते हैं।
             </div>
           ),
         },
@@ -214,10 +214,10 @@ const questions = [
           question: " 18. जल प्रदूषण के क्या-क्या कारण है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> जल प्रदूषण के निम्न कारण है:
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}>जल प्रदूषण के निम्न कारण है:</span>
               <ul className="ml-16 list-none">
-                <li><b style={{ color: "blue" }} >(i) जैविक प्रदूषण:</b> नदियों में मलमूत्र बहाना तथा पशुओं को स्नान कराना, लाशें बहाना या अस्थि विसर्जन इत्यादि से जल प्रदूषण होता है।</li>
-                <li><b style={{ color: "blue" }} >(ii) रासायनिक प्रदूषण:</b> कई प्रकार के धात्विक पदार्थ  <b style={{ color: "violet" }}>  जैसे – </b><span style={{ color: "blue" }}>सीसा, मरकरी, कैडमियम</span> इत्यादि जल को दूषित करते हैं। रासायनिक उर्वरकों के प्रयोग से भी जल प्रदूषण होता है।</li>
+                <li><span style={{ color: "red" }} >(i) जैविक प्रदूषण:</span> नदियों में मलमूत्र बहाना तथा पशुओं को स्नान कराना, लाशें बहाना या अस्थि विसर्जन इत्यादि से जल प्रदूषण होता है।</li>
+                <li><span style={{ color: "red" }} >(ii) रासायनिक प्रदूषण:</span> कई प्रकार के धात्विक पदार्थ  <b style={{ color: "violet" }}>  जैसे – </b><span style={{ color: "blue" }}>सीसा, मरकरी, कैडमियम</span> इत्यादि जल को दूषित करते हैं। रासायनिक उर्वरकों के प्रयोग से भी जल प्रदूषण होता है।</li>
               </ul>
             </div>
           ),
@@ -235,15 +235,15 @@ const questions = [
           answer: (
             <div>
               <p>
-                <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }}>  वायु प्रदूषण रोकने के उपाय निम्न है: </b></p>
+                <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}>  वायु प्रदूषण रोकने के उपाय निम्न है: </span></p>
               <ul className="list-none ml-16">
-                <li><span style={{ color: "red" }}>(I) वृक्षारोपण करें।</span></li>
-                <li><span style={{ color: "red" }}>(II) सार्वजनिक परिवहन का उपयोग करें</span></li>
-                <li><span style={{ color: "red" }}>(III) वाहनों की नियमित जांच करें।</span></li>
-                <li><span style={{ color: "red" }}>(IV) बिजली की बचत करें।</span></li>
-                <li><span style={{ color: "red" }}>(V) कूड़ा-कचरा सही तरीके से निपटाएं।</span></li>
-                <li><span style={{ color: "red" }}>(VI) वायु प्रदूषण नियंत्रण कानून का पालन करें।</span></li>
-                <li><span style={{ color: "red" }}>(VII) वायु प्रदूषण जागरूकता अभियान चलाएं।</span></li>
+                <li><span style={{ color: "black" }}>(I) वृक्षारोपण करें।</span></li>
+                <li><span style={{ color: "black" }}>(II) सार्वजनिक परिवहन का उपयोग करें</span></li>
+                <li><span style={{ color: "black" }}>(III) वाहनों की नियमित जांच करें।</span></li>
+                <li><span style={{ color: "black" }}>(IV) बिजली की बचत करें।</span></li>
+                <li><span style={{ color: "black" }}>(V) कूड़ा-कचरा सही तरीके से निपटाएं।</span></li>
+                <li><span style={{ color: "black" }}>(VI) वायु प्रदूषण नियंत्रण कानून का पालन करें।</span></li>
+                <li><span style={{ color: "black" }}>(VII) वायु प्रदूषण जागरूकता अभियान चलाएं।</span></li>
               </ul>
             </div>
           ),

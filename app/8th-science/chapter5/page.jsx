@@ -23,9 +23,9 @@ const questions = [
               question: "1. जीवाश्म ईंधन किसे कहते हैं?",
               answer: (
                 <div>
-                  <b style={{ color: "green" }}>उत्तर: </b> वे ईंधन, जिनका निर्माण सजीव प्राणियों के मृत अवशेषों से होता है, उन्हें <b style={{ color: "blue" }}>जीवाश्म ईंधन</b> कहते हैं।
+                  <b style={{ color: "green" }}>उत्तर: </b> वे ईंधन, जिनका निर्माण सजीव प्राणियों के मृत अवशेषों से होता है, उन्हें जीवाश्म ईंधन कहते हैं।
                   <br />
-                  <p className="ml-10"> जैसे:— <b style={{ color: "blue" }}>कोयला, पेट्रोलियम और प्राकृतिक गैस । </b></p>
+                  <p className="ml-10"> <span style={{color:"violet"}}> जैसे:— </span>कोयला, पेट्रोलियम और प्राकृतिक गैस । </p>
                 </div>
               ),
             },
@@ -35,9 +35,9 @@ const questions = [
                 <div>
                   <b style={{ color: "green" }}>उत्तर: </b> <b style={{ color: "blue" }}> जीवाश्म ईंधन तीन प्रकार के होते हैं:</b>
                   <ul className="ml-10">
-                    <li><b style={{ color: "red" }}>(i) कोयला</b></li>
-                    <li><b style={{ color: "red" }}>(ii) पेट्रोलियम</b></li>
-                    <li><b style={{ color: "red" }}>(iii) प्राकृतिक गैस</b></li>
+                    <li>(i) कोयला</li>
+                    <li>(ii) पेट्रोलियम</li>
+                    <li>(iii) प्राकृतिक गैस</li>
                   </ul>
                 </div>
               ),
@@ -46,7 +46,7 @@ const questions = [
               question: "3. कोयला किसे कहते हैं?",
               answer: (
                 <div>
-                  <b style={{ color: "green" }}>उत्तर: </b> <b style={{ color: "blue" }}>कोयला</b> एक जीवाश्म ईंधन है, जो पौधों के अवशेषों के दबाव और तापमान के कारण लाखों वर्षों में बनता है।
+                  <b style={{ color: "green" }}>उत्तर: </b> कोयला एक जीवाश्म ईंधन है, जो पौधों के अवशेषों के दबाव और तापमान के कारण लाखों वर्षों में बनता है।
                 </div>
               ),
             },
@@ -54,11 +54,11 @@ const questions = [
               question: " 4. पेट्रोलियम क्या है?",
               answer: (
                 <div>
-                  <b style={{ color: "green" }}>उत्तर: </b> <b style={{ color: "blue" }}>पेट्रोलियम</b> एक जीवाश्म ईंधन है जो प्राचीन पौधों और जानवरों के अवशेषों से बनता है। यह एक तरल ईंधन है।
+                  <b style={{ color: "green" }}>उत्तर: </b> पेट्रोलियम एक जीवाश्म ईंधन है जो प्राचीन पौधों और जानवरों के अवशेषों से बनता है। यह एक तरल ईंधन है।
                   <br />
-                  <b style={{ color: "blue" }} className="ml-12">उपयोग:</b> पेट्रोलियम का उपयोग विभिन्न उद्योगों में किया जाता है।
+                  <b style={{ color: "violet" }} className="ml-12">उपयोग:</b> पेट्रोलियम का उपयोग विभिन्न उद्योगों में किया जाता है।
                   <br />
-                  <p className="ml-12"> <b style={{ color: "violet" }}> जैसे:— </b> <b style={{ color: "blue" }}>वाहन ईंधन, ऊर्जा उत्पादन और पेट्रोकेमिकल्स के निर्माण में। </b> </p>
+                  <p className="ml-12"> <b style={{ color: "violet" }}> जैसे:— </b> वाहन ईंधन, ऊर्जा उत्पादन और पेट्रोकेमिकल्स के निर्माण में।  </p>
                 </div>
               ),
             },
@@ -66,7 +66,7 @@ const questions = [
               question: " 5. प्राकृतिक गैस क्या है?",
               answer: (
                 <div>
-                  <b style={{ color: "green" }}>उत्तर: </b> <b style={{ color: "blue" }}>प्राकृतिक गैस</b> एक जीवाश्म ईंधन है जो प्राचीन पौधों और जानवरों के अवशेषों से बनती है। यह मुख्य रूप से <b style={{ color: "blue" }}>मिथेन (मीथेन)</b> CH₄ से बनी होती है।
+                  <b style={{ color: "green" }}>उत्तर: </b> <span style={{ color: "blue" }}>प्राकृतिक गैस</span> एक जीवाश्म ईंधन है जो प्राचीन पौधों और जानवरों के अवशेषों से बनती है। यह मुख्य रूप से <span style={{ color: "blue" }}>मिथेन (मीथेन)</span> CH₄ से बनी होती है।
                   <br />
                   <p className="ml-10">
                     <b style={{ color: "violet" }}>उदाहरण:</b> घरों में खाना पकाने के लिए उपयोग की जाने वाली गैस।
@@ -79,9 +79,9 @@ const questions = [
               question: " 6. कोयला का रासायनिक गुणधर्म लिखिए?",
               answer: (
                 <div>
-                  <b style={{ color: "green" }}>उत्तर: </b> <b style={{ color: "blue" }}>कोयला</b> मुख्य रूप से <b style={{ color: "blue" }}>कार्बन (C)</b> और <b style={{ color: "blue" }}>हाइड्रोजन (H)</b> का मिश्रण है।
+                  <b style={{ color: "green" }}>उत्तर: </b> <span style={{ color: "blue" }}>कोयला</span> मुख्य रूप से <span style={{ color: "blue" }}>कार्बन (C)</span> और <span style={{ color: "blue" }}>हाइड्रोजन (H)</span> का मिश्रण है।
                   <br />
-                  इसके अलावा, इसमें <b style={{ color: "blue" }}>ऑक्सीजन (O)</b>, <b style={{ color: "blue" }}>नाइट्रोजन (N)</b> और <b style={{ color: "blue" }}>सल्फर (S)</b> जैसे अन्य तत्व भी उपस्थित होते हैं।
+                  इसके अलावा, इसमें <span style={{ color: "blue" }}>ऑक्सीजन (O)</span>, <span style={{ color: "blue" }}>नाइट्रोजन (N)</span> और <span style={{ color: "blue" }}>सल्फर (S)</span> जैसे अन्य तत्व भी उपस्थित होते हैं।
                 </div>
               ),
             },
@@ -89,7 +89,7 @@ const questions = [
               question: " 7. कार्बनीकरण क्या है?",
               answer: (
                 <div>
-                  <b style={{ color: "green" }}>उत्तर: </b> मृत वनस्पति के धीरे-धीरे प्रक्रम द्वारा <b style={{ color: "blue" }}>कोयला</b> में परिवर्तन को <b style={{ color: "blue" }}>कार्बनीकरण</b> कहते हैं।
+                  <b style={{ color: "green" }}>उत्तर: </b> मृत वनस्पति के धीरे-धीरे प्रक्रम द्वारा कोयला में परिवर्तन को कार्बनीकरण कहते हैं।
                 </div>
               ),
             },
@@ -97,7 +97,7 @@ const questions = [
               question: " 8. उद्योग में कोयला के प्रक्रमण द्वारा प्राप्त उत्पादों के नाम लिखिए?",
               answer: (
                 <div>
-                  <b style={{ color: "green" }}>उत्तर: </b> <b style={{ color: "blue" }}>कोक</b>, <b style={{ color: "blue" }}>कोलतार</b>, और <b style={{ color: "blue" }}>कोयला गैस</b>।
+                  <b style={{ color: "green" }}>उत्तर: </b> कोक, कोलतार, और कोयला गैस।
                 </div>
               ),
             },
@@ -169,7 +169,7 @@ const questions = [
               answer: (
                 <div>
                   <p>
-                    <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }}> LPG और CNG का ईंधन के रूप में उपयोग करने से निम्नलिखित फायदे होते हैं:  </b></p>
+                    <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}> LPG और CNG का ईंधन के रूप में उपयोग करने से निम्नलिखित फायदे होते हैं:  </span></p>
                   <ul className="ml-16">
                     <li>प्रदूषण कम फैलता है।</li>
                     <li>काम जल्दी से होता है।</li>
@@ -215,7 +215,7 @@ const questions = [
               question: " 20. ईंधन कितने प्रकार के होते हैं?",
               answer: (
                 <div>
-                  <p> <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }} > ईंधन मुख्य रूप से तीन प्रकार के होते हैं: </b></p>
+                  <p> <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }} > ईंधन मुख्य रूप से तीन प्रकार के होते हैं: </span></p>
                   <ul className="ml-14">
                     <li>ठोस ईंधन (जैसे: कोयला, लकड़ी)</li>
                     <li>तरल ईंधन (जैसे: पेट्रोल, डीजल)</li>

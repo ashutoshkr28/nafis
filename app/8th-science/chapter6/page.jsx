@@ -108,7 +108,7 @@ const questions = [
            answer: (
              <div>
                <p>
-                 <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }}>जलने के तीन उपयोगी बात हैं:</b>
+                 <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}>जलने के तीन उपयोगी बात हैं:</span>
                </p>
                <ol className="ml-16">
                  <li>(i) ज्वलनशील पदार्थ।</li>
@@ -123,7 +123,7 @@ const questions = [
            answer: (
              <div>
                <p>
-                 <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }}> दहन तीन प्रकार के होते हैं: </b>
+                 <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}> दहन तीन प्रकार के होते हैं: </span>
                </p>
                <ol className="ml-16">
                  <li>(i) तीव्र दहन ।</li>
@@ -166,7 +166,7 @@ const questions = [
            answer: (
              <div>
                <p>
-                 <b style={{ color: "green" }}>उत्तर:—</b>  <b style={{ color: "blue" }}>कोयले को हवा की अनुपस्थिति में गर्म करने से हमें निम्नलिखित महत्वपूर्ण पदार्थ प्राप्त होते हैं: </b>
+                 <b style={{ color: "green" }}>उत्तर:—</b>  <span style={{ color: "blue" }}>कोयले को हवा की अनुपस्थिति में गर्म करने से हमें निम्नलिखित महत्वपूर्ण पदार्थ प्राप्त होते हैं: </span>
                </p>
                <ol className="ml-16">
                  <li>(i) कृत्रिम पेट्रोलियम।</li>
@@ -192,7 +192,7 @@ const questions = [
            answer: (
              <div>
                <p>
-                 <b style={{ color: "green" }}>उत्तर:—</b><b style={{ color: "blue" }}>  ज्वाला के तीन भिन्न क्षेत्र निम्न हैं: </b>
+                 <b style={{ color: "green" }}>उत्तर:—</b><span style={{ color: "blue" }}>  ज्वाला के तीन भिन्न क्षेत्र निम्न हैं: </span>
                </p>
                <ol className="ml-16">
                  <li> (i) अदीप्त क्षेत्र। </li>
@@ -242,14 +242,14 @@ const questions = [
            answer: (
              <div>
                <p>
-                 <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }}> दहन और जंग लगने में मुख्य अंतर यह है:</b>
+                 <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}> दहन और जंग लगने में मुख्य अंतर यह है:</span>
                </p>
                <ol className="ml-16">
                  <li>
-                   <b style={{ color: "violet" }}>(I) दहन:</b> दहन एक रासायनिक प्रतिक्रिया है जिसमें कोई पदार्थ ऑक्सीजन की उपस्थिति में जलता है और ऊर्जा का उत्पादन करता है। इसमें ताप और प्रकाश का उत्पादन होता है।
+                   <span style={{ color: "blue" }}>(I) दहन:</span> दहन एक रासायनिक प्रतिक्रिया है जिसमें कोई पदार्थ ऑक्सीजन की उपस्थिति में जलता है और ऊर्जा का उत्पादन करता है। इसमें ताप और प्रकाश का उत्पादन होता है।
                  </li>
                  <li>
-                   <b style={{ color: "violet" }}>(II) जंग लगना:</b> जंग लगना एक रासायनिक प्रतिक्रिया है जिसमें धातु ऑक्सीजन और नमी की उपस्थिति में क्षय होती है। इसमें धातु का ऑक्साइड बनता है और धातु की सतह पर जंग की परत बन जाती है।
+                   <span style={{ color: "blue" }}>(II) जंग लगना:</span> जंग लगना एक रासायनिक प्रतिक्रिया है जिसमें धातु ऑक्सीजन और नमी की उपस्थिति में क्षय होती है। इसमें धातु का ऑक्साइड बनता है और धातु की सतह पर जंग की परत बन जाती है।
                  </li>
                </ol>
              </div>
@@ -268,7 +268,7 @@ const questions = [
            answer: (
              <div>
                <p>
-                 <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }}> बारूद मुख्य रूप से तीन पदार्थों से मिलकर बना होता है: </b>
+                 <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}> बारूद मुख्य रूप से तीन पदार्थों से मिलकर बना होता है: </span>
                </p>
                <ol className="ml-16">
                  <li>  (i) सल्फर (गंधक) </li>

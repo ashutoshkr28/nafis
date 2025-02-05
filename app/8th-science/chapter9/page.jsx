@@ -39,11 +39,11 @@ const questions = [
           answer: (
             <div>
               <p>
-                <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }} > निषेचन दो प्रकार के होते हैं: </b>
+                <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }} > निषेचन दो प्रकार के होते हैं: </span>
               </p>
               <ul className="ml-16">
-                <li><b >(i) आंतरिक निषेचन (शरीर के अंदर)</b></li>
-                <li><b > (ii) बाहरी निषेचन (शरीर के बाहर)</b></li>
+                <li>(i) आंतरिक निषेचन (शरीर के अंदर)</li>
+                <li> (ii) बाहरी निषेचन (शरीर के बाहर)</li>
               </ul>
             </div>
           ),
@@ -117,10 +117,10 @@ const questions = [
           answer: (
             <div>
               <p>
-                <b style={{ color: "green" }}>उत्तर:-</b> <b style={{ color: "blue" }}> अलैंगिक प्रजनन और लैंगिक प्रजनन में निम्न अंतर हैं: </b>
+                <b style={{ color: "green" }}>उत्तर:-</b> <span style={{ color: "blue" }}> अलैंगिक प्रजनन और लैंगिक प्रजनन में निम्न अंतर हैं: </span>
               </p>
               <ul className="ml-14">
-                <li><b style={{ color: "red" }}>अलैंगिक प्रजनन:</b>
+                <li><span style={{ color: "red" }}>अलैंगिक प्रजनन:</span>
                   <ul>
                     <li>एक ही माता-पिता की कोशिका शामिल होती है।</li>
                     <li>कोशिका विभाजन के माध्यम से नए जीव उत्पन्न होते हैं।</li>
@@ -129,7 +129,7 @@ const questions = [
                     <li>यह प्रक्रिया तेजी से होती है और इसमें ऊर्जा की कम आवश्यकता होती है।</li>
                   </ul>
                 </li>
-                <li><b style={{ color: "red" }}>लैंगिक प्रजनन:</b>
+                <li><span style={{ color: "red" }}>लैंगिक प्रजनन:</span>
                   <ul>
                     <li>दो माता-पिता की कोशिकाएं शामिल होती हैं।</li>
                     <li>नर और मादा युग्मकों के मिलन से नए जीव उत्पन्न होते हैं।</li>
@@ -147,17 +147,17 @@ const questions = [
           answer: (
             <div>
               <p>
-                <b style={{ color: "green" }}>उत्तर:-</b> <b style={{ color: "blue" }}>  आंतरिक निषेचन तथा बाहरी निषेचन में निम्न अंतर हैं:</b>
+                <b style={{ color: "green" }}>उत्तर:-</b> <span style={{ color: "blue" }}>  आंतरिक निषेचन तथा बाहरी निषेचन में निम्न अंतर हैं:</span>
               </p>
               <ul className="ml-14">
-                <li><b style={{ color: "red" }}>आंतरिक निषेचन:</b>
+                <li><span style={{ color: "red" }}>आंतरिक निषेचन:</span>
                   <ul>
                     <li>निषेचन मादा के शरीर के अंदर होता है।</li>
                     <li>नर के शुक्राणु मादा के शरीर में प्रवेश करते हैं।</li>
                     <li>यह प्रक्रिया स्तनधारियों, पक्षियों और कुछ अन्य जीवों में होती है।</li>
                   </ul>
                 </li>
-                <li><b style={{ color: "red" }}>बाहरी निषेचन:</b>
+                <li><span style={{ color: "red" }}>बाहरी निषेचन:</span>
                   <ul>
                     <li>निषेचन जल में या बाहरी वातावरण में होता है।</li>
                     <li>नर और मादा दोनों अपने युग्मकों को जल में छोड़ते हैं।</li>
@@ -205,11 +205,11 @@ const questions = [
           answer: (
             <div>
               <p>
-                <b style={{ color: "green" }}>उत्तर:-</b> <b style={{ color: "blue" }}> जंतुओं में प्रजनन दो प्रकार से होता है: </b>
+                <b style={{ color: "green" }}>उत्तर:-</b> <span style={{ color: "blue" }}> जंतुओं में प्रजनन दो प्रकार से होता है: </span>
               </p>
               <ul className="ml-14">
-                <li><b > (i) अलैंगिक प्रजनन</b></li>
-                <li> <b >(ii) लैंगिक प्रजनन</b></li>
+                <li> (i) अलैंगिक प्रजनन</li>
+                <li> (ii) लैंगिक प्रजनन</li>
               </ul>
             </div>
           ),

@@ -40,11 +40,11 @@ const questions = [
           answer: (
             <div>
               <p>
-                <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }}> बल दो प्रकार के होते हैं:</b>
+                <b style={{ color: "green" }}>उत्तर:—</b> <span style={{ color: "blue" }}> बल दो प्रकार के होते हैं:</span>
               </p>
               <ul className="ml-16">
-                <li> <b >(i) संपर्क बल</b></li>
-                <li><b > (ii) असंपर्क बल</b></li>
+                <li> (i) संपर्क बल</li>
+                <li> (ii) असंपर्क बल</li>
               </ul>
             </div>
           ),
@@ -67,7 +67,7 @@ const questions = [
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> असंपर्क बल वह बल होता है जो दो वस्तुओं के बीच बिना संपर्क के लगता है।
               <ul>
-                <li>जैसे:— गुरुत्वाकर्षण बल, चुंबकीय बल और विद्युत बल।</li>
+                <li><span style={{color:"violet"}}>जैसे:—</span> गुरुत्वाकर्षण बल, चुंबकीय बल और विद्युत बल।</li>
               </ul>
             </div>
           ),
@@ -78,8 +78,8 @@ const questions = [
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> संपर्क बल दो प्रकार के होते हैं:
               <ul>
-                <li> <b style={{ color: "blue" }} >(i) पेशीय बल</b></li>
-                <li> <b style={{ color: "blue" }} >(ii) घर्षण बल </b></li>
+                <li> (i) पेशीय बल</li>
+                <li> (ii) घर्षण बल </li>
               </ul>
             </div>
           ),
@@ -90,7 +90,7 @@ const questions = [
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> पेशीय बल वह बल होता है जो किसी वस्तु पर सीधे लगाया जाता है।
               <ul>
-                <li>जैसे:— धक्का देना या खींचना।</li>
+                <li><b style={{color:"violet"}}> जैसे:—</b> धक्का देना या खींचना।</li>
               </ul>
             </div>
           ),
@@ -101,7 +101,7 @@ const questions = [
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> घर्षण बल वह बल होता है जो दो वस्तुओं के बीच रगड़ या घर्षण के कारण लगता है।
               <ul>
-                <li>जैसे:— जब आप एक पेंसिल को कागज़ पर रगड़ते हैं, तो पेंसिल और कागज़ के बीच घर्षण बल लगता है।</li>
+                <li><b style={{color:"violet"}}> जैसे:—</b> जब आप एक पेंसिल को कागज़ पर रगड़ते हैं, तो पेंसिल और कागज़ के बीच घर्षण बल लगता है।</li>
               </ul>
             </div>
           ),
@@ -122,8 +122,8 @@ const questions = [
                 <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }}> असंपर्क बल दो प्रकार के होते हैं: </b>
               </p>
               <ul className="ml-16">
-                <li><b >(i) चुंबकीय बल</b></li>
-                <li><b >(ii) गुरुत्व बल</b></li>
+                <li>(i) चुंबकीय बल</li>
+                <li>(ii) गुरुत्व बल</li>
               </ul>
             </div>
           ),

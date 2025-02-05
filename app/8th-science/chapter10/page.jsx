@@ -86,7 +86,7 @@ const questions = [
           question: "8. किशोरावस्था, बाल्यावस्था से किस प्रकार भिन्न है?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> किशोरावस्था और बाल्यावस्था में कई अंतर हैं:
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}> किशोरावस्था और बाल्यावस्था में कई अंतर हैं:</span>
               <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
                 <thead>
                   <tr className="bg-indigo-100">
@@ -147,7 +147,7 @@ const questions = [
           question: "12. शारीरिक बनावट में किस प्रकार परिवर्तन आते हैं?",
           answer: (
             <div>
-              <b style={{ color: "green" }}>उत्तर:—</b> शारीरिक बनावट में निम्न परिवर्तन आते हैं:
+              <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color: "blue"}}>शारीरिक बनावट में निम्न परिवर्तन आते हैं:</span>
               <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
                 <thead>
                   <tr className="bg-indigo-100">
@@ -183,13 +183,13 @@ const questions = [
           answer: (
             <div>
               <p>
-                <b style={{ color: "green" }}>उत्तर:—</b> <b style={{ color: "blue" }}> मनुष्य के जीवन काल को चार भागों में बाँटा जाता है: </b>
+                <b style={{ color: "green" }}>उत्तर:—</b>  मनुष्य के जीवन काल को चार भागों में बाँटा जाता है: 
               </p>
               <ul className="ml-16">
-                <li><b >बाल्यावस्था (0-12 वर्ष):</b> बचपन का समय</li>
-                <li><b>किशोरावस्था (13-19 वर्ष):</b> जवानी की शुरुआत</li>
-                <li><b>प्रौढ़ावस्था (20-59 वर्ष):</b> जवानी का समय</li>
-                <li><b>वृद्धावस्था (60 वर्ष से अधिक):</b> बुढ़ापा</li>
+                <li> <span style={{color:"blue"}}>बाल्यावस्था (0-12 वर्ष): </span>बचपन का समय</li>
+                <li> <span style={{color:"blue"}}>किशोरावस्था (13-19 वर्ष): </span>जवानी की शुरुआत</li>
+                <li> <span style={{color:"blue"}}>प्रौढ़ावस्था (20-59 वर्ष): </span> जवानी का समय</li>
+                <li> <span style={{color:"blue"}}>वृद्धावस्था (60 वर्ष से अधिक):</span> बुढ़ापा</li>
               </ul>
             </div>
           ),

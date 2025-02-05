@@ -13,10 +13,10 @@ const questions = [
       question: "2. विज्ञान की कितनी शाखाएँ हैं?",
       answer: (
         <div>
-          <b style={{ color: "green" }}>उत्तर:—</b> विज्ञान की दो मुख्य शाखाएँ हैं।
+          <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}>विज्ञान की दो मुख्य शाखाएँ हैं। </span>
           <ul className="ml-14">
-            <li><b style={{color: "blue"}}>भौतिक विज्ञान:</b> इसमें हम निर्जीव पदार्थों और उनसे संबंधित घटनाओं के बारे में अध्ययन करते हैं।</li>
-            <li><b style={{color: "blue"}}>जीव विज्ञान:</b> इसमें हम सजीव पदार्थों और उनसे संबंधित घटनाओं के बारे में अध्ययन करते हैं।</li>
+            <li><span style={{color: "red"}}>भौतिक विज्ञान:</span> इसमें हम निर्जीव पदार्थों और उनसे संबंधित घटनाओं के बारे में अध्ययन करते हैं।</li>
+            <li><span style={{color: "red"}}>जीव विज्ञान:</span> इसमें हम सजीव पदार्थों और उनसे संबंधित घटनाओं के बारे में अध्ययन करते हैं।</li>
           </ul>
         </div>
       ),
@@ -25,10 +25,10 @@ const questions = [
       question: "3. भौतिक विज्ञान की कितनी शाखाएँ हैं?",
       answer: (
         <div>
-          <b style={{ color: "green" }}>उत्तर:—</b> भौतिक विज्ञान की दो मुख्य शाखाएँ हैं।
+          <b style={{ color: "green" }}>उत्तर:—</b>  <span style={{color:"blue"}}>भौतिक विज्ञान की दो मुख्य शाखाएँ हैं। </span>
           <ul className="ml-16">
-            <li><b style={{color: "blue"}}>भौतिक Physics</b></li>
-            <li><b style={{color: "blue"}}>रसायन शास्त्र Chemistry</b></li>
+            <li><span style={{color: "black"}}>भौतिक Physics</span></li>
+            <li><span style={{color: "black"}}>रसायन शास्त्र Chemistry</span></li>
           </ul>
         </div>
       ),
@@ -37,10 +37,10 @@ const questions = [
       question: "4. जीव विज्ञान की कितनी शाखाएँ हैं?",
       answer: (
         <div>
-          <b style={{ color: "green" }}>उत्तर:—</b> जीव विज्ञान की दो मुख्य शाखाएँ हैं।
+          <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}> जीव विज्ञान की दो मुख्य शाखाएँ हैं। </span>
           <ul className="ml-16">
-            <li><b style={{color: "blue"}}>वनस्पति विज्ञान Botany</b></li>
-            <li><b style={{color: "blue"}}>प्राणी विज्ञान Zoology</b></li>
+            <li><span style={{color: "black"}}>वनस्पति विज्ञान Botany</span></li>
+            <li><span style={{color: "black"}}>प्राणी विज्ञान Zoology</span></li>
           </ul>
         </div>
       ),
@@ -59,10 +59,10 @@ const questions = [
         <div>
           <b style={{ color: "green" }}>उत्तर:—</b> किसी भी राशि के परिमाण के पूर्ण वितरण के लिए निम्नांकित दो बातों का ज्ञान होना आवश्यक है।
           <ul>
-            <li><b style={{color: "blue"}}>मात्रक:</b> जिसमें राशि को व्यक्त किया जाता है।</li>
-            <li><b style={{color: "blue"}}>संख्यांक:</b> जो बताता है कि दी गई राशि कितना है।</li>
+            <li><span style={{color: "blue"}}>मात्रक:</span> जिसमें राशि को व्यक्त किया जाता है।</li>
+            <li><span style={{color: "blue"}}>संख्यांक:</span> जो बताता है कि दी गई राशि कितना है।</li>
           </ul>
-          <span style={{color: "violet"}}>जैसे:— </span>5 मीटर लंबाई का परिमाण।
+          <b style={{color: "violet"}}>जैसे:— </b>5 मीटर लंबाई का परिमाण।
           <p>इसमें <span style={{color: "blue"}}>(5)</span> संख्यांक और <span style={{color: "blue"}}> (मीटर)</span> मात्रक है।</p>
         </div>
       ),
@@ -81,10 +81,10 @@ const questions = [
       question: "8. भौतिक राशि कितने प्रकार के होते हैं?",
       answer: (
         <div>
-          <b style={{ color: "green" }}>उत्तर:—</b> भौतिक राशि दो प्रकार की होती है।
+          <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}>भौतिक राशि दो प्रकार की होती है। </span>
           <ul>
-            <li><b style={{color: "blue"}}>आधारी राशि</b></li>
-            <li><b style={{color: "blue"}}>व्युत्पन्न राशि</b></li>
+            <li><span style={{color: "black"}}>(i) आधारी राशि</span></li>
+            <li><span style={{color: "black"}}> (ii) व्युत्पन्न राशि</span></li>
           </ul>
         </div>
       ),
@@ -95,15 +95,15 @@ const questions = [
         <div>
           <b style={{ color: "green" }}>उत्तर:—</b> वैसे प्रकार की सभी राशि जो किसी अन्य राशि पर निर्भर नहीं करता हो आधारी राशि कहलाती है।
           <br />
-          <b>नोट:</b> आधारी राशि सात प्रकार की होती है:
-          <ul>
-            <li>लंबाई</li>
-            <li>द्रव्यमान</li>
-            <li>समय</li>
-            <li>विद्युत धारा</li>
-            <li>ताप या तापमान</li>
-            <li>ज्योति तीव्रता</li>
-            <li>पदार्थ का परिमाण</li>
+          <b style={{color:"blue"}}>नोट:</b>  <span style={{color:"blue"}}>आधारी राशि सात प्रकार की होती है:</span>
+          <ul className="ml-12">
+            <li>(i)लंबाई</li>
+            <li>(ii)द्रव्यमान</li>
+            <li>(iii)समय</li>
+            <li>(iV)विद्युत धारा</li>
+            <li>(Vi)ताप या तापमान</li>
+            <li>(Vii)ज्योति तीव्रता</li>
+            <li>(Vii)पदार्थ का परिमाण</li>
           </ul>
         </div>
       ),
@@ -130,12 +130,12 @@ const questions = [
       question: "12. मात्रकों की पद्धति के प्रकार को लिखें?",
       answer: (
         <div>
-          <b style={{ color: "green" }}>उत्तर:—</b> मात्रकों की पद्धति निम्नलिखित प्रकार से है।
+          <b style={{ color: "green" }}>उत्तर:—</b><span style={{color:"blue"}}> मात्रकों की पद्धति निम्नलिखित प्रकार से है। </span>
           <ul>
-            <li><b style={{color: "blue"}}>फुट–पाउंड–सेकंड पद्धति (FPS)</b>:— इस पद्धति में लंबाई को फुट में, द्रव्यमान को पाउंड में और समय को सेकंड में मापा जाता है।</li>
-            <li><b style={{color: "blue"}}>सेंटीमीटर–ग्राम–सेकंड पद्धति (CGS)</b>:— इस पद्धति में लंबाई को सेंटीमीटर में, द्रव्यमान को ग्राम में और समय को सेकंड में मापा जाता है।</li>
-            <li><b style={{color: "blue"}}>मीटर–किलोग्राम–सेकंड पद्धति (MKS)</b>:— इस पद्धति में लंबाई को मीटर में, द्रव्यमान को किलोग्राम में और समय को सेकंड में मापा जाता है।</li>
-            <li><b style={{color: "blue"}}>अंतर्राष्ट्रीय पद्धति (S.I)</b>:— वह मात्रक जो सभी देशों के लिए एक ही है।</li>
+            <li><span style={{color: "red"}}>फुट–पाउंड–सेकंड पद्धति (FPS)</span>:— इस पद्धति में लंबाई को फुट में, द्रव्यमान को पाउंड में और समय को सेकंड में मापा जाता है।</li>
+            <li><span style={{color: "red"}}>सेंटीमीटर–ग्राम–सेकंड पद्धति (CGS)</span>:— इस पद्धति में लंबाई को सेंटीमीटर में, द्रव्यमान को ग्राम में और समय को सेकंड में मापा जाता है।</li>
+            <li><span style={{color: "red"}}>मीटर–किलोग्राम–सेकंड पद्धति (MKS)</span>:— इस पद्धति में लंबाई को मीटर में, द्रव्यमान को किलोग्राम में और समय को सेकंड में मापा जाता है।</li>
+            <li><span style={{color: "red"}}>अंतर्राष्ट्रीय पद्धति (S.I)</span>:— वह मात्रक जो सभी देशों के लिए एक ही है।</li>
           </ul>
         </div>
       ),
@@ -144,15 +144,15 @@ const questions = [
       question: "13. आधारी राशियाँ और उनके S.I मात्रक को लिखें?",
       answer: (
         <div>
-          <b style={{ color: "green" }}>उत्तर:—</b> आधारी राशियाँ और उनके S.I मात्रक निम्न हैं:
+          <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}>आधारी राशियाँ और उनके S.I मात्रक निम्न हैं:</span>
           <ul>
-            <li><b style={{color: "blue"}}>लंबाई:</b> मीटर (M)</li>
-            <li><b style={{color: "blue"}}>द्रव्यमान:</b> किलोग्राम (Kg)</li>
-            <li><b style={{color: "blue"}}>समय:</b> सेकंड (S)</li>
-            <li><b style={{color: "blue"}}>विद्युत धारा:</b> एम्पीयर (A)</li>
-            <li><b style={{color: "blue"}}>ताप या तापमान:</b> केल्विन (K)</li>
-            <li><b style={{color: "blue"}}>ज्योति तीव्रता:</b> कैंडेला (Cd)</li>
-            <li><b style={{color: "blue"}}>पदार्थ का परिमाण:</b> मोल (Mol)</li>
+            <li><span style={{color: "red"}}>लंबाई:</span> मीटर (M)</li>
+            <li><span style={{color: "red"}}>द्रव्यमान:</span> किलोग्राम (Kg)</li>
+            <li><span style={{color: "red"}}>समय:</span> सेकंड (S)</li>
+            <li><span style={{color: "red"}}>विद्युत धारा:</span> एम्पीयर (A)</li>
+            <li><span style={{color: "red"}}>ताप या तापमान:</span> केल्विन (K)</li>
+            <li><span style={{color: "red"}}>ज्योति तीव्रता:</span> कैंडेला (Cd)</li>
+            <li><span style={{color: "red"}}>पदार्थ का परिमाण:</span> मोल (Mol)</li>
           </ul>
         </div>
       ),
@@ -178,8 +178,8 @@ const questions = [
         <div>
           <b style={{ color: "green" }}>उत्तर:—</b>
           <ul>
-            <li><b style={{color: "blue"}}>समतल कोण:</b> दो रेखाओं से बने कोण को समतल कोण कहते हैं।<b style={{color: "blue"}}> इसका S.I मात्रक रेडियन (rad)</b> है।</li>
-            <li><b style={{color: "blue"}}>घन कोण:</b> तीन रेखाओं से बने कोण को घन कोण कहते हैं। <b style={{color: "blue"}}>इसका S.I मात्रक स्टेरेडियन (sr)</b> है।</li>
+            <li><span style={{color: "blue"}}>समतल कोण:</span> दो रेखाओं से बने कोण को समतल कोण कहते हैं।<span style={{color: "blue"}}> इसका S.I मात्रक रेडियन (rad)</span> है।</li>
+            <li><span style={{color: "blue"}}>घन कोण:</span> तीन रेखाओं से बने कोण को घन कोण कहते हैं। <span style={{color: "blue"}}>इसका S.I मात्रक स्टेरेडियन (sr)</span> है।</li>
           </ul>
           <h4>मानक SI उपसर्ग</h4>
           <table border="1">

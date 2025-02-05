@@ -31,11 +31,11 @@ const questions = [
                    </ul>
                    <ul className="ml-8">
                      <li><b style={{ color: 'blue' }}>ठोस: </b>पदार्थ की वह अवस्थाएँ जिनका आकार एवं आयतन दोनों निश्‍चित हो। <br />
-                       <b><b style={{ color: "darkviolet" }}> जैसे:—</b></b> पत्थर, फुटबॉल इत्यादि।</li>
+                       <b><b style={{ color: "violet" }}> जैसे:—</b></b> पत्थर, फुटबॉल इत्यादि।</li>
                      <li><b style={{ color: 'blue' }}>द्रव्य: </b> पदार्थ की वह अवस्थाएँ जिनका आकार अनिश्‍चित एवं आयतन निश्‍चित हो। <br />
-                       <b><b style={{ color: "darkviolet" }}> जैसे:—</b></b> पानी, डीजल, पेट्रोल इत्यादि।</li>
+                       <b><b style={{ color: "violet" }}> जैसे:—</b></b> पानी, डीजल, पेट्रोल इत्यादि।</li>
                      <li><b style={{ color: 'blue' }}>गैस: </b> पदार्थ की वह अवस्थाएँ जिनका आकार एवं आयतन दोनों अनिश्‍चित हो। <br />
-                       <b><b style={{ color: "darkviolet" }}> जैसे:—</b></b> कार्बन डाई ऑक्साइड, नाइट्रोजन गैस।</li>
+                       <b><b style={{ color: "violet" }}> जैसे:—</b></b> कार्बन डाई ऑक्साइड, नाइट्रोजन गैस।</li>
                    </ul>
     
                    {/* <b style={{ color: 'blue' }}>ठोस: </b> पदार्थ की वह अवस्थाएँ जिनका आकार एवं आयतन दोनों निश्‍चित हो। <br />
@@ -61,7 +61,7 @@ const questions = [
                      त्याग कर धन आयन बनाते हैं, एवं धातुओं को पीट-पीटकर चौड़ा किया जा सकता
                      है। <br />
                      <p className="ml-12">
-                       <b style={{ color: "darkviolet" }}> जैसे:—</b> सोना, चांदी, सोडियम।
+                       <b style={{ color: "violet" }}> जैसे:—</b> सोना, चांदी, सोडियम।
                      </p>
                    </p>
                  </div>
@@ -211,7 +211,7 @@ const questions = [
                      <li>दबाने पर आकार बदलना: आघातवर्ध्य धातुएँ दबाने पर भी आकार बदलती हैं।</li>
                      <li>टूटने की प्रतिरोधकता रखती हैं।</li>
                    </ul>
-                   <p className="text-lg text-blue-600 ml-6">आघातवर्ध्यता के उदाहरण: सोना, चाँदी, ताँबा</p>
+                   <p className="text-lg  ml-6"><span style={{color: "violet"}}>आघातवर्ध्यता के उदाहरण: सोना, चाँदी, ताँबा</span></p>
                    {/* <ul className="list-disc ml-6 text-gray-800">
                      <li>सोना</li>
                      <li>चाँदी</li>
@@ -250,7 +250,7 @@ const questions = [
                  <div>
                    <p>
                      <b style={{ color: "green" }}>उत्तर: </b>
-                     <span className="text-blue-500"> हरा (blue)</span>
+                     <span className=""> हरा (blue)</span>
                    </p>
                  </div>
                ),
@@ -379,51 +379,6 @@ const questions = [
                  </div>
                ),
              },
-              {
-                question: " विस्थापन अभिक्रिया किसे कहते हैं?",
-                answer: (
-                  <div>
-                    <p>
-                      <b style={{ color: "green" }}>उत्तर: </b>
-               ऐसी अभिक्रिया जिसमें अधिक क्रियाशील धातु कम क्रियाशील
-                      धातु को उसके यौगिक से बाहर कर देता है, ऐसी अभिक्रिया को विस्थापन
-                      अभिक्रिया कहते हैं।
-                    </p>
-                    <p>
-                      <b>उदाहरण:</b>
-                    </p>
-                    <p>
-                      मान लीजिए हमारे पास एक लोहे की कील है जिसे हम कॉपर सल्फेट के घोल में
-                      डालते हैं। कुछ समय बाद हम देखेंगे कि लोहे की कील पर तांबे की एक परत
-                      जम गई है और घोल का रंग हरा हो गया है।
-                    </p>
-                    <p>
-                      इस अभिक्रिया को हम निम्न रासायनिक समीकरण से दर्शा सकते हैं:
-                    </p>
-                    <p className="font-mono mt-2">
-                      Fe (s) + CuSO₄ (aq) → FeSO₄ (aq) + Cu (s)
-                    </p>
-                    <ul className="list-disc ml-6 text-gray-800">
-                      <li>Fe (s): लोहा (ठोस अवस्था में)</li>
-                      <li>CuSO₄ (aq): कॉपर सल्फेट (जलीय घोल में)</li>
-                      <li>FeSO₄ (aq): आयरन सल्फेट (जलीय घोल में)</li>
-                      <li>Cu (s): तांबा (ठोस अवस्था में)</li>
-                    </ul>
-                    <p>
-                      <b>इस अभिक्रिया में क्या हुआ:</b>
-                    </p>
-                    <ul className="list-disc ml-6 text-gray-800">
-                      <li>लोहा (Fe) कॉपर (Cu) से अधिक क्रियाशील है।</li>
-                      <li>
-                        लोहे ने कॉपर सल्फेट (CuSO₄) में मौजूद कॉपर को विस्थापित कर दिया और
-                        स्वयं सल्फेट आयनों (SO₄²⁻) के साथ संयुक्त होकर आयरन सल्फेट (FeSO₄)
-                        बनाया।
-                      </li>
-                      <li>विस्थापित हुआ तांबा (Cu) लोहे की कील पर जम गया।</li>
-                    </ul>
-                  </div>
-                ),
-              },
              {
                question: "21.  विस्थापन अभिक्रिया किसे कहते हैं?",
                answer: (
@@ -474,7 +429,7 @@ const questions = [
                answer: (
                  <div>
                    <b style={{ color: "green" }}>उत्तर: </b>
-                   सोडियम और पोटेशियम को खुला वायु में छोड़ने पर <b style={{ color: 'red' }}>आग पकड़ लेता है</b>।
+                   सोडियम और पोटेशियम को खुला वायु में छोड़ने पर आग पकड़ लेता है ।
                  </div>
                ),
              },
@@ -494,7 +449,7 @@ const questions = [
                answer: (
                  <div>
                    <b style={{ color: "green" }}>उत्तर: </b>
-                   सबसे सरल हाइड्रोकार्बन <b style={{ color: 'blue' }}>मीथेन (CH₄)</b> है।
+                   सबसे सरल हाइड्रोकार्बन मीथेन (CH₄) है।
                  </div>
                ),
              },
@@ -504,13 +459,13 @@ const questions = [
                answer: (
                  <div>
                    <b style={{ color: "green" }}>उत्तर: </b>
-                   हाइड्रोजन तथा कार्बन से बने यौगिक को <b style={{ color: 'purple' }}>हाइड्रोकार्बन</b> कहते हैं।
+                   हाइड्रोजन तथा कार्बन से बने यौगिक को हाइड्रोकार्बन  कहते हैं।
                    <br />
                    <b className="text-blue-600 ml-10">तीन हाइड्रोकार्बन का नाम निम्न है:</b>
                    <ul className="list-none ml-10 text-gray-800">
-                     <li ><b style={{ color: 'orange' }}>(i) मीथेन</b></li>
-                     <li ><b style={{ color: 'orange' }}>(ii) एथेन</b></li>
-                     <li ><b style={{ color: 'orange' }}>(iii) प्रोपेन</b></li>
+                     <li >(i) मीथेन</li>
+                     <li >(ii) एथेन</li>
+                     <li >(iii) प्रोपेन</li>
                    </ul>
                  </div>
                ),
@@ -521,7 +476,7 @@ const questions = [
                answer: (
                  <div>
                    <b style={{ color: "green" }}>उत्तर: </b>
-                   सोल्डर एक मिश्र धातु है जो टीन और लैड के मिश्रण से बनाया जाता है। इसे <b style={{ color: 'brown' }}>बिजली के तारों को जोड़ने</b> में उपयोग किया जाता है।
+                   सोल्डर एक मिश्र धातु है जो टीन और लैड के मिश्रण से बनाया जाता है। इसे  बिजली के तारों को जोड़ने में उपयोग किया जाता है।
                  </div>
                ),
              },
@@ -548,9 +503,9 @@ const questions = [
                    <b style={{ color: 'blue' }}>
                      मिश्र धातु के बनाने के निम्न फायदा हैं:</b>
                    <ul className="list-none ml-12 text-gray-800">
-                     <li><b>(i) मिश्र धातु तत्वों के मुकाबले अधिक मजबूत और कठोर होता है।</b></li>
-                     <li ><b>(ii) मिश्र धातु पर जंग नहीं लगता है।</b></li>
-                     <li ><b>(iii) मिश्र धातुओं से उपयोगी वस्तुएँ बनायी जाती हैं।</b></li>
+                     <li>(i) मिश्र धातु तत्वों के मुकाबले अधिक मजबूत और कठोर होता है।</li>
+                     <li >(ii) मिश्र धातु पर जंग नहीं लगता है।</li>
+                     <li >(iii) मिश्र धातुओं से उपयोगी वस्तुएँ बनायी जाती हैं।</li>
                    </ul>
                  </div>
                ),
@@ -574,24 +529,24 @@ const questions = [
                    <br />
                    <b>जंग लगने की प्रक्रिया:</b>
                    <ul className="list-none ml-10 text-gray-800">
-                     <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'purple' }}>लोहा पानी और ऑक्सीजन</b> के संपर्क में आता है।</li>
-                     <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'purple' }}>पानी और ऑक्सीजन</b> लोहे के साथ रासायनिक अभिक्रिया करते हैं।</li>
-                     <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: 'purple' }}>इस अभिक्रिया</b> से लोहे की सतह पर एक लाल-भूरे रंग की परत जम जाती है, जिसे जंग कहते हैं।</li>
+                     <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold">लोहा पानी और ऑक्सीजन के संपर्क में आता है।</li>
+                     <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold">पानी और ऑक्सीजन लोहे के साथ रासायनिक अभिक्रिया करते हैं।</li>
+                     <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold">इस अभिक्रिया से लोहे की सतह पर एक लाल-भूरे रंग की परत जम जाती है, जिसे जंग कहते हैं।</li>
                    </ul>
                    <b>जंग लगने से क्या होता है:</b>
                    <ul className="list-none ml-10 text-gray-800">
-                     <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'red' }}>लोहा कमजोर</b> हो जाता है।</li>
-                     <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'red' }}>लोहे की चमक</b> खत्म हो जाती है।</li>
-                     <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: 'red' }}>लोहे का आकार</b> बदल जाता है।</li>
+                     <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold">लोहा कमजोर हो जाता है।</li>
+                     <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold">लोहे की चमक खत्म हो जाती है।</li>
+                     <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold">लोहे का आकार बदल जाता है।</li>
                    </ul>
                    <b className="">जंग लगने से कैसे बचें:</b>
                    <ul className="list-none ml-10 text-gray-800">
-                     <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'blue' }}>लोहे पर पेंट</b> या तेल लगाएं।</li>
-                     <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold"><b style={{ color: 'blue' }}>लोहे को पानी से</b> दूर रखें।</li>
-                     <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: 'blue' }}>लोहे को जंग रोधी पदार्थों</b> से ढकें।</li>
-                     <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold"><b style={{ color: 'blue' }}>गैल्वनाइजेशन की प्रक्रिया</b> का उपयोग करें।</li>
+                     <li className="relative before:content-['(I)'] before:absolute before:-left-9 before:text-red-500 font-bold">लोहे पर पेंट या तेल लगाएं।</li>
+                     <li className="relative before:content-['(II)'] before:absolute before:-left-9 before:text-red-500 font-bold">लोहे को पानी से दूर रखें।</li>
+                     <li className="relative before:content-['(III)'] before:absolute before:-left-10 before:text-red-500 font-bold">लोहे को जंग रोधी पदार्थों से ढकें।</li>
+                     <li className="relative before:content-['(IV)'] before:absolute before:-left-10 before:text-red-500 font-bold">गैल्वनाइजेशन की प्रक्रिया का उपयोग करें।</li>
                    </ul>
-                   <b>नोट:</b> <i>जंग लगना एक प्राकृतिक प्रक्रिया है, लेकिन हम कुछ उपायों से इसे रोक सकते हैं।</i>
+                   <b style={{color:"violet"}}>नोट:</b> <i style={{color:"blue"}}>जंग लगना एक प्राकृतिक प्रक्रिया है, लेकिन हम कुछ उपायों से इसे रोक सकते हैं।</i>
                  </div>
                ),
              },
@@ -606,7 +561,7 @@ const questions = [
                      <li><b style={{ color: 'blue' }}>(i) केरोसिन तेल</b> सोडियम को हवा और पानी से पूरी तरह से अलग कर देता है। इससे सोडियम, हवा और पानी के संपर्क में आने से बच जाता है और प्रतिक्रिया नहीं कर पाता।</li>
                      <li><b style={{ color: 'blue' }}>(ii) केरोसिन तेल</b> एक अक्रिय पदार्थ है। यह सोडियम के साथ किसी भी तरह की प्रतिक्रिया नहीं करता, जिससे सोडियम सुरक्षित रहता है।</li>
                    </ul>
-                   <b>संक्षेप में:</b> <p>सोडियम को केरोसिन तेल में डुबोकर रखने का मुख्य उद्देश्य इसे हवा और पानी के संपर्क में आने से बचाना है ताकि यह प्रतिक्रिया न करे और आग लगने का खतरा कम हो।</p>
+                   <b style={{color:"violet"}}>संक्षेप में:</b> <p>सोडियम को केरोसिन तेल में डुबोकर रखने का मुख्य उद्देश्य इसे हवा और पानी के संपर्क में आने से बचाना है ताकि यह प्रतिक्रिया न करे और आग लगने का खतरा कम हो।</p>
                  </div>
                ),
              },

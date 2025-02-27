@@ -110,7 +110,41 @@ const questions = [
     question: "11. दूरी और विस्थापन में क्या अंतर है?",
     answer: (
       <div>
-        <b>उत्तर:</b> दूरी और विस्थापन में निम्नलिखित अंतर है:
+        {/* <b>उत्तर:</b> दूरी और विस्थापन में निम्नलिखित अंतर है: */}
+
+        <h3 className="font-bold text-lg mb-2 text-indigo-700"> <b style={{ color: "green" }} className="text-xl">उत्तर: </b>दूरी और विस्थापन में निम्नलिखित अंतर है:</h3>
+            <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-indigo-100">
+                  <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center"><b > दूरी: </b></th>
+                  <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center "> <b>विस्थापन: </b></th>
+                </tr>
+              </thead>
+              <tbody className="bg-white">
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4 ">(I) दूरी कभी भी ऋणात्मक नहीं होती अर्थात दूरी का मान हमेशा धनात्मक होता है।</td>
+                  <td className="border border-gray-400 px-4 py-4">(I) विस्थापन का मान धनात्मक तथा ऋणात्मक दोनों होता है।</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(II) दूरी कभी भी शून्य नहीं होती है।</td>
+                  <td className="border border-gray-400 px-4  py-4">(II) विस्थापन का मान शून्य भी होता है।</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(III)  दूरी में केवल परिमाण होता है।</td>
+                  <td className="border border-gray-400 px-4  py-4">(III) विस्थापन में परिमाण और दिशा दोनों होता है। </td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(IV)  दूरी एक अदिश राशि है।</td>
+                  <td className="border border-gray-400 px-4  py-4">(IV) विस्थापन एक सदिश राशि है। </td>
+                </tr>
+              </tbody>
+            </table>
+            <p><b style={{color: "violet"}}>नोट:</b> यदि कोई वस्तु सरल रेखा पर बिना दिशा परिवर्तन के चले तो उस वस्तु का दूरी और विस्थापन का मान बराबर होगा।</p>
+
+
+
+
+{/* 
         <ul>
           <li><b style={{color: "blue"}}>दूरी:</b>
             <ul>
@@ -129,7 +163,7 @@ const questions = [
             </ul>
           </li>
         </ul>
-        <p><b style={{color: "violet"}}>नोट:</b> यदि कोई वस्तु सरल रेखा पर बिना दिशा परिवर्तन के चले तो उस वस्तु का दूरी और विस्थापन का मान बराबर होगा।</p>
+        <p><b style={{color: "violet"}}>नोट:</b> यदि कोई वस्तु सरल रेखा पर बिना दिशा परिवर्तन के चले तो उस वस्तु का दूरी और विस्थापन का मान बराबर होगा।</p> */}
       </div>
     ),
   },

@@ -166,7 +166,7 @@ const questions = [
           answer: (
             <div>
               <b style={{ color: "green" }}>उत्तर:—</b> राइबोसोम ऐसे कण हैं जो केवल इलेक्ट्रॉन सूक्ष्मदर्शी में ही दिखाई पड़ते हैं। ये अंतः प्रद्रव्य जालिका की झिल्लियों की सतह पर सटे होते हैं या कोशिका द्रव्य में गुच्छों में बिखरे रहते हैं।
-              <b >कार्य:</b> राइबोसोम में प्रोटीन का संश्लेषण होता है।
+             <br /> <b style={{color:"violet"}}>कार्य:</b> राइबोसोम में प्रोटीन का संश्लेषण होता है।
             </div>
           ),
         },
@@ -175,7 +175,7 @@ const questions = [
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर:—</b> सर्वप्रथम कैमिलो गॉल्जी ने 1898 में जंतु कोशिका में गॉल्जी उपकरण को देखा। साधारण सूक्ष्मदर्शी में यह मुड़ी हुई छड़ के गुच्छा के समान प्रतीत होता है।
-                <b >कार्य:</b>
+                <br /><b style={{color:"violet"}}>कार्य:</b>
                 <ol >
                   <li>यह कोशिका का मुख्य स्त्रवण अंगक है।</li>
                   <li>लाइसोसोम और पेरॉक्सिसोम के निर्माण में मदद करता है।</li>
@@ -188,7 +188,7 @@ const questions = [
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर:—</b> माइटोकॉण्ड्रिया कोशिका द्रव्य में पाई जाने वाली महत्वपूर्ण संरचना है। यह प्रकाश सूक्ष्मदर्शी में सूक्ष्म कण, धागेनुमा, दानेदार या गोलाकार दिखाई देती है।
-                <b >कार्य:</b>
+               <br /> <b style={{color:"violet"}}>कार्य:</b>
                 <ol >
                   <li>कोशिकीय श्वसन के एंजाइम्स के चलते भोजन का संपूर्ण ऑक्सीकरण होता है।</li>
                   <li>यह ऊर्जा को ATP (Adenosine Triphosphate) के रूप में संग्रहित करता है।</li>
@@ -202,7 +202,7 @@ const questions = [
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर:—</b> यह बहुत सूक्ष्म कोशिकांग है जिसे 1958 में क्रिश्चियन डि ड्यूवे ने देखा। ये छोटी-छोटी पुटिकाओं के रूप में पाए जाते हैं, जिनके चारों ओर पतली झिल्ली होती है।
-                <b >कार्य:</b>
+                <br /><b style={{color:"violet"}}>कार्य:</b>
                 <ol >
                   <li>कोशिका में प्रवेश करने वाले बड़े कणों और बाह्य पदार्थों का पाचन करता है।</li>
                   <li>अंतः कोशिकीय पदार्थों और अंगकों के टूटे-फूटे भागों को पचाकर कोशिका को साफ करता है।</li>
@@ -215,13 +215,13 @@ const questions = [
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर:—</b> लवक या प्लैस्टिड केवल पादप कोशिकाओं में पाए जाते हैं। ये कोशिका द्रव्य में बिखरे रहते हैं और अंडाकार या गोलाकार होते हैं।
-                <b >यह तीन प्रकार के होते हैं:</b>
+                <b style={{color:"blue"}}>यह तीन प्रकार के होते हैं:</b>
                 <ul >
                   <li>अवर्णीलवक</li>
                   <li>वर्णीलवक</li>
                   <li>हरितलवक</li>
                 </ul>
-                <b >कार्य:</b>
+                <b style={{color:"violet"}}>कार्य:</b>
                 <ol >
                   <li>ल्यूकोप्लास्ट मुख्यतः जड़ की कोशिकाओं में पाया जाता है।</li>
                   <li>क्रोमोप्लास्ट फूलों और बीजों को विभिन्न रंग प्रदान करता है।</li>
@@ -235,7 +235,7 @@ const questions = [
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर:—</b> कोशिका की रसधानियाँ चारों ओर से एक झिल्ली से घिरी होती हैं, जिसे टोनोप्लास्ट कहते हैं। इनके भीतर ठोस और तरल पदार्थ भरे रहते हैं। <br />
-                <b >कार्य:</b>
+                <b style={{color:"violet"}}>कार्य:</b>
                 <ol >
                   <li>जंतु कोशिका में जल संतुलन बनाए रखती है।</li>
                   <li>कोशिका रस में मौजूद विभिन्न पदार्थों को कोशिका द्रव्य से अलग रखती है।</li>
@@ -257,7 +257,7 @@ const questions = [
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर:—</b> केंद्रक के अंदर गाढ़ा, अर्धतरल द्रव्य भरा होता है, जिसे केंद्रक द्रव्य कहते हैं। इसमें महीन धागों की जाल जैसी संरचना होती है, जिसे क्रोमैटिन जालिका कहते हैं।
-                <b >कार्य:</b>
+                <br /><b style={{color:"violet"}}>कार्य:</b>
                 <ol >
                   <li>केंद्रक कोशिका की रक्षा करता है और कोशिका विभाजन में भाग लेता है।</li>
                   <li>केंद्रक की अनुपस्थिति में कोशिका विभाजन संभव नहीं है।</li>
@@ -271,7 +271,7 @@ const questions = [
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर:—</b> यह सामान्य कोशिका के केंद्रक में महीन, लंबे और अत्यधिक कुंडलित धागों के रूप में पाए जाते हैं। 
-                <b >क्रोमोसोम के तीन भाग होते हैं:</b>
+                <br /> <span style={{color:"blue"}}>क्रोमोसोम के तीन भाग होते हैं:</span>
                 <ul >
                   <li>पेलिकल</li>
                   <li>मैट्रिक्स</li>
@@ -295,8 +295,37 @@ const questions = [
               question: "24. प्रोकैरियोटिक एवं यूकैरियोटिक कोशिका में क्या अंतर है?",
               answer: (
                 <div>
-                  <b style={{ color: "green" }}>उत्तर:—</b> प्रोकैरियोटिक एवं यूकैरियोटिक कोशिकाओं के बीच निम्नलिखित अंतर होते हैं:
-                  <b >प्रोकैरियोटिक:</b>
+                  <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}> प्रोकैरियोटिक एवं यूकैरियोटिक कोशिकाओं के बीच निम्नलिखित अंतर होते हैं:</span>
+
+
+
+                  <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-indigo-100">
+                  <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center"><b > प्रोकैरियोटिक</b></th>
+                  <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center "> <b>यूकैरियोटिक </b></th>
+                </tr>
+              </thead>
+              <tbody className="bg-white">
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4 ">(I) आकार: 0.1–5.0 µm</td>
+                  <td className="border border-gray-400 px-4 py-4">(I) आकार: 5–100 µm</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(II) केंद्रिका अनुपस्थित।</td>
+                  <td className="border border-gray-400 px-4  py-4">(II) केंद्रिका उपस्थित।</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(III) सिर्फ एक क्रोमोसोम।</td>
+                  <td className="border border-gray-400 px-4  py-4">(III) अनेक क्रोमोसोम। </td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(III) वास्तविक केंद्रक नहीं।</td>
+                  <td className="border border-gray-400 px-4  py-4">(III) वास्तविक केंद्रक मौजूद। </td>
+                </tr>
+              </tbody>
+            </table>
+                  {/* <b >प्रोकैरियोटिक:</b>
                   <ul >
                     <li>आकार: 0.1–5.0 µm</li>
                     <li>केंद्रिका अनुपस्थित।</li>
@@ -309,7 +338,7 @@ const questions = [
                     <li>केंद्रिका उपस्थित।</li>
                     <li>अनेक क्रोमोसोम।</li>
                     <li>वास्तविक केंद्रक मौजूद।</li>
-                  </ul>
+                  </ul> */}
                 </div>
               ),
             },
@@ -317,7 +346,42 @@ const questions = [
               question: "25. पादप कोशिका और जंतु कोशिका में क्या अंतर है?",
               answer: (
                 <div>
-                  <b style={{ color: "green" }}>उत्तर:—</b> पादप कोशिका और जंतु कोशिका में मुख्य अंतर:
+                  <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}>पादप कोशिका और जंतु कोशिका में मुख्य अंतर:</span>
+
+
+
+
+                  <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-indigo-100">
+                  <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center"><b > पादप कोशिका </b></th>
+                  <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center "> <b>जंतु कोशिका </b></th>
+                </tr>
+              </thead>
+              <tbody className="bg-white">
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4 ">(I) आकार जंतु कोशिका से बड़ा होता है।</td>
+                  <td className="border border-gray-400 px-4 py-4">(I) आकार छोटा।</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(II) मोटी और कड़ी कोशिका भित्ति के कारण नियमित आकार।</td>
+                  <td className="border border-gray-400 px-4  py-4">(II) कोशिका का अनियमित आकार।</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(III) बड़ी रसधानी उपस्थित।</td>
+                  <td className="border border-gray-400 px-4  py-4">(III) छोटी या अनुपस्थित रसधानी। </td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(III) लवक उपस्थित।</td>
+                  <td className="border border-gray-400 px-4  py-4">(III) लवक अनुपस्थित। </td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+{/* 
+
                   <b >पादप कोशिका:</b>
                   <ul >
                     <li>आकार जंतु कोशिका से बड़ा होता है।</li>
@@ -331,7 +395,7 @@ const questions = [
                     <li>कोशिका का अनियमित आकार।</li>
                     <li>छोटी या अनुपस्थित रसधानी।</li>
                     <li>लवक अनुपस्थित।</li>
-                  </ul>
+                  </ul> */}
                 </div>
               ),
             },

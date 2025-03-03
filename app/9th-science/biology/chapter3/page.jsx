@@ -32,7 +32,7 @@ const questions = [
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर:—</b> वर्गीकरण की चार इकाइयाँ थीं:
-                <ul>
+                <ul className="list-disc ml-16">
                   <li>संघ</li>
                   <li>वर्ग</li>
                   <li>वंश</li>
@@ -46,7 +46,7 @@ const questions = [
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर:—</b> वर्गीकरण को छोटी इकाइयों में बाँटा गया है:
-                <ul>
+                <ul className="list-disc ml-16">
                   <li>उपसंघ</li>
                   <li>उपवर्ग</li>
                   <li>उपवंश</li>
@@ -59,7 +59,7 @@ const questions = [
             question: "6. कैरोलस लिन्नियस ने जीवों को कितने भागों में बाँटा है?",
             answer: (
               <div>
-                <b style={{ color: "green" }}>उत्तर:—</b> दो भागों में:
+                <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}> दो भागों में:</span>
                 <ul>
                   <li>पादप जगत</li>
                   <li>जंतु जगत</li>
@@ -93,7 +93,7 @@ const questions = [
             question: "9. जीवों के वर्गीकरण के कितने स्तर है?",
             answer: (
               <div>
-                <b style={{ color: "green" }}>उत्तर:—</b> जीवों के वर्गीकरण के निम्नलिखित स्तर हैं:
+                <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}>  जीवों के वर्गीकरण के निम्नलिखित स्तर हैं:</span>
                 <ol>
                   <li>जगत (किंगडम)</li>
                   <li>उपजगत (सबकिंगडम)</li>
@@ -111,7 +111,7 @@ const questions = [
             question: "10. हिटेकर के पाँच जगत क्या है?",
             answer: (
               <div>
-                <b style={{ color: "green" }}>उत्तर:—</b> हिटेकर के पाँच जगत निम्न हैं:
+                <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}> हिटेकर के पाँच जगत निम्न हैं:</span>
                 <ul>
                   <li>जगत मोनेरा</li>
                   <li>जगत प्रोटिस्टा</li>
@@ -126,7 +126,7 @@ const questions = [
             question: "11. मोनेरा क्या है?",
             answer: (
               <div>
-                <b style={{ color: "green" }}>उत्तर:—</b> मोनेरा जगत में प्राचीन, सरल और प्रोकैरियोटिक सूक्ष्मजीव सम्मिलित हैं, जैसे:
+                <b style={{ color: "green" }}>उत्तर:—</b> मोनेरा जगत में प्राचीन, सरल और प्रोकैरियोटिक सूक्ष्मजीव सम्मिलित हैं, <br /><b style={{color:"violet"}}> जैसे:-</b>
                 <ul>
                   <li>जीवाणु</li>
                   <li>नीलहरित शैवाल</li>
@@ -140,7 +140,7 @@ const questions = [
             answer: (
               <div>
                 <b style={{ color: "green" }}>उत्तर:—</b> प्रोटिस्टा जगत में जलीय एककोशिकीय सूक्ष्मजीव होते हैं। ये स्वपोषी और परपोषी होते हैं। 
-                <p>उदाहरण: अमीबा, पैरामीशियम</p>
+                <p><b style={{color:"violet"}}>उदाहरण:- </b>अमीबा, पैरामीशियम</p>
               </div>
             ),
           },
@@ -189,7 +189,7 @@ const questions = [
             question: "17. क्रिप्टोगैम्स को कितने भागों में बाँटा गया है?",
             answer: (
               <div>
-                <b style={{ color: "green" }}>उत्तर:—</b> क्रिप्टोगैम्स को तीन भागों में बाँटा गया है:
+                <b style={{ color: "green" }}>उत्तर:—</b> <span style={{color:"blue"}}> क्रिप्टोगैम्स को तीन भागों में बाँटा गया है:</span>
                 <ul>
                   <li>थैलोफाइटा</li>
                   <li>ब्रायोफाइटा</li>
@@ -284,7 +284,7 @@ const questions = [
                     <li>इनका शरीर कठोर निर्जीव बाहरी कंकाल से ढका होता है।</li>
                     <li>देहगुहा में रक्त भरा रहता है।</li>
                     <li>आहार नाल पूर्ण होता है और मुख के चारों ओर मुखांग होते हैं।</li>
-                    <li>उदाहरण: केकड़ा, झींगा, मक्खी आदि।</li>
+                    <li><b style={{color:"violet"}}>उदाहरण:-</b> केकड़ा, झींगा, मक्खी आदि।</li>
                   </ul>
                 </div>
               ),
@@ -298,7 +298,7 @@ const questions = [
                     <li>इनका शरीर अखंडित होता है, लेकिन टॉर्सन प्रक्रिया के कारण असममित हो जाता है।</li>
                     <li>इनका शरीर एक कोमल झिल्ली से ढका होता है, जिसे प्रावार (मेंटल) कहते हैं।</li>
                     <li>देहगुहा छोटी होती है।</li>
-                    <li>उदाहरण: घोंघा।</li>
+                    <li><b style={{color:"violet"}}>उदाहरण:-</b> घोंघा।</li>
                   </ul>
                 </div>
               ),
@@ -311,7 +311,7 @@ const questions = [
                   <ul>
                     <li>ये द्विपार्श्व सममित और ट्रिप्लोब्लास्टिक होते हैं।</li>
                     <li>इनके शरीर में वास्तविक देहगुहा पाई जाती है।</li>
-                    <li>उदाहरण: हर्डमानिया, एम्फीओक्सस।</li>
+                    <li><b style={{color:"violet"}}>उदाहरण:-</b> हर्डमानिया, एम्फीओक्सस।</li>
                   </ul>
                 </div>
               ),
@@ -381,7 +381,7 @@ const questions = [
                     <ul>
                       <li>इनकी त्वचा बाल या रोम से ढकी होती है।</li>
                       <li>श्वसन फेफड़ों द्वारा होता है।</li>
-                      <li>उदाहरण: बतख, चूहा, कुत्ता इत्यादि।</li>
+                      <li><b style={{color:"violet"}}>उदाहरण:-</b> बतख, चूहा, कुत्ता इत्यादि।</li>
                     </ul>
                   </div>
                 ),
@@ -397,7 +397,7 @@ const questions = [
                   {/* <Image sr></Image> */}
                   <div className='flex justify-between'>
                     <div>
-                  <Image src={"/image/8th-S-Chap-1.png"} className=' rounded mb-12 transition-all transform hover:animate-shake' width={2500} height={300} alt='img'></Image>
+                  {/* <Image src={"/image/8th-S-Chap-1.png"} className=' rounded mb-12 transition-all transform hover:animate-shake' width={2500} height={300} alt='img'></Image> */}
                   </div>
             
                   {/* <div className='border border-x-8  flex flex-col'>

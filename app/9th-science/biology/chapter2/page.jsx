@@ -324,7 +324,7 @@ const QuestionAnswerPage = () => {
       {/* <Image sr></Image> */}
       <div className='flex justify-between'>
         <div>
-      {/* <Image src={"/image/8th-S-Chap-1.png"} className=' rounded mb-12 transition-all transform hover:animate-shake' width={2500} height={300} alt='img'></Image> */}
+      <Image src={"/image/9th-biology-subjective-chapter-2.png"} className=' rounded mb-12 transition-all transform hover:animate-shake' width={2500} height={300} alt='img'></Image>
       </div>
 
       {/* <div className='border border-x-8  flex flex-col'>

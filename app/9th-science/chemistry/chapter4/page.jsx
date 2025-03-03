@@ -56,9 +56,9 @@ const questions = [
         <div>
           <b style={{ color: "green" }}>उत्तर:—</b>
           <p>आवेश और द्रव्यमान।</p>
-          <b style={{color: "blue"}}>आवेश:</b> इलेक्ट्रॉन पर ऋण आवेश कण होता है। इलेक्ट्रॉन के आवेश का मान e⁻ = 1.60× 10⁻¹⁹ C
+          <b >आवेश:</b> इलेक्ट्रॉन पर ऋण आवेश कण होता है। इलेक्ट्रॉन के आवेश का मान e⁻ = 1.60× 10⁻¹⁹ C
           <br />
-          <b style={{color: "blue"}}>द्रव्यमान:</b> इलेक्ट्रॉन में द्रव्यमान होता है जिसे g या kg में लिखा जाता है। e⁻ = 9.1×10⁻³¹ kg
+          <b >द्रव्यमान:</b> इलेक्ट्रॉन में द्रव्यमान होता है जिसे g या kg में लिखा जाता है। e⁻ = 9.1×10⁻³¹ kg
         </div>
       ),
     },
@@ -78,7 +78,45 @@ const questions = [
       answer: (
         <div>
           <b style={{ color: "green" }}>उत्तर:—</b>
-          <p>इलेक्ट्रॉन, प्रोटॉन और न्यूट्रॉन में निम्न अंतर है:</p>
+          <p style={{color:"blue"}}>इलेक्ट्रॉन, प्रोटॉन और न्यूट्रॉन में निम्न अंतर है:</p>
+
+          <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-indigo-100">
+                  <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center"><b > इलेक्ट्रॉन </b></th>
+                  <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center "> <b>प्रोटॉन </b></th>
+                  <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center "> <b>न्यूट्रॉन </b></th>
+                </tr>
+              </thead>
+              <tbody className="bg-white">
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4 ">(I) इलेक्ट्रॉन का संकेत e⁻ है।</td>
+                  <td className="border border-gray-400 px-4 py-4">(I) प्रोटॉन का संकेत p+ या H+ है।</td>
+                  <td className="border border-gray-400 px-4 py-4">(I) न्यूट्रॉन का संकेत n या n⁰ है।</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(II) इलेक्ट्रॉन का आवेश -1.602 × 10⁻¹⁹ कूलॉम है।</td>
+                  <td className="border border-gray-400 px-4  py-4">(II) प्रोटॉन का आवेश +1.602 × 10⁻¹⁹ कूलॉम है।</td>
+                  <td className="border border-gray-400 px-4  py-4">(II) न्यूट्रॉन का आवेश शून्य है।</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(III) इलेक्ट्रॉन का द्रव्यमान लगभग 9.109 × 10⁻³¹ किलोग्राम है।</td>
+                  <td className="border border-gray-400 px-4  py-4">(III) प्रोटॉन का द्रव्यमान लगभग 1.672 × 10⁻²⁷ किलोग्राम है। </td>
+                  <td className="border border-gray-400 px-4  py-4">(III) न्यूट्रॉन का द्रव्यमान लगभग 1.675 × 10⁻²⁷ किलोग्राम है। </td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(IV) इलेक्ट्रॉन परमाणु के बाहरी भाग में पाए जाते हैं और इलेक्ट्रॉन त्वचा बनाते हैं।</td>
+                  <td className="border border-gray-400 px-4  py-4">(IV) प्रोटॉन परमाणु के नाभिक में पाए जाते हैं। </td>
+                  <td className="border border-gray-400 px-4  py-4">(IV) न्यूट्रॉन परमाणु के नाभिक में पाए जाते हैं। </td>
+                </tr>
+                {/* <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(III) इलेक्ट्रॉन परमाणु के बाहरी भाग में पाए जाते हैं और इलेक्ट्रॉन त्वचा बनाते हैं।</td>
+                  <td className="border border-gray-400 px-4  py-4">(III) यह फैक्ट्रियों में बनाया जाता है। </td>
+                </tr> */}
+              </tbody>
+            </table>
+
+{/* 
           <b style={{color: "blue"}}>इलेक्ट्रॉन:</b>
           <ol>
             <li>इलेक्ट्रॉन का संकेत e⁻ है।</li>
@@ -99,7 +137,7 @@ const questions = [
             <li>न्यूट्रॉन का आवेश शून्य है।</li>
             <li>न्यूट्रॉन का द्रव्यमान लगभग 1.675 × 10⁻²⁷ किलोग्राम है।</li>
             <li>न्यूट्रॉन परमाणु के नाभिक में पाए जाते हैं।</li>
-          </ol>
+          </ol> */}
         </div>
       ),
     },
@@ -281,7 +319,7 @@ const questions = [
             <p>A → द्रव्यमान संख्या</p>
             <p>Z → परमाणु संख्या</p>
             <p>N → न्यूट्रॉनों की संख्या</p>
-            <p><b>उदाहरण:</b><br />
+            <p><b style={{color:"violet"}}>उदाहरण:-</b><br />
             ¹¹Na²³ → सोडियम <br />
             परमाणु संख्या (Z) = 11 <br />
             द्रव्यमान संख्या (A) = 23 <br />

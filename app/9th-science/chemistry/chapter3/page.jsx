@@ -108,9 +108,72 @@ const questions = [
     {
       question: "7. तत्वों के नाम उनके लैटिन नाम एवं संकेत को लिखें?",
       answer: (
-        <div>
+        <div className="">
           <b style={{ color: "green" }}>उत्तर:—</b>
-          <p><b style={{color: "blue"}}>तत्वों के नाम:</b></p>
+          {/* <p><b style={{color: "blue"}}>तत्वों के नाम:</b></p> */}
+
+
+
+
+
+          <table className="table-auto border-collapse text-gray-800 sm:text-sm w-full shadow-lg rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-indigo-100">
+                  <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center"><b > तत्वों के नाम </b></th>
+                  <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center "> <b>लैटिन नाम </b></th>
+                  <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center "> <b>संकेत </b></th>
+                </tr>
+              </thead>
+              <tbody className="bg-white">
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4 ">(I) Sodium</td>
+                  <td className="border border-gray-400 px-4 py-4">(I) नात्रियम (Natrium)</td>
+                  <td className="border border-gray-400 px-4 py-4">(I) Na</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(II) Potassium</td>
+                  <td className="border border-gray-400 px-4  py-4">(II) कालियम (Kalium)</td>
+                  <td className="border border-gray-400 px-4  py-4">(II) K</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(III) Copper</td>
+                  <td className="border border-gray-400 px-4  py-4">(III) क्यूप्रम (Cuprum) </td>
+                  <td className="border border-gray-400 px-4  py-4">(III) Cu </td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(IV) Iron</td>
+                  <td className="border border-gray-400 px-4  py-4">(IV) फेरम (Ferrum) </td>
+                  <td className="border border-gray-400 px-4  py-4">(IV) Fe </td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(V) Gold</td>
+                  <td className="border border-gray-400 px-4  py-4">(V) औरम (Aurum) </td>
+                  <td className="border border-gray-400 px-4  py-4">(V) Au </td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(VI) Silver</td>
+                  <td className="border border-gray-400 px-4  py-4">(VI) आर्जेन्टम (Argentum) </td>
+                  <td className="border border-gray-400 px-4  py-4">(VI) Ag </td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(VII) Mercury</td>
+                  <td className="border border-gray-400 px-4  py-4">(VII) हाइड्रार जाइरम (Hydrargyrum)  </td>
+                  <td className="border border-gray-400 px-4  py-4">(VII) Hg </td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(VIII) Lead</td>
+                  <td className="border border-gray-400 px-4  py-4">(VIII) प्लंबम  (Plumbum)  </td>
+                  <td className="border border-gray-400 px-4  py-4">(VIII) Pb </td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+
+
+
+{/* 
           <ul>
             <li>Sodium</li>
             <li>Potassium</li>
@@ -142,7 +205,7 @@ const questions = [
             <li>Ag</li>
             <li>Hg</li>
             <li>Pb</li>
-          </ul>
+          </ul> */}
         </div>
       ),
     },
@@ -279,6 +342,37 @@ const questions = [
           <div>
             <b style={{ color: "green" }}>उत्तर:—</b>
             <div>
+
+
+            <table className="table-auto border-collapse text-gray-800 w-full shadow-lg rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-indigo-100">
+                  <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center"><b > ★ परमाणु </b></th>
+                  <th className="border border-gray-400 px-6 py-3 text-sky-500 font-medium text-center "> <b>★ अणु </b></th>
+                </tr>
+              </thead>
+              <tbody className="bg-white">
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4 ">(I) तत्व का सूक्ष्मतम कण जो मुक्त अवस्था में नहीं पाया जाता है।</td>
+                  <td className="border border-gray-400 px-4 py-4">(I) तत्व या यौगिक का सूक्ष्मतम कण जो मुक्त अवस्था में पाया जाता है।</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(II) परमाणु का आकार गोलीय होता है।</td>
+                  <td className="border border-gray-400 px-4  py-4">(II) अणु का आकृति रैखिक या त्रिकोणीय होता है।</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(III)  परमाणु में कोई बंधन नहीं होता है।</td>
+                  <td className="border border-gray-400 px-4  py-4">(III) अणु के परमाणु रासायनिक बंधन से जुड़े होते हैं। </td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="border border-gray-400 px-4  py-4">(IV)  परमाणु को विभाजित नहीं किया जा सकता है।</td>
+                  <td className="border border-gray-400 px-4  py-4">(IV) अणु को विभाजित किया जाता है। </td>
+                </tr>
+              </tbody>
+            </table>
+
+
+{/* 
               <b style={{color: "blue"}}>★ परमाणु:—</b>
               <ul>
                 <li>(i) तत्व का सूक्ष्मतम कण जो मुक्त अवस्था में नहीं पाया जाता है।</li>
@@ -295,6 +389,8 @@ const questions = [
                 <li>(iii) अणु के परमाणु रासायनिक बंधन से जुड़े होते हैं।</li>
                 <li>(iv) अणु को विभाजित किया जाता है।</li>
               </ul>
+            </div> */}
+
             </div>
           </div>
         ),
@@ -344,8 +440,8 @@ const questions = [
             <p>किसी यौगिक के परमाणु में उपस्थित परमाणुओं की संख्या का अनुपात या वास्तविक संख्या को व्यक्त करता हो उसे अणु सूत्र या रासायनिक सूत्र कहते हैं।</p>
             <p><b style={{color:"violet"}}> जैसे:—</b> एसिटिक अम्ल के लिए:</p>
             <ul>
-              <li><b style={{color: "blue"}}>अणु सूत्र:</b> C₂H₄O₂</li>
-              <li><b style={{color: "blue"}}>सरल सूत्र:</b> CH₂O</li>
+              <li><b >अणु सूत्र:</b> C₂H₄O₂</li>
+              <li><b >सरल सूत्र:</b> CH₂O</li>
             </ul>
             <p><b style={{color: "blue"}}>★ सरल सूत्र प्राप्त करने की विधि:</b></p>
             <ol>
